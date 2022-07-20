@@ -17,17 +17,32 @@
 
 html {
   scroll-behavior: smooth;
+  padding: 0 ;
+  margin : 0   ;
+
+  box-sizing: border-box;
 }
 
-body {
+* {
+  padding: 0  ;
+  margin : 0  !important;  
+
+  box-sizing: border-box;
+}
+
+ body {
   font-family: 'Poppins', sans-serif;
-  background: rgba(0, 8, 45, 1);
+  background: rgba(0, 8, 45, 1) !important;
+  padding: 0 ;
+  margin : 0 ;
+  
+
 }
 
-main {
+/* main {
   position: relative;
   overflow: hidden;
-}
+} */ */
 
 button:focus,
 a:focus {
@@ -38,19 +53,23 @@ a {
   color: var(--c-main);
 }
 
-.header {
+/* .header {
+  
   position: fixed;
   top: 0;
   left: 0;
   z-index: 3;
   width: 100%;
   transition: background 0.3s;
-}
 
-.sticky-header {
+} */
+
+
+/* .sticky-header {
   background: rgba(0, 0, 0, 0.3);
   color: #fff;
 }
+ */
 
 .nav-hamburger {
   display: block;
@@ -76,7 +95,7 @@ a {
   -webkit-touch-callout: none;
 }
 
-.nav-hamburger span {
+/* .nav-hamburger span {
   display: block;
   width: 33px;
   height: 2px;
@@ -90,7 +109,7 @@ a {
 
   transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1),
     background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), opacity 0.55s ease;
-}
+} */
 
 .nav-hamburger span:first-child {
   transform-origin: 0% 0%;
