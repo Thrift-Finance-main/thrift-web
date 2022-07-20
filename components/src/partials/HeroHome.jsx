@@ -3,8 +3,8 @@ import Modal from '../utils/Modal';
 
 import MockupImage from '../images/mockup-image-01.jpg';
 import IphoneMockup from '../images/iphone-mockup.png';
-import PlayBtn from '../images/play-button.svg';
 
+import Image from 'next/image'
 function Hero() {
 
   const [videoModalOpen, setVideoModalOpen] = useState(false);
@@ -71,19 +71,24 @@ function Hero() {
                   </defs>
                 </svg>
                 {/* Image inside mockup size: 290x624px (or 580x1248px for Retina devices) */}
-                <img className="absolute" src={MockupImage} width="290" height="624" style={{ maxWidth: '84.33%' }} alt="Features illustration" />
+                <Image className="absolute" src={MockupImage} width="290" height="624" style={{ maxWidth: '84.33%' }} alt="Features illustration" />
+
                 {/* iPhone mockup */}
-                <img className="relative max-w-full mx-auto md:mr-0 md:max-w-none h-auto pointer-events-none" src={IphoneMockup} width="344" height="674" alt="iPhone mockup" aria-hidden="true" />
+                <Image className="relative max-w-full mx-auto md:mr-0 md:max-w-none h-auto pointer-events-none" src={'https://res.cloudinary.com/dhkccnvyn/image/upload/v1658348423/iPhone_12___12_Pro_f69cnq.svg'} width="344" height="674" alt="iPhone mockup" aria-hidden="true" />
                 {/* Play button */}
-                <a className="absolute group" href="#0" onClick={(e) => { e.preventDefault(); e.stopPropagation(); setVideoModalOpen(true); }} aria-controls="modal">
+                {/* <a className="absolute group" href="#0" onClick={(e) => { e.preventDefault(); e.stopPropagation(); setVideoModalOpen(true); }} aria-controls="modal">
                   <img src={PlayBtn} width="96" height="96" alt="Play" />
-                </a>
+                </a> */}
               </div>
+
+
 
               {/* Modal */}
               <Modal id="modal" ariaLabel="modal-headline" show={videoModalOpen} handleClose={() => setVideoModalOpen(false)}>
                 <div className="relative pb-9/16">
-                  <iframe className="absolute w-full h-full" src="https://player.vimeo.com/video/174002812" title="Video" allowFullScreen></iframe>
+                  
+                   
+
                 </div>
               </Modal>
 

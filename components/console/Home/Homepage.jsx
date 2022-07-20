@@ -2,6 +2,8 @@
 import Headers from '../Components/Headers.jsx';
 import TheHeader from '../../src/partials/Header';
 import Hero from '../../src/partials/HeroHome';
+import How from '../../src/partials/How';
+
 const Homepage = () => {
 
 
@@ -12,7 +14,10 @@ const Homepage = () => {
                 
               <center>
                   <TheHeader/>
-                  <Hero />
+                   <Hero />
+                   <How />
+                  
+                  
                   
               </center>
               
