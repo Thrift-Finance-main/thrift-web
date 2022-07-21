@@ -1,41 +1,46 @@
 import { useEffect, useRef } from 'react'
-import { renderCanvas } from './canvas'
-
-import { DelegateButton } from '@features/wallet'
+import Typed from 'react-typed';
+import content from '../../../public/data/hero/content.json';
+// @ts-ignore
+import {Swirl} from 'ambient-cbg';
 
 export const Hero: React.FC = () => {
-  const canvasRef = useRef<HTMLCanvasElement>(null)
 
   useEffect(() => {
-    renderCanvas(canvasRef.current)
-  }, [canvasRef])
+
+  }, [])
 
   return (
     <section className="hero flex items-center">
 
-      <div id="wrapper">
-        <canvas id="canvas" className="canvas" ref={canvasRef} />
-      </div>
-
       <div className="container mx-auto relative">
 
+        <Swirl/>
         <div className="flex flex-col-reverse lg:flex-row mx-auto">
           <section className="text-gray-600 body-font">
             <div className="container mx-auto flex px-5 py-24 md:flex-row flex-col items-center">
               <div
                 className="lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center">
-                <h1 className="title-font sm:text-4xl text-3xl mb-4 font-medium text-gray-200">Before they sold out
-                  <br className="hidden lg:inline-block"/>readymade gluten
+                <h1 className="title-font sm:text-4xl text-3xl mb-4 font-medium text-gray-200">
+                  RealFi Wallet
+                  <br className="hidden lg:inline-block"/>
+                  {/*@ts-ignore*/}
+                  <Typed
+                  strings={content.typedStrings}
+                  typeSpeed={70}
+                  loop={true}
+                />
+
                 </h1>
-                <p className="mb-8 leading-relaxed text-white">Copper mug try-hard pitchfork pour-over freegan heirloom neutra air
-                  plant cold-pressed tacos poke beard tote bag. Heirloom echo park mlkshk tote bag selvage hot chicken
-                  authentic tumeric truffaut hexagon try-hard chambray.</p>
+                <p className="mb-8 leading-relaxed text-white">Take back the control of your finances through a decentralized and trustless RealFi and DeFi ecosystem.</p>
                 <div className="flex justify-center">
                   <button
-                    className="inline-flex text-white bg-indigo-500 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded text-lg">Button
+                    className="inline-flex text-white bg-indigo-500 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded text-lg">
+                    Button
                   </button>
                   <button
-                    className="ml-4 inline-flex text-gray-700 bg-gray-100 border-0 py-2 px-6 focus:outline-none hover:bg-gray-200 rounded text-lg">Button
+                    className="ml-4 inline-flex text-gray-700 bg-gray-100 border-0 py-2 px-6 focus:outline-none hover:bg-gray-200 rounded text-lg">
+                    Button
                   </button>
                 </div>
               </div>
