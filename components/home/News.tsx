@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react'
+import React, { useState, useEffect } from 'react'
 import { Swiper, SwiperSlide } from 'swiper/react'
 import dayjs from 'dayjs'
 
@@ -36,6 +36,11 @@ export const News: React.FC = () => {
 
   return (
     <section id="news" className="news py-36 mx-auto">
+      <div className="custom-shape-divider-top-1658445462">
+        <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+          <path d="M0,0V7.23C0,65.52,268.63,112.77,600,112.77S1200,65.52,1200,7.23V0Z" className="shape-fill"></path>
+        </svg>
+      </div>
       <div className="container mx-auto pl-6 sm:pl-0 pr-6 sm:pr-0">
         <h2 className="section-heading mb-16" data-aos="fade-down">
           News

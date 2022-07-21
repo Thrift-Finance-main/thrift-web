@@ -223,7 +223,7 @@ a {
 
 .heading-hero span {
   padding: 12px 24px;
-  background: var(--c-main);
+  background: rgb(96,62,218);
   color: var(--c-dark);
   border-radius: 50px;
 }
@@ -255,18 +255,18 @@ a {
 }
 
 .btn-2 {
-  background: var(--c-main);
+  background: rgb(96,62,218);
   color: var(--c-dark);
   padding: 10px 30px;
   border-radius: 50px;
   font-weight: 600;
-  border: 1px solid var(--c-main);
+  border: 1px solid rgb(96,62,218);
   transition: 0.3s ease-in-out;
 }
 .btn-2:hover {
   background: white;
   color: var(--c-main);
-  border: 1px solid var(--c-main);
+  border: 1px solid rgb(96,62,218);
 }
 
 .btn .btn-text-blended {
@@ -310,9 +310,35 @@ a {
   border-color: rgb(118, 122, 140);
 }
 
+.shapes-bg {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-size: 300% 300%;
+  background-image: linear-gradient(
+          -45deg,
+          rgba(59,173,227,1) 0%,
+          rgba(87,111,230,1) 25%,
+          rgba(152,68,183,1) 51%,
+          rgba(255,53,127,1) 100%
+  );
+  animation: AnimateBG 20s ease infinite;
+}
+
+@keyframes AnimateBG {
+  0%{background-position:0% 50%}
+  50%{background-position:100% 50%}
+  100%{background-position:0% 50%}
+}
+
+#about{
+  background: rgb(96,62,218);
+}
 #about .swiper-slide {
   padding: 60px 0;
-  background: var(--c-dark);
+  background: rgb(96,62,218);
   height: auto !important;
 }
 
@@ -327,8 +353,8 @@ a {
 
 #about .swiper-button-next,
 #about .swiper-button-prev {
-  color: var(--c-dark) !important;
-  background-color: var(--c-main);
+  color: rgb(96,62,218) !important;
+  background-color: rgb(96,62,218);
   padding: 12px 22px;
   border-radius: 50%;
   top: unset !important;
@@ -351,12 +377,12 @@ a {
 }
 
 .swiper-pagination-bullets-dynamic .swiper-pagination-bullet {
-  background: var(--c-main);
+  background:rgb(96,62,218);
 }
 
 .features-card {
   padding: 40px;
-  background: var(--c-main);
+  background: rgb(96,62,218);
 }
 
 .features-card h3 {
@@ -364,10 +390,10 @@ a {
 }
 
 .features-card-title {
-  color: #00082d;
+  color: rgb(96,62,218);
 }
 .features-card-content {
-  color: #00082d;
+  color: rgb(96,62,218);
 }
 
 .bg-red {
@@ -388,16 +414,19 @@ a {
   color: white;
 }
 .c-main {
-  color: var(--c-main);
+  color: rgb(96,62,218);
 }
 .c-dark {
-  color: var(--c-dark);
+  color: rgb(96,62,218);
 }
 .bg-main {
-  background: var(--c-main);
+  background: rgb(96,62,218);
+}
+.bg-second {
+  background: #F338C2;
 }
 .bg-dark {
-  background: var(--c-dark);
+  background: rgb(96,62,218);
 }
 
 section {
@@ -471,4 +500,25 @@ section {
   .frame-box {
     height: 300px;
   }
+}
+
+
+.custom-shape-divider-top-1658445462 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+}
+
+.custom-shape-divider-top-1658445462 svg {
+  position: relative;
+  display: block;
+  width: calc(100% + 1.3px);
+  height: 100px;
+}
+
+.custom-shape-divider-top-1658445462 .shape-fill {
+  fill: #603EDA;
 }

@@ -9,103 +9,88 @@ import { Delegation } from './Delegation'
 import 'swiper/css'
 import 'swiper/css/navigation'
 import 'swiper/css/pagination'
+import React from 'react'
 
 // install Swiper modules
 SwiperCore.use([EffectCreative, Pagination, Navigation])
 
 export const AboutPool: React.FC = () => {
   return (
-    <section id="about" className="about py-36">
-      <div className="container  mx-auto pl-6 sm:pl-0 pr-6 sm:pr-0">
-        <h2 className="section-heading mb-10" data-aos="fade-down">
-          About our Pool
-        </h2>
-        <div className="lg:flex mx-auto">
-          <div className="flex flex-col items-center justify-center p-8 w-full lg:w-1/2 relative">
-            <div className="w-60 sm:w-72 md:w-96 h-60 sm:h-72 md:h-96 z-10 rounded-full bg-red absolute left-10"></div>
-
-            <div className="w-10/12 z-20 ">
-              <NextImage
-                height={213}
-                width={373}
-                src="/stakepool-epoch.png"
-                data-aos="zoom-in"
-                alt=""
-              />
+    <section id="about" className="about py-36 ">
+      <div className="container  mx-auto pl-6 sm:pl-0 pr-6 sm:pr-0 ">
+        <section className="text-gray-600 body-font">
+          <div className="container px-5 py-24 mx-auto flex flex-wrap">
+            <div className="lg:w-1/2 w-full mb-10 lg:mb-0 rounded-lg overflow-hidden">
+              <img alt="feature" className="object-cover object-center h-full w-full"
+                   src="/multiOuts.png"/>
+            </div>
+            <div className="flex flex-col flex-wrap lg:py-6 -mb-10 lg:w-1/2 lg:pl-12 lg:text-left text-center">
+              <div className="flex flex-col mb-10 lg:items-start items-center">
+                <div
+                  className="w-12 h-12 inline-flex items-center justify-center rounded-full bg-indigo-100 text-indigo-500 mb-5">
+                  <svg fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2"
+                       className="w-6 h-6" viewBox="0 0 24 24">
+                    <path d="M22 12h-4l-3 9L9 3l-3 9H2"></path>
+                  </svg>
+                </div>
+                <div className="flex-grow">
+                  <h2 className="text-gray-200 text-lg title-font font-medium mb-3">Shooting Stars</h2>
+                  <p className="leading-relaxed text-gray-200 text-base">Blue bottle crucifix vinyl post-ironic four dollar toast
+                    vegan taxidermy. Gastropub indxgo juice poutine.</p>
+                  <a className="mt-3 text-indigo-500 inline-flex items-center">Learn More
+                    <svg fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round"
+                         strokeWidth="2" className="w-4 h-4 ml-2" viewBox="0 0 24 24">
+                      <path d="M5 12h14M12 5l7 7-7 7"></path>
+                    </svg>
+                  </a>
+                </div>
+              </div>
+              <div className="flex flex-col mb-10 lg:items-start items-center">
+                <div
+                  className="w-12 h-12 inline-flex items-center justify-center rounded-full bg-indigo-100 text-indigo-500 mb-5">
+                  <svg fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2"
+                       className="w-6 h-6" viewBox="0 0 24 24">
+                    <path d="M22 12h-4l-3 9L9 3l-3 9H2"></path>
+                  </svg>
+                </div>
+                <div className="flex-grow">
+                  <h2 className="text-gray-200 text-lg title-font font-medium mb-3">Shooting Stars</h2>
+                  <p className="leading-relaxed text-gray-200 text-base">Blue bottle crucifix vinyl post-ironic four dollar toast
+                    vegan taxidermy. Gastropub indxgo juice poutine.</p>
+                  <a className="mt-3 text-indigo-500 inline-flex items-center">Learn More
+                    <svg fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round"
+                         strokeWidth="2" className="w-4 h-4 ml-2" viewBox="0 0 24 24">
+                      <path d="M5 12h14M12 5l7 7-7 7"></path>
+                    </svg>
+                  </a>
+                </div>
+              </div>
+              <div className="flex flex-col mb-10 lg:items-start items-center">
+                <div
+                  className="w-12 h-12 inline-flex items-center justify-center rounded-full bg-indigo-100 text-indigo-500 mb-5">
+                  <svg fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2"
+                       className="w-6 h-6" viewBox="0 0 24 24">
+                    <path d="M22 12h-4l-3 9L9 3l-3 9H2"></path>
+                  </svg>
+                </div>
+                <div className="flex-grow">
+                  <h2 className="text-gray-200 text-lg title-font font-medium mb-3">Shooting Stars</h2>
+                  <p className="leading-relaxed text-gray-200 text-base">Blue bottle crucifix vinyl post-ironic four dollar toast
+                    vegan taxidermy. Gastropub indxgo juice poutine.</p>
+                  <a className="mt-3 text-indigo-500 inline-flex items-center">Learn More
+                    <svg fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round"
+                         strokeWidth="2" className="w-4 h-4 ml-2" viewBox="0 0 24 24">
+                      <path d="M5 12h14M12 5l7 7-7 7"></path>
+                    </svg>
+                  </a>
+                </div>
+              </div>
             </div>
           </div>
+        </section>
 
-          <div className="flex items-center justify-center w-full lg:w-1/2">
-            <Swiper
-              effect={'creative'}
-              pagination={{
-                dynamicBullets: true,
-              }}
-              navigation={true}
-              spaceBetween={50}
-              slidesPerView={1}
-              creativeEffect={{
-                prev: {
-                  shadow: true,
-                  translate: [0, 0, -400],
-                },
-                next: {
-                  translate: ['100%', 0, 0],
-                },
-              }}
-            >
-              <SwiperSlide>
-                <Delegation />
-              </SwiperSlide>
-
-              <SwiperSlide>
-                <Slide title="Fees / Pledge">
-                  2.5% + 1M ADA PLEDGE
-                  <br />
-                  <br />
-                  LOW FEES AS WE STRONGLY BELIEVE IN ACCESSIBILITY TO FINANCE
-                  FOR EVERYONE
-                </Slide>
-              </SwiperSlide>
-
-              <SwiperSlide>
-                <Slide title="Hardware">
-                  WE ARE RUNNING CARDANOFANS STAKING POOL ON BAREMETAL WITH TWO
-                  RELAY NODES AND ONE BLOCK PRODUCING, LINK 200 MBIT
-                  <br />
-                  <br />
-                  Baremetal stakepool with 200 Mbit fiber running on Intel i3
-                  and 2 x Intel i7 servers ( 3 x 16 GB RAM)
-                </Slide>
-              </SwiperSlide>
-
-              <SwiperSlide>
-                <Slide title="Monitoring">
-                  WE HAVE SETUP ADVANCED MONITORING WITH ALTERING IN CASE THINGS
-                  GET PEAR SHAPED.
-                </Slide>
-              </SwiperSlide>
-
-              <SwiperSlide>
-                <Slide title="Operators">
-                  WELCOME TO CARDANOFANS CARDANO (CRFA) STAKE POOL. WE ARE
-                  PROFESSIONAL STAKE POOL OPERATORS. WE HAVE BEEN RUNNING LINUX
-                  SERVERS (BARE METAL, CLOUD) FOR OVER 15 YEARS NOW.
-                </Slide>
-              </SwiperSlide>
-
-              <SwiperSlide>
-                <Slide title="Involvement">
-                  WE STRONGLY BELIEVE THAT FINANCE SHOULD BE AVAILABLE FOR
-                  EVERYONE NOT JUST PRIVILIGED ONES. THERE IS ABOUT 3 BLN PEOPLE
-                  THAT ARE CURRENTLY UNBANKED, CARDANO AIMS TO CHANGE THIS AND
-                  WE WILL SUPPORT IT VIA RUNNING LOW FEES STAKING POOL.
-                </Slide>
-              </SwiperSlide>
-            </Swiper>
-          </div>
-        </div>
       </div>
+
     </section>
   )
 }
