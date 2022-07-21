@@ -42,13 +42,13 @@ export const Header: React.FC = () => {
               <a>
                 <div className="logo-box flex items-center justify-center">
                   <img
-                    className="rounded-circle mr-8"
+                    className="rounded-circle mr-4 p-1"
                     style={{ width: 48, height: 48 }}
-                    src="/logo192.png"
+                    src="/favicon.png"
                     alt="Cardano Fans Staking Pool - Logo"
                   />
-                  <h5 className="c-white font-semibold">
-                    CARDANO.<span className="c-main">FANS</span>
+                  <h5 className="c-white font-semibold text-2xl">
+                    Thrift
                   </h5>
                 </div>
               </a>
@@ -56,35 +56,21 @@ export const Header: React.FC = () => {
             <ul className="nav-list hidden lg:flex">
               <li className="nav-link">
                 <Link href="/#about" passHref>
-                  <a>Our Pool</a>
+                  <a>RealFi</a>
                 </Link>
               </li>
               <li className="nav-link">
                 <Link href="/#cardano" passHref>
-                  <a>Cardano</a>
+                  <a>Wallet</a>
                 </Link>
               </li>
               <li className="nav-link">
-                <Link href="/cardano-blockchain-insight" passHref>
-                  <a>Blockchain Insights</a>
+                <Link href="/#cardano" passHref>
+                  <a>About Us</a>
                 </Link>
               </li>
               <li className="nav-link">
-                <Link href="/#news" passHref>
-                  <a>News</a>
-                </Link>
-              </li>
-              <li className="nav-link">
-                <a
-                  href="https://cardano-fans.medium.com/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  Blog
-                </a>
-              </li>
-              <li className="nav-link">
-                <Link href="/#contact" passHref>
+                <Link href="/#cardano" passHref>
                   <a>Contact</a>
                 </Link>
               </li>
