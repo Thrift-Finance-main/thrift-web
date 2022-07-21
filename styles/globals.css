@@ -21,7 +21,7 @@ html {
 
 body {
   font-family: 'Poppins', sans-serif;
-  background: rgba(0, 8, 45, 1);
+  background: rgba(96,62,218);
 }
 
 main {
@@ -130,7 +130,7 @@ a {
   width: 50vw;
   height: 120vh;
   z-index: -1;
-  background: var(--c-main) !important;
+  background: rgb(96,62,218) !important;
   transform: translateX(140%);
   list-style-type: none;
   -webkit-font-smoothing: antialiased;
@@ -199,7 +199,7 @@ a {
   background: linear-gradient(
     35deg,
     rgba(230, 70, 70, 0.32) 0%,
-    rgba(0, 8, 45, 1) 90%
+    rgba(96,62,218) 90%
   );
 }
 
@@ -428,27 +428,6 @@ section {
   z-index: -10;
   filter: blur(3px);
   opacity: 0.6;
-}
-
-.custom-shape-divider-bottom-1634242204 {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  overflow: hidden;
-  line-height: 0;
-  transform: rotate(180deg);
-}
-
-.custom-shape-divider-bottom-1634242204 svg {
-  position: relative;
-  display: block;
-  width: calc(130% + 1.3px);
-  height: 150px;
-}
-
-.custom-shape-divider-bottom-1634242204 .shape-fill {
-  fill: #00082d;
 }
 
 .frame-box {

@@ -43,11 +43,11 @@ export const Header: React.FC = () => {
                 <div className="logo-box flex items-center justify-center">
                   <img
                     className="rounded-circle mr-4 p-1"
-                    style={{ width: 48, height: 48 }}
-                    src="/favicon.png"
+                    style={{ width: 52, height: 'auto' }}
+                    src="/logoWhite.png"
                     alt="Cardano Fans Staking Pool - Logo"
                   />
-                  <h5 className="c-white font-semibold text-2xl">
+                  <h5 className="text-gray-200 font-semibold text-2xl">
                     Thrift
                   </h5>
                 </div>
@@ -90,36 +90,23 @@ export const Header: React.FC = () => {
                 <div className="menu-row">
                   <div className="menu-box">
                     <ul className="menu-items">
-                      <li className="menu-item">
-                        <Link href="/" passHref>
-                          <a>Home</a>
-                        </Link>
-                      </li>
-                      <li className="menu-item">
+                      <li className="nav-link">
                         <Link href="/#about" passHref>
-                          <a>Our Pool</a>
+                          <a>RealFi</a>
                         </Link>
                       </li>
-                      <li className="menu-item">
+                      <li className="nav-link">
                         <Link href="/#cardano" passHref>
-                          <a>Cardano</a>
+                          <a>Wallet</a>
                         </Link>
                       </li>
-                      <li className="menu-item">
-                        <a href="#">
-                          Cardano Blockchain Insights
-                        </a>
-                      </li>
-                      <li className="menu-item">
-                        <Link href="/#news" passHref>
-                          <a>News</a>
+                      <li className="nav-link">
+                        <Link href="/#cardano" passHref>
+                          <a>About Us</a>
                         </Link>
                       </li>
-                      <li className="menu-item">
-                        <a href="https://cardano-fans.medium.com/">Blog</a>
-                      </li>
-                      <li className="menu-item">
-                        <Link href="/#contact" passHref>
+                      <li className="nav-link">
+                        <Link href="/#cardano" passHref>
                           <a>Contact</a>
                         </Link>
                       </li>
