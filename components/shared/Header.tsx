@@ -6,7 +6,7 @@ import {
   SelectWalletModal,
   ConnectWallet,
   useRestoreWallet,
-} from '@features/wallet'
+} from '@features/wallet';
 
 export const Header: React.FC = () => {
   const [isSticky, setSticky] = useState(false)
@@ -87,6 +87,7 @@ export const Header: React.FC = () => {
               <span />
 
               <div className="menu-container">
+
                 <div className="menu-row">
                   <div className="menu-box">
                     <ul className="menu-items">

@@ -2,7 +2,7 @@ import { useEffect, useRef } from 'react'
 import Typed from 'react-typed';
 import content from '../../../public/data/hero/content.json';
 // @ts-ignore
-import {Swirl} from 'ambient-cbg';
+import {Swirl, Shift} from 'ambient-cbg';
 
 export const Hero: React.FC = () => {
 
@@ -22,16 +22,19 @@ export const Hero: React.FC = () => {
               <div
                 className="lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center">
                 <h1 className="title-font sm:text-4xl text-3xl mb-4 font-medium text-gray-200">
-                  RealFi Wallet
+                  RealFi Wallet{' '}
                   <br className="hidden lg:inline-block"/>
-                  {/*@ts-ignore*/}
-                  <Typed
+
+
+
+                </h1>
+                {/*@ts-ignore*/}
+                <Typed
+                  className="title-font sm:text-4xl text-3xl mb-4 font-medium text-gray-200"
                   strings={content.typedStrings}
                   typeSpeed={70}
                   loop={true}
                 />
-
-                </h1>
                 <p className="mb-8 leading-relaxed text-white">Take back the control of your finances through a decentralized and trustless RealFi and DeFi ecosystem.</p>
                 <div className="flex justify-center">
                   <button
