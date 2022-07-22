@@ -41,6 +41,7 @@
     "react-hot-toast": "^2.2.0",
     "react-redux": "^8.0.2",
     "react-transition-group": "^4.4.2",
+    "react-twitter-embed": "^4.0.4",
     "react-typed": "^1.2.0",
     "redux": "^4.2.0",
     "redux-devtools-extension": "^2.13.9",

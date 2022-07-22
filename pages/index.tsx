@@ -17,6 +17,7 @@ import News from '@components/home/News'
 import { BlockchainInsights } from '@components/home/BlockchainInsights'
 import { AboutCardano } from '@components/home/AboutCardano'
 import { Footer } from '@components/shared/Footer'
+import { Foot } from '@components/home/Foot'
 
 const Console: NextPage = () => {
   const dispatch = useDispatch();
@@ -99,9 +100,8 @@ const Console: NextPage = () => {
 
         <News />
 
+        <Foot />
       </main>
-
-      <Footer />
     </div>
   )
 }

@@ -423,7 +423,7 @@ a {
   background: rgb(96,62,218);
 }
 .bg-second {
-  background: #c62d70;
+  background: #F338C2;
 }
 .bg-dark {
   background: rgb(96,62,218);
@@ -563,4 +563,25 @@ section {
 
 .custom-shape-divider-bottom-1658438681 .shape-fill {
   fill: #ffff;
+}
+
+.custom-shape-divider-bottom-1658451010 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  transform: rotate(180deg);
+}
+
+.custom-shape-divider-bottom-1658451010 svg {
+  position: relative;
+  display: block;
+  width: calc(100% + 1.3px);
+  height: 150px;
+}
+
+.custom-shape-divider-bottom-1658451010 .shape-fill {
+  fill: #FFFFFF;
 }
