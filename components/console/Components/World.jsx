@@ -14,7 +14,7 @@ function FeaturesWorld() {
             <p className="text-xl text-gray-600">Decentralized Team of experts with prident blockchain history</p>
           </div>
 
-        
+          
 
           {/* World illustration */}
           <div className="flex flex-col items-center pt-12 md:pt-16">

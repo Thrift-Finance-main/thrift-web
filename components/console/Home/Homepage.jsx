@@ -6,9 +6,10 @@ import How from '../../src/partials/How';
 import FeaturesBlocks from '../Components/TheFeatures.jsx';
 import FeaturesWorld from '../Components/World';
 import TheCta from '../Components/Cta'
-
 import TheFooter from '../Components/Footer';
 import TeamMembers from '../Components/TeamMembers';
+import Timeline from '../../src/partials/Timeline';
+
 const Homepage = () => {
 
 
@@ -23,6 +24,7 @@ const Homepage = () => {
                    <How />
                    <FeaturesBlocks/>
                    <FeaturesWorld/>
+                   <Timeline/>
                    <TeamMembers/>
                    <TheCta/>
                    <TheFooter/>
