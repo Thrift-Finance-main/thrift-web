@@ -35,94 +35,73 @@ export const News: React.FC = () => {
   }, [])
 
   return (
-    <section id="news" className="news py-36 mx-auto">
-      <div className="custom-shape-divider-top-1658445462">
+    <section id="news" className="py-36 mx-auto ">
+      <div className="custom-shape-divider-top-1658447098">
         <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
-          <path d="M0,0V7.23C0,65.52,268.63,112.77,600,112.77S1200,65.52,1200,7.23V0Z" className="shape-fill"></path>
+          <path d="M649.97 0L599.91 54.12 550.03 0 0 0 0 120 1200 120 1200 0 649.97 0z" className="shape-fill"></path>
         </svg>
       </div>
-      <div className="container mx-auto pl-6 sm:pl-0 pr-6 sm:pr-0">
-        <h2 className="section-heading mb-16" data-aos="fade-down">
-          News
-        </h2>
 
-        <div>
-          {status === 'loading' && <p className="text-white">Loading...</p>}
-          {status === 'error' && (
-            <div className="text-white">
-              <p className="mb-3">
-                Sorry, we cannot load preview of our blog posts at the moment.
-              </p>
-              <p>
-                But you can always directly check out{' '}
-                <a
-                  href="https://cardano-fans.medium.com/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  our blog
-                </a>
-              </p>
+      <section className="">
+        <div className="max-w-6xl mx-auto px-4 sm:px-6">
+          <div className="py-12 md:py-20">
+
+            {/* Section header */}
+            <div className="max-w-3xl mx-auto text-center pb-12 md:pb-20">
+              <h2 className="h2 text-4xl text-gray-200 md:mr-10">The humans behind the project</h2>
             </div>
-          )}
-          {status === 'loaded' && (
-            <Swiper
-              pagination={{
-                dynamicBullets: true,
-                clickable: true,
-              }}
-              spaceBetween={20}
-              slidesPerView={3}
-              breakpoints={{
-                1024: {
-                  slidesPerView: 3,
-                  spaceBetween: 20,
-                },
-                500: {
-                  slidesPerView: 2,
-                  spaceBetween: 20,
-                },
-                0: {
-                  slidesPerView: 1,
-                  spaceBetween: 20,
-                },
-              }}
-            >
-              {posts.map((post, index) => (
-                <SwiperSlide key={index}>
-                  <PostCard post={post} />
-                </SwiperSlide>
-              ))}
-            </Swiper>
-          )}
+
+            {/* Team members */}
+            <div className="max-w-sm sm:max-w-5xl mx-auto sm:flex sm:flex-wrap sm:justify-center -my-6 sm:-my-8 sm:-mx-3 md:ml-10" data-aos-id-team>
+
+              {/* 1st member */}
+              <div className="sm:w-1/2 md:w-1/3 py-6 sm:py-8 sm:px-3" data-aos="zoom-y-out" data-aos-anchor="[data-aos-id-team]">
+                <div className="flex flex-col items-center">
+                  <img className="rounded-full mb-4" src={"https://dummyimage.com/200x200"} width="120" height="120" alt="Team member 01" />
+                  <h4 className="text-xl text-gray-200 font-bold mb-1">Mark Lamprecht</h4>
+                  <div className="text-blue-600 font-medium mb-2">CEO & Co-founder</div>
+                  <p className="text-gray-600 text-center mb-3">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum sint occaecat cupidatat.</p>
+                  <div className="text-sm text-gray-200 font-medium">
+                    <a className="text-gray-400 hover:underline" href="#0">Twitter</a> · <a className="text-gray-400 hover:underline" href="#0">GitHub</a> · <a className="text-gray-400 hover:underline" href="#0">LinkedIn</a>
+                  </div>
+                </div>
+              </div>
+              {/* 1st member */}
+              <div className="sm:w-1/2 md:w-1/3 py-6 sm:py-8 sm:px-3" data-aos="zoom-y-out" data-aos-anchor="[data-aos-id-team]">
+                <div className="flex flex-col items-center">
+                  <img className="rounded-full mb-4" src={"https://dummyimage.com/200x200"} width="120" height="120" alt="Team member 01" />
+                  <h4 className="text-xl text-gray-200 font-bold mb-1">Mark Lamprecht</h4>
+                  <div className="text-blue-600 font-medium mb-2">CEO & Co-founder</div>
+                  <p className="text-gray-600 text-center mb-3">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum sint occaecat cupidatat.</p>
+                  <div className="text-sm text-gray-200 font-medium">
+                    <a className="text-gray-400 hover:underline" href="#0">Twitter</a> · <a className="text-gray-400 hover:underline" href="#0">GitHub</a> · <a className="text-gray-400 hover:underline" href="#0">LinkedIn</a>
+                  </div>
+                </div>
+              </div>
+              {/* 1st member */}
+              <div className="sm:w-1/2 md:w-1/3 py-6 sm:py-8 sm:px-3" data-aos="zoom-y-out" data-aos-anchor="[data-aos-id-team]">
+                <div className="flex flex-col items-center">
+                  <img className="rounded-full mb-4" src={"https://dummyimage.com/200x200"} width="120" height="120" alt="Team member 01" />
+                  <h4 className="text-xl text-gray-200 font-bold mb-1">Mark Lamprecht</h4>
+                  <div className="text-blue-600 font-medium mb-2">CEO & Co-founder</div>
+                  <p className="text-gray-600 text-center mb-3">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum sint occaecat cupidatat.</p>
+                  <div className="text-sm text-gray-200 font-medium">
+                    <a className="text-gray-400 hover:underline" href="#0">Twitter</a> · <a className="text-gray-400 hover:underline" href="#0">GitHub</a> · <a className="text-gray-400 hover:underline" href="#0">LinkedIn</a>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+
+          </div>
         </div>
-      </div>
+      </section>
+
+
     </section>
   )
 }
 
-const PostCard: React.FC<{ post: Post }> = ({ post }) => {
-  return (
-    <div className="bg-card p-8 rounded-md post-card mb-10 h-full">
-      <a
-        href={post.link}
-        target="_blank"
-        rel="noopener noreferrer"
-        className="mb-2 block"
-      >
-        <img
-          src={post.thumbnail}
-          className="h-52 object-cover w-full mb-6"
-          alt="post cover"
-        />
 
-        <h3 className="text-white text-lg">{post.title}</h3>
-      </a>
-      <div className="text-sm text-white">
-        {dayjs(post.pubDate).format('MMM DD, YYYY')}
-      </div>
-    </div>
-  )
-}
 
 export default News

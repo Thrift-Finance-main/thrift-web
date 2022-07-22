@@ -95,11 +95,10 @@ const Console: NextPage = () => {
 
         <AboutPool />
 
+        <AboutCardano />
+
         <News />
 
-        <BlockchainInsights />
-
-        <AboutCardano />
       </main>
 
       <Footer />

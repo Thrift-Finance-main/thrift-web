@@ -334,7 +334,7 @@ a {
 }
 
 #about{
-  background: rgb(96,62,218);
+  background: #ffff;
 }
 #about .swiper-slide {
   padding: 60px 0;
@@ -399,8 +399,8 @@ a {
 .bg-red {
   background: #e64646;
 }
-.bg-dark-blue {
-  background: #00226c;
+.bg-dark-black {
+  background: #0B0812;
 }
 
 .-z-1 {
@@ -423,7 +423,7 @@ a {
   background: rgb(96,62,218);
 }
 .bg-second {
-  background: #F338C2;
+  background: #c62d70;
 }
 .bg-dark {
   background: rgb(96,62,218);
@@ -520,5 +520,47 @@ section {
 }
 
 .custom-shape-divider-top-1658445462 .shape-fill {
-  fill: #603EDA;
+  fill: #ffff;
+}
+
+.custom-shape-divider-top-1658447098 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  transform: rotate(180deg);
+}
+
+.custom-shape-divider-top-1658447098 svg {
+  position: relative;
+  display: block;
+  width: calc(100% + 1.3px);
+  height: 100px;
+}
+
+.custom-shape-divider-top-1658447098 .shape-fill {
+  fill: rgb(96,62,218);
+}
+
+.custom-shape-divider-bottom-1658438681 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  transform: rotate(180deg);
+}
+
+.custom-shape-divider-bottom-1658438681 svg {
+  position: relative;
+  display: block;
+  width: calc(100% + 1.3px);
+  height: 100px;
+}
+
+.custom-shape-divider-bottom-1658438681 .shape-fill {
+  fill: #ffff;
 }

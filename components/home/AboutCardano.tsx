@@ -1,9 +1,11 @@
+import React from 'react'
+
 export const AboutCardano: React.FC = () => {
   return (
-    <section id="cardano" className="features py-36 mx-auto">
+    <section id="cardano" className="features py-36 mx-auto bg-dark ">
       <div className="container mx-auto pl-6 sm:pl-0 pr-6 sm:pr-0">
         <h2 className="section-heading mb-10" data-aos="fade-down">
-          About Cardano
+          Roadmap
         </h2>
         <div className="flex flex-col lg:flex-row items-stretch gap-8">
           <Card
@@ -37,6 +39,11 @@ export const AboutCardano: React.FC = () => {
             delegation to another stake pool.
           </Card>
         </div>
+      </div>
+      <div className="custom-shape-divider-top-1658445462">
+        <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+          <path d="M0,0V7.23C0,65.52,268.63,112.77,600,112.77S1200,65.52,1200,7.23V0Z" className="shape-fill"></path>
+        </svg>
       </div>
     </section>
   )
