@@ -4,6 +4,7 @@ import { TwitterTimelineEmbed } from 'react-twitter-embed'
 import Accordion from '../utils/Accordion';
 
 export const Foot: React.FC = () => {
+
   return (
     <section id="news" className=" mx-auto bg-white">
       <section className="">
@@ -57,6 +58,7 @@ export const Foot: React.FC = () => {
                   <g>
                     <g transform="rotate(17 176.891 4319.928)">
                       <use fill="#000" filter="url(#scill-sh)" xlinkHref="#scill-sc" />
+                      {/* @ts-ignore */}
                       <circle stroke="#EAEAEA" strokeLinejoin="square" fill="#FFF" cx="32" cy="32" r="31.5" />
                     </g>
                     <path d="M1303.077 166.793l-8.62 2.42 5.814 6.758 8.601-2.35-5.795-6.828zm-14.413-4.407l-8.621 2.42 5.815 6.759 8.599-2.352-5.793-6.827zm2.987 16.006l5.793 6.827 8.622-2.42-5.795-6.828-8.62 2.42zm-14.415-4.407l5.795 6.827 8.62-2.42-5.793-6.827-8.622 2.42zm5.337 8.324l5.793 6.826 8.62-2.42-5.814-6.758-8.599 2.352z" fill="#0062FF" />
