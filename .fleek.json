@@ -1,6 +1,6 @@
 {
   "build": {
-    "image": "fleek/next-js:node-16",
+    "image": "fleek/next-js:node-14",
     "command": "npm install && npm run build && npm run export",
     "publicDir": "out"
   }
