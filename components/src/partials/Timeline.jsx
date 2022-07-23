@@ -53,7 +53,7 @@ function Timeline() {
                   <article className="p-6 bg-white dark:bg-gray-800 shadow-2xl flex flex-col">
                     <header>
                       <h3 className="h4 font-red-hat-display mb-1">
-                        <a href="#0">Launched Appy Business</a>
+                        <a href="#0">Git Init</a>
                       </h3>
                     </header>
                     <div className="text-gray-600 dark:text-gray-400 grow">
@@ -69,7 +69,7 @@ function Timeline() {
                   <article className="p-6 bg-white dark:bg-gray-800 shadow-2xl flex flex-col">
                     <header>
                       <h3 className="h4 font-red-hat-display mb-1">
-                        <a href="#0">Series B fundraising</a>
+                        <a href="#0">Thrift on Cardano Summit</a>
                       </h3>
                     </header>
                     <div className="text-gray-600 dark:text-gray-400 grow">
@@ -85,7 +85,7 @@ function Timeline() {
                   <article className="p-6 bg-white dark:bg-gray-800 shadow-2xl flex flex-col">
                     <header>
                       <h3 className="h4 font-red-hat-display mb-1">
-                        <a href="#0">1M Customers</a>
+                        <a href="#0">DeFI and Microlending for Africa </a>
                       </h3>
                     </header>
                     <div className="text-gray-600 dark:text-gray-400 grow">
@@ -101,7 +101,7 @@ function Timeline() {
                   <article className="p-6 bg-white dark:bg-gray-800 shadow-2xl flex flex-col">
                     <header>
                       <h3 className="h4 font-red-hat-display mb-1">
-                        <a href="#0">Mobile builder enabled</a>
+                        <a href="#0">Catalyst Boost Camp for Africa </a>
                       </h3>
                     </header>
                     <div className="text-gray-600 dark:text-gray-400 grow">

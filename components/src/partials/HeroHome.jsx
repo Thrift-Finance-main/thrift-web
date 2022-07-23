@@ -1,8 +1,6 @@
 import React, { useState } from 'react';
 import Modal from '../utils/Modal';
 
-import MockupImage from '../images/mockup-image-01.jpg';
-import IphoneMockup from '../images/iphone-mockup.png';
 
 import Image from 'next/image'
 function Hero() {
@@ -71,8 +69,7 @@ function Hero() {
                   </defs>
                 </svg>
                 {/* Image inside mockup size: 290x624px (or 580x1248px for Retina devices) */}
-                <Image className="absolute" src={MockupImage} width="290" height="624" style={{ maxWidth: '84.33%' }} alt="Features illustration" />
-
+           
                 {/* iPhone mockup */}
                 <Image className="relative max-w-full mx-auto md:mr-0 md:max-w-none h-auto pointer-events-none" src={'https://res.cloudinary.com/dhkccnvyn/image/upload/v1658348423/iPhone_12___12_Pro_f69cnq.svg'} width="344" height="674" alt="iPhone mockup" aria-hidden="true" />
                 {/* Play button */}
