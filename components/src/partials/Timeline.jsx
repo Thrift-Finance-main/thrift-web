@@ -11,7 +11,7 @@ function Timeline() {
 
           {/* Section header */}
           <div className="max-w-3xl mx-auto text-center pb-12 md:pb-20">
-            <h2 className="h2 font-red-hat-display mb-4 text-bold text-2xl">Road Map</h2>
+            <h2 className="h2 font-red-hat-display mb-4 font-bold text-2xl">Road Map</h2>
             <p className="text-xl text-gray-600 dark:text-gray-400">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
                 deserunt mollit anim id est.</p>
           </div>
@@ -50,7 +50,7 @@ function Timeline() {
                 <div className="grid md:grid-cols-2 gap-4 sm:gap-6">
                   <article className="p-6 bg-white dark:bg-gray-800 shadow-2xl flex flex-col">
                     <header>
-                      <h3 className="h4 font-red-hat-display mb-1">
+                      <h3 className="h4 font-red-hat-display font-bold  mb-1">
                         <a href="#0">Git Init</a>
                       </h3>
                     </header>
@@ -64,7 +64,7 @@ function Timeline() {
                       </svg>
                     </a>
                   </article>
-                  <article className="p-6 bg-white dark:bg-gray-800 shadow-2xl flex flex-col">
+                  <article className="p-6 font-bold  bg-white dark:bg-gray-800 shadow-2xl flex flex-col">
                     <header>
                       <h3 className="h4 font-red-hat-display mb-1">
                         <a href="#0">Thrift on Cardano Summit</a>
@@ -80,7 +80,7 @@ function Timeline() {
                       </svg>
                     </a>
                   </article>
-                  <article className="p-6 bg-white dark:bg-gray-800 shadow-2xl flex flex-col">
+                  <article className="p-6 font-bold  bg-white dark:bg-gray-800 shadow-2xl flex flex-col">
                     <header>
                       <h3 className="h4 font-red-hat-display mb-1">
                         <a href="#0">DeFI and Microlending for Africa </a>
@@ -98,7 +98,7 @@ function Timeline() {
                   </article>
                   <article className="p-6 bg-white dark:bg-gray-800 shadow-2xl flex flex-col">
                     <header>
-                      <h3 className="h4 font-red-hat-display mb-1">
+                      <h3 className="h4 font-bold  font-black font-red-hat-display mb-1">
                         <a href="#0">Catalyst Boost Camp for Africa </a>
                       </h3>
                     </header>

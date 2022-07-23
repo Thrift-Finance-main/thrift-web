@@ -23,8 +23,9 @@ const Homepage = () => {
                    <Hero />
                    <How />
                    <FeaturesBlocks/>
-                   <FeaturesWorld/>
                    <Timeline/>
+                   <FeaturesWorld/>
+                  
                    <TeamMembers/>
                    <TheCta/>
                    <TheFooter/>
