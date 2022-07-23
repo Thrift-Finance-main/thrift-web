@@ -11,7 +11,7 @@ function Timeline() {
 
           {/* Section header */}
           <div className="max-w-3xl mx-auto text-center pb-12 md:pb-20">
-            <h2 className="h2 font-red-hat-display mb-4">What we’ve achieved</h2>
+            <h2 className="h2 font-red-hat-display mb-4 text-bold text-2xl">Road Map</h2>
             <p className="text-xl text-gray-600 dark:text-gray-400">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
                 deserunt mollit anim id est.</p>
           </div>
@@ -25,26 +25,24 @@ function Timeline() {
                 <div className="absolute inset-0 my-6 ml-16 pointer-events-none -z-1" aria-hidden="true">
                   <div className="absolute inset-0 w-0.5 h-full bg-gray-300 dark:bg-gray-700"></div>
                 </div>
-                <button className="flex items-center justify-between font-medium text-gray-500 dark:text-gray-400 w-20 py-3 pr-2 text-left" onClick={() => setYear('2020')}>
+                <button className="flex items-center justify-between font-medium text-gray-500 dark:text-gray-400 w-20 py-3 pr-2 text-left" onClick={() => setYear('2021')}>
                   <span className="block w-12 truncate">2020</span>
-                  <span className={`block w-3.5 h-3.5 bg-gray-400 dark:bg-gray-700 border-2 border-white dark:border-gray-900 rounded-full ${year === '2020' && 'bg-teal-500 dark:bg-teal-500'}`}></span>
+                  <span className={`block w-3.5 h-3.5 bg-gray-400 dark:bg-gray-700 border-2 border-white dark:border-gray-900 rounded-full ${year === '2022' && 'bg-primary dark:bg-primary'}`}></span>
                 </button>
-                <button className="flex items-center justify-between font-medium text-gray-500 dark:text-gray-400 w-20 py-3 pr-2 text-left" onClick={() => setYear('2019')}>
+                <button className="flex items-center justify-between font-medium text-gray-500 dark:text-gray-400 w-20 py-3 pr-2 text-left" onClick={() => setYear('2022')}>
                   <span className="block w-12 truncate">2019</span>
-                  <span className={`block w-3.5 h-3.5 bg-gray-400 dark:bg-gray-700 border-2 border-white dark:border-gray-900 rounded-full ${year === '2019' && 'bg-teal-500 dark:bg-teal-500'}`}></span>
+                  <span className={`block w-3.5 h-3.5 bg-gray-400 dark:bg-gray-700 border-2 border-white dark:border-gray-900 rounded-full ${year === '2023' && 'bg-primary dark:bg-primary'}`}></span>
                 </button>
                 <button className="flex items-center justify-between font-medium text-gray-500 dark:text-gray-400 w-20 py-3 pr-2 text-left" onClick={() => setYear('2018')}>
                   <span className="block w-12 truncate">2018</span>
-                  <span className={`block w-3.5 h-3.5 bg-gray-400 dark:bg-gray-700 border-2 border-white dark:border-gray-900 rounded-full ${year === '2018' && 'bg-teal-500 dark:bg-teal-500'}`}></span>
+                  <span className={`block w-3.5 h-3.5 bg-gray-400 dark:bg-gray-700 border-2 border-white dark:border-gray-900 rounded-full ${year === '2024' && 'bg-primary dark:bg-primary'}`}></span>
                 </button>
-                <button className="flex items-center justify-between font-medium text-gray-500 dark:text-gray-400 w-20 py-3 pr-2 text-left" onClick={() => setYear('2017')}>
+                <button className="flex items-center justify-between font-medium text-gray-500 dark:text-gray-400 w-20 py-3 pr-2 text-left" onClick={() => setYear('2025')}>
                   <span className="block w-12 truncate">2017</span>
-                  <span className={`block w-3.5 h-3.5 bg-gray-400 dark:bg-gray-700 border-2 border-white dark:border-gray-900 rounded-full ${year === '2017' && 'bg-teal-500 dark:bg-teal-500'}`}></span>
+                  <span className={`block w-3.5 h-3.5 bg-gray-400 dark:bg-gray-700 border-2 border-white dark:border-gray-900 rounded-full ${year === '2025' && 'bg-primary dark:bg-primary'}`}></span>
                 </button>
-                <button className="flex items-center justify-between font-medium text-gray-500 dark:text-gray-400 w-20 py-3 pr-2 text-left" onClick={() => setYear('2016')}>
-                  <span className="block w-12 truncate">2016</span>
-                  <span className={`block w-3.5 h-3.5 bg-gray-400 dark:bg-gray-700 border-2 border-white dark:border-gray-900 rounded-full ${year === '2016' && 'bg-teal-500 dark:bg-teal-500'}`}></span>
-                </button>
+
+              
               </div>
 
               {/* 2020's articles */}
@@ -59,7 +57,7 @@ function Timeline() {
                     <div className="text-gray-600 dark:text-gray-400 grow">
                       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
                     </div>
-                    <a className="inline-flex items-center font-medium text-teal-500 hover:underline mt-2" href="#0">
+                    <a className="inline-flex items-center font-medium text-primary hover:underline mt-2" href="#0">
                       <span>Learn more</span>
                       <svg className="w-3 h-3 shrink-0 mt-px ml-2" viewBox="0 0 12 12" xmlns="http://www.w3.org/2000/svg">
                         <path className="fill-current" d="M6.602 11l-.875-.864L9.33 6.534H0v-1.25h9.33L5.727 1.693l.875-.875 5.091 5.091z" />
@@ -75,7 +73,7 @@ function Timeline() {
                     <div className="text-gray-600 dark:text-gray-400 grow">
                       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
                     </div>
-                    <a className="inline-flex items-center font-medium text-teal-500 hover:underline mt-2" href="#0">
+                    <a className="inline-flex items-center font-medium text-primary hover:underline mt-2" href="#0">
                       <span>Learn more</span>
                       <svg className="w-3 h-3 shrink-0 mt-px ml-2" viewBox="0 0 12 12" xmlns="http://www.w3.org/2000/svg">
                         <path className="fill-current" d="M6.602 11l-.875-.864L9.33 6.534H0v-1.25h9.33L5.727 1.693l.875-.875 5.091 5.091z" />
@@ -91,7 +89,7 @@ function Timeline() {
                     <div className="text-gray-600 dark:text-gray-400 grow">
                       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
                     </div>
-                    <a className="inline-flex items-center font-medium text-teal-500 hover:underline mt-2" href="#0">
+                    <a className="inline-flex items-center font-medium text-primary hover:underline mt-2" href="#0">
                       <span>Learn more</span>
                       <svg className="w-3 h-3 shrink-0 mt-px ml-2" viewBox="0 0 12 12" xmlns="http://www.w3.org/2000/svg">
                         <path className="fill-current" d="M6.602 11l-.875-.864L9.33 6.534H0v-1.25h9.33L5.727 1.693l.875-.875 5.091 5.091z" />
@@ -107,7 +105,7 @@ function Timeline() {
                     <div className="text-gray-600 dark:text-gray-400 grow">
                       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
                     </div>
-                    <a className="inline-flex items-center font-medium text-teal-500 hover:underline mt-2" href="#0">
+                    <a className="inline-flex items-center font-medium text-primary hover:underline mt-2" href="#0">
                       <span>Learn more</span>
                       <svg className="w-3 h-3 shrink-0 mt-px ml-2" viewBox="0 0 12 12" xmlns="http://www.w3.org/2000/svg">
                         <path className="fill-current" d="M6.602 11l-.875-.864L9.33 6.534H0v-1.25h9.33L5.727 1.693l.875-.875 5.091 5.091z" />
@@ -129,7 +127,7 @@ function Timeline() {
                     <div className="text-gray-600 dark:text-gray-400 grow">
                       <p>Sed do eiusmod tempor incididunt, Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
                     </div>
-                    <a className="inline-flex items-center font-medium text-teal-500 hover:underline mt-2" href="#0">
+                    <a className="inline-flex items-center font-medium text-primary hover:underline mt-2" href="#0">
                       <span>Learn more</span>
                       <svg className="w-3 h-3 shrink-0 mt-px ml-2" viewBox="0 0 12 12" xmlns="http://www.w3.org/2000/svg">
                         <path className="fill-current" d="M6.602 11l-.875-.864L9.33 6.534H0v-1.25h9.33L5.727 1.693l.875-.875 5.091 5.091z" />
@@ -145,7 +143,7 @@ function Timeline() {
                     <div className="text-gray-600 dark:text-gray-400 grow">
                       <p>Sed do eiusmod tempor incididunt, Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
                     </div>
-                    <a className="inline-flex items-center font-medium text-teal-500 hover:underline mt-2" href="#0">
+                    <a className="inline-flex items-center font-medium text-primary hover:underline mt-2" href="#0">
                       <span>Learn more</span>
                       <svg className="w-3 h-3 shrink-0 mt-px ml-2" viewBox="0 0 12 12" xmlns="http://www.w3.org/2000/svg">
                         <path className="fill-current" d="M6.602 11l-.875-.864L9.33 6.534H0v-1.25h9.33L5.727 1.693l.875-.875 5.091 5.091z" />
@@ -167,7 +165,7 @@ function Timeline() {
                     <div className="text-gray-600 dark:text-gray-400 grow">
                       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
                     </div>
-                    <a className="inline-flex items-center font-medium text-teal-500 hover:underline mt-2" href="#0">
+                    <a className="inline-flex items-center font-medium text-primary hover:underline mt-2" href="#0">
                       <span>Learn more</span>
                       <svg className="w-3 h-3 shrink-0 mt-px ml-2" viewBox="0 0 12 12" xmlns="http://www.w3.org/2000/svg">
                         <path className="fill-current" d="M6.602 11l-.875-.864L9.33 6.534H0v-1.25h9.33L5.727 1.693l.875-.875 5.091 5.091z" />
@@ -183,7 +181,7 @@ function Timeline() {
                     <div className="text-gray-600 dark:text-gray-400 grow">
                       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
                     </div>
-                    <a className="inline-flex items-center font-medium text-teal-500 hover:underline mt-2" href="#0">
+                    <a className="inline-flex items-center font-medium text-primary hover:underline mt-2" href="#0">
                       <span>Learn more</span>
                       <svg className="w-3 h-3 shrink-0 mt-px ml-2" viewBox="0 0 12 12" xmlns="http://www.w3.org/2000/svg">
                         <path className="fill-current" d="M6.602 11l-.875-.864L9.33 6.534H0v-1.25h9.33L5.727 1.693l.875-.875 5.091 5.091z" />
@@ -205,7 +203,7 @@ function Timeline() {
                     <div className="text-gray-600 dark:text-gray-400 grow">
                       <p>Sed do eiusmod tempor incididunt, Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
                     </div>
-                    <a className="inline-flex items-center font-medium text-teal-500 hover:underline mt-2" href="#0">
+                    <a className="inline-flex items-center font-medium text-primary hover:underline mt-2" href="#0">
                       <span>Learn more</span>
                       <svg className="w-3 h-3 shrink-0 mt-px ml-2" viewBox="0 0 12 12" xmlns="http://www.w3.org/2000/svg">
                         <path className="fill-current" d="M6.602 11l-.875-.864L9.33 6.534H0v-1.25h9.33L5.727 1.693l.875-.875 5.091 5.091z" />
@@ -221,7 +219,7 @@ function Timeline() {
                     <div className="text-gray-600 dark:text-gray-400 grow">
                       <p>Sed do eiusmod tempor incididunt, Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
                     </div>
-                    <a className="inline-flex items-center font-medium text-teal-500 hover:underline mt-2" href="#0">
+                    <a className="inline-flex items-center font-medium text-primary hover:underline mt-2" href="#0">
                       <span>Learn more</span>
                       <svg className="w-3 h-3 shrink-0 mt-px ml-2" viewBox="0 0 12 12" xmlns="http://www.w3.org/2000/svg">
                         <path className="fill-current" d="M6.602 11l-.875-.864L9.33 6.534H0v-1.25h9.33L5.727 1.693l.875-.875 5.091 5.091z" />
@@ -243,7 +241,7 @@ function Timeline() {
                     <div className="text-gray-600 dark:text-gray-400 grow">
                       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est.</p>
                     </div>
-                    <a className="inline-flex items-center font-medium text-teal-500 hover:underline mt-2" href="#0">
+                    <a className="inline-flex items-center font-medium text-primary hover:underline mt-2" href="#0">
                       <span>Learn more</span>
                       <svg className="w-3 h-3 shrink-0 mt-px ml-2" viewBox="0 0 12 12" xmlns="http://www.w3.org/2000/svg">
                         <path className="fill-current" d="M6.602 11l-.875-.864L9.33 6.534H0v-1.25h9.33L5.727 1.693l.875-.875 5.091 5.091z" />
@@ -259,7 +257,7 @@ function Timeline() {
                     <div className="text-gray-600 dark:text-gray-400 grow">
                       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
                     </div>
-                    <a className="inline-flex items-center font-medium text-teal-500 hover:underline mt-2" href="#0">
+                    <a className="inline-flex items-center font-medium text-primary hover:underline mt-2" href="#0">
                       <span>Learn more</span>
                       <svg className="w-3 h-3 shrink-0 mt-px ml-2" viewBox="0 0 12 12" xmlns="http://www.w3.org/2000/svg">
                         <path className="fill-current" d="M6.602 11l-.875-.864L9.33 6.534H0v-1.25h9.33L5.727 1.693l.875-.875 5.091 5.091z" />
@@ -275,7 +273,7 @@ function Timeline() {
                     <div className="text-gray-600 dark:text-gray-400 grow">
                       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
                     </div>
-                    <a className="inline-flex items-center font-medium text-teal-500 hover:underline mt-2" href="#0">
+                    <a className="inline-flex items-center font-medium text-primary hover:underline mt-2" href="#0">
                       <span>Learn more</span>
                       <svg className="w-3 h-3 shrink-0 mt-px ml-2" viewBox="0 0 12 12" xmlns="http://www.w3.org/2000/svg">
                         <path className="fill-current" d="M6.602 11l-.875-.864L9.33 6.534H0v-1.25h9.33L5.727 1.693l.875-.875 5.091 5.091z" />

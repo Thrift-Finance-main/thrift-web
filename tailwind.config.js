@@ -13,7 +13,7 @@ module.exports = {
     },
     extend: {
       colors: {
-        primary: '#E64646',
+        primary: '#F338C2',
         dark: '#00082D',
         card: 'rgba(255,255,255, .04)',
       },
