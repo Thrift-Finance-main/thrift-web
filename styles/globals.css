@@ -53,6 +53,7 @@ a {
   color: var(--c-main);
 }
 
+
 /* .header {
   
   position: fixed;
@@ -221,6 +222,8 @@ a {
     rgba(0, 8, 45, 1) 90%
   );
 }
+
+
 
 .about,
 .features,

@@ -17,9 +17,9 @@ const Homepage = () => {
         <>
 
 
-                
+              <TheHeader/>
               <center>
-                  <TheHeader/>
+                  
                    <Hero />
                    <How />
                    <FeaturesBlocks/>
