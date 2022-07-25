@@ -3,13 +3,14 @@ import React, { useState, useRef, useEffect } from 'react';
 import Dropdown from '../utils/Dropdown';
 import Transition from '../utils/Transition';
 import Logo from './../../console/Components/Logo';
-
+import Image from 'next/image'
 function TheHeader() {
 
   const [mobileNavOpen, setMobileNavOpen] = useState(false);
 
   const trigger = useRef(null);
   const mobileNav = useRef(null);
+  const [darken , setDarken] = useState(true)
 
   // close the mobile menu on click outside
   useEffect(() => {
@@ -56,8 +57,10 @@ function TheHeader() {
     localStorage.setItem('dark-mode', darkMode)
     if (darkMode) {
       document.documentElement.classList.add('dark')
+      setDarken(false)
     } else {
       document.documentElement.classList.remove('dark')
+      setDarken(true)
     }
   }, [darkMode]); 
   
@@ -72,7 +75,12 @@ function TheHeader() {
           <div className="shrink-0 mr-5">
             {/* Logo */}
             <div to="/" className="block" aria-label="Cruip">
-               <Logo/>
+
+                {/* check if dark mode is true  */}
+                {
+                  darken ? <Logo/> :  <Image width={'100%'} height={'50%'} src={'https://res.cloudinary.com/dhkccnvyn/image/upload/v1658767409/Logo_Thrift_Finance_white_1_2_1_xr9jzu.png'} />
+                }
+
             </div>
           </div>
 
@@ -159,7 +167,7 @@ function TheHeader() {
             {/* Desktop CTA on the right */}
             <ul className="flex justify-end flex-wrap items-center">
               <li>
-                <div to="/contact" className="btn-sm text-white  cursor-pointer ml-6 p-3 bg-primary">
+                <div to="/contact" className="btn-sm text-white  cursor-pointer ml-6 p-3 bg-purpled">
                    Join Waitlist 
                 </div>
               </li>
@@ -282,9 +290,9 @@ function TheHeader() {
                     <li>
                       <div
                         to="/contact"
-                        className="font-medium w-full inline-flex items-center justify-center border border-transparent px-4 py-2 my-2 rounded text-white bg-teal-500 hover:bg-teal-400 transition duration-150 ease-in-out"
+                        className="font-medium bg-purpled w-full inline-flex items-center justify-center border border-transparent px-4 py-2 my-2 rounded text-white bg-teal-500 hover:bg-teal-400 transition duration-150 ease-in-out"
                       >
-                        Join Waitlist 
+                        Join Waitlist
                       </div>
                     </li>
                   </ul>

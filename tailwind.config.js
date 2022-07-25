@@ -16,9 +16,10 @@ module.exports = {
         primary: '#F338C2',
         dark: '#00082D',
         card: 'rgba(255,255,255, .04)',
-
-        darken: '#1D1D21',
-        blackest: '#151515'
+       
+        darken: '#1D1D21' , 
+        blackest: '#151515',
+        purpled : '#603EDA', 
       },
     },
   },

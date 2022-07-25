@@ -101,6 +101,7 @@ function Timeline() {
                       <h3 className="h4 font-medium   font-red-hat-display mb-1">
                         <a href="#0">Catalyst Boost Camp for Africa </a>
                       </h3>
+                      
                     </header>
                     <div className="text-gray-600 dark:text-gray-400 grow">
                       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
