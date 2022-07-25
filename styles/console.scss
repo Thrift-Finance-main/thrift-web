@@ -1,0 +1,32 @@
+.p2p {
+    width: 50%;
+    
+    position: relative;
+
+    h3 {
+        font-size: 1.5em;
+        font-weight: bold;
+    }
+}
+
+.peerText {
+    margin: 5em 0;
+}
+
+.phone-cloud {
+    position: absolute;
+    top: -4em;
+    width: 90%;
+    margin: 0 auto;
+    
+}
+
+
+//for small screens 
+@media screen and (max-width: 600px) {
+    .p2p {
+        width: 90%;
+        height: 100%;
+       
+    }
+}

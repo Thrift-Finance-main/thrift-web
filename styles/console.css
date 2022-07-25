@@ -1,1 +1,26 @@
-/*# sourceMappingURL=console.css.map */
+.p2p {
+  width: 50%;
+  position: relative;
+}
+.p2p h3 {
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+.peerText {
+  margin: 5em 0;
+}
+
+.phone-cloud {
+  position: absolute;
+  top: -4em;
+  width: 90%;
+  margin: 0 auto;
+}
+
+@media screen and (max-width: 600px) {
+  .p2p {
+    width: 90%;
+    height: 100%;
+  }
+}/*# sourceMappingURL=console.css.map */

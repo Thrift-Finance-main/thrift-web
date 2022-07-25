@@ -65,7 +65,7 @@ function Hero() {
 
             {/* Content */}
             <div className="md:col-span-7 lg:col-span-7 mb-8 md:mb-0 text-center md:text-left">
-              <h1 className="h1 lg:text-6xl mb-4 font-red-hat-display font-extrabold" data-aos="fade-down">Crypto Sacing, made personal</h1>
+              <h1 className="h1 lg:text-6xl mb-4 font-red-hat-display font-extrabold" data-aos="fade-down">Crypto Saving, made personal</h1>
               <p className="text-xl text-gray-600 dark:text-gray-400" data-aos="fade-down" data-aos-delay="150">Thrift RealFi wallet lets you easily save, invest, pay and manage your funds without giving up your privacy, asset’s ownership, security or your data. </p>
               {/* CTA form */}
               <form className="mt-8" data-aos="fade-down" data-aos-delay="300">

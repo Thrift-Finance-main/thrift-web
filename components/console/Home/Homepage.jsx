@@ -9,6 +9,7 @@ import TheCta from '../Components/Cta'
 import TheFooter from '../Components/Footer';
 import TeamMembers from '../Components/TeamMembers';
 import Timeline from '../../src/partials/Timeline';
+import ThriftPeer from '../Components/ThriftPeer';
 
 const Homepage = () => {
 
@@ -23,6 +24,7 @@ const Homepage = () => {
                    <Hero />
                    <How />
                    <FeaturesBlocks/>
+                   <ThriftPeer/>
                    <Timeline/>
                    <FeaturesWorld/>
                   
