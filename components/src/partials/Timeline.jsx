@@ -6,8 +6,8 @@ function Timeline() {
 
   return (
     <section>
-      <div className="max-w-6xl mx-auto px-4 sm:px-6">
-        <div className="py-12 md:py-20 border-t border-gray-200 dark:border-gray-800">
+      <div className="max-w-6xl mx-auto px-4 sm:px-6 ">
+        <div className="py-12 md:py-20 border-t dark-here border-gray-200 dark:border-gray-800">
 
           {/* Section header */}
           <div className="max-w-3xl mx-auto text-center pb-12 md:pb-20">
@@ -48,10 +48,10 @@ function Timeline() {
               {/* 2020's articles */}
               <div className={`grow ${year !== '2020' && 'hidden'}`}>
                 <div className="grid md:grid-cols-2 gap-4 sm:gap-6">
-                  <article className="p-6 bg-white dark:bg-gray-800 shadow-2xl flex flex-col">
+                  <article className="p-6 bg-white  dark-here dark:bg-gray-800 shadow-2xl flex flex-col">
                     <header>
                       <h3 className="h4 font-red-hat-display font-bold  mb-1">
-                        <a href="#0">Git Init</a>
+                        <a href="#0" >Git Init</a>
                       </h3>
                     </header>
                     <div className="text-gray-600 dark:text-gray-400 grow">
@@ -64,7 +64,7 @@ function Timeline() {
                       </svg>
                     </a>
                   </article>
-                  <article className="p-6 font-bold  bg-white dark:bg-gray-800 shadow-2xl flex flex-col">
+                  <article className="p-6 font-bold dark-here  bg-white dark:bg-gray-800 shadow-2xl flex flex-col">
                     <header>
                       <h3 className="h4 font-red-hat-display mb-1">
                         <a href="#0">Thrift on Cardano Summit</a>
@@ -80,10 +80,10 @@ function Timeline() {
                       </svg>
                     </a>
                   </article>
-                  <article className="p-6 font-bold  bg-white dark:bg-gray-800 shadow-2xl flex flex-col">
+                  <article className="p-6 font-bold dark-here  bg-white dark:bg-gray-800 shadow-2xl flex flex-col">
                     <header>
                       <h3 className="h4 font-red-hat-display mb-1">
-                        <a href="#0">DeFI and Microlending for Africa </a>
+                        <a href="#0" >DeFI and Microlending for Africa </a>
                       </h3>
                     </header>
                     <div className="text-gray-600 dark:text-gray-400 grow">
@@ -96,9 +96,9 @@ function Timeline() {
                       </svg>
                     </a>
                   </article>
-                  <article className="p-6 bg-white dark:bg-gray-800 shadow-2xl flex flex-col">
+                  <article className="p-6 dark-here  bg-white dark:bg-gray-800 shadow-2xl flex flex-col">
                     <header>
-                      <h3 className="h4 font-bold  font-black font-red-hat-display mb-1">
+                      <h3 className="h4 font-medium   font-red-hat-display mb-1">
                         <a href="#0">Catalyst Boost Camp for Africa </a>
                       </h3>
                     </header>

@@ -93,8 +93,16 @@
 
      
     .dark-here {
-        @apply bg-gray-900 text-white
+        @apply bg-darken text-white;
     }    
+
+    .other-here {
+        @apply bg-primary text-white;
+    }
+
+    .black{
+        @apply bg-blackest text-white;
+    }
 
     .h4 {
         @apply font-bold;
