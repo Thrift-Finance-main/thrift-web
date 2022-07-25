@@ -5,14 +5,19 @@ import Modal from '../utils/Modal';
 import Image from 'next/image'
 function Hero() {
 
-  const [videoModalOpen, setVideoModalOpen] = useState(false);
+  // const [videoModalOpen, setVideoModalOpen] = useState(false);
 
   return (
     <section className='dark-here'>
+       <div className='absolute right-0'>
+       <Image
+           width='600%'
+           height = '600%'
+           src='https://res.cloudinary.com/dhkccnvyn/image/upload/v1658768303/Oval_keoygc.png' />   
+      </div>
       <div className="max-w-6xl mx-auto px-4 sm:px-6">
         <div className="pt-32 pb-10 md:pt-40 md:pb-16">
-
-          {/* Hero content */}
+                 {/* Hero content */}
           <div className="md:grid md:grid-cols-12 md:gap-12 lg:gap-20 items-center">
 
             {/* Content */}
