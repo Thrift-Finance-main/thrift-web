@@ -16,7 +16,7 @@ export const Home: React.FC = (props) => {
         <title>Thrift Finance</title>
       </Head>
 
-      <div>
+      <div className='dark-here'>
        
        <Homepage />
        

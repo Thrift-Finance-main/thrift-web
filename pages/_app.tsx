@@ -1,4 +1,10 @@
+import '../styles/styles.css'
+import '../styles/theme.css'
 import '../styles/globals.css'
+import '../styles/range-slider.css'
+import '../styles/toggle-switch.css'
+import '../styles/utility-patterns.css'
+
 import type { AppProps } from 'next/app'
 import { Toaster } from 'react-hot-toast'
 import { Provider } from "react-redux";

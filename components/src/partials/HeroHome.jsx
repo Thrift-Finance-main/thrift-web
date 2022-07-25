@@ -8,7 +8,7 @@ function Hero() {
   const [videoModalOpen, setVideoModalOpen] = useState(false);
 
   return (
-    <section>
+    <section className='dark-here'>
       <div className="max-w-6xl mx-auto px-4 sm:px-6">
         <div className="pt-32 pb-10 md:pt-40 md:pb-16">
 

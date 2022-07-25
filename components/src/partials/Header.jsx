@@ -3,6 +3,7 @@ import React, { useState, useRef, useEffect } from 'react';
 import Dropdown from '../utils/Dropdown';
 import Transition from '../utils/Transition';
 import Logo from './../../console/Components/Logo';
+
 function TheHeader() {
 
   const [mobileNavOpen, setMobileNavOpen] = useState(false);
@@ -31,28 +32,41 @@ function TheHeader() {
     return () => document.removeEventListener('keydown', keyHandler);
   });
 
-  // // Handle light modes
-  // const [darkMode, setDarkMode] = useState(() => {
-  //   const dark = localStorage.getItem('dark-mode');
-  //   if (dark === null) {
-  //     return true;
-  //   } else {
-  //     return dark === 'true';
-  //   }
-  // });
 
-  // useEffect(() => {
-  //   localStorage.setItem('dark-mode', darkMode)
-  //   if (darkMode) {
-  //     document.documentElement.classList.add('dark')
-  //   } else {
-  //     document.documentElement.classList.remove('dark')
-  //   }
-  // }, [darkMode]);  
+
+         // Handle light modes
+  const [darkMode, setDarkMode] = useState(() => {
+      //check if typeof windows is undefined
+      if (typeof window !== 'undefined') {
+        const dark = localStorage.getItem('dark-mode');
+        if (dark === null) {
+          return true;
+        } else {
+          return dark === 'true';
+        }
+      }
+  });
+
+  
+
+
+  useEffect(() => {
+
+ 
+    localStorage.setItem('dark-mode', darkMode)
+    if (darkMode) {
+      document.documentElement.classList.add('dark')
+    } else {
+      document.documentElement.classList.remove('dark')
+    }
+  }, [darkMode]); 
+  
+ 
 
   return (
+    
     <header className="absolute w-full z-30">
-      <div className="max-w-6xl mx-auto px-4 sm:px-6">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6">
         <div className="flex items-center justify-between h-20">
           {/* Site branding */}
           <div className="shrink-0 mr-5">
@@ -111,7 +125,7 @@ function TheHeader() {
                 </li>
               </Dropdown>
             </ul>
-
+      
             {/* Desktop lights switch */}
             <div className="form-switch flex flex-col justify-center ml-3">
               <input
@@ -119,10 +133,12 @@ function TheHeader() {
                 name="light-switch"
                 id="light-switch-desktop"
                 className="light-switch sr-only"
-                // checked={darkMode}
-                // onChange={() => setDarkMode(!darkMode)}
+                checked={darkMode}
+                onChange={() => setDarkMode(!darkMode)}
               />
-              <label className="relative" htmlFor="light-switch-desktop">
+            
+
+            <label className="relative" htmlFor="light-switch-desktop">
                 <span
                   className="relative bg-gradient-to-t from-gray-100 to-white dark:from-gray-800 dark:to-gray-700 shadow-sm z-10"
                   aria-hidden="true"
@@ -137,13 +153,14 @@ function TheHeader() {
                 </svg>
                 <span className="sr-only">Switch to light / dark version</span>
               </label>
+
             </div>
 
             {/* Desktop CTA on the right */}
             <ul className="flex justify-end flex-wrap items-center">
               <li>
-                <div to="/contact" className="btn-sm text-white  hover:bg-teal-400 ml-6 p-3 bg-primary">
-                  Request code
+                <div to="/contact" className="btn-sm text-white  cursor-pointer ml-6 p-3 bg-primary">
+                   Join Waitlist 
                 </div>
               </li>
             </ul>
@@ -152,15 +169,18 @@ function TheHeader() {
           {/* Mobile menu */}
           <div className="inline-flex md:hidden">
             {/* Mobile lights switch */}
-            <div className="form-switch flex flex-col justify-center mr-6 -mt-0.5">
+            <div className="form-switch flex flex-col justify-center mr-6 -mt-0.5 ">
               <input
                 type="checkbox"
                 name="light-switch"
                 id="light-switch-mobile"
                 className="light-switch sr-only"
-                // checked={darkMode}
-                // onChange={() => setDarkMode(!darkMode)}
+                checked={darkMode}
+                onChange={() => setDarkMode(!darkMode)}
               />
+              
+
+
               <label className="relative" htmlFor="light-switch-mobile">
                 <span
                   className="relative bg-gradient-to-t from-gray-100 to-white dark:from-gray-800 dark:to-gray-700 shadow-sm z-10"
@@ -176,6 +196,7 @@ function TheHeader() {
                 </svg>
                 <span className="sr-only">Switch to light / dark version</span>
               </label>
+
             </div>
 
             {/* Hamburger button */}
