@@ -1,19 +1,62 @@
-import React, { useState } from 'react';
+import React, { useState , useEffect } from 'react';
 import Modal from '../utils/Modal';
 
 
 import Image from 'next/image'
+
 function Hero() {
+
+  const [darken , setDarken ] = useState(false)
 
   // const [videoModalOpen, setVideoModalOpen] = useState(false);
 
+  
+  useEffect(() => {
+    if(typeof window !== 'undefined') {
+      localStorage.getItem('dark-mode') ? setDarken(true)  : setDarken(false)
+    } else {
+      return null
+    }
+  } , [])
+
+
+  
+
   return (
     <section className='dark-here'>
+       
+
        <div className='absolute right-0'>
-       <Image
-           width='600%'
-           height = '600%'
-           src='https://res.cloudinary.com/dhkccnvyn/image/upload/v1658768303/Oval_keoygc.png' />   
+      
+
+
+        {
+          darken  ?  
+            (
+              <>
+
+            <Image
+          width='600%'
+          height = '600%'
+          src='https://res.cloudinary.com/dhkccnvyn/image/upload/v1658768303/Oval_keoygc.png' /> 
+
+              </>
+            )
+        
+
+          :
+
+          (
+            <>
+
+          <Image
+          width='600%'
+          height = '600%'
+          src='https://res.cloudinary.com/dhkccnvyn/image/upload/v1658768696/Oval_1_supgtn.png' />
+            </>
+          )
+        }
+          
       </div>
       <div className="max-w-6xl mx-auto px-4 sm:px-6">
         <div className="pt-32 pb-10 md:pt-40 md:pb-16">
