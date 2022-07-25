@@ -53,8 +53,9 @@ function Hero() {
             {/* Mobile mockup */}
             <div className="md:col-span-5 lg:col-span-5 text-center md:text-right" data-aos="fade-up" data-aos-delay="450">
               <div className="inline-flex relative justify-center items-center">
-                {/* Glow illustration */}
-                <svg className="absolute mr-12 mt-32 pointer-events-none -z-1 dark:opacity-40" aria-hidden="true" width="678" height="634" viewBox="0 0 678 634" fill="none" xmlns="http://www.w3.org/2000/svg">
+                {/* Glow illustration
+
+                 <svg className="absolute mr-12 mt-32 pointer-events-none -z-1 dark:opacity-40" aria-hidden="true" width="678" height="634" viewBox="0 0 678 634" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <circle cx="240" cy="394" r="240" fill="url(#piphoneill_paint0_radial)" fillOpacity=".4" />
                   <circle cx="438" cy="240" r="240" fill="url(#piphoneill_paint1_radial)" fillOpacity=".6" />
                   <defs>
@@ -68,8 +69,11 @@ function Hero() {
                     </radialGradient>
                   </defs>
                 </svg>
+
+                */}
+
                 {/* Image inside mockup size: 290x624px (or 580x1248px for Retina devices) */}
-           
+
                 {/* iPhone mockup */}
                 <Image className="relative max-w-full mx-auto md:mr-0 md:max-w-none h-auto pointer-events-none" src={'https://res.cloudinary.com/dhkccnvyn/image/upload/v1658348423/iPhone_12___12_Pro_f69cnq.svg'} width="344" height="674" alt="iPhone mockup" aria-hidden="true" />
                 {/* Play button */}
@@ -79,15 +83,6 @@ function Hero() {
               </div>
 
 
-
-              {/* Modal */}
-              <Modal id="modal" ariaLabel="modal-headline" show={videoModalOpen} handleClose={() => setVideoModalOpen(false)}>
-                <div className="relative pb-9/16">
-                  
-                   
-
-                </div>
-              </Modal>
 
             </div>
 
