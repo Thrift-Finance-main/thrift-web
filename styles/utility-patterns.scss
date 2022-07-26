@@ -7,6 +7,9 @@
     @apply text-3xl font-extrabold tracking-tighter;
 }
 
+
+
+
 .h3 {
     @apply text-3xl font-extrabold;
 }
@@ -97,6 +100,10 @@
     .dark-here {
         @apply bg-darken text-white;
     }    
+
+    .black-text {
+        @apply text-winter;
+    }
 
     .other-here {
         @apply bg-primary text-white ;

@@ -214,10 +214,11 @@ function TheHeader() {
               aria-controls="mobile-nav"
               aria-expanded={mobileNavOpen}
               onClick={() => setMobileNavOpen(!mobileNavOpen)}
+              dark-here
             >
               <span className="sr-only">Menu</span>
               <svg
-                className="w-6 h-6 fill-current text-gray-900 hover:text-gray-900 dark:text-gray-300 dark:hover:text-gray-100 transition duration-150 ease-in-out"
+                className="w-6 h-6 fill-current text-white hover:text-gray-900 dark:text-gray-300 dark:hover:text-gray-100 transition duration-150 ease-in-out"
                 viewBox="0 0 24 24"
                 xmlns="http://www.w3.org/2000/svg"
               >

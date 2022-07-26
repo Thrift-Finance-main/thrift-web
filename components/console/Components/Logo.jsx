@@ -4,7 +4,7 @@ const Logo = () => {
 
 
         <svg width="100" height="100" viewBox="0 0 58 25" fill="none" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink">
-        <rect x="0.5" y="0.5" width="57" height="23.3697" fill="url(#pattern0)" stroke="white"/>
+        <rect x="0.5" y="0.5" width="57" height="23.3697" fill="url(#pattern0)" stroke=""/>
         <defs>
         <pattern id="pattern0" patternContentUnits="objectBoundingBox" width="1" height="1">
         <use xlinkHref="#image0_2_56" transform="translate(-0.952823 -1.45161) scale(0.000709386 0.00169337)"/>

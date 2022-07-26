@@ -22,6 +22,7 @@ module.exports = {
         purpled : '#603EDA', 
         shader: '#000000',
         tinter: '#272727',
+        winter: '#A2A2A8'
       },
     },
   },
