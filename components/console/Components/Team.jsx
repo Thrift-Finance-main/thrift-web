@@ -5,39 +5,39 @@ const Team = () => {
     const team = [
         {
         name: 'Josiah Odosu ',
-        title: 'CEO',
+        title: 'Founder , Product Lead',
         image: 'https://res.cloudinary.com/dhkccnvyn/image/upload/v1658844458/thrift%20web/Avatar_awomic.svg'
     },
 
     {
         name: 'Jaime Caso',
-        title: 'CEO',
+        title: 'Co-Founder , Lead Enginner ',
         image: 'https://res.cloudinary.com/dhkccnvyn/image/upload/v1658844463/thrift%20web/1_2x_e0y822.svg'
     },
     {
         name: 'Loveth Chukwu',
-        title: 'CEO',
+        title: 'Finance Consultant',
         image: 'https://res.cloudinary.com/dhkccnvyn/image/upload/v1658844469/thrift%20web/3_2x_xfcljs.svg'
     },
     {
         name: 'Obiabo Immanuel',
-        title: 'CEO',
+        title: 'Frontend Developer ',
         image: 'https://res.cloudinary.com/dhkccnvyn/image/upload/v1658844456/thrift%20web/4_2x_ajpsfv.svg'
     },
 
     {
         name: 'Kan Kan',
-        title: 'CEO',
+        title: 'Community Manager ',
         image: 'https://res.cloudinary.com/dhkccnvyn/image/upload/v1658844468/thrift%20web/5_2x_l7lila.svg'
     },
     {
         name: 'Hishmat Rai',
-        title: 'CEO',
+        title: 'Web & Mobile Developer',
         image: 'https://res.cloudinary.com/dhkccnvyn/image/upload/v1658844457/thrift%20web/6_2x_sqlqmx.svg'
     },
     {
         name: 'August Egesi',
-        title: 'CEO',
+        title: 'Graphics Designer ',
         image: 'https://res.cloudinary.com/dhkccnvyn/image/upload/v1658844458/thrift%20web/Avatar-1_heodhb.svg'
     }
 ]
@@ -47,7 +47,7 @@ const Team = () => {
 
             <div>
 
-                <h2>Team </h2>
+              
                
                <div className="container dark-here ">
                     
