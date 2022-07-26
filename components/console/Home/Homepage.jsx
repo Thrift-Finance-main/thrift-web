@@ -11,7 +11,7 @@ import TeamMembers from '../Components/TeamMembers';
 import Timeline from '../../src/partials/Timeline';
 import ThriftPeer from '../Components/ThriftPeer';
 import Partners from '../Components/Partners';
-
+import Team from '../Components/Team';
 const Homepage = () => {
 
 
@@ -29,8 +29,9 @@ const Homepage = () => {
                    <Timeline/>
                    <FeaturesWorld/>
                    
-                   <TeamMembers/>
-                    <Partners/>
+                   {/* <TeamMembers/> */}
+                   <Team/>
+                   <Partners/>
                    <TheCta/>
                    <TheFooter/>
                   

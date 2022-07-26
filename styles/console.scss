@@ -1,3 +1,39 @@
+.map-items {
+     
+    margin: 5em 0;
+    color: black;
+    font-weight: 300;
+ 
+    padding: 1em;
+   
+
+    h6 {
+        font-weight: 300;
+        font-size: 1.2em;
+        margin: 0;
+        padding: 0;
+    }
+
+}
+
+.item-team {
+
+    //display flex amd flex wrap
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    margin: 1em 0;
+    padding: 1em;
+    width: 65%;
+    gap: 3em;
+    justify-content: center;
+
+    
+
+}
+
 .p2p {
     width: 80%;
     color: white;
@@ -37,5 +73,13 @@
         width: 90%;
         height: 100%;
        
+    }
+
+    //team section for mobile phone 
+    .item-team {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 2em;
     }
 }
