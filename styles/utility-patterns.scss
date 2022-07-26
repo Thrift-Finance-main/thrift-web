@@ -88,25 +88,37 @@
   scrollbar-width: none;  /* Firefox */
 }
 
+
 .dark {
 
 
      
+
     .dark-here {
         @apply bg-darken text-white;
     }    
 
     .other-here {
-        @apply bg-primary text-white !important;
+        @apply bg-primary text-white ;
     }
 
     .black{
         @apply bg-blackest text-white;
     }
 
+    .shade {
+        @apply  text-gray-400;
+    }
+
+    .box-gradient {
+        @apply bg-gradient-to-r from-tinter to-shader;
+    }
+
     .h4 {
         @apply font-bold;
     }
+
+   
 
     .form-input,
     .form-textarea,

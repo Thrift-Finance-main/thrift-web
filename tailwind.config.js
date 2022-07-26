@@ -20,6 +20,8 @@ module.exports = {
         darken: '#1D1D21' , 
         blackest: '#151515',
         purpled : '#603EDA', 
+        shader: '#000000',
+        tinter: '#272727',
       },
     },
   },
