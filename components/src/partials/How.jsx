@@ -42,7 +42,8 @@ function How() {
 
           {/* Top image */}
           <div className="pb-12 md:pb-16">
-            <Image src={'https://res.cloudinary.com/dhkccnvyn/image/upload/v1658349986/Group_18_xkayht.svg'} width="1104" height="325" alt="Features top" />
+            {/* <Image src={'https://res.cloudinary.com/dhkccnvyn/image/upload/v1658349986/Group_18_xkayht.svg'} width="1104" height="325" alt="Features top" /> */}
+            <Image src={'https://res.cloudinary.com/dhkccnvyn/image/upload/v1658770646/Illustration_xpjge3.svg'} width="1104" height="325" alt="Features top" />
           </div>
 
           {/* Section content */}
