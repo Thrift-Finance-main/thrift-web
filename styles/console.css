@@ -9,7 +9,7 @@
 }
 
 .adjust {
-  display: "none !important";
+  margin: 0 auto !important;
 }
 
 .peerText {
