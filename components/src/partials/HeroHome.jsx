@@ -88,7 +88,7 @@ useEffect(() => {
             
             {/* Content */}
             <div className="adjust md:col-span-7 lg:col-span-7 mb-8 md:mb-0 text-center md:text-left ">
-              <h1 className="h1 lg:text-6xl mb-4 font-red-hat-display font-extrabold" data-aos="fade-down">Crypto Saving, made personal</h1>
+              <h1 className="h1 lg:text-6xl mb-4 font-red-hat-display font-extrabold font-top show-white" data-aos="fade-down">Crypto Saving, made personal</h1>
               <p className="text-xl text-gray-600 dark:text-gray-400" data-aos="fade-down" data-aos-delay="150">Thrift RealFi wallet lets you easily save, invest, pay and manage your funds without giving up your privacy, asset’s ownership, security or your data. </p>
               {/* CTA form */}
               <form className="mt-8" data-aos="fade-down" data-aos-delay="300">
@@ -159,7 +159,7 @@ useEffect(() => {
                 {/* Image inside mockup size: 290x624px (or 580x1248px for Retina devices) */}
 
                 {/* iPhone mockup */}
-                <Image className="relative max-w-full mx-auto md:mr-0 md:max-w-none h-auto pointer-events-none" src={'https://res.cloudinary.com/dhkccnvyn/image/upload/v1658348423/iPhone_12___12_Pro_f69cnq.svg'} width="344" height="674" alt="iPhone mockup" aria-hidden="true" />
+                <Image className="relative dance max-w-full mx-auto md:mr-0 md:max-w-none h-auto pointer-events-none" src={'https://res.cloudinary.com/dhkccnvyn/image/upload/v1658348423/iPhone_12___12_Pro_f69cnq.svg'} width="344" height="674" alt="iPhone mockup" aria-hidden="true" />
                 {/* Play button */}
                 {/* <a className="absolute group" href="#0" onClick={(e) => { e.preventDefault(); e.stopPropagation(); setVideoModalOpen(true); }} aria-controls="modal">
                   <img src={PlayBtn} width="96" height="96" alt="Play" />

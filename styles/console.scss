@@ -1,3 +1,44 @@
+//add animation 
+@keyframes dangle {
+    0% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(10px);
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
+
+  @keyframes dance {
+    0% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(5px);
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
+
+.dance {
+    animation: dangle 1.5s infinite;
+}
+
+.dangle {
+    animation: dance 1.5s infinite;
+}
+
+.partner {
+    margin: 7em 0;
+    color: black;
+
+    h2 {
+        margin: 3em 0
+    }
+}
 .map-items {
      
     margin: 5em 0;
@@ -29,6 +70,7 @@
     width: 65%;
     gap: 3em;
     justify-content: center;
+    margin: 2em ;
 
     
 
@@ -82,4 +124,15 @@
         justify-content: center;
         gap: 2em;
     }
+
+    .dance {
+        margin: 2em 0 !important;
+    }
+
+    .font-top {
+        color:black !important;
+        display:block !important;
+    }
 }
+
+

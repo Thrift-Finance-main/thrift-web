@@ -1,3 +1,65 @@
+@-webkit-keyframes dangle {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(10px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+@keyframes dangle {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(10px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+@-webkit-keyframes dance {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(5px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+@keyframes dance {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(5px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+.dance {
+  -webkit-animation: dangle 1.5s infinite;
+          animation: dangle 1.5s infinite;
+}
+
+.dangle {
+  -webkit-animation: dance 1.5s infinite;
+          animation: dance 1.5s infinite;
+}
+
+.partner {
+  margin: 7em 0;
+  color: black;
+}
+.partner h2 {
+  margin: 3em 0;
+}
+
 .map-items {
   margin: 5em 0;
   color: black;
@@ -22,6 +84,7 @@
   width: 65%;
   gap: 3em;
   justify-content: center;
+  margin: 2em;
 }
 
 .p2p {
@@ -60,5 +123,12 @@
     align-items: center;
     justify-content: center;
     gap: 2em;
+  }
+  .dance {
+    margin: 2em 0 !important;
+  }
+  .font-top {
+    color: black !important;
+    display: block !important;
   }
 }/*# sourceMappingURL=console.css.map */

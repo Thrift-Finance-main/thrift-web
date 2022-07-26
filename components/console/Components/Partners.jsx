@@ -3,9 +3,9 @@ const Partners = () => {
     return (
         <>
 
-           <div className='my-5'>
+           <div className='my-5 partner'>
 
-           <h2 className='font-bold dark-here' > Partners </h2>
+           <h2 className='font-bold dark-here ' > Partners </h2>
 
                 <Image src = {'https://res.cloudinary.com/dhkccnvyn/image/upload/v1658828293/Logos_hm2qbw.svg'} 
                 width='700%' height='100%'/>

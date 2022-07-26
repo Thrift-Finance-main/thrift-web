@@ -114,6 +114,10 @@
         @apply bg-shade_black text-white;
     }
 
+    .show-white {
+        @apply text-white;
+    }
+
     .box-gradient {
         @apply bg-gradient-to-r from-tinter to-shader;
     }

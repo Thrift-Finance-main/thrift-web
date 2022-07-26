@@ -98,6 +98,9 @@
 .dark .peer {
   @apply bg-shade_black text-white;
 }
+.dark .show-white {
+  @apply text-white;
+}
 .dark .box-gradient {
   @apply bg-gradient-to-r from-tinter to-shader;
 }
