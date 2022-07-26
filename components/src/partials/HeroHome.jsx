@@ -6,18 +6,39 @@ import Image from 'next/image'
 
 function Hero() {
 
-  const [darken , setDarken ] = useState(false)
+  const [darken , setDarken] = useState(true)
+  const [darkPlay , setDarkPlay] = useState()
 
-  // const [videoModalOpen, setVideoModalOpen] = useState(false);
 
   
-  useEffect(() => {
-    if(typeof window !== 'undefined') {
-      localStorage.getItem('dark-mode') ? setDarken(true)  : setDarken(false)
-    } else {
-      return null
+
+
+  const [darkMode, setDarkMode] = useState(() => {
+    //check if typeof windows is undefined
+    if (typeof window !== 'undefined') {
+      const dark = localStorage.getItem('dark-mode');
+      if (dark) {
+        return true;
+      } else {
+        return dark === 'true';
+      }
     }
-  } , [])
+});
+  
+
+useEffect(() => {
+
+ 
+  localStorage.setItem('dark-mode', darkMode)
+  if (darkMode) {
+   
+    setDarken(false)
+  } else {
+   
+    setDarken(true)
+  }
+}, [darkMode]); 
+  
 
 
   
@@ -28,10 +49,8 @@ function Hero() {
 
        <div className='absolute right-0'>
       
-
-
-        {
-          darken  ?  
+       {
+          !darken  ?  
             (
               <>
 
@@ -56,6 +75,7 @@ function Hero() {
             </>
           )
         }
+       
           
       </div>
       <div className="max-w-6xl mx-auto px-4 sm:px-6 ">
@@ -64,6 +84,8 @@ function Hero() {
                  {/* removed items-center */}
           <div className="md:grid md:grid-cols-12 md:gap-12 lg:gap-20 ">
 
+
+            
             {/* Content */}
             <div className="adjust md:col-span-7 lg:col-span-7 mb-8 md:mb-0 text-center md:text-left ">
               <h1 className="h1 lg:text-6xl mb-4 font-red-hat-display font-extrabold" data-aos="fade-down">Crypto Saving, made personal</h1>
@@ -97,7 +119,20 @@ function Hero() {
                   <span>Grow wealth annonymously</span>
                 </li>
               </ul>
+
+              <div className='absolute left-20' style = {{
+                display : darkPlay
+              }}>
+              <Image
+                 width='200%'
+                height = '300%'
+                src='https://res.cloudinary.com/dhkccnvyn/image/upload/v1658794005/Oval_lpwusi.svg' />
+                
+              </div>
+              
             </div>
+
+            
 
             {/* Mobile mockup */}
             <div className="md:col-span-5 lg:col-span-5 text-center md:text-right" data-aos="fade-up" data-aos-delay="450">
