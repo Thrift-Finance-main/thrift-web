@@ -28,7 +28,7 @@ const Homepage = () => {
                    <ThriftPeer/>
                    <Timeline/>
                    <FeaturesWorld/>
-                  
+                   
                    <TeamMembers/>
                     <Partners/>
                    <TheCta/>

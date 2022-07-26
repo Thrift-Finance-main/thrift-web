@@ -48,7 +48,7 @@ function Timeline() {
               {/* 2020's articles */}
               <div className={`grow ${year !== '2020' && 'hidden'}`}>
                 <div className="grid md:grid-cols-2 gap-4 sm:gap-6">
-                  <article className="p-6 bg-white  dark-here dark:bg-gray-800 shadow-2xl flex flex-col">
+                  <article className="p-6 bg-white  box-shade-top  dark:bg-gray-800 shadow-2xl flex flex-col">
                     <header>
                       <h3 className="h4 font-red-hat-display font-bold  mb-1">
                         <a href="#0" >Git Init</a>
@@ -64,7 +64,7 @@ function Timeline() {
                       </svg>
                     </a>
                   </article>
-                  <article className="p-6 font-bold dark-here  bg-white dark:bg-gray-800 shadow-2xl flex flex-col">
+                  <article className="p-6 font-bold box-shade-top bg-white dark:bg-gray-800 shadow-2xl flex flex-col">
                     <header>
                       <h3 className="h4 font-red-hat-display mb-1">
                         <a href="#0">Thrift on Cardano Summit</a>
@@ -80,7 +80,7 @@ function Timeline() {
                       </svg>
                     </a>
                   </article>
-                  <article className="p-6 font-bold dark-here  bg-white dark:bg-gray-800 shadow-2xl flex flex-col">
+                  <article className="p-6 font-bold box-shade-top  bg-white dark:bg-gray-800 shadow-2xl flex flex-col">
                     <header>
                       <h3 className="h4 font-red-hat-display mb-1">
                         <a href="#0" >DeFI and Microlending for Africa </a>

@@ -110,8 +110,16 @@
         @apply  text-gray-400;
     }
 
+    .peer {
+        @apply bg-shade_black text-white;
+    }
+
     .box-gradient {
         @apply bg-gradient-to-r from-tinter to-shader;
+    }
+
+    .box-shade-top {
+        @apply bg-gradient-to-t from-tinter to-shader;
     }
 
     .h4 {
