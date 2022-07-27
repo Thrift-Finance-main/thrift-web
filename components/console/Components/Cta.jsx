@@ -7,7 +7,7 @@ function TheCta() {
         <div className="pb-12 md:pb-20">
 
           {/* CTA box */}
-          <div className="bg-primary rounded py-10 px-8 md:py-16 md:px-12 shadow-2xl" data-aos="zoom-y-out">
+          <div className="bg-primary dark-here rounded py-10 px-8 md:py-16 md:px-12 shadow-2xl" data-aos="zoom-y-out">
 
             <div className="flex flex-col lg:flex-row justify-between items-center">
 
