@@ -14,7 +14,7 @@ function FeaturesBlocks() {
           {/* Section header */}
           <div className="max-w-3xl mx-auto text-center pb-12 md:pb-20">
             <h2 className="h2 dark-here mb-4 text-black">How it Works </h2>
-            <p className="text-xl text-gray-600">Track expenses, income, and create savings plan while growing your funds conviniently. Do these things plus more in a non-custodial wallet. You’re in control.</p>
+            <p className="text-xl text-gray-600 black-text">Track expenses, income, and create savings plan while growing your funds conviniently. Do these things plus more in a non-custodial wallet. You’re in control.</p>
           </div>
 
           {/* Items */}
@@ -34,7 +34,7 @@ function FeaturesBlocks() {
                 </g>
               </svg>
               <h4 className="text-xl font-bold leading-snug tracking-tight mb-1">SmartFi</h4>
-              <p className="text-gray-600 text-center">Manage and analyze your personal finances better and easier
+              <p className="text-gray-600 text-center black-text">Manage and analyze your personal finances better and easier
               </p>
               <p className={'invisible'}> Thrift.</p>
             </div>
@@ -52,7 +52,7 @@ function FeaturesBlocks() {
                 </g>
               </svg>
               <h4 className="text-xl font-bold leading-snug tracking-tight mb-1">Governance</h4>
-              <p className="text-gray-600 text-center">Through voting rights, the community governs, maintains, and upgrades Thrift.</p>
+              <p className="text-gray-600 text-center black-text">Through voting rights, the community governs, maintains, and upgrades Thrift.</p>
             </div>
 
             {/* 3rd item */}
@@ -69,7 +69,7 @@ function FeaturesBlocks() {
                 </g>
               </svg>
               <h4 className="text-xl font-bold leading-snug tracking-tight mb-1">Stable Currency</h4>
-              <p className="text-gray-600 text-center">save in stable currency, stay ahead of the curve, and secure your future</p>
+              <p className="text-gray-600 text-center black-text">save in stable currency, stay ahead of the curve, and secure your future</p>
               <p className={'invisible'}> Thrift.</p>
             </div>
 
@@ -87,7 +87,8 @@ function FeaturesBlocks() {
                 </g>
               </svg>
               <h4 className="text-xl font-bold leading-snug tracking-tight mb-1">Decentralized Digital Identity</h4>
-              <p className="text-gray-600 text-center">Own your identity</p>
+              <p className="text-gray-600 text-center black-text">Own your identity</p>
+              <p className={'invisible'}> Thrift.</p>
               <p className={'invisible'}> Thrift.</p>
               <p className={'invisible'}> Thrift.</p>
             </div>
@@ -105,7 +106,8 @@ function FeaturesBlocks() {
                 </g>
               </svg>
               <h4 className="text-xl font-bold leading-snug tracking-tight mb-1">Digital Agregation</h4>
-              <p className="text-gray-600 text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+              <p className="text-gray-600 text-center black-text">Trustless access to DeFi services and platforms. </p>
+              <p className={'invisible'}> Thrift.</p>
               <p className={'invisible'}> Thrift.</p>
             </div>
 
@@ -121,7 +123,7 @@ function FeaturesBlocks() {
                 </g>
               </svg>
               <h4 className="text-xl font-bold leading-snug tracking-tight mb-1">Seamless UI/UX</h4>
-              <p className="text-gray-600 text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+              <p className="text-gray-600 text-center black-text">No matter your background, you can use Thrift RealFi Wallet, it’s that simple.</p>
               <p className={'invisible'}> Thrift.</p>
             </div>
 

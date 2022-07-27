@@ -90,8 +90,10 @@ useEffect(() => {
               <div style={{
                
               }}>
-                                {/* <h1 className="h1 dark-here lg:text-6xl mb-4  font-red-hat-display font-extrabold font-top  show-white" data-aos="fade-down">Crypto Saving, made personal</h1> */}
-              <h1 className="h1 mb-5 text-3xl leading-9 font-extrabold dark-here tracking-tight text-gray-900 sm:text-4xl sm:leading-10">
+                                {/* <h1 className="h1 dark-here lg:text-6xl mb-4  font-red-hat-display  font-top  show-white" data-aos="fade-down">Crypto Saving, made personal</h1> */}
+              <h1 className="h1 mb-5 text-3xl leading-9 font-extrabold dark-here font-extrabold tracking-tight text-gray-900 sm:text-4xl sm:leading-10"
+                data-aos="fade-down"
+              >
                     Crypto saving,
                      made personal
               </h1>
@@ -106,7 +108,7 @@ useEffect(() => {
                 {/* Success message */}
                 {/* <p className="text-center md:text-left mt-2 opacity-75 text-sm">Thanks for subscribing!</p> */}
               </form>
-              <ul className="max-w-sm sm:max-w-md mx-auto md:max-w-none text-gray-600 dark:text-gray-400 mt-8 -mb-2" data-aos="fade-down" data-aos-delay="450">
+              <ul className="max-w-sm black-text sm:max-w-md mx-auto md:max-w-none text-gray-600 dark:text-gray-400 mt-8 -mb-2" data-aos="fade-down" data-aos-delay="450">
                 <li className="flex items-center mb-2">
                   <svg className="w-3 h-3 fill-current text-primary mr-2 shrink-0" viewBox="0 0 12 12" xmlns="http://www.w3.org/2000/svg">
                     <path d="M10.28 2.28L3.989 8.575 1.695 6.28A1 1 0 00.28 7.695l3 3a1 1 0 001.414 0l7-7A1 1 0 0010.28 2.28z" />

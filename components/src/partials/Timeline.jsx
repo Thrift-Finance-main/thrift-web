@@ -25,22 +25,22 @@ function Timeline() {
                 <div className="absolute inset-0 my-6 ml-16 pointer-events-none -z-1" aria-hidden="true">
                   <div className="absolute inset-0 w-0.5 h-full bg-gray-300 dark:bg-gray-700"></div>
                 </div>
-                <button className="flex items-center justify-between font-medium text-gray-500 dark:text-gray-400 w-20 py-3 pr-2 text-left" onClick={() => setYear('2021')}>
-                  <span className="block w-12 truncate">2020</span>
-                  <span className={`block w-3.5 h-3.5 bg-gray-400 dark:bg-gray-700 border-2 border-white dark:border-gray-900 rounded-full ${year === '2022' && 'bg-primary dark:bg-primary'}`}></span>
-                </button>
                 <button className="flex items-center justify-between font-medium text-gray-500 dark:text-gray-400 w-20 py-3 pr-2 text-left" onClick={() => setYear('2022')}>
-                  <span className="block w-12 truncate">2019</span>
+                  <span className="block w-12 truncate">2022</span>
+                  <span className={`block w-3.5 h-3.5 bg-primary dark:bg-primary border-2 border-white dark:border-gray-900 rounded-full ${year === '2022' && 'bg-primary dark:bg-primary'}`}></span>
+                </button>
+                {/* <button className="flex items-center justify-between font-medium text-gray-500 dark:text-gray-400 w-20 py-3 pr-2 text-left" onClick={() => setYear('2022')}>
+                  <span className="block w-12 truncate">2021</span>
                   <span className={`block w-3.5 h-3.5 bg-gray-400 dark:bg-gray-700 border-2 border-white dark:border-gray-900 rounded-full ${year === '2023' && 'bg-primary dark:bg-primary'}`}></span>
-                </button>
+                </button> */}
                 <button className="flex items-center justify-between font-medium text-gray-500 dark:text-gray-400 w-20 py-3 pr-2 text-left" onClick={() => setYear('2018')}>
-                  <span className="block w-12 truncate">2018</span>
-                  <span className={`block w-3.5 h-3.5 bg-gray-400 dark:bg-gray-700 border-2 border-white dark:border-gray-900 rounded-full ${year === '2024' && 'bg-primary dark:bg-primary'}`}></span>
+                  <span className="block w-12 truncate">2021</span>
+                  <span className={`block w-3.5 h-3.5 bg-primary dark:bg-primary border-2 border-white dark:border-gray-900 rounded-full ${year === '2024' && 'bg-primary dark:bg-primary'}`}></span>
                 </button>
-                <button className="flex items-center justify-between font-medium text-gray-500 dark:text-gray-400 w-20 py-3 pr-2 text-left" onClick={() => setYear('2025')}>
+                {/* <button className="flex items-center justify-between font-medium text-gray-500 dark:text-gray-400 w-20 py-3 pr-2 text-left" onClick={() => setYear('2025')}>
                   <span className="block w-12 truncate">2017</span>
                   <span className={`block w-3.5 h-3.5 bg-gray-400 dark:bg-gray-700 border-2 border-white dark:border-gray-900 rounded-full ${year === '2025' && 'bg-primary dark:bg-primary'}`}></span>
-                </button>
+                </button> */}
 
               
               </div>
@@ -156,7 +156,7 @@ function Timeline() {
 
               {/* 2018's articles */}
               <div className={`grow ${year !== '2018' && 'hidden'}`}>
-                <div className="grid md:grid-cols-2 gap-6">
+                <div className="grid md:grid-cols-2 gap-6 dark-here">
                   <article className="p-6 bg-white dark:bg-gray-800 shadow-2xl flex flex-col">
                     <header>
                       <h3 className="h4 font-red-hat-display mb-1">

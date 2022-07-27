@@ -37,7 +37,7 @@ function How() {
           {/* Section header */}
           <div className="max-w-3xl mx-auto text-center pb-12 md:pb-16">
             <h1 className="h2 mb-4">How Simple works</h1>
-            <p className="text-xl text-gray-600">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur excepteur sint occaecat cupidatat.</p>
+            <p className="text-xl text-gray-600 black-text">Track expenses, income, and create savings plan while growing your funds conviniently. Do these things plus more in a non-custodial wallet. You’re in control.</p>
           </div>
 
           {/* Top image */}
@@ -53,17 +53,18 @@ function How() {
             <div className="max-w-xl md:max-w-none md:w-full mx-auto md:col-span-7 lg:col-span-6 md:mt-6" data-aos="fade-right">
               <div className="md:pr-4 lg:pr-12 xl:pr-16 mb-8">
                 <h3 className="h3 mb-3">Powerful suite of tools</h3>
-                <p className="text-xl text-gray-600">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa.</p>
+                <p className="text-xl text-gray-600 black-text">DeFi solutions are often complex, unintuitive, and hard to understand. Thrift makes it simple,
+                 providing real solutions to real life finance problems.</p>
               </div>
               {/* Tabs buttons */}
               <div className="mb-8 md:mb-0">
                 <button
-                  className={`flex items-center  text-lg p-5 rounded border transition duration-300 ease-in-out mb-3 ${tab !== 1 ? 'bg-white shadow-md border-gray-200 hover:shadow-lg' : 'bg-gray-200 border-transparent'}`}
+                  className={`flex other-here black-text items-center  text-lg p-5 rounded border transition duration-300 ease-in-out mb-3 ${tab !== 1 ? 'bg-white shadow-md border-gray-200 hover:shadow-lg' : 'bg-gray-200 border-transparent'}`}
                   onClick={(e) => { e.preventDefault(); setTab(1); }}
                 >
                   <div>
-                    <div className="font-bold leading-snug text-left tracking-tight mb-1">Building the Simple ecosystem</div>
-                    <div className="text-gray-600 text-left">Take collaboration to the next level with security and administrative features built for teams.</div>
+                    <div className="font-bold leading-snug text-left tracking-tight mb-1">Non-custodial Savings </div>
+                    <div className="text-gray-600  text-left other-here">Own your data, save your funds in the safest way, earn passively, get rewards, NFTs and much more. </div>
                   </div>
                   <div className="flex justify-center items-center w-8 h-8  bg-white rounded-full shadow shrink-0 ml-3">
                     <svg className="w-3 h-3 fill-current" viewBox="0 0 12 12" xmlns="http://www.w3.org/2000/svg">
@@ -76,8 +77,8 @@ function How() {
                   onClick={(e) => { e.preventDefault(); setTab(2); }}
                 >
                   <div >
-                    <div className="font-bold leading-snug tracking-tight mb-1 text-left">Building the Simple ecosystem</div>
-                    <div className="text-gray-600 text-left">Take collaboration to the next level with security and administrative features built for teams.</div>
+                    <div className="font-bold leading-snug tracking-tight mb-1 text-left">Crowd Lending</div>
+                    <div className="text-gray-600 text-left other-here">Join or create groups according to your saving goals, lend, and grow your wealth.  </div>
                   </div>
                   <div className="flex justify-center items-center w-8 h-8 bg-white rounded-full shadow shrink-0 ml-3">
                     <svg className="w-3 h-3 fill-current" viewBox="0 0 12 12" xmlns="http://www.w3.org/2000/svg">
@@ -91,7 +92,7 @@ function How() {
                 >
                   <div>
                     <div className="font-bold leading-snug tracking-tight mb-1 text-left">Multiple Payments </div>
-                    <div className="text-gray-600 text-left">Take collaboration to the next level with security and administrative features built for teams.</div>
+                    <div className="text-gray-600 text-left other-here">For a single payment transaction fee, you can make multiple payments in one transaction.</div>
                   </div>
                   <div className="flex justify-center items-center w-8 h-8 bg-white rounded-full shadow shrink-0 ml-3">
                     <svg className="w-3 h-3 fill-current" viewBox="0 0 12 12" xmlns="http://www.w3.org/2000/svg">

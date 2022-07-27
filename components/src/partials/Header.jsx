@@ -68,7 +68,7 @@ function TheHeader() {
 
   return (
     
-    <header className="absolute w-full z-30">
+    <header className="absolute w-full z-30 black-text">
       <div className="max-w-7xl mx-auto px-2 sm:px-6">
         <div className="flex items-center justify-between h-20">
           {/* Site branding */}
@@ -87,11 +87,11 @@ function TheHeader() {
           {/* Desktop navigation */}
           <nav className="hidden md:flex md:grow">
             {/* Desktop menu divs */}
-            <ul className="flex grow flex-wrap items-center font-medium">
+            <ul className="flex black-text grow flex-wrap items-center font-medium">
               <li>
                 <div
                   to="/about"
-                  className="text-gray-600 hover:text-gray-900 dark:text-gray-300 dark:hover:text-gray-100 px-5 py-2 flex items-center transition duration-150 ease-in-out"
+                  className="black-text text-gray-600 hover:text-gray-900 dark:text-gray-300 dark:hover:text-gray-100 px-5 py-2 flex items-center transition duration-150 ease-in-out"
                 >
                   About
                 </div>
@@ -99,7 +99,7 @@ function TheHeader() {
               <li>
                 <div
                   to="/blog"
-                  className="text-gray-600 hover:text-gray-900 dark:text-gray-300 dark:hover:text-gray-100 px-5 py-2 flex items-center transition duration-150 ease-in-out"
+                  className="text-gray-600 black-text  hover:text-gray-900 dark:text-gray-300 dark:hover:text-gray-100 px-5 py-2 flex items-center transition duration-150 ease-in-out"
                 >
                   Blog
                 </div>
@@ -107,18 +107,18 @@ function TheHeader() {
               <li>
                 <div
                   to="/testimonials"
-                  className="text-gray-600 hover:text-gray-900 dark:text-gray-300 dark:hover:text-gray-100 px-5 py-2 flex items-center transition duration-150 ease-in-out"
+                  className="text-gray-600 black-text  hover:text-gray-900 dark:text-gray-300 dark:hover:text-gray-100 px-5 py-2 flex items-center transition duration-150 ease-in-out"
                 >
                   Testimonials
                 </div>
               </li>
               {/* 1st level: hover */}
-              <Dropdown title="Resources">
+              <Dropdown title="Resources" >
                 {/* 2nd level: hover */}
                 <li>
                   <div
                     to="/help"
-                    className="text-sm text-gray-600 dark:text-gray-400 hover:text-teal-500 dark:hover:text-teal-500 flex py-2 px-4 leading-tight"
+                    className="text-sm black-text  text-gray-600 dark:text-gray-400 hover:text-teal-500 dark:hover:text-teal-500 flex py-2 px-4 leading-tight"
                   >
                     Help center
                   </div>
@@ -126,7 +126,7 @@ function TheHeader() {
                 <li>
                   <div
                     to="/404"
-                    className="text-sm text-gray-600 dark:text-gray-400 hover:text-teal-500 dark:hover:text-teal-500 flex py-2 px-4 leading-tight"
+                    className="text-sm black-text  text-gray-600 dark:text-gray-400 hover:text-teal-500 dark:hover:text-teal-500 flex py-2 px-4 leading-tight"
                   >
                     404
                   </div>
