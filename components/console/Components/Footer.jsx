@@ -1,5 +1,7 @@
 import React from 'react';
-import Logo from './Logo'
+
+import Image from 'next/image'
+
 function TheFooter() {
   return (
     <footer>
@@ -13,7 +15,8 @@ function TheFooter() {
             <div className="mb-2">
               {/* Logo */}
               <div to="/" className="inline-block" aria-label="Cruip">
-                 <Logo/>
+                 <Image src='https://res.cloudinary.com/dhkccnvyn/image/upload/v1658915838/Logo_c44zln.png'
+                 width='100%' height='100%' />
               </div>
             </div>
             <div className="text-sm text-gray-600">

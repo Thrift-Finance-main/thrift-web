@@ -33,10 +33,9 @@ useEffect(() => {
   if (darkMode) {
    
     setDarken(false)
-  } else {
-   
-    setDarken(true)
+    console.log('dark mode')
   }
+
 }, [darkMode]); 
   
 
@@ -88,7 +87,15 @@ useEffect(() => {
             
             {/* Content */}
             <div className="adjust md:col-span-7 lg:col-span-7 mb-8 md:mb-0 text-center md:text-left ">
-              <h1 className="h1 lg:text-6xl mb-4 font-red-hat-display font-extrabold font-top show-white" data-aos="fade-down">Crypto Saving, made personal</h1>
+              <div style={{
+               
+              }}>
+                                {/* <h1 className="h1 dark-here lg:text-6xl mb-4  font-red-hat-display font-extrabold font-top  show-white" data-aos="fade-down">Crypto Saving, made personal</h1> */}
+              <h1 className="h1 mb-5 text-3xl leading-9 font-extrabold dark-here tracking-tight text-gray-900 sm:text-4xl sm:leading-10">
+                    Crypto saving,
+                     made personal
+              </h1>
+              </div>
               <p className="text-xl black-text text-gray-600 dark:text-gray-400" data-aos="fade-down" data-aos-delay="150">Thrift RealFi wallet lets you easily save, invest, pay and manage your funds without giving up your privacy, asset’s ownership, security or your data. </p>
               {/* CTA form */}
               <form className="mt-8" data-aos="fade-down" data-aos-delay="300">
