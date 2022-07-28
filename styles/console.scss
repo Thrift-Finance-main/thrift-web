@@ -16,6 +16,8 @@
       transform: translateY(0);
     }
     50% {
+
+
       transform: translateY(5px);
     }
     100% {
@@ -132,6 +134,11 @@
     .font-top {
         color:black !important;
         display:block !important;
+    }
+
+    .btn-sm {
+        width:100% !important;
+
     }
 }
 

@@ -131,4 +131,7 @@
     color: black !important;
     display: block !important;
   }
+  .btn-sm {
+    width: 100% !important;
+  }
 }/*# sourceMappingURL=console.css.map */

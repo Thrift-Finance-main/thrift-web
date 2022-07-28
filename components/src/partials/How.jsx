@@ -36,7 +36,7 @@ function How() {
 
           {/* Section header */}
           <div className="max-w-3xl mx-auto text-center pb-12 md:pb-16">
-            <h1 className="h2 mb-4">How Simple works</h1>
+            <h1 className="h2 mb-4">How it works</h1>
             <p className="text-xl text-gray-600 black-text">Track expenses, income, and create savings plan while growing your funds conviniently. Do these things plus more in a non-custodial wallet. You’re in control.</p>
           </div>
 
@@ -119,8 +119,8 @@ function How() {
                   leaveEnd="opacity-0 -translate-y-16"
                 >
                   <div className="relative inline-flex flex-col">
-                    <Image className="md:max-w-none mx-auto rounded" src={FeaturesBg01} width="500" height="375" alt="Features bg" />
-                    <Image className="md:max-w-none absolute w-full left-0 transform animate-float" src={FeaturesElement01} width="500" height="147" alt="Element 01" style={{ top: '22%' }} />
+                    <Image className="md:max-w-none mx-auto rounded" src={'https://res.cloudinary.com/thrift-labs-team/image/upload/v1659019350/Thrift%20images/Base_pmgv7g.svg'} width="500" height="375" alt="Features bg" />
+                    {/* <Image className="md:max-w-none absolute w-full left-0 transform animate-float" src={FeaturesElement01} width="500" height="147" alt="Element 01" style={{ top: '22%' }} /> */}
                     <Image className="md:max-w-none absolute w-full left-0 transform animate-float animation-delay-500" src={FeaturesElement02} width="500" height="158" alt="Element 02" style={{ top: '39%' }} />
                     <Image className="md:max-w-none absolute w-full left-0 bottom-0 transform animate-float animation-delay-1000" src={FeaturesElement03} width="500" height="167" alt="Element 03" style={{ top: '77%' }} />
                   </div>
@@ -138,10 +138,10 @@ function How() {
                   leaveEnd="opacity-0 -translate-y-16"
                 >
                   <div className="relative inline-flex flex-col">
-                    <Image className="md:max-w-none mx-auto rounded" src={FeaturesBg01} width="500" height="375" alt="Features bg" />
-                    <Image className="md:max-w-none absolute w-full left-0 bottom-0 transform animate-float animation-delay-1000" src={FeaturesElement03} width="500" height="167" alt="Element 03" style={{ top: '18%' }} />
-                    <Image className="md:max-w-none absolute w-full left-0 transform animate-float animation-delay-500" src={FeaturesElement02} width="500" height="158" alt="Element 02" style={{ top: '40%' }} />
-                    <Image className="md:max-w-none absolute w-full left-0 transform animate-float" src={FeaturesElement01} width="500" height="147" alt="Element 01" style={{ top: '79%' }} />
+                    <Image className="md:max-w-none mx-auto rounded" src={'https://res.cloudinary.com/thrift-labs-team/image/upload/v1659019778/Thrift%20images/Base_1_qcyybc.svg'} width="500" height="375" alt="Features bg" />
+                    {/* <Image className="md:max-w-none absolute w-full left-0 bottom-0 transform animate-float animation-delay-1000" src={FeaturesElement03} width="500" height="167" alt="Element 03" style={{ top: '18%' }} />
+                    // <Image className="md:max-w-none absolute w-full left-0 transform animate-float animation-delay-500" src={FeaturesElement02} width="500" height="158" alt="Element 02" style={{ top: '40%' }} /> */}
+                     {/* <Image className="md:max-w-none absolute w-full left-0 transform animate-float" src={'https://res.cloudinary.com/thrift-labs-team/image/upload/v1659019778/Thrift%20images/Base_1_qcyybc.svg'} width="500" height="147" alt="Element 01" style={{ top: '79%' }} /> */}
                   </div>
                 </Transition>
                 {/* Item 3 */}
