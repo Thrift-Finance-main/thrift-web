@@ -49,7 +49,7 @@ const Team = () => {
 
               
                
-               <div className="container dark-here ">
+               <div className=" dark-here ">
                     
                     <div className='item-team'>
                         {/* loop through items  */}
