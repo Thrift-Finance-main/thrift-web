@@ -50,11 +50,11 @@ function Timeline() {
                   <article className="p-6 bg-white  box-shade-top  dark:bg-gray-800 shadow-2xl flex flex-col">
                     <header>
                       <h3 className="h4 font-red-hat-display font-bold  mb-1">
-                        <a href="#0" >Git Init</a>
+                        <a href="#0"  className={'black-text text-black'} >Git Init</a>
                       </h3>
                     </header>
                     <div className="text-gray-600 dark:text-gray-400 grow">
-                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+                      <p  >Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
                     </div>
                     <a className="inline-flex items-center font-medium text-primary hover:underline mt-2" href="#0">
                       <span>Learn more</span>
@@ -66,13 +66,13 @@ function Timeline() {
                   <article className="p-6 font-bold box-shade-top bg-white dark:bg-gray-800 shadow-2xl flex flex-col">
                     <header>
                       <h3 className="h4 font-red-hat-display mb-1">
-                        <a href="#0">Thrift on Cardano Summit</a>
+                        <a href="#0" className={'black-text text-black'}>Thrift on Cardano Summit</a>
                       </h3>
                     </header>
                     <div className="text-gray-600 dark:text-gray-400 grow">
-                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+                      <p className='left'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
                     </div>
-                    <a className="inline-flex items-center font-medium text-primary hover:underline mt-2" href="#0">
+                    <a className="inline-flex items-center font-medium  hover:underline mt-2" href="#0">
                       <span>Learn more</span>
                       <svg className="w-3 h-3 shrink-0 mt-px ml-2" viewBox="0 0 12 12" xmlns="http://www.w3.org/2000/svg">
                         <path className="fill-current" d="M6.602 11l-.875-.864L9.33 6.534H0v-1.25h9.33L5.727 1.693l.875-.875 5.091 5.091z" />
@@ -82,7 +82,7 @@ function Timeline() {
                   <article className="p-6 font-bold box-shade-top  bg-white dark:bg-gray-800 shadow-2xl flex flex-col">
                     <header>
                       <h3 className="h4 font-red-hat-display mb-1">
-                        <a href="#0" >DeFI and Microlending for Africa </a>
+                        <a href="#0"  className={'black-text text-black'}>DeFI and Microlending for Africa </a>
                       </h3>
                     </header>
                     <div className="text-gray-600 dark:text-gray-400 grow">
@@ -98,7 +98,7 @@ function Timeline() {
                   <article className="p-6 dark-here  bg-white dark:bg-gray-800 shadow-2xl flex flex-col">
                     <header>
                       <h3 className="h4 font-medium   font-red-hat-display mb-1">
-                        <a href="#0">Catalyst Boost Camp for Africa </a>
+                        <a href="#0"  className={'black-text text-black'}>Catalyst Boost Camp for Africa </a>
                       </h3>
                       
                     </header>
@@ -159,7 +159,7 @@ function Timeline() {
                   <article className="p-6 bg-white dark:bg-gray-800 shadow-2xl flex flex-col">
                     <header>
                       <h3 className="h4 font-red-hat-display mb-1">
-                        <a href="#0">Series B fundraising</a>
+                        <a href="#0"  className={'black-text text-black'}>Series B fundraising</a>
                       </h3>
                     </header>
                     <div className="text-gray-600 dark:text-gray-400 grow">
@@ -175,7 +175,7 @@ function Timeline() {
                   <article className="p-6 bg-white dark:bg-gray-800 shadow-2xl flex flex-col">
                     <header>
                       <h3 className="h4 font-red-hat-display mb-1">
-                        <a href="#0">Launched Appy Business</a>
+                        <a href="#0" >Launched Appy Business</a>
                       </h3>
                     </header>
                     <div className="text-gray-600 dark:text-gray-400 grow">

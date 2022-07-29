@@ -101,7 +101,7 @@ function TheHeader() {
                   to="/blog"
                   className="text-gray-600 black-text  hover:text-gray-900 dark:text-gray-300 dark:hover:text-gray-100 px-5 py-2 flex items-center transition duration-150 ease-in-out"
                 >
-                  Blog
+                  Roadmap
                 </div>
               </li>
               <li>
@@ -109,11 +109,11 @@ function TheHeader() {
                   to="/testimonials"
                   className="text-gray-600 black-text  hover:text-gray-900 dark:text-gray-300 dark:hover:text-gray-100 px-5 py-2 flex items-center transition duration-150 ease-in-out"
                 >
-                  Testimonials
+                  About
                 </div>
               </li>
               {/* 1st level: hover */}
-              <Dropdown title="Resources" >
+              <Dropdown title="Doc" >
                 {/* 2nd level: hover */}
                 <li>
                   <div
