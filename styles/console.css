@@ -3,6 +3,10 @@
   --header_font: "Rai Text 1983 Lowercase";
 }
 
+.left {
+  text-align: left;
+}
+
 @font-face {
   font-family: Rai;
   src: url("./font/Rai.ttf");
@@ -155,5 +159,8 @@
   .h1 {
     font-size: 3em !important;
     line-height: 1.5;
+  }
+  .left {
+    text-align: center;
   }
 }/*# sourceMappingURL=console.css.map */
