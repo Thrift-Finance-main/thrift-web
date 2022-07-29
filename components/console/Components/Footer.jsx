@@ -1,6 +1,7 @@
 import React from 'react';
 
 import Image from 'next/image'
+import { AiFillGithub , AiFillTwitterCircle , AiFillInstagram } from 'react-icons/ai'
 
 function TheFooter() {
   return (
@@ -19,9 +20,9 @@ function TheFooter() {
                  width='100%' height='100%' />
               </div>
             </div>
-            <div className="text-sm text-gray-600">
+            {/* <div className="text-sm text-gray-600">
               <div to="#" className="text-gray-600 hover:text-gray-900 hover:underline transition duration-150 ease-in-out">Terms</div> · <div to="#" className="text-gray-600 hover:text-gray-900 hover:underline transition duration-150 ease-in-out">Privacy Policy</div>
-            </div>
+            </div> */}
           </div>
 
           {/* 2nd block */}
@@ -62,6 +63,29 @@ function TheFooter() {
         </div>
 
     
+
+        {/* Bottom area: Copyright */}
+        <div className={'flex-bottom black-text'}>
+
+        <div >
+           <p>© 2020 Appy. All rights reserved.</p>
+        </div>
+
+        <div >
+          <p>Privacy Policy  ·  Terms</p>
+        </div>
+
+        <div>
+          <ul className='flex white-text gap-4 justifyContent-right' >
+           <li >
+              <AiFillGithub size={'2em'}/>
+      
+           </li>
+           <li> <AiFillTwitterCircle size={'2em'}/></li>
+           <li><AiFillInstagram size={'2em'}/></li>
+          </ul>
+        </div>
+        </div>
 
       </div>
     </footer>

@@ -168,7 +168,7 @@ function TheHeader() {
             <ul className="flex justify-end flex-wrap items-center">
               <li>
                 <div to="/contact" className="btn-sm text-white  cursor-pointer ml-6 p-3 bg-purpled">
-                   Join Waitlist 
+                   App Comming Soon
                 </div>
               </li>
             </ul>
@@ -293,7 +293,7 @@ function TheHeader() {
                         to="/contact"
                         className="font-medium bg-purpled w-full inline-flex items-center justify-center border border-transparent px-4 py-2 my-2 rounded text-white bg-teal-500 hover:bg-teal-400 transition duration-150 ease-in-out"
                       >
-                        Join Waitlist
+                        App Comming Soon
                       </div>
                     </li>
                   </ul>

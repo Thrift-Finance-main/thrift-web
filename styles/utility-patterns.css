@@ -89,6 +89,9 @@
 .dark .black-text {
   @apply text-winter;
 }
+.dark .white-text {
+  @apply text-purpled;
+}
 .dark .other-here {
   @apply bg-primary text-white;
 }
