@@ -13,7 +13,7 @@ function FeaturesBlocks() {
 
           {/* Section header */}
           <div className="max-w-3xl mx-auto text-center pb-12 md:pb-20">
-            <h2 className="h2 dark-here mb-4 text-black">How it Works </h2>
+            <h2 className="h2 dark-here mb-4 text-black font-header ">How it Works </h2>
             <p className="text-xl text-gray-600 black-text">Track expenses, income, and create savings plan while growing your funds conviniently. Do these things plus more in a non-custodial wallet. You’re in control.</p>
           </div>
 

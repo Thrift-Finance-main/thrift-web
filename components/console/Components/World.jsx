@@ -10,7 +10,7 @@ function FeaturesWorld() {
 
           {/* Section header */}
           <div className="max-w-3xl mx-auto text-center pb-12 md:pb-16">
-            <h1 className="h2 mb-4 font-extrabold font-xl">Team</h1>
+            <h1 className="h2 mb-4 font-extrabold font-xl font-header">Team</h1>
             <p className="text-xl text-gray-600 black-text">Decentralized Team of experts with prident blockchain history</p>
           </div>
 

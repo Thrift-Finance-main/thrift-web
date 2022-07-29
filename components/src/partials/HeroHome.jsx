@@ -91,7 +91,7 @@ useEffect(() => {
                
               }}>
                                 {/* <h1 className="h1 dark-here lg:text-6xl mb-4  font-red-hat-display  font-top  show-white" data-aos="fade-down">Crypto Saving, made personal</h1> */}
-              <h1 className="h1 mb-5 text-3xl leading-9 font-extrabold dark-here font-extrabold tracking-tight text-gray-900 sm:text-4xl sm:leading-10"
+              <h1 className="h1 font-header  mb-5 text-3xl leading-9 font-extrabold dark-here font-extrabold tracking-tight text-gray-900 sm:text-4xl sm:leading-10"
                 data-aos="fade-down"
               >
                     Crypto saving,

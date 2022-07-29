@@ -11,9 +11,8 @@ function Timeline() {
 
           {/* Section header */}
           <div className="max-w-3xl mx-auto text-center pb-12 md:pb-20">
-            <h2 className="h2 font-red-hat-display mb-4 font-bold text-2xl">Road Map</h2>
-            <p className="text-xl text-gray-600 dark:text-gray-400">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
-                deserunt mollit anim id est.</p>
+            <h2 className="h2 font-red-hat-display mb-4 font-bold text-2xl font-header ">Road Map</h2>
+            <p className="text-xl text-gray-600 dark:text-gray-400">Track expenses, income, and create savings plan while growing your funds conviniently. Do these things plus more in a non-custodial wallet. You’re in control.</p>
           </div>
 
           {/* Section content */}

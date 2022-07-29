@@ -14,7 +14,7 @@ function TheCta() {
               {/* CTA content */}
               <div className="mb-6 lg:mr-16 lg:mb-0 text-center lg:text-left">
               
-                <p className="text-white text-lg opacity-75 text-4xl w-100">Get Notification</p>
+                <p className="text-white text-lg opacity-75 text-4xl w-100 font-header">Get Notification</p>
               </div>
 
               {/* CTA button */}
