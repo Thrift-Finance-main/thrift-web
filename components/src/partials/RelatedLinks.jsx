@@ -11,6 +11,7 @@ function RelatedLinks() {
 
           {/* Section header */}
           <div className="max-w-3xl mx-auto text-center pb-12 md:pb-20">
+            {/* eslint-disable-next-line react/no-unescaped-entities */}
             <h2 className="h2 font-red-hat-display">Can't find what you’re looking for?</h2>
           </div>
 
