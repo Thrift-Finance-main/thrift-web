@@ -8,25 +8,25 @@ input[type=range] {
     height: 6px;
     margin-top: ($range-thumb-size - 6px) * 0.5;
     margin-bottom: ($range-thumb-size - 6px) * 0.5;
-    --thumb-size: #{$range-thumb-size};  
+    --thumb-size: #{$range-thumb-size};
 
     &::-webkit-slider-thumb {
         appearance: none;
         -webkit-appearance: none;
         background-color: #000;
-        background-image: url("data:image/svg+xml,%3Csvg width='12' height='8' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M8 .5v7L12 4zM0 4l4 3.5v-7z' fill='%23FFF' fill-rule='nonzero'/%3E%3C/svg%3E");
+        background-image: url("data:image/svg+xml,%3Csvg width='12' height='8' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M8 .5v7L12 4zM0 4l4 3.5v-7z' fill='%23FFF' fillRule='nonzero'/%3E%3C/svg%3E");
         background-position: center;
         background-repeat: no-repeat;
         border: 0;
         border-radius: 50%;
         cursor: pointer;
         height: $range-thumb-size;
-        width: $range-thumb-size;            
+        width: $range-thumb-size;
     }
 
     &::-moz-range-thumb {
         background-color: #000;
-        background-image: url("data:image/svg+xml,%3Csvg width='12' height='8' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M8 .5v7L12 4zM0 4l4 3.5v-7z' fill='%23FFF' fill-rule='nonzero'/%3E%3C/svg%3E");
+        background-image: url("data:image/svg+xml,%3Csvg width='12' height='8' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M8 .5v7L12 4zM0 4l4 3.5v-7z' fill='%23FFF' fillRule='nonzero'/%3E%3C/svg%3E");
         background-position: center;
         background-repeat: no-repeat;
         border: 0;
@@ -36,10 +36,10 @@ input[type=range] {
         height: $range-thumb-size;
         width: $range-thumb-size;
     }
-    
+
     &::-ms-thumb {
         background-color: #000;
-        background-image: url("data:image/svg+xml,%3Csvg width='12' height='8' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M8 .5v7L12 4zM0 4l4 3.5v-7z' fill='%23FFF' fill-rule='nonzero'/%3E%3C/svg%3E");
+        background-image: url("data:image/svg+xml,%3Csvg width='12' height='8' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M8 .5v7L12 4zM0 4l4 3.5v-7z' fill='%23FFF' fillRule='nonzero'/%3E%3C/svg%3E");
         background-position: center;
         background-repeat: no-repeat;
         border: 0;
@@ -48,7 +48,7 @@ input[type=range] {
         height: $range-thumb-size;
         width: $range-thumb-size;
     }
-    
+
     &::-moz-focus-outer {
         border: 0;
     }
