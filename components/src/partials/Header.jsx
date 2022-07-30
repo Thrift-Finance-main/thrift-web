@@ -48,12 +48,12 @@ function TheHeader() {
       }
   });
 
-  
+
 
 
   useEffect(() => {
 
- 
+
     localStorage.setItem('dark-mode', darkMode)
     if (darkMode) {
       document.documentElement.classList.add('dark')
@@ -62,12 +62,12 @@ function TheHeader() {
       document.documentElement.classList.remove('dark')
       setDarken(true)
     }
-  }, [darkMode]); 
-  
- 
+  }, [darkMode]);
+
+
 
   return (
-    
+
     <header className="absolute w-full z-30 black-text">
       <div className="max-w-7xl mx-auto px-2 sm:px-6">
         <div className="flex items-center justify-between h-20">
@@ -78,7 +78,7 @@ function TheHeader() {
 
                 {/* check if dark mode is true  */}
                 {
-                  darken ? <Logo/> :  <Image width={'100%'} height={'50%'} src={'https://res.cloudinary.com/dhkccnvyn/image/upload/v1658767409/Logo_Thrift_Finance_white_1_2_1_xr9jzu.png'} />
+                  darken ? <Logo/> :  <img width={'100%'} height={'50%'} src={'https://res.cloudinary.com/dhkccnvyn/image/upload/v1658767409/Logo_Thrift_Finance_white_1_2_1_xr9jzu.png'} />
                 }
 
             </div>
@@ -133,7 +133,7 @@ function TheHeader() {
                 </li>
               </Dropdown>
             </ul>
-      
+
             {/* Desktop lights switch */}
             <div className="form-switch flex flex-col justify-center ml-3">
               <input
@@ -144,7 +144,7 @@ function TheHeader() {
                 checked={darkMode}
                 onChange={() => setDarkMode(!darkMode)}
               />
-            
+
 
             <label className="relative" htmlFor="light-switch-desktop">
                 <span
@@ -186,7 +186,7 @@ function TheHeader() {
                 checked={darkMode}
                 onChange={() => setDarkMode(!darkMode)}
               />
-              
+
 
 
               <label className="relative" htmlFor="light-switch-mobile">

@@ -10,7 +10,7 @@ function Hero() {
   const [darkPlay , setDarkPlay] = useState()
 
 
-  
+
 
 
   const [darkMode, setDarkMode] = useState(() => {
@@ -24,58 +24,58 @@ function Hero() {
       }
     }
 });
-  
+
 
 useEffect(() => {
 
- 
+
   localStorage.setItem('dark-mode', darkMode)
   if (darkMode) {
-   
+
     setDarken(false)
     console.log('dark mode')
   }
 
-}, [darkMode]); 
-  
+}, [darkMode]);
 
 
-  
+
+
 
   return (
     <section className='dark-here'>
-       
+
 
        <div className='absolute right-0'>
-      
+
        {
-          !darken  ?  
+          !darken  ?
             (
               <>
 
-            <Image
+            <img
           width='600%'
           height = '600%'
-          src='https://res.cloudinary.com/dhkccnvyn/image/upload/v1658768303/Oval_keoygc.png' /> 
+          src='https://res.cloudinary.com/dhkccnvyn/image/upload/v1658768303/Oval_keoygc.png' />
 
               </>
             )
-        
+
 
           :
 
           (
             <>
 
-          <Image
+          <img
           width='600%'
           height = '600%'
           src='https://res.cloudinary.com/dhkccnvyn/image/upload/v1658768696/Oval_1_supgtn.png' />
             </>
           )
         }
-       
-          
+
+
       </div>
       <div className="max-w-6xl mx-auto px-4 sm:px-6 ">
         <div className="pt-32 pb-10 md:pt-40 md:pb-16 topper">
@@ -84,11 +84,11 @@ useEffect(() => {
           <div className="md:grid md:grid-cols-12 md:gap-12 lg:gap-20 ">
 
 
-            
+
             {/* Content */}
             <div className="adjust md:col-span-7 lg:col-span-7 mb-8 md:mb-0 text-center md:text-left ">
               <div style={{
-               
+
               }}>
                                 {/* <h1 className="h1 dark-here lg:text-6xl mb-4  font-red-hat-display  font-top  show-white" data-aos="fade-down">Crypto Saving, made personal</h1> */}
               <h1 className="h1 font-header  mb-5 text-3xl leading-9 font-extrabold dark-here font-extrabold tracking-tight text-gray-900 sm:text-4xl sm:leading-10"
@@ -132,16 +132,16 @@ useEffect(() => {
               <div className='absolute left-20' style = {{
                 display : darkPlay
               }}>
-              <Image
+              <img
                  width='200%'
                 height = '300%'
                 src='https://res.cloudinary.com/dhkccnvyn/image/upload/v1658794005/Oval_lpwusi.svg' />
-                
+
               </div>
-              
+
             </div>
 
-            
+
 
             {/* Mobile mockup */}
             <div className="md:col-span-5 lg:col-span-5 text-center md:text-right" data-aos="fade-up" data-aos-delay="450">
@@ -168,7 +168,7 @@ useEffect(() => {
                 {/* Image inside mockup size: 290x624px (or 580x1248px for Retina devices) */}
 
                 {/* iPhone mockup */}
-                <Image className="relative dance max-w-full mx-auto md:mr-0 md:max-w-none h-auto pointer-events-none" src={'https://res.cloudinary.com/dhkccnvyn/image/upload/v1658348423/iPhone_12___12_Pro_f69cnq.svg'} width="344" height="674" alt="iPhone mockup" aria-hidden="true" />
+                <img className="relative dance max-w-full mx-auto md:mr-0 md:max-w-none h-auto pointer-events-none" src={'https://res.cloudinary.com/dhkccnvyn/image/upload/v1658348423/iPhone_12___12_Pro_f69cnq.svg'} width="344" height="674" alt="iPhone mockup" aria-hidden="true" />
                 {/* Play button */}
                 {/* <a className="absolute group" href="#0" onClick={(e) => { e.preventDefault(); e.stopPropagation(); setVideoModalOpen(true); }} aria-controls="modal">
                   <img src={PlayBtn} width="96" height="96" alt="Play" />
