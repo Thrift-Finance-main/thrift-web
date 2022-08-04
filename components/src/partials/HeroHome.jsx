@@ -169,10 +169,7 @@ useEffect(() => {
 
                 {/* iPhone mockup */}
                 <Image className="relative dance max-w-full mx-auto md:mr-0 md:max-w-none h-auto pointer-events-none" src={'https://res.cloudinary.com/dhkccnvyn/image/upload/v1658348423/iPhone_12___12_Pro_f69cnq.svg'} width="344" height="674" alt="iPhone mockup" aria-hidden="true" />
-                {/* Play button */}
-                {/* <a className="absolute group" href="#0" onClick={(e) => { e.preventDefault(); e.stopPropagation(); setVideoModalOpen(true); }} aria-controls="modal">
-                  <img src={PlayBtn} width="96" height="96" alt="Play" />
-                </a> */}
+        
               </div>
 
 
