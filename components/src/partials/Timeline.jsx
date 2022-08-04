@@ -5,7 +5,7 @@ function Timeline() {
   const [year, setYear] = useState('2020');
 
   return (
-    <section>
+    <section className='text-left'>
       <div className="max-w-6xl mx-auto px-4 sm:px-6 ">
         <div className="py-12 md:py-20 border-t dark-here border-gray-200 dark:border-gray-800">
 
@@ -16,7 +16,9 @@ function Timeline() {
           </div>
 
           {/* Section content */}
-          <div>
+          <div style={{
+            display: 'none'
+          }}>
             <div className="flex items-start">
 
               {/* Timeline buttons */}

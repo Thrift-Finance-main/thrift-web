@@ -17,9 +17,9 @@ function FeaturesWorld() {
 
           {/* World illustration */}
           <div className="flex flex-col items-center pt-12 md:pt-16">
-            <div className="relative">
+            {/* <div className="relative">
                   <Image src={'https://res.cloudinary.com/dhkccnvyn/image/upload/v1659129900/Globe_q8nbya.svg'} alt={'Team around the globe'} width='100%' height='100%'/>
-            </div>
+            </div> */}
           </div>
 
         </div>
