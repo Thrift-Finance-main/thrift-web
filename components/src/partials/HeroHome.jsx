@@ -10,7 +10,10 @@ function Hero() {
   const [darkPlay , setDarkPlay] = useState()
 
 
-  
+  //handle email 
+  const handleEmail = e => {
+      e.target.preventDefault()
+  }
 
 
   const [darkMode, setDarkMode] = useState(() => {
@@ -100,10 +103,10 @@ useEffect(() => {
               </div>
               <p className="text-xl black-text text-gray-600 dark:text-gray-400" data-aos="fade-down" data-aos-delay="150">Thrift RealFi wallet lets you easily save, invest, pay and manage your funds without giving up your privacy, asset’s ownership, security or your data. </p>
               {/* CTA form */}
-              <form className="mt-8" data-aos="fade-down" data-aos-delay="300">
+              <form className="mt-8" data-aos="fade-down" data-aos-delay="300" onSubmit={handleEmail}>
                 <div className="flex flex-col sm:flex-row justify-center max-w-sm mx-auto sm:max-w-md md:mx-0">
                   <input type="email" className="form-input w-full mb-2 sm:mb-0 sm:mr-2" placeholder="email address" aria-label="email address" />
-                  <a className="btn text-white bg-purpled hover:bg-teal-400 shrink-0" href="#0"> Join Waitlist  </a>
+                  <a className="btn text-white bg-purpled hover:bg-purpled shrink-0" href="#0"> Join Waitlist  </a>
                 </div>
                 {/* Success message */}
                 {/* <p className="text-center md:text-left mt-2 opacity-75 text-sm">Thanks for subscribing!</p> */}

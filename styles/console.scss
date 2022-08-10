@@ -5,6 +5,10 @@
     --header_font: 'Rai Text 1983 Lowercase';
 }
 
+body {
+    scroll-behavior: smooth !important;
+}
+
 .part {
     width: 100%;
 }
@@ -126,6 +130,7 @@
 }
 
 
+
 .topper {
    
 }
@@ -148,6 +153,12 @@
 
 //for small screens 
 @media screen and (max-width: 600px) {
+
+    .footer-foot {
+        flex-direction: column;
+        text-align: center;
+    }
+
     .p2p {
         width: 90%;
         height: 100%;
