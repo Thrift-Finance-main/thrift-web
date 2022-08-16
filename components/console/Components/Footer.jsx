@@ -3,7 +3,7 @@ import React from 'react';
 import Image from 'next/image'
 import { AiFillGithub , AiFillTwitterCircle , AiFillInstagram } from 'react-icons/ai'
 
-function TheFooter() {
+function TheFooter({darkM}) {
   return (
     <footer>
       <div className="max-w-6xl text-left dark-here mx-auto px-4 sm:px-6">

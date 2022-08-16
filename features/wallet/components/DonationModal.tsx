@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import toast from 'react-hot-toast'
 import { useAtom } from 'jotai'
 
-import { Modal } from '@components/shared/Modal'
+import { RModal } from '@components/shared/Modal'
 import { donateModalAtom } from '../atoms'
 import { useWallet } from '../useWallet'
 
@@ -28,7 +28,7 @@ export const DonationModal: React.FC = () => {
   }
 
   return (
-    <Modal
+    <RModal
       title="How much would you like to donate?"
       isOpen={isOpen}
       onClose={() => {
@@ -49,6 +49,6 @@ export const DonationModal: React.FC = () => {
           Donate
         </button>
       </div>
-    </Modal>
+    </RModal>
   )
 }

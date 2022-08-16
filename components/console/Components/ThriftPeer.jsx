@@ -1,5 +1,5 @@
 import Image from 'next/image'
-const ThriftPeer = () => {
+const ThriftPeer = ({darkM}) => {
     return (
         <>
 
