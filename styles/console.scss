@@ -1,5 +1,4 @@
 @import url(//db.onlinewebfonts.com/c/111775e1c5848e1d609ab1dbe2b4a0ec?family=Rai+Text+1983+Lowercase);
-//add animation 
 
 :root {
     --header_font: 'Rai Text 1983 Lowercase';
@@ -80,11 +79,11 @@ body {
     }
 }
 .map-items {
-     
+
     margin: 5em 0;
     color: black;
     font-weight: 300;
- 
+
     padding: 1em;
     text-align: center;
 
@@ -111,9 +110,9 @@ body {
     gap: 3em;
     justify-content: center;
     margin: 2em ;
-   
 
-    
+
+
 
 }
 
@@ -132,7 +131,7 @@ body {
 
 
 .topper {
-   
+
 }
 
 .adjust {
@@ -147,11 +146,10 @@ body {
     top: -4em;
     width: 90%;
     margin: 0 auto;
-    
+
 }
 
 
-//for small screens 
 @media screen and (max-width: 600px) {
 
     .footer-foot {
@@ -162,10 +160,9 @@ body {
     .p2p {
         width: 90%;
         height: 100%;
-       
+
     }
 
-    //team section for mobile phone 
     .item-team {
         flex-direction: column;
         align-items: center;
@@ -204,6 +201,5 @@ body {
         gap: 1em;
     }
 }
-
 
 

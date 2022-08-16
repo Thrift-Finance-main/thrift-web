@@ -47,10 +47,10 @@ const Team = () => {
 
             <div>
 
-              
-               
+
+
                <div className=" dark-here ">
-                    
+
                     <div className='item-team'>
                         {/* loop through items  */}
                     {
@@ -60,13 +60,13 @@ const Team = () => {
                                 <>
 
                                   <div>
-                                    <Image src={item.image}  
+                                    <img src={item.image}
                                         width={"80%"} height={"80%"}
                                     />
 
                                     <h6 className=' text-lg'>{item.name}</h6>
                                     <p className='text-primary'>{item.title}</p>
-                                  </div>  
+                                  </div>
 
                                 </>
                             )
@@ -76,7 +76,7 @@ const Team = () => {
                     </div>
 
                </div>
-                
+
             </div>
 
 

@@ -5,13 +5,14 @@ module.exports = {
   // images: {
   //   loader: 'akamai',
   //   path: '/',
+  //domains: [
+  //  'res.cloudinary.com'
+  //],
   // }
-  
+
   images: {
-    
-    domains: [
-      'res.cloudinary.com'
-    ],
+    loader: 'akamai',
+    path: '/',
   }
   ,
   webpack: (config, { buildId, dev, isServer, defaultLoaders, webpack }) => {

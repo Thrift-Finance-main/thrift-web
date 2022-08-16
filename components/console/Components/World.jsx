@@ -13,13 +13,13 @@ function FeaturesWorld() {
             <p className="text-xl text-gray-600 black-text">Decentralized Team of experts with prident blockchain history</p>
           </div>
 
-          
+
 
           {/* World illustration */}
           <div className="flex flex-col items-center pt-12 md:pt-16">
-            {/* <div className="relative">
-                  <Image src={'https://res.cloudinary.com/dhkccnvyn/image/upload/v1659129900/Globe_q8nbya.svg'} alt={'Team around the globe'} width='100%' height='100%'/>
-            </div> */}
+            <div className="relative">
+                  <img src={'https://res.cloudinary.com/dhkccnvyn/image/upload/v1659129900/Globe_q8nbya.svg'} alt={'Team around the globe'} width='100%' height='100%'/>
+            </div>
           </div>
 
         </div>

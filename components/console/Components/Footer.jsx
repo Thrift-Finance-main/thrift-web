@@ -16,7 +16,7 @@ function TheFooter() {
             <div className="mb-2">
               {/* Logo */}
               <div to="/" className="inline-block" aria-label="Cruip">
-                 <Image src='https://res.cloudinary.com/dhkccnvyn/image/upload/v1658915838/Logo_c44zln.png'
+                 <img src='https://res.cloudinary.com/dhkccnvyn/image/upload/v1658915838/Logo_c44zln.png'
                  width='100%' height='100%' />
               </div>
             </div>
@@ -38,7 +38,7 @@ function TheFooter() {
               <li className="mb-2">
               <div to="#" className="text-gray-600 hover:text-gray-900 shade transition duration-150 ease-in-out">FAQs</div>
               </li>
-                
+
             </ul>
           </div>
 
@@ -52,17 +52,17 @@ function TheFooter() {
               <li className="mb-2">
                 <div to="#" className="text-gray-600 hover:text-gray-900 transition duration-150 ease-in-out">Roadmap</div>
               </li>
-            
+
             </ul>
           </div>
 
-         
-           
-         
+
+
+
 
         </div>
 
-    
+
 
         {/* Bottom area: Copyright */}
         <div className={'flex-bottom black-text'}>
@@ -79,7 +79,7 @@ function TheFooter() {
           <ul className='flex white-text gap-4 justifyContent-right' >
            <li >
               <AiFillGithub size={'2em'}/>
-      
+
            </li>
            <li> <AiFillTwitterCircle size={'2em'}/></li>
            <li><AiFillInstagram size={'2em'}/></li>

@@ -45,7 +45,7 @@ function How() {
           {/* Top image */}
           <div className="pb-12 md:pb-16">
             {/* <Image src={'https://res.cloudinary.com/dhkccnvyn/image/upload/v1658349986/Group_18_xkayht.svg'} width="1104" height="325" alt="Features top" /> */}
-            <Image src={'https://res.cloudinary.com/dhkccnvyn/image/upload/v1658770646/Illustration_xpjge3.svg'} width="1104" height="325" alt="Features top" />
+            <img src={'https://res.cloudinary.com/dhkccnvyn/image/upload/v1658770646/Illustration_xpjge3.svg'} width="1104" height="325" alt="Features top" />
           </div>
 
           {/* Section content */}
@@ -121,7 +121,7 @@ function How() {
                   leaveEnd="opacity-0 -translate-y-16"
                 >
                   <div className="relative inline-flex flex-col">
-                    <Image className="md:max-w-none mx-auto rounded" src={'https://res.cloudinary.com/thrift-labs-team/image/upload/v1659087983/Thrift%20images/Base_2_fhzh6m.svg'} width="500" height="375" alt="Features bg" />
+                    <img className="md:max-w-none mx-auto rounded" src={'https://res.cloudinary.com/thrift-labs-team/image/upload/v1659087983/Thrift%20images/Base_2_fhzh6m.svg'} width="500" height="375" alt="Features bg" />
                     {/* <Image className="md:max-w-none absolute w-full left-0 transform animate-float" src={FeaturesElement01} width="500" height="147" alt="Element 01" style={{ top: '22%' }} /> */}
                     {/* <Image className="md:max-w-none absolute w-full left-0 transform animate-float animation-delay-500" src={FeaturesElement02} width="500" height="158" alt="Element 02" style={{ top: '39%' }} />
                     <Image className="md:max-w-none absolute w-full left-0 bottom-0 transform animate-float animation-delay-1000" src={FeaturesElement03} width="500" height="167" alt="Element 03" style={{ top: '77%' }} /> */}
@@ -140,7 +140,7 @@ function How() {
                   leaveEnd="opacity-0 -translate-y-16"
                 >
                   <div className="relative inline-flex flex-col">
-                    <Image className="md:max-w-none mx-auto rounded" src={'https://res.cloudinary.com/thrift-labs-team/image/upload/v1659019350/Thrift%20images/Base_pmgv7g.svg'} width="500" height="375" alt="Features bg" />
+                    <img className="md:max-w-none mx-auto rounded" src={'https://res.cloudinary.com/thrift-labs-team/image/upload/v1659019350/Thrift%20images/Base_pmgv7g.svg'} width="500" height="375" alt="Features bg" />
                     {/* <Image className="md:max-w-none absolute w-full left-0 bottom-0 transform animate-float animation-delay-1000" src={FeaturesElement03} width="500" height="167" alt="Element 03" style={{ top: '18%' }} />
                     // <Image className="md:max-w-none absolute w-full left-0 transform animate-float animation-delay-500" src={FeaturesElement02} width="500" height="158" alt="Element 02" style={{ top: '40%' }} /> */}
                      {/* <Image className="md:max-w-none absolute w-full left-0 transform animate-float" src={'https://res.cloudinary.com/thrift-labs-team/image/upload/v1659019778/Thrift%20images/Base_1_qcyybc.svg'} width="500" height="147" alt="Element 01" style={{ top: '79%' }} /> */}
@@ -159,7 +159,7 @@ function How() {
                   leaveEnd="opacity-0 -translate-y-16"
                 >
                   <div className="relative inline-flex flex-col">
-                    <Image className="md:max-w-none mx-auto rounded" src={'https://res.cloudinary.com/thrift-labs-team/image/upload/v1659019778/Thrift%20images/Base_1_qcyybc.svg'} width="500" height="375" alt="Features bg" />
+                    <img className="md:max-w-none mx-auto rounded" src={'https://res.cloudinary.com/thrift-labs-team/image/upload/v1659019778/Thrift%20images/Base_1_qcyybc.svg'} width="500" height="375" alt="Features bg" />
                     {/* <Image className="md:max-w-none absolute w-full left-0 transform animate-float" src={FeaturesElement01} width="500" height="147" alt="Element 01" style={{ top: '22%' }} />
                     <Image className="md:max-w-none absolute w-full left-0 transform animate-float animation-delay-500" src={FeaturesElement02} width="500" height="158" alt="Element 02" style={{ top: '39%' }} />
                     <Image className="md:max-w-none absolute w-full left-0 bottom-0 transform animate-float animation-delay-1000" src={FeaturesElement03} width="500" height="167" alt="Element 03" style={{ top: '77%' }} /> */}
