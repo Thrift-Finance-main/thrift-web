@@ -4,7 +4,7 @@ export const SAMPLE_ERROR = "SAMPLE_ERROR";
 export const SET_CONFIG = "SET_CONFIG";
 export const SET_CURRENT_ACCOUNT= "SET_CURRENT_ACCOUNT";
 export const SET_CURRENT_ROUTE= "SET_CURRENT_ROUTE";
-export const SET_LOGGED_STATUS= "SET_LOGGED_STATUS";
+export const SET_DARK_MODE= "SET_DARK_MODE";
 
 export const initialConfig = {
   darkMode: true,
@@ -52,6 +52,11 @@ const sampleReducer = (state = initialState, action:any) => {
 
     case SET_CURRENT_ROUTE:
       state.config.currentRoute = action.payload;
+      return state
+
+
+    case SET_DARK_MODE:
+      state.config.darkMode = action.payload;
       return state
 
     default:

@@ -3,15 +3,19 @@ import Modal from '../shared/Modal';
 
 
 import Image from 'next/image'
+import { useDispatch, useSelector } from 'react-redux'
 
 function Hero() {
 
+  const dispatch = useDispatch();
+
+  const storeState = useSelector((state) => state.reduxData);
+
+  console.log('storeState');
+  console.log(storeState);
+
   const [darken , setDarken] = useState(true)
   const [darkPlay , setDarkPlay] = useState()
-
-
-
-
 
   const [darkMode, setDarkMode] = useState(() => {
     //check if typeof windows is undefined
