@@ -1,7 +1,7 @@
 import React from 'react'
 import NextImage from 'next/image'
 import { useAtom } from 'jotai'
-import { Modal } from '@components/shared/Modal'
+import { RModal } from '@components/shared/Modal'
 import { config } from '@shared/config'
 import { selectWalletModalAtom } from '../atoms'
 import { useWallet } from '../useWallet'
@@ -15,7 +15,7 @@ export const SelectWalletModal: React.FC = () => {
   }
 
   return (
-    <Modal
+    <RModal
       title="Select Wallet"
       isOpen={isOpen}
       onClose={() => {
@@ -44,6 +44,6 @@ export const SelectWalletModal: React.FC = () => {
           </button>
         ))}
       </div>
-    </Modal>
+    </RModal>
   )
 }

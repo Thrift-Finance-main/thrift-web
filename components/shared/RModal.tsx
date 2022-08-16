@@ -7,7 +7,7 @@ type Props = {
   children: React.ReactNode
   title: string
 }
-export function Modal({ isOpen, onClose, children, title }: Props) {
+export function RModal({ isOpen, onClose, children, title }: Props) {
   return (
     <>
       <Transition appear show={isOpen} as={Fragment}>

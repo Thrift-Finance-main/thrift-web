@@ -1,5 +1,5 @@
 import React, { useState , useEffect } from 'react';
-import Modal from '../src/utils/Modal';
+import Modal from '../shared/Modal';
 
 
 import Image from 'next/image'

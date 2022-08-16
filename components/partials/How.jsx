@@ -1,5 +1,5 @@
 import React, { useState, useRef, useEffect } from 'react';
-import Transition from '../src/utils/Transition';
+import Transition from '../shared/Transition';
 function How() {
 
   const [tab, setTab] = useState(1);

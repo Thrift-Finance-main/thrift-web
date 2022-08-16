@@ -1,7 +1,7 @@
 import React, { useState, useRef, useEffect } from 'react';
 // import { div } from 'react-router-dom';
-import Dropdown from '../src/utils/Dropdown';
-import Transition from '../src/utils/Transition';
+import Dropdown from '../shared/Dropdown';
+import Transition from '../shared/Transition';
 import Logo from '../console/Components/Logo';
 import Image from 'next/image'
 function TheHeader() {
