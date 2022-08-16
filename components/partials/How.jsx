@@ -1,12 +1,5 @@
 import React, { useState, useRef, useEffect } from 'react';
 import Transition from '../src/utils/Transition';
-import Image from 'next/image'
-
-import FeaturesBg01 from '../src/images/features-home-bg-01.png';
-import FeaturesElement01 from '../src/images/features-home-element-01.png';
-import FeaturesElement02 from '../src/images/features-home-element-02.png';
-import FeaturesElement03 from '../src/images/features-home-element-03.png';
-
 function How() {
 
   const [tab, setTab] = useState(1);
