@@ -1,9 +1,9 @@
 import React from 'react';
 
-import TestimonialImage01 from '../images/testimonial-01.jpg';
-import TestimonialImage02 from '../images/testimonial-02.jpg';
-import TestimonialImage03 from '../images/testimonial-03.jpg';
-import TestimonialImage04 from '../images/testimonial-04.jpg';
+import TestimonialImage01 from '../src/images/testimonial-01.jpg';
+import TestimonialImage02 from '../src/images/testimonial-02.jpg';
+import TestimonialImage03 from '../src/images/testimonial-03.jpg';
+import TestimonialImage04 from '../src/images/testimonial-04.jpg';
 
 function Testimonials() {
   return (

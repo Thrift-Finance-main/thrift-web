@@ -1,9 +1,9 @@
 import React from 'react';
 
-import MockupImage02 from '../images/mockup-image-02.jpg';
-import MockupImage03 from '../images/mockup-image-03.jpg';
-import MockupImage04 from '../images/mockup-image-04.jpg';
-import IphoneMockup from '../images/iphone-mockup.png';
+import MockupImage02 from '../src/images/mockup-image-02.jpg';
+import MockupImage03 from '../src/images/mockup-image-03.jpg';
+import MockupImage04 from '../src/images/mockup-image-04.jpg';
+import IphoneMockup from '../src/images/iphone-mockup.png';
 
 function Process() {
   return (

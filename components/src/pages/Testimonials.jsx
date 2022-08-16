@@ -1,13 +1,13 @@
 import React from 'react';
 
-import Header from '../partials/Header';
-import HeroTestimonials from '../partials/HeroTestimonials';
-import Clients from '../partials/Clients';
-import VideoTestimonial from '../partials/VideoTestimonial';
-import TestimonialsCarousel from '../partials/TestimonialsCarousel';
-import TestimonialsCircles from '../partials/TestimonialsCircles';
-import Cta from '../partials/Cta';
-import Footer from '../partials/Footer';
+import Header from '../../partials/Header';
+import HeroTestimonials from '../../partials/HeroTestimonials';
+import Clients from '../../partials/Clients';
+import VideoTestimonial from '../../partials/VideoTestimonial';
+import TestimonialsCarousel from '../../partials/TestimonialsCarousel';
+import TestimonialsCircles from '../../partials/TestimonialsCircles';
+import Cta from '../../partials/Cta';
+import Footer from '../../partials/Footer';
 
 function Testimonials() {
   return (

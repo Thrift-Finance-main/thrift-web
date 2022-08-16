@@ -1,10 +1,10 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-import RelatedImage01 from '../images/related-post-01.jpg';
-import RelatedImage02 from '../images/related-post-02.jpg';
-import Author01 from '../images/news-author-04.jpg';
-import Author02 from '../images/news-author-03.jpg';
+import RelatedImage01 from '../src/images/related-post-01.jpg';
+import RelatedImage02 from '../src/images/related-post-02.jpg';
+import Author01 from '../src/images/news-author-04.jpg';
+import Author02 from '../src/images/news-author-03.jpg';
 
 function RelatedPosts() {
   return (

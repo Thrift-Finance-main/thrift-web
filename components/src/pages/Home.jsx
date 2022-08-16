@@ -1,17 +1,17 @@
 import React from 'react';
 
-import Header from '../partials/Header';
-import PageIllustration from '../partials/PageIllustration';
-import HeroHome from '../partials/HeroHome';
-import Stats from '../partials/Stats';
-import Carousel from '../partials/Carousel';
-import Tabs from '../partials/Tabs';
-import Process from '../partials/Process';
-import PricingTables from '../partials/PricingTables';
-import TestimonialsBlocks from '../partials/TestimonialsBlocks';
-import FeaturesBlocks from '../partials/FeaturesBlocks';
-import Cta from '../partials/Cta';
-import Footer from '../partials/Footer';
+import Header from '../../partials/Header';
+import PageIllustration from '../../partials/PageIllustration';
+import HeroHome from '../../partials/HeroHome';
+import Stats from '../../partials/Stats';
+import Carousel from '../../partials/Carousel';
+import Tabs from '../../partials/Tabs';
+import Process from '../../partials/Process';
+import PricingTables from '../../partials/PricingTables';
+import TestimonialsBlocks from '../../partials/TestimonialsBlocks';
+import FeaturesBlocks from '../../partials/FeaturesBlocks';
+import Cta from '../../partials/Cta';
+import Footer from '../../partials/Footer';
 
 function Home() {
   return (

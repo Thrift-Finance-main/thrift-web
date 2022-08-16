@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-import HeroBg from '../images/hero-bg-02.jpg';
+import HeroBg from '../src/images/hero-bg-02.jpg';
 
 function HeroTestimonials() {
   return (

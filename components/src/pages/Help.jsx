@@ -1,11 +1,11 @@
 import React from 'react';
 
-import Header from '../partials/Header';
-import PageIllustration from '../partials/PageIllustration';
-import HeroHelp from '../partials/HeroHelp';
-import HelpList from '../partials/HelpList';
-import RelatedLinks from '../partials/RelatedLinks';
-import Footer from '../partials/Footer';
+import Header from '../../partials/Header';
+import PageIllustration from '../../partials/PageIllustration';
+import HeroHelp from '../../partials/HeroHelp';
+import HelpList from '../../partials/HelpList';
+import RelatedLinks from '../../partials/RelatedLinks';
+import Footer from '../../partials/Footer';
 
 function Help() {
 

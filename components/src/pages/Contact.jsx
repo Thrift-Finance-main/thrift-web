@@ -1,8 +1,8 @@
 import React from 'react';
 
-import Header from '../partials/Header';
-import PageIllustration from '../partials/PageIllustration';
-import Footer from '../partials/Footer';
+import Header from '../../partials/Header';
+import PageIllustration from '../../partials/PageIllustration';
+import Footer from '../../partials/Footer';
 
 function Contact() {
   return (

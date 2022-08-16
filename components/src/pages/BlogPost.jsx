@@ -1,9 +1,9 @@
 import React from 'react';
 
-import Header from '../partials/Header';
-import RelatedPosts from '../partials/RelatedPosts';
-import BlogSingle from '../partials/BlogSingle';
-import Footer from '../partials/Footer';
+import Header from '../../partials/Header';
+import RelatedPosts from '../../partials/RelatedPosts';
+import BlogSingle from '../../partials/BlogSingle';
+import Footer from '../../partials/Footer';
 
 function BlogPost() {
   return (

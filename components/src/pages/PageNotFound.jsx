@@ -1,9 +1,9 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-import Header from '../partials/Header';
-import PageIllustration from '../partials/PageIllustration';
-import Footer from '../partials/Footer';
+import Header from '../../partials/Header';
+import PageIllustration from '../../partials/PageIllustration';
+import Footer from '../../partials/Footer';
 
 import NotFoundImage from '../images/404.jpg';
 
