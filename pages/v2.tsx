@@ -2,7 +2,7 @@ import type { NextPage } from 'next'
 import { useAOS } from '../hooks/useAOS'
 import { useEffect, useRef, useState } from 'react'
 import { RustModule } from '@lib/rust-module'
-import { Layout } from '@components/console/Layout/Layout'
+import Head from 'next/head'
 import { Home } from '@components/console/Home/Home'
 import { useDispatch, useSelector } from "react-redux";
 import {
@@ -10,6 +10,15 @@ import {
 } from '../constants'
 import { setCurrRoute } from '../store/actions/sampleAction'
 import { getObj } from '../db/LocalStorage'
+import { Header } from '@components/shared/Header'
+import { Hero } from '@components/home/Hero/Hero'
+import { AboutPool } from '@components/home/about-pool/AboutPool'
+import News from '@components/home/News'
+import { BlockchainInsights } from '@components/home/BlockchainInsights'
+import { AboutCardano } from '@components/home/AboutCardano'
+import { Footer } from '@components/shared/Footer'
+import { Foot } from '@components/home/Foot'
+import { HeroV2 } from '@components/v2/HeroV2'
 
 const Console: NextPage = () => {
   const dispatch = useDispatch();
@@ -63,9 +72,26 @@ const Console: NextPage = () => {
   }, [currentRoute])
 
   return (
-    <Layout navigateTo={(route:string) => navigateTo(route)}>
-      {renderMain()}
-    </Layout>
+    <div>
+
+      <Head>
+        <title>Thrift Finance</title>
+      </Head>
+
+      <Header />
+
+      <main>
+        <HeroV2 />
+
+        <AboutPool />
+
+        <AboutCardano />
+
+        <News />
+
+        <Foot />
+      </main>
+    </div>
   )
 }
 
