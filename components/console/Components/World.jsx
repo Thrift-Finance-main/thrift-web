@@ -1,6 +1,5 @@
 import React from 'react';
 import Image from 'next/image';
-import Globe from './Globe.svg'
 
 function FeaturesWorld() {
   return (
@@ -10,16 +9,16 @@ function FeaturesWorld() {
 
           {/* Section header */}
           <div className="max-w-3xl mx-auto text-center pb-12 md:pb-16">
-            <h1 className="h2 mb-4 font-extrabold font-xl">Team</h1>
-            <p className="text-xl text-gray-600">Decentralized Team of experts with prident blockchain history</p>
+            <h1 className="h2 mb-4 font-extrabold font-xl font-header">Team</h1>
+            <p className="text-xl text-gray-600 black-text">Decentralized Team of experts with prident blockchain history</p>
           </div>
 
-          
+
 
           {/* World illustration */}
           <div className="flex flex-col items-center pt-12 md:pt-16">
             <div className="relative">
-                  <Image src={Globe} alt={'Team around the globe'}/>
+                  <img src={'https://res.cloudinary.com/dhkccnvyn/image/upload/v1659129900/Globe_q8nbya.svg'} alt={'Team around the globe'} width='100%' height='100%'/>
             </div>
           </div>
 

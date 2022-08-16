@@ -7,19 +7,28 @@ function TheCta() {
         <div className="pb-12 md:pb-20">
 
           {/* CTA box */}
-          <div className="bg-primary rounded py-10 px-8 md:py-16 md:px-12 shadow-2xl" data-aos="zoom-y-out">
+          <div className="bg-primary dark-here rounded py-10 px-8 md:py-16 md:px-12 shadow-2xl" data-aos="zoom-y-out">
 
-            <div className="flex flex-col lg:flex-row justify-between items-center">
+            <div className="flex gap-2 flex-col lg:flex-row justify-between items-center">
 
               {/* CTA content */}
               <div className="mb-6 lg:mr-16 lg:mb-0 text-center lg:text-left">
               
-                <p className="text-white text-lg opacity-75 text-4xl w-100">Free until you’re ready to launch</p>
+                <p className="text-white text-lg opacity-75 text-4xl w-100 font-header">Get Notification</p>
               </div>
 
               {/* CTA button */}
+              <form>
+                  <input type={"email"} className={' py-2 rounded-lg dark-here '} 
+                    placeholder={'Email Address'}
+                  />
+               </form>
               <div>
-                <a className="btn text-primary bg-gradient-to-r from-blue-100 to-white" href="#0">Get started for free</a>
+
+              <div className="btn-sm text-white btn-sm  cursor-pointer   bg-purpled">
+                   Join Waitlist 
+               </div>
+                
               </div>
 
             </div>

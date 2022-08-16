@@ -2,10 +2,10 @@ import React from 'react';
 
 function FeaturesBlocks() {
   return (
-    <section className="relative">
+    <section className="relative dark-here ">
 
       {/* Section background (needs .relative class on parent and next sibling elements) */}
-      <div className="absolute inset-0 top-1/2 md:mt-24 lg:mt-0 bg-gray-900 pointer-events-none" aria-hidden="true"></div>
+      <div className="absolute inset-0 top-1/2 md:mt-24 lg:mt-0 bg-gray-900 other-here pointer-events-none" aria-hidden="true"></div>
       <div className="absolute left-0 right-0 bottom-0 m-auto w-px p-px h-20 bg-gray-200 transform translate-y-1/2"></div>
 
       <div className="relative max-w-6xl mx-auto px-4 sm:px-6">
@@ -13,15 +13,15 @@ function FeaturesBlocks() {
 
           {/* Section header */}
           <div className="max-w-3xl mx-auto text-center pb-12 md:pb-20">
-            <h2 className="h2 mb-4 text-black">How it Works </h2>
-            <p className="text-xl text-gray-600">Track expenses, income, and create savings plan while growing your funds conviniently. Do these things plus more in a non-custodial wallet. You’re in control.</p>
+            <h2 className="h2 dark-here mb-4 text-black font-header ">How it Works </h2>
+            <p className="text-xl text-gray-600 black-text">Track expenses, income, and create savings plan while growing your funds conviniently. Do these things plus more in a non-custodial wallet. You’re in control.</p>
           </div>
 
           {/* Items */}
-          <div className="max-w-sm mx-auto grid gap-6 md:grid-cols-2 lg:grid-cols-3 items-start md:max-w-2xl lg:max-w-none">
+          <div className="max-w-sm mx-auto grid  gap-6 md:grid-cols-2 lg:grid-cols-3 items-start md:max-w-2xl lg:max-w-none">
 
             {/* 1st item */}
-            <div className="relative flex flex-col items-center p-6 bg-white rounded shadow-xl">
+            <div className="relative flex  flex-col items-center p-6  bg-white box-gradient  rounded shadow-xl">
               <svg className="w-16 h-16 p-1 -mt-1 mb-2" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
                 <g fill="none" fillRule="evenodd">
                   <rect className="fill-current text-primary" width="64" height="64" rx="32" />
@@ -34,12 +34,13 @@ function FeaturesBlocks() {
                 </g>
               </svg>
               <h4 className="text-xl font-bold leading-snug tracking-tight mb-1">SmartFi</h4>
-              <p className="text-gray-600 text-center">Manage and analyze your personal finances better and easier
-</p>
+              <p className="text-gray-600 text-center black-text">Manage and analyze your personal finances better and easier
+              </p>
+              <p className={'invisible'}> Thrift.</p>
             </div>
 
             {/* 2nd item */}
-            <div className="relative flex flex-col items-center p-6 bg-white rounded shadow-xl">
+            <div className="relative flex flex-col items-center box-gradient p-6 bg-white rounded shadow-xl">
               <svg className="w-16 h-16 p-1 -mt-1 mb-2" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
                 <g fill="none" fillRule="evenodd">
                   <rect className="fill-current text-primary" width="64" height="64" rx="32" />
@@ -51,11 +52,11 @@ function FeaturesBlocks() {
                 </g>
               </svg>
               <h4 className="text-xl font-bold leading-snug tracking-tight mb-1">Governance</h4>
-              <p className="text-gray-600 text-center">Through voting rights, the community governs, maintains, and upgrades Thrift.</p>
+              <p className="text-gray-600 text-center black-text">Through voting rights, the community governs, maintains, and upgrades Thrift.</p>
             </div>
 
             {/* 3rd item */}
-            <div className="relative flex flex-col items-center p-6 bg-white rounded shadow-xl">
+            <div className="relative flex flex-col items-center box-gradient  p-6 bg-white rounded shadow-xl">
               <svg className="w-16 h-16 p-1 -mt-1 mb-2" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
                 <g fill="none" fillRule="evenodd">
                   <rect className="fill-current text-primary" width="64" height="64" rx="32" />
@@ -68,11 +69,12 @@ function FeaturesBlocks() {
                 </g>
               </svg>
               <h4 className="text-xl font-bold leading-snug tracking-tight mb-1">Stable Currency</h4>
-              <p className="text-gray-600 text-center">save in stable currency, stay ahead of the curve, and secure your future</p>
+              <p className="text-gray-600 text-center black-text">save in stable currency, stay ahead of the curve, and secure your future</p>
+              <p className={'invisible'}> Thrift.</p>
             </div>
 
             {/* 4th item */}
-            <div className="relative flex flex-col items-center p-6 bg-white rounded shadow-xl">
+            <div className="relative flex flex-col box-gradient  items-center p-6 bg-white rounded shadow-xl">
               <svg className="w-16 h-16 p-1 -mt-1 mb-2" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
                 <g fill="none" fillRule="evenodd">
                   <rect className="fill-current text-primary" width="64" height="64" rx="32" />
@@ -85,11 +87,14 @@ function FeaturesBlocks() {
                 </g>
               </svg>
               <h4 className="text-xl font-bold leading-snug tracking-tight mb-1">Decentralized Digital Identity</h4>
-              <p className="text-gray-600 text-center">Own your identity</p>
+              <p className="text-gray-600 text-center black-text">Own your identity</p>
+              <p className={'invisible'}> Thrift.</p>
+              <p className={'invisible'}> Thrift.</p>
+              <p className={'invisible'}> Thrift.</p>
             </div>
 
             {/* 5th item */}
-            <div className="relative flex flex-col items-center p-6 bg-white rounded shadow-xl">
+            <div className="relative flex box-gradient  flex-col items-center p-6 bg-white rounded shadow-xl">
               <svg className="w-16 h-16 p-1 -mt-1 mb-2" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
                 <g fill="none" fillRule="evenodd">
                   <rect className="fill-current text-primary" width="64" height="64" rx="32" />
@@ -101,11 +106,13 @@ function FeaturesBlocks() {
                 </g>
               </svg>
               <h4 className="text-xl font-bold leading-snug tracking-tight mb-1">Digital Agregation</h4>
-              <p className="text-gray-600 text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+              <p className="text-gray-600 text-center black-text">Trustless access to DeFi services and platforms. </p>
+              <p className={'invisible'}> Thrift.</p>
+              <p className={'invisible'}> Thrift.</p>
             </div>
 
             {/* 6th item */}
-            <div className="relative flex flex-col items-center p-6 bg-white rounded shadow-xl">
+            <div className="relative box-gradient  flex flex-col items-center p-6 bg-white rounded shadow-xl">
               <svg className="w-16 h-16 p-1 -mt-1 mb-2" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
                 <g fill="none" fillRule="evenodd">
                   <rect className="fill-current text-primary" width="64" height="64" rx="32" />
@@ -116,7 +123,8 @@ function FeaturesBlocks() {
                 </g>
               </svg>
               <h4 className="text-xl font-bold leading-snug tracking-tight mb-1">Seamless UI/UX</h4>
-              <p className="text-gray-600 text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+              <p className="text-gray-600 text-center black-text">No matter your background, you can use Thrift RealFi Wallet, it’s that simple.</p>
+              <p className={'invisible'}> Thrift.</p>
             </div>
 
           </div>

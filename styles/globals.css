@@ -25,7 +25,7 @@ html {
 
 * {
   padding: 0 ;
-  margin : 0  ;  
+  margin : 0  ;
 
   box-sizing: border-box;
 }
@@ -35,14 +35,14 @@ html {
   background: rgba(0, 8, 45, 1) !important;
   padding: 0 ;
   margin : 0  !important;
-  
+
 
 }
 
 /* main {
   position: relative;
   overflow: hidden;
-} */ */
+} */
 
 button:focus,
 a:focus {
@@ -53,8 +53,9 @@ a {
   color: var(--c-main);
 }
 
+
 /* .header {
-  
+
   position: fixed;
   top: 0;
   left: 0;
@@ -221,6 +222,8 @@ a {
     rgba(0, 8, 45, 1) 90%
   );
 }
+
+
 
 .about,
 .features,

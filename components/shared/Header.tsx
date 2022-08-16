@@ -7,7 +7,7 @@ import {
   ConnectWallet,
   useRestoreWallet,
 } from '@features/wallet'
-
+import Image from 'next/image'
 export const Header: React.FC = () => {
   const [isSticky, setSticky] = useState(false)
 
@@ -41,9 +41,8 @@ export const Header: React.FC = () => {
             <Link href="/" passHref>
               <a>
                 <div className="logo-box flex items-center justify-center">
-                  <img
+                  <Image
                     className="rounded-circle mr-8"
-                    style={{ width: 48, height: 48 }}
                     src="/logo192.png"
                     alt="Cardano Fans Staking Pool - Logo"
                   />

@@ -17,6 +17,7 @@ function HeroTestimonials() {
         <div className="pt-32 pb-12 md:pt-40 md:pb-20">
           <div className="max-w-3xl mx-auto text-center">
             <h1 className="h1 font-red-hat-display mb-4" data-aos="fade-down">Smart teams trust Appy to build killer websites</h1>
+            {/* eslint-disable-next-line react/no-unescaped-entities */}
             <p className="text-xl text-gray-600 dark:text-gray-400" data-aos="fade-down" data-aos-delay="150">Our customers are building some of the world's most original, useful and
                 loved products.</p>
             <div className="mt-8" data-aos="fade-down" data-aos-delay="300">

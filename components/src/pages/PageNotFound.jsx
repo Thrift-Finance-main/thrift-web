@@ -30,6 +30,7 @@ function PageNotFound() {
                   <img className="hidden sm:block opacity-50 md:opacity-80" src={NotFoundImage} width="768" height="432" alt="404" />
                   <div className="hidden sm:block absolute inset-0 bg-gradient-to-t from-white dark:from-gray-900" aria-hidden="true"></div>
                   <div className="sm:absolute w-full">
+                    {/* eslint-disable-next-line react/no-unescaped-entities */}
                     <h1 className="h3 font-red-hat-display mb-8">Hm, the page you were looking for doesn't exist anymore.</h1>
                     <Link className="btn text-white bg-teal-500 hover:bg-teal-400 inline-flex items-center" to="/">
                       <span>Back to Appy</span>
