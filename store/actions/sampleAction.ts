@@ -5,6 +5,7 @@ import {
   SET_CURRENT_ACCOUNT,
   SET_CURRENT_ROUTE, SET_DARK_MODE,
 } from '../reducers/sampleReducer'
+import { storeData, storeObj } from '../../db/LocalStorage'
 
 export const setConfig = (config:any) => async (dispatch:any) => {
   try {
@@ -45,12 +46,14 @@ export const setCurrRoute = (currentRoute:string) => async (dispatch:any) => {
     });
   }
 };
-export const setDarkMode = (darkMode:string) => async (dispatch:any) => {
+export const setDarkMode = (darkMode:boolean) => async (dispatch:any) => {
   try {
     dispatch({
       type: SET_DARK_MODE,
       payload: darkMode,
     });
+    // Set value in local storage
+    await storeData(SET_DARK_MODE, darkMode );
   } catch (error) {
     dispatch({
       type: SAMPLE_ERROR,

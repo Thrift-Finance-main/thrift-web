@@ -7,7 +7,7 @@ export const SET_CURRENT_ROUTE= "SET_CURRENT_ROUTE";
 export const SET_DARK_MODE= "SET_DARK_MODE";
 
 export const initialConfig = {
-  darkMode: true,
+  darkMode: false,
   lan: 'en',
   lastAction: '',
   currentRoute: 'login',
@@ -54,9 +54,9 @@ const sampleReducer = (state = initialState, action:any) => {
       state.config.currentRoute = action.payload;
       return state
 
-
     case SET_DARK_MODE:
       state.config.darkMode = action.payload;
+      console.log(state.config.darkMode);
       return state
 
     default:

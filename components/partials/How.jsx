@@ -1,6 +1,11 @@
 import React, { useState, useRef, useEffect } from 'react';
 import Transition from '../shared/Transition';
+import { useSelector } from 'react-redux'
 function How() {
+
+  const storeState = useSelector((state) => state.reduxData);
+
+  const [darken , _] = useState(storeState.config.darkMode)
 
   const [tab, setTab] = useState(1);
 
@@ -17,8 +22,7 @@ function How() {
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [tab])
 
-  console.log('tab');
-  console.log(tab);
+
   return (
     <section className="relative">
 

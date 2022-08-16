@@ -4,13 +4,19 @@ import Dropdown from '../shared/Dropdown';
 import Transition from '../shared/Transition';
 import Logo from '../console/Components/Logo';
 import Image from 'next/image'
+import { useDispatch, useSelector } from 'react-redux'
+import { setDarkMode } from '../../store/actions/sampleAction'
 function TheHeader() {
+
+  const dispatch = useDispatch();
+
+  const storeState = useSelector((state) => state.reduxData);
+  const [darken , setDarken] = useState(storeState.config.darkMode);
 
   const [mobileNavOpen, setMobileNavOpen] = useState(false);
 
   const trigger = useRef(null);
   const mobileNav = useRef(null);
-  const [darken , setDarken] = useState(true)
 
   // close the mobile menu on click outside
   useEffect(() => {
@@ -33,38 +39,24 @@ function TheHeader() {
     return () => document.removeEventListener('keydown', keyHandler);
   });
 
-
-
-         // Handle light modes
-  const [darkMode, setDarkMode] = useState(() => {
-      //check if typeof windows is undefined
-      if (typeof window !== 'undefined') {
-        const dark = localStorage.getItem('dark-mode');
-        if (dark === null) {
-          return true;
-        } else {
-          return dark === 'true';
-        }
-      }
-  });
-
-
-
-
   useEffect(() => {
 
-
-    localStorage.setItem('dark-mode', darkMode)
-    if (darkMode) {
+    if (darken) {
       document.documentElement.classList.add('dark')
-      setDarken(false)
     } else {
       document.documentElement.classList.remove('dark')
-      setDarken(true)
     }
-  }, [darkMode]);
+  }, [darken]);
 
 
+  const handleDarkMode = (darkMode) => {
+
+    console.log('handleDarkMode');
+    console.log(darkMode);
+    setDarken(darkMode);
+    // @ts-ignore
+    dispatch(setDarkMode(darkMode));
+  }
 
   return (
 
@@ -78,7 +70,7 @@ function TheHeader() {
 
                 {/* check if dark mode is true  */}
                 {
-                  darken ? <Logo/> :  <img width={'100%'} height={'50%'} src={'https://res.cloudinary.com/dhkccnvyn/image/upload/v1658767409/Logo_Thrift_Finance_white_1_2_1_xr9jzu.png'} />
+                  !darken ? <Logo/> :  <img width={'100%'} height={'50%'} src={'https://res.cloudinary.com/dhkccnvyn/image/upload/v1658767409/Logo_Thrift_Finance_white_1_2_1_xr9jzu.png'} />
                 }
 
             </div>
@@ -141,10 +133,9 @@ function TheHeader() {
                 name="light-switch"
                 id="light-switch-desktop"
                 className="light-switch sr-only"
-                checked={darkMode}
-                onChange={() => setDarkMode(!darkMode)}
+                checked={darken}
+                onChange={() => handleDarkMode(!darken)}
               />
-
 
             <label className="relative" htmlFor="light-switch-desktop">
                 <span
@@ -168,7 +159,7 @@ function TheHeader() {
             <ul className="flex justify-end flex-wrap items-center">
               <li>
                 <div to="/contact" className="btn-sm text-white  cursor-pointer ml-6 p-3 bg-purpled">
-                   App Comming Soon
+                   App Coming Soon
                 </div>
               </li>
             </ul>
@@ -183,11 +174,9 @@ function TheHeader() {
                 name="light-switch"
                 id="light-switch-mobile"
                 className="light-switch sr-only"
-                checked={darkMode}
-                onChange={() => setDarkMode(!darkMode)}
+                checked={darken}
+                onChange={() => setDarkMode(!darken)}
               />
-
-
 
               <label className="relative" htmlFor="light-switch-mobile">
                 <span

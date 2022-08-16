@@ -1,50 +1,14 @@
 import React, { useState , useEffect } from 'react';
-import Modal from '../shared/Modal';
 
-
-import Image from 'next/image'
 import { useDispatch, useSelector } from 'react-redux'
 
 function Hero() {
-
-  const dispatch = useDispatch();
-
   const storeState = useSelector((state) => state.reduxData);
 
   console.log('storeState');
   console.log(storeState);
 
-  const [darken , setDarken] = useState(true)
-  const [darkPlay , setDarkPlay] = useState()
-
-  const [darkMode, setDarkMode] = useState(() => {
-    //check if typeof windows is undefined
-    if (typeof window !== 'undefined') {
-      const dark = localStorage.getItem('dark-mode');
-      if (dark) {
-        return true;
-      } else {
-        return dark === 'true';
-      }
-    }
-});
-
-
-useEffect(() => {
-
-
-  localStorage.setItem('dark-mode', darkMode)
-  if (darkMode) {
-
-    setDarken(false)
-    console.log('dark mode')
-  }
-
-}, [darkMode]);
-
-
-
-
+  const [darken , _] = useState(storeState.config.darkMode)
 
   return (
     <section className='dark-here'>
@@ -134,7 +98,7 @@ useEffect(() => {
               </ul>
 
               <div className='absolute left-20' style = {{
-                display : darkPlay
+                display : darken
               }}>
               <img
                  width='200%'
