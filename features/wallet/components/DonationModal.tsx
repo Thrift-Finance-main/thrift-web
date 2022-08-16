@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import toast from 'react-hot-toast'
 import { useAtom } from 'jotai'
 
-import { RModal } from '@components/shared/Modal'
+import { RModal } from '@components/shared/RModal'
 import { donateModalAtom } from '../atoms'
 import { useWallet } from '../useWallet'
 

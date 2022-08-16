@@ -1,7 +1,7 @@
 import React from 'react'
 import NextImage from 'next/image'
 import { useAtom } from 'jotai'
-import { RModal } from '@components/shared/Modal'
+import { RModal } from '@components/shared/RModal'
 import { config } from '@shared/config'
 import { selectWalletModalAtom } from '../atoms'
 import { useWallet } from '../useWallet'
