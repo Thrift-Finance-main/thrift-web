@@ -1,6 +1,6 @@
 import React from 'react';
 
-function TheCta() {
+function TheCta({darkM}) {
   return (
     <section>
       <div className="max-w-6xl mx-auto px-4 sm:px-6">
@@ -13,22 +13,22 @@ function TheCta() {
 
               {/* CTA content */}
               <div className="mb-6 lg:mr-16 lg:mb-0 text-center lg:text-left">
-              
+
                 <p className="text-white text-lg opacity-75 text-4xl w-100 font-header">Get Notification</p>
               </div>
 
               {/* CTA button */}
               <form>
-                  <input type={"email"} className={' py-2 rounded-lg dark-here '} 
+                  <input type={"email"} className={' py-2 rounded-lg dark-here '}
                     placeholder={'Email Address'}
                   />
                </form>
               <div>
 
               <div className="btn-sm text-white btn-sm  cursor-pointer   bg-purpled">
-                   Join Waitlist 
+                   Join Waitlist
                </div>
-                
+
               </div>
 
             </div>

@@ -1,5 +1,5 @@
 import Image from 'next/image'
-const Partners = () => {
+const Partners = ({darkM}) => {
     return (
         <>
 

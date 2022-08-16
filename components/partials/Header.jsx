@@ -6,7 +6,7 @@ import Logo from '../console/Components/Logo';
 import Image from 'next/image'
 import { useDispatch, useSelector } from 'react-redux'
 import { setDarkMode } from '../../store/actions/sampleAction'
-function TheHeader() {
+function TheHeader({setDarkModeProp}) {
 
   const dispatch = useDispatch();
 
@@ -56,6 +56,7 @@ function TheHeader() {
     setDarken(darkMode);
     // @ts-ignore
     dispatch(setDarkMode(darkMode));
+    setDarkModeProp(darkMode)
   }
 
   return (

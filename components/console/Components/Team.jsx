@@ -1,6 +1,6 @@
 
 import Image from 'next/image'
-const Team = () => {
+const Team = ({darkM}) => {
 
     const team = [
         {

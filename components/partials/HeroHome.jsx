@@ -2,14 +2,7 @@ import React, { useState , useEffect } from 'react';
 
 import { useDispatch, useSelector } from 'react-redux'
 
-function Hero() {
-  const storeState = useSelector((state) => state.reduxData);
-
-  console.log('storeState');
-  console.log(storeState);
-
-  const [darken , _] = useState(storeState.config.darkMode)
-
+function Hero({darkM}) {
   return (
     <section className='dark-here'>
 
@@ -17,7 +10,7 @@ function Hero() {
        <div className='absolute right-0'>
 
        {
-          !darken  ?
+          !darkM  ?
             (
               <>
 
@@ -97,19 +90,15 @@ function Hero() {
                 </li>
               </ul>
 
-              <div className='absolute left-20' style = {{
-                display : darken
-              }}>
-              <img
-                 width='200%'
-                height = '300%'
-                src='https://res.cloudinary.com/dhkccnvyn/image/upload/v1658794005/Oval_lpwusi.svg' />
-
+              <div className='absolute left-20' >
+                {
+                  darkM ? <img
+                    width='200%'
+                    height = '300%'
+                    src='https://res.cloudinary.com/dhkccnvyn/image/upload/v1658794005/Oval_lpwusi.svg' /> : null
+                }
               </div>
-
             </div>
-
-
 
             {/* Mobile mockup */}
             <div className="md:col-span-5 lg:col-span-5 text-center md:text-right" data-aos="fade-up" data-aos-delay="450">

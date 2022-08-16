@@ -1,6 +1,6 @@
 import React from 'react';
 
-function FeaturesBlocks() {
+function FeaturesBlocks({darkM}) {
   return (
     <section className="relative dark-here ">
 

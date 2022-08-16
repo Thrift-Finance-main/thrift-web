@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 
-function Timeline() {
+function Timeline({darkM}) {
 
   const [year, setYear] = useState('2020');
 
@@ -43,7 +43,7 @@ function Timeline() {
                   <span className={`block w-3.5 h-3.5 bg-gray-400 dark:bg-gray-700 border-2 border-white dark:border-gray-900 rounded-full ${year === '2025' && 'bg-primary dark:bg-primary'}`}></span>
                 </button> */}
 
-              
+
               </div>
 
               {/* 2020's articles */}
@@ -102,7 +102,7 @@ function Timeline() {
                       <h3 className="h4 font-medium   font-red-hat-display mb-1">
                         <a href="#0"  className={'black-text text-black'}>Catalyst Boost Camp for Africa </a>
                       </h3>
-                      
+
                     </header>
                     <div className="text-gray-600 dark:text-gray-400 grow">
                       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
