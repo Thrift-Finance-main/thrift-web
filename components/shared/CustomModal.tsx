@@ -23,7 +23,7 @@ type Props = {
 export function CustomModal({ isOpen, onClose, children, title }: Props) {
 
   // @ts-ignore
-  const storeState = useSelector((state) => state.sampleData);
+  const storeState = useSelector((state) => state.reduxData);
   const { currentAccount } = storeState;
   const dispatch = useDispatch();
   const [currentWallet, setCurrentWallet] = useState({});

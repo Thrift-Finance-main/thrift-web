@@ -9,7 +9,7 @@ interface IProps {
 export const Layout: React.FC<IProps> = (props) => {
   const [showModal, setShowModal] = React.useState(false);
   // @ts-ignore
-  const storeState = useSelector((state) => state.sampleData);
+  const storeState = useSelector((state) => state.reduxData);
   const { currentAccount } = storeState;
 
   useEffect(() => {

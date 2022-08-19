@@ -1,7 +1,7 @@
 import React from 'react';
 import Image from 'next/image';
 
-function FeaturesWorld() {
+function FeaturesWorld({darkM}) {
   return (
     <section>
       <div className="max-w-6xl mx-auto px-4 sm:px-6">
