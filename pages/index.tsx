@@ -62,6 +62,18 @@ const Console: NextPage = () => {
     //dispatch(setLoggedUser(isLogged));
   }, [currentRoute])
 
+  const renderMain = () => {
+    console.log('renderMain');
+    let mainRoute = currentRoute.split(':');
+    mainRoute = mainRoute[0];
+    switch(mainRoute) {
+      case "home":
+        return <Home/>
+      default:
+        return <Home/>
+    }
+  }
+
   return (
     <Layout navigateTo={(route:string) => navigateTo(route)}>
       {renderMain()}
