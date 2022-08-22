@@ -23,10 +23,10 @@ function How({darkM}) {
 
 
   return (
-    <section className="relative">
+    <section className={!darkM ? "relative bg-[url('/bg/Rectangle.png')] bg-no-repeat bg-cover" : "relative"}>
 
       {/* Section background (needs .relative class on parent and next sibling elements) */}
-      <div className="absolute dark-here inset-0 bg-gray-100 pointer-events-none mb-16" aria-hidden="true"></div>
+      {/* <div className="absolute dark-here inset-0 bg-gray-100 pointer-events-none mb-16" aria-hidden="true"></div> */}
       <div className="absolute left-0 right-0 m-auto w-px p-px h-20 bg-gray-200 transform -translate-y-1/2"></div>
 
       <div className="relative max-w-6xl mx-auto px-4 sm:px-6">
@@ -35,7 +35,8 @@ function How({darkM}) {
           {/* Section header */}
           <div className="max-w-3xl mx-auto text-center pb-12 md:pb-16">
             <h1 className="h2 mb-4 font-header ">How it works</h1>
-            <p className="text-xl text-gray-600 black-text">Track expenses, income, and create savings plan while growing your funds conviniently. Do these things plus more in a non-custodial wallet. You’re in control.</p>
+            <p className="text-gray-600 black-text">Track expenses, income, and create savings plan while growing your funds
+              <br/>conviniently. Do these things plus more in a non-custodial wallet. You’re in control.</p>
           </div>
 
           {/* Top image */}
@@ -51,16 +52,16 @@ function How({darkM}) {
             <div className="max-w-xl md:max-w-none md:w-full mx-auto md:col-span-7 lg:col-span-6 md:mt-6" data-aos="fade-right">
               <div className="md:pr-4 lg:pr-12 xl:pr-16 mb-8">
                 <h3 className="h3 mb-3 font-header  left">Powerful suite of tools</h3>
-                <p className="text-xl left text-gray-600 black-text">DeFi solutions are often complex, unintuitive, and hard to understand. Thrift makes it simple,
+                <p className="left text-gray-600 black-text">DeFi solutions are often complex, unintuitive, and hard to understand. Thrift makes it simple,
                  providing real solutions to real life finance problems.</p>
               </div>
               {/* Tabs buttons */}
               <div className="mb-8 md:mb-0">
                 <button
-                  className={'flex black-text items-center  text-lg p-5 rounded border transition duration-300 ease-in-out mb-3 '+ (tab === 1 ? 'bg-white shadow-md border-gray-200 hover:shadow-lg' : 'other-here bg-gray-200 border-transparent')}
+                  className={'flex black-text items-center  text-lg p-5 rounded border transition duration-300 ease-in-out mb-3 '+ (tab === 1 ? 'bg-gray-200 shadow-md border-gray-200 hover:shadow-lg' : ('other-here bg-gray-200 border-transparent' + (darkM ? null : ' !bg-white')))}
                   onClick={(e) => { e.preventDefault(); setTab(1); }}
                 >
-                  <div className={" "+ (tab === 1 ? 'text-gray-900' : 'text-gray-200')}>
+                  <div className={" "+ (tab === 1 ? 'text-gray-900' : (darkM ? 'text-gray-200' : 'text-gray-900'))}>
                     <div className="font-bold leading-snug text-left tracking-tight mb-1">Non-custodial Savings </div>
                     <div className="text-left">Own your data, save your funds in the safest way, earn passively, get rewards, NFTs and much more. </div>
                   </div>
@@ -71,10 +72,10 @@ function How({darkM}) {
                   </div>
                 </button>
                 <button
-                  className={'flex black-text items-center  text-lg p-5 rounded border transition duration-300 ease-in-out mb-3 '+ (tab === 2 ? 'bg-white shadow-md border-gray-200 hover:shadow-lg' : 'other-here bg-gray-200 border-transparent')}
+                  className={'flex black-text items-center  text-lg p-5 rounded border transition duration-300 ease-in-out mb-3 '+ (tab === 2 ? 'bg-gray-200 shadow-md border-gray-200 hover:shadow-lg' : ('other-here bg-gray-200 border-transparent' + (darkM ? null : ' !bg-white')))}
                   onClick={(e) => { e.preventDefault(); setTab(2); }}
                 >
-                  <div className={" "+ (tab === 2 ? 'text-gray-900' : 'text-gray-200')}>
+                  <div className={" "+ (tab === 2 ? 'text-gray-900' : (darkM ? 'text-gray-200' : 'text-gray-900'))}>
                     <div className="font-bold leading-snug text-left tracking-tight mb-1">Crowd Lending</div>
                     <div className="text-left">Join or create groups according to your saving goals, lend, and grow your wealth. </div>
                   </div>
@@ -85,10 +86,10 @@ function How({darkM}) {
                   </div>
                 </button>
                 <button
-                  className={'flex black-text items-center  text-lg p-5 rounded border transition duration-300 ease-in-out mb-3 '+ (tab === 3 ? 'bg-white shadow-md border-gray-200 hover:shadow-lg' : 'other-here bg-gray-200 border-transparent')}
+                  className={'flex black-text items-center  text-lg p-5 rounded border transition duration-300 ease-in-out mb-3 '+ (tab === 3 ? 'bg-gray-200 shadow-md border-gray-200 hover:shadow-lg' : ('other-here bg-gray-200 border-transparent' + (darkM ? null : ' !bg-white')))}
                   onClick={(e) => { e.preventDefault(); setTab(3); }}
                 >
-                  <div className={" "+ (tab === 3 ? 'text-gray-900' : 'text-gray-200')}>
+                  <div className={" "+ (tab === 3 ? 'text-gray-900' : (darkM ? 'text-gray-200' : 'text-gray-900'))}>
                     <div className="font-bold leading-snug text-left tracking-tight mb-1">Multiple Payments</div>
                     <div className="text-left">For a single payment transaction fee, you can make multiple payments in one transaction.</div>
                   </div>
@@ -117,7 +118,9 @@ function How({darkM}) {
                   leaveEnd="opacity-0 -translate-y-16"
                 >
                   <div className="relative inline-flex flex-col">
-                    <img className="md:max-w-none mx-auto rounded" src={'https://res.cloudinary.com/thrift-labs-team/image/upload/v1659087983/Thrift%20images/Base_2_fhzh6m.svg'} width="500" height="375" alt="Features bg" />
+                    <img className="md:max-w-none mx-auto rounded"
+                      src={ darkM? 'https://res.cloudinary.com/thrift-labs-team/image/upload/v1659087983/Thrift%20images/Base_2_fhzh6m.svg' : '/base/Base2.png' }
+                      width="500" height="375" alt="Features bg" />
                     {/* <Image className="md:max-w-none absolute w-full left-0 transform animate-float" src={FeaturesElement01} width="500" height="147" alt="Element 01" style={{ top: '22%' }} /> */}
                     {/* <Image className="md:max-w-none absolute w-full left-0 transform animate-float animation-delay-500" src={FeaturesElement02} width="500" height="158" alt="Element 02" style={{ top: '39%' }} />
                     <Image className="md:max-w-none absolute w-full left-0 bottom-0 transform animate-float animation-delay-1000" src={FeaturesElement03} width="500" height="167" alt="Element 03" style={{ top: '77%' }} /> */}
@@ -136,7 +139,8 @@ function How({darkM}) {
                   leaveEnd="opacity-0 -translate-y-16"
                 >
                   <div className="relative inline-flex flex-col">
-                    <img className="md:max-w-none mx-auto rounded" src={'https://res.cloudinary.com/thrift-labs-team/image/upload/v1659019350/Thrift%20images/Base_pmgv7g.svg'} width="500" height="375" alt="Features bg" />
+                    <img className="md:max-w-none mx-auto rounded"
+                      src={ darkM ? 'https://res.cloudinary.com/thrift-labs-team/image/upload/v1659019350/Thrift%20images/Base_pmgv7g.svg' : '/base/Base1.png' } width="500" height="375" alt="Features bg" />
                     {/* <Image className="md:max-w-none absolute w-full left-0 bottom-0 transform animate-float animation-delay-1000" src={FeaturesElement03} width="500" height="167" alt="Element 03" style={{ top: '18%' }} />
                     // <Image className="md:max-w-none absolute w-full left-0 transform animate-float animation-delay-500" src={FeaturesElement02} width="500" height="158" alt="Element 02" style={{ top: '40%' }} /> */}
                      {/* <Image className="md:max-w-none absolute w-full left-0 transform animate-float" src={'https://res.cloudinary.com/thrift-labs-team/image/upload/v1659019778/Thrift%20images/Base_1_qcyybc.svg'} width="500" height="147" alt="Element 01" style={{ top: '79%' }} /> */}
@@ -155,7 +159,7 @@ function How({darkM}) {
                   leaveEnd="opacity-0 -translate-y-16"
                 >
                   <div className="relative inline-flex flex-col">
-                    <img className="md:max-w-none mx-auto rounded" src={'https://res.cloudinary.com/thrift-labs-team/image/upload/v1659019778/Thrift%20images/Base_1_qcyybc.svg'} width="500" height="375" alt="Features bg" />
+                    <img className="md:max-w-none mx-auto rounded" src={ darkM ? 'https://res.cloudinary.com/thrift-labs-team/image/upload/v1659019778/Thrift%20images/Base_1_qcyybc.svg' : '/base/Base3.png' } width="500" height="375" alt="Features bg" />
                     {/* <Image className="md:max-w-none absolute w-full left-0 transform animate-float" src={FeaturesElement01} width="500" height="147" alt="Element 01" style={{ top: '22%' }} />
                     <Image className="md:max-w-none absolute w-full left-0 transform animate-float animation-delay-500" src={FeaturesElement02} width="500" height="158" alt="Element 02" style={{ top: '39%' }} />
                     <Image className="md:max-w-none absolute w-full left-0 bottom-0 transform animate-float animation-delay-1000" src={FeaturesElement03} width="500" height="167" alt="Element 03" style={{ top: '77%' }} /> */}

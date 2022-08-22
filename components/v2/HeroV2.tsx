@@ -1,6 +1,6 @@
 import React, { useEffect, useRef } from 'react'
 import Typed from 'react-typed';
-import content from '../../public/data/hero/content.json';
+// import content from '../../public/data/hero/content.json';
 // @ts-ignore
 import {Swirl, Shift} from 'ambient-cbg';
 import Image from 'next/image'

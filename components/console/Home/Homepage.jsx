@@ -34,9 +34,7 @@ const Homepage = () => {
 
   return (
         <>
-
-
-              <TheHeader setDarkModeProp={(dm) => setDarkM(dm)}/>
+              <TheHeader setDarkModeProp={setDarkM}/>
               <center>
 
                    <Hero darkM={darken}/>
