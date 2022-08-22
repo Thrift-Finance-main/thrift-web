@@ -10,12 +10,20 @@ module.exports = {
   theme: {
     fontFamily: {
       sans: ['Poppins', 'sans-serif'],
+      // rai: 'Rai Text 1983 Lowercase',
     },
     extend: {
       colors: {
-        primary: '#E64646',
+        primary: '#F338C2',
         dark: '#00082D',
         card: 'rgba(255,255,255, .04)',
+        shade_black: '#2E2E33',
+        darken: '#1D1D21',
+        blackest: '#151515',
+        purpled: '#603EDA',
+        shader: '#000000',
+        tinter: '#272727',
+        winter: '#A2A2A8',
       },
     },
   },

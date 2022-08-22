@@ -23,7 +23,7 @@ const Console: NextPage = () => {
   const dispatch = useDispatch();
   useAOS()
   // @ts-ignore
-  const storeState = useSelector((state) => state.sampleData);
+  const storeState = useSelector((state) => state.reduxData);
   const { config } = storeState;
   const [currentRoute, setCurrentRoute] = useState(config.currentRoute);
 

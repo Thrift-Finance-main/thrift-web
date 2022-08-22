@@ -6,8 +6,8 @@ import {
   SelectWalletModal,
   ConnectWallet,
   useRestoreWallet,
-} from '@features/wallet';
-
+} from '@features/wallet'
+import Image from 'next/image'
 export const Header: React.FC = () => {
   const [isSticky, setSticky] = useState(false)
 
@@ -41,14 +41,13 @@ export const Header: React.FC = () => {
             <Link href="/" passHref>
               <a>
                 <div className="logo-box flex items-center justify-center">
-                  <img
-                    className="rounded-circle mr-4 p-1"
-                    style={{ width: 52, height: 'auto' }}
-                    src="/logoWhite.png"
+                  <Image
+                    className="rounded-circle mr-8"
+                    src="/logo192.png"
                     alt="Cardano Fans Staking Pool - Logo"
                   />
-                  <h5 className="text-gray-200 font-semibold text-2xl">
-                    Thrift
+                  <h5 className="c-white font-semibold">
+                    CARDANO.<span className="c-main">FANS</span>
                   </h5>
                 </div>
               </a>
@@ -56,21 +55,35 @@ export const Header: React.FC = () => {
             <ul className="nav-list hidden lg:flex">
               <li className="nav-link">
                 <Link href="/#about" passHref>
-                  <a>RealFi</a>
+                  <a>Our Pool</a>
                 </Link>
               </li>
               <li className="nav-link">
                 <Link href="/#cardano" passHref>
-                  <a>Wallet</a>
+                  <a>Cardano</a>
                 </Link>
               </li>
               <li className="nav-link">
-                <Link href="/#cardano" passHref>
-                  <a>About Us</a>
+                <Link href="/cardano-blockchain-insight" passHref>
+                  <a>Blockchain Insights</a>
                 </Link>
               </li>
               <li className="nav-link">
-                <Link href="/#cardano" passHref>
+                <Link href="/#news" passHref>
+                  <a>News</a>
+                </Link>
+              </li>
+              <li className="nav-link">
+                <a
+                  href="https://cardano-fans.medium.com/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Blog
+                </a>
+              </li>
+              <li className="nav-link">
+                <Link href="/#contact" passHref>
                   <a>Contact</a>
                 </Link>
               </li>
@@ -87,27 +100,39 @@ export const Header: React.FC = () => {
               <span />
 
               <div className="menu-container">
-
                 <div className="menu-row">
                   <div className="menu-box">
                     <ul className="menu-items">
-                      <li className="nav-link">
+                      <li className="menu-item">
+                        <Link href="/" passHref>
+                          <a>Home</a>
+                        </Link>
+                      </li>
+                      <li className="menu-item">
                         <Link href="/#about" passHref>
-                          <a>RealFi</a>
+                          <a>Our Pool</a>
                         </Link>
                       </li>
-                      <li className="nav-link">
+                      <li className="menu-item">
                         <Link href="/#cardano" passHref>
-                          <a>Wallet</a>
+                          <a>Cardano</a>
                         </Link>
                       </li>
-                      <li className="nav-link">
-                        <Link href="/#cardano" passHref>
-                          <a>About Us</a>
+                      <li className="menu-item">
+                        <a href="#">
+                          Cardano Blockchain Insights
+                        </a>
+                      </li>
+                      <li className="menu-item">
+                        <Link href="/#news" passHref>
+                          <a>News</a>
                         </Link>
                       </li>
-                      <li className="nav-link">
-                        <Link href="/#cardano" passHref>
+                      <li className="menu-item">
+                        <a href="https://cardano-fans.medium.com/">Blog</a>
+                      </li>
+                      <li className="menu-item">
+                        <Link href="/#contact" passHref>
                           <a>Contact</a>
                         </Link>
                       </li>

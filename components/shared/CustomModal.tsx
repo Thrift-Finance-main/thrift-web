@@ -10,7 +10,7 @@ import { capitalize, isEmpty } from '../../utils'
 import { RustModule } from '@lib/rust-module'
 import { useDispatch, useSelector } from 'react-redux'
 import { setCurrentAccount, setCurrRoute } from '../../store/actions/sampleAction'
-
+import Image from 'next/image'
 const SUPPORTED_WALLETS = ["nami", "ccvault", "flint" ]
 //const SUPPORTED_WALLETS = ["nami"]
 
@@ -23,7 +23,7 @@ type Props = {
 export function CustomModal({ isOpen, onClose, children, title }: Props) {
 
   // @ts-ignore
-  const storeState = useSelector((state) => state.sampleData);
+  const storeState = useSelector((state) => state.reduxData);
   const { currentAccount } = storeState;
   const dispatch = useDispatch();
   const [currentWallet, setCurrentWallet] = useState({});
@@ -201,7 +201,7 @@ export function CustomModal({ isOpen, onClose, children, title }: Props) {
                             className={"m-1 p-0 w-16 h-16 block text-black opacity-95 hover:scale-140 shadow-lg shadow-lg hover:shadow-xl hidden md:block right-2 lg:right-10"}>
                             {
                               // @ts-ignore
-                              wallet.icon ? <img className="text-md px-2" src={wallet.icon} /> : <span>{capitalize(wallet.name)}</span>
+                              wallet.icon ? <Image className="text-md px-2" src={wallet.icon} /> : <span>{capitalize(wallet.name)}</span>
                             }
 
                           </button>

@@ -1,5 +1,5 @@
 
-export const storeData = async (key:string, value:string) => {
+export const storeData = async (key:string, value:any) => {
     try {
         await localStorage.setItem(key, value)
     } catch (e) {

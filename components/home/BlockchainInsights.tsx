@@ -1,4 +1,5 @@
 import Link from 'next/link'
+import Image from 'next/image'
 
 export const BlockchainInsights: React.FC = () => {
   return (
@@ -30,7 +31,7 @@ export const BlockchainInsights: React.FC = () => {
           <div className="w-full lg:w-1/2">
             <Link passHref href="/cardano-blockchain-insight/">
               <a>
-                <img
+                <Image
                   className="w-100 rounded-md"
                   src="/ada-fans-cardano.png"
                   alt="zoom in"

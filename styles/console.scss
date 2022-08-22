@@ -1,0 +1,205 @@
+@import url(//db.onlinewebfonts.com/c/111775e1c5848e1d609ab1dbe2b4a0ec?family=Rai+Text+1983+Lowercase);
+
+:root {
+    --header_font: 'Rai Text 1983 Lowercase';
+}
+
+body {
+    scroll-behavior: smooth !important;
+}
+
+.part {
+    width: 100%;
+}
+
+.left {
+    text-align: left;
+}
+
+@font-face {
+    font-family: Rai;
+    src: url('./font/Rai.ttf');
+}
+
+.font-header {
+
+    font-family: var(--header_font) !important;
+
+}
+
+.h1 {
+    font-size: 5em;
+}
+
+.flex-bottom {
+    display: flex;
+    justify-content: space-between;
+}
+
+@keyframes dangle {
+    0% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(10px);
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
+
+  @keyframes dance {
+    0% {
+      transform: translateY(0);
+    }
+    50% {
+
+
+      transform: translateY(5px);
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
+
+.dance {
+    animation: dangle 1.5s infinite;
+}
+
+.dangle {
+    animation: dance 1.5s infinite;
+}
+
+.partner {
+    margin: 7em 0 3em;
+    color: black;
+
+    h2 {
+        margin: 3em 0
+    }
+}
+.map-items {
+
+    margin: 5em 0;
+    color: black;
+    font-weight: 300;
+
+    padding: 1em;
+    text-align: center;
+
+    h6 {
+        font-weight: 300;
+        font-size: 1.2em;
+        margin: 0;
+        padding: 0;
+    }
+
+}
+
+.item-team {
+
+    //display flex amd flex wrap
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    margin: 1em 0;
+    padding: 1em;
+    width: 80%;
+    gap: 3em;
+    justify-content: center;
+    margin: 2em ;
+
+
+
+
+}
+
+.p2p {
+    width: 80%;
+    color: white;
+    position: relative;
+    margin: 10em 0;
+
+    h3 {
+        font-size: 1.5em;
+        font-weight: bold;
+    }
+}
+
+
+
+.topper {
+
+}
+
+.adjust {
+     margin: 0 auto !important;
+}
+.peerText {
+    margin: 5em 0;
+}
+
+.phone-cloud {
+    position: absolute;
+    top: -4em;
+    width: 90%;
+    margin: 0 auto;
+
+}
+
+
+@media screen and (max-width: 600px) {
+
+    .footer-foot {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .p2p {
+        width: 90%;
+        height: 100%;
+
+    }
+
+    .item-team {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 2em;
+
+    }
+
+    .dance {
+        margin: 2em 0 !important;
+    }
+
+    .font-top {
+        color:black !important;
+        display:block !important;
+    }
+
+    .btn-sm {
+        width:100% !important;
+
+    }
+
+    .h1 {
+        font-size: 3em !important;
+        line-height: 1.5;
+    }
+
+    .left {
+        text-align: center;
+    }
+
+    .flex-bottom {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 1em;
+    }
+}
+
+

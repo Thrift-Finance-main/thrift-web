@@ -9,7 +9,7 @@ interface IProps {
 export const Layout: React.FC<IProps> = (props) => {
   const [showModal, setShowModal] = React.useState(false);
   // @ts-ignore
-  const storeState = useSelector((state) => state.sampleData);
+  const storeState = useSelector((state) => state.reduxData);
   const { currentAccount } = storeState;
 
   useEffect(() => {
@@ -21,7 +21,7 @@ export const Layout: React.FC<IProps> = (props) => {
         <title>Thrift</title>
       </Head>
       <div className="min-h-screen flex flex-col flex-auto flex-shrink-0 antialiased bg-white text-black dark:text-white">
-        <div className="h-full ml-14 mt-14 mb-10 md:ml-64">
+        <div >
           {props.children}
         </div>
       </div>
