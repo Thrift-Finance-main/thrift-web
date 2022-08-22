@@ -7,36 +7,7 @@ export const AboutCardano: React.FC = () => {
           About Cardano
         </h2>
         <div className="flex flex-col lg:flex-row items-stretch gap-8">
-          <Card
-            image="/blockchain.png"
-            title="Cryptocurrency"
-            data-aos="fade-right"
-          >
-            Cardano is a public blockchain and cryptocurrency project. It
-            requires decentralized node servers to validate and secure the
-            blockchain for all participants.
-          </Card>
 
-          <Card
-            title="Earn"
-            image="/fintech.png"
-            data-aos="fade-right"
-            data-aos-delay={200}
-          >
-            If you hold Ada (₳) cryptocurrency, you can participate in this
-            process and earn rewards by staking your Ada.
-          </Card>
-
-          <Card
-            title="Control"
-            image="/fingerprint.png"
-            data-aos="fade-right"
-            data-aos-delay={400}
-          >
-            Your Ada remains within your complete control at all times and you
-            are still allowed to transfer, spend, or move your staking
-            delegation to another stake pool.
-          </Card>
         </div>
       </div>
     </section>

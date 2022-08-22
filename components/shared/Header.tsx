@@ -41,11 +41,7 @@ export const Header: React.FC = () => {
             <Link href="/" passHref>
               <a>
                 <div className="logo-box flex items-center justify-center">
-                  <Image
-                    className="rounded-circle mr-8"
-                    src="/logo192.png"
-                    alt="Cardano Fans Staking Pool - Logo"
-                  />
+
                   <h5 className="c-white font-semibold">
                     CARDANO.<span className="c-main">FANS</span>
                   </h5>
