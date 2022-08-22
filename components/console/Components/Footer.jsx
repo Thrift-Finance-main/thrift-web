@@ -26,7 +26,7 @@ function TheFooter({darkM}) {
           </div>
 
           {/* 2nd block */}
-          <div className="sm:col-span-6 md:col-span-3 lg:col-span-2 mr-[120px]">
+          <div className="sm:col-span-6 md:col-span-3 lg:col-span-2 mr-0 sm:mr-[150px]">
             <h6 className="text-gray-800 font-medium mb-2 dark-here">Quick links </h6>
             <ul className="text-sm">
               <li className="mb-2">
@@ -43,7 +43,7 @@ function TheFooter({darkM}) {
           </div>
 
           {/* 3rd block */}
-          <div className="sm:col-span-6 md:col-span-3 lg:col-span-2 mr-[50px]">
+          <div className="mt-4 sm:mt-0 sm:col-span-6 md:col-span-3 lg:col-span-2 mr-0 sm:mr-[50px]">
             <h6 className="text-gray-800 font-medium mb-2 dark-here">About</h6>
             <ul className="text-sm">
               <li className="mb-2">

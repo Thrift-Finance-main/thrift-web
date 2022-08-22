@@ -19,14 +19,14 @@ function TheCta({darkM}) {
               </div>
 
               {/* CTA button */}
-              <div className='flex'>
+              <div className='block sm:flex'>
                 <form>
                     <input type={"email"} className={' py-2 rounded-lg'}
                       placeholder={'Enter Email Address..'}
                     />
                 </form>
 
-                <div className="ml-2 btn-sm text-white cursor-pointer  bg-purpled text-[16px]">
+                <div className="ml-0 sm:ml-2 mt-2 sm:mt-0 btn-sm text-white cursor-pointer  bg-purpled text-[16px]">
                     Join Waitlist
                 </div>
 
