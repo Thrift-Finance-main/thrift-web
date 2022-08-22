@@ -17,7 +17,7 @@ import News from '@components/home/News'
 import { BlockchainInsights } from '@components/home/BlockchainInsights'
 import { AboutCardano } from '@components/home/AboutCardano'
 import { Footer } from '@components/shared/Footer'
-import { Foot } from '@components/home/Foot'
+// import { Foot } from '@components/home/Foot'
 import { HeroV2 } from '@components/v2/HeroV2'
 
 const Console: NextPage = () => {
@@ -89,7 +89,7 @@ const Console: NextPage = () => {
 
         <News />
 
-        <Foot />
+        {/* <Foot /> */}
       </main>
     </div>
   )

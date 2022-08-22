@@ -4,7 +4,7 @@ import { useDispatch, useSelector } from 'react-redux'
 
 function Hero({darkM}) {
   return (
-    <section className='dark-here'>
+    <section className='dark-here bg-[url("/bg/Bg-Shapes.png")] bg-no-repeat bg-left-bottom bg-cover'>
 
 
        <div className='absolute right-0'>
@@ -12,26 +12,20 @@ function Hero({darkM}) {
        {
           !darkM  ?
             (
-              <>
-
-            <img
-          width='600%'
-          height = '600%'
-          src='https://res.cloudinary.com/dhkccnvyn/image/upload/v1658768303/Oval_keoygc.png' />
-
+              <> 
+                <img
+                  width='600%'
+                  height = '600%'
+                  src='https://res.cloudinary.com/dhkccnvyn/image/upload/v1658768303/Oval_keoygc.png' /> 
               </>
-            )
-
-
-          :
-
+            ) 
+          : 
           (
-            <>
-
-          <img
-          width='600%'
-          height = '600%'
-          src='https://res.cloudinary.com/dhkccnvyn/image/upload/v1658768696/Oval_1_supgtn.png' />
+            <> 
+              <img
+                width='600%'
+                height = '600%'
+                src='https://res.cloudinary.com/dhkccnvyn/image/upload/v1658768696/Oval_1_supgtn.png' />
             </>
           )
         }
@@ -52,18 +46,19 @@ function Hero({darkM}) {
 
               }}>
                                 {/* <h1 className="h1 dark-here lg:text-6xl mb-4  font-red-hat-display  font-top  show-white" data-aos="fade-down">Crypto Saving, made personal</h1> */}
-              <h1 className="h1 font-header  mb-5 text-3xl leading-9 font-extrabold dark-here font-extrabold tracking-tight text-gray-900 sm:text-4xl sm:leading-10"
+                <h1 className="h1 !font-[400] font-header mb-5 text-3xl leading-9 
+              dark-here tracking-tight text-gray-900 sm:text-4xl sm:leading-10"
                 data-aos="fade-down"
               >
                     Crypto saving,
                      made personal
               </h1>
               </div>
-              <p className="text-xl black-text text-gray-600 dark:text-gray-400" data-aos="fade-down" data-aos-delay="150">Thrift RealFi wallet lets you easily save, invest, pay and manage your funds without giving up your privacy, asset’s ownership, security or your data. </p>
+              <p className="black-text text-gray-600 dark:text-gray-400" data-aos="fade-down" data-aos-delay="150">Thrift RealFi wallet lets you easily save, invest, pay and manage your funds without giving up your privacy, asset’s ownership, security or your data. </p>
               {/* CTA form */}
               <form className="mt-8" data-aos="fade-down" data-aos-delay="300">
                 <div className="flex flex-col sm:flex-row justify-center max-w-sm mx-auto sm:max-w-md md:mx-0">
-                  <input type="email" className="form-input w-full mb-2 sm:mb-0 sm:mr-2" placeholder="email address" aria-label="email address" />
+                  <input type="email" className="form-input w-full mb-2 sm:mb-0 sm:mr-2" placeholder="Enter Email Address.." aria-label="email address" />
                   <a className="btn text-white bg-purpled hover:bg-teal-400 shrink-0" href="#0"> Join Waitlist  </a>
                 </div>
                 {/* Success message */}
@@ -71,31 +66,31 @@ function Hero({darkM}) {
               </form>
               <ul className="max-w-sm black-text sm:max-w-md mx-auto md:max-w-none text-gray-600 dark:text-gray-400 mt-8 -mb-2" data-aos="fade-down" data-aos-delay="450">
                 <li className="flex items-center mb-2">
-                  <svg className="w-3 h-3 fill-current text-primary mr-2 shrink-0" viewBox="0 0 12 12" xmlns="http://www.w3.org/2000/svg">
+                  <svg className="text-[#3ABAB4] w-3 h-3 fill-current text-primary mr-2 shrink-0" viewBox="0 0 12 12" xmlns="http://www.w3.org/2000/svg">
                     <path d="M10.28 2.28L3.989 8.575 1.695 6.28A1 1 0 00.28 7.695l3 3a1 1 0 001.414 0l7-7A1 1 0 0010.28 2.28z" />
                   </svg>
                   <span>Local language support </span>
                 </li>
                 <li className="flex items-center mb-2">
-                  <svg className="w-3 h-3 fill-current text-primary mr-2 shrink-0" viewBox="0 0 12 12" xmlns="http://www.w3.org/2000/svg">
+                  <svg className="text-[#3ABAB4] w-3 h-3 fill-current text-primary mr-2 shrink-0" viewBox="0 0 12 12" xmlns="http://www.w3.org/2000/svg">
                     <path d="M10.28 2.28L3.989 8.575 1.695 6.28A1 1 0 00.28 7.695l3 3a1 1 0 001.414 0l7-7A1 1 0 0010.28 2.28z" />
                   </svg>
                   <span>Lend or save as a group</span>
                 </li>
                 <li className="flex items-center mb-2">
-                  <svg className="w-3 h-3 fill-current text-primary mr-2 shrink-0" viewBox="0 0 12 12" xmlns="http://www.w3.org/2000/svg">
+                  <svg className="text-[#3ABAB4] w-3 h-3 fill-current text-primary mr-2 shrink-0" viewBox="0 0 12 12" xmlns="http://www.w3.org/2000/svg">
                     <path d="M10.28 2.28L3.989 8.575 1.695 6.28A1 1 0 00.28 7.695l3 3a1 1 0 001.414 0l7-7A1 1 0 0010.28 2.28z" />
                   </svg>
                   <span>Grow wealth annonymously</span>
                 </li>
               </ul>
 
-              <div className='absolute left-20' >
+              <div className='relative'>
                 {
-                  darkM ? <img
-                    width='200%'
-                    height = '300%'
-                    src='https://res.cloudinary.com/dhkccnvyn/image/upload/v1658794005/Oval_lpwusi.svg' /> : null
+                  <img
+                    className='absolute top-[2.5rem] left-[-8rem]' 
+                    width={'256px'}
+                    src={ darkM === true ? 'https://res.cloudinary.com/dhkccnvyn/image/upload/v1658794005/Oval_lpwusi.svg' : '/Oval-light.svg' } />
                 }
               </div>
             </div>
@@ -125,7 +120,7 @@ function Hero({darkM}) {
                 {/* Image inside mockup size: 290x624px (or 580x1248px for Retina devices) */}
 
                 {/* iPhone mockup */}
-                <img className="relative dance max-w-full mx-auto md:mr-0 md:max-w-none h-auto pointer-events-none" src={'https://res.cloudinary.com/dhkccnvyn/image/upload/v1658348423/iPhone_12___12_Pro_f69cnq.svg'} width="344" height="674" alt="iPhone mockup" aria-hidden="true" />
+                <img className="relative dance max-w-full mx-auto md:mr-0 md:max-w-none h-auto pointer-events-none" width='423px' src={'https://res.cloudinary.com/dhkccnvyn/image/upload/v1658348423/iPhone_12___12_Pro_f69cnq.svg'} width="344" height="674" alt="iPhone mockup" aria-hidden="true" />
                 {/* Play button */}
                 {/* <a className="absolute group" href="#0" onClick={(e) => { e.preventDefault(); e.stopPropagation(); setVideoModalOpen(true); }} aria-controls="modal">
                   <img src={PlayBtn} width="96" height="96" alt="Play" />

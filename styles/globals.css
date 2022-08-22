@@ -17,26 +17,24 @@
 
 html {
   scroll-behavior: smooth;
-  padding: 0 ;
-  margin : 0   ;
+  padding: 0;
+  margin: 0;
 
   box-sizing: border-box;
 }
 
 * {
-  padding: 0 ;
-  margin : 0  ;
+  padding: 0;
+  margin: 0;
 
   box-sizing: border-box;
 }
 
- body {
+body {
   font-family: 'Poppins', sans-serif;
   background: rgba(0, 8, 45, 1) !important;
-  padding: 0 ;
-  margin : 0  !important;
-
-
+  padding: 0;
+  margin: 0 !important;
 }
 
 /* main {
@@ -53,7 +51,6 @@ a {
   color: var(--c-main);
 }
 
-
 /* .header {
 
   position: fixed;
@@ -64,7 +61,6 @@ a {
   transition: background 0.3s;
 
 } */
-
 
 /* .sticky-header {
   background: rgba(0, 0, 0, 0.3);
@@ -222,8 +218,6 @@ a {
     rgba(0, 8, 45, 1) 90%
   );
 }
-
-
 
 .about,
 .features,
@@ -514,4 +508,30 @@ section {
   .frame-box {
     height: 300px;
   }
+}
+
+.dark-bg-noti {
+  background: #f338c2;
+}
+.dark .dark-bg-noti {
+  background: #2e2e33;
+}
+.dark .dark-bg-noti input {
+  background: #2e2e33;
+}
+
+.dark-bg-noti-img {
+  background-image: url(/bg/notification/Oval1.png),
+    url(/bg/notification/Oval2.png);
+  background-repeat: no-repeat, no-repeat;
+  background-position: top right, left bottom;
+  background-size: 80px 200px, 50px 80px;
+}
+
+.bg-noti-img {
+  background-image: url(/bg/notification/Oval3.png),
+    url(/bg/notification/Oval4.png);
+  background-repeat: no-repeat, no-repeat;
+  background-position: top right, left bottom;
+  background-size: 80px 200px, 50px 80px;
 }

@@ -1,6 +1,6 @@
 @import url(//db.onlinewebfonts.com/c/111775e1c5848e1d609ab1dbe2b4a0ec?family=Rai+Text+1983+Lowercase);
 :root {
-  --header_font: "Rai Text 1983 Lowercase";
+  --header_font: 'Rai';
 }
 
 .part {
@@ -13,7 +13,7 @@
 
 @font-face {
   font-family: Rai;
-  src: url("./font/Rai.ttf");
+  src: url('./font/Rai.ttf');
 }
 .font-header {
   font-family: var(--header_font) !important;
@@ -75,16 +75,16 @@
 }
 .dance {
   -webkit-animation: dangle 1.5s infinite;
-          animation: dangle 1.5s infinite;
+  animation: dangle 1.5s infinite;
 }
 
 .dangle {
   -webkit-animation: dance 1.5s infinite;
-          animation: dance 1.5s infinite;
+  animation: dance 1.5s infinite;
 }
 
 .partner {
-  margin: 7em 0;
+  margin: 7em 0 3em;
   color: black;
 }
 .partner h2 {
@@ -178,4 +178,4 @@
     justify-content: center;
     gap: 1em;
   }
-}/*# sourceMappingURL=console.css.map */
+} /*# sourceMappingURL=console.css.map */

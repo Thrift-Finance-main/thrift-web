@@ -13,16 +13,14 @@ import '../styles/console.scss';
 import { initialConfig, SET_DARK_MODE } from '../store/reducers/sampleReducer'
 import { setDarkMode } from '../store/actions/sampleAction'
 
-const initConfig = (store:any) => {
-  console.log('initConfig');
-
+const initConfig = (store:any) => { 
+  store.dispatch(setDarkMode(false));
   getObj(SET_DARK_MODE).then(darkMode => {
     let dm = initialConfig.darkMode;
     if (darkMode){
       dm = darkMode;
     }
     console.log(dm);
-    store.dispatch(setDarkMode(dm));
   });
 }
 

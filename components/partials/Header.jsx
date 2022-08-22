@@ -11,8 +11,7 @@ function TheHeader({setDarkModeProp}) {
   const dispatch = useDispatch();
 
   const storeState = useSelector((state) => state.reduxData);
-  const [darken , setDarken] = useState(storeState.config.darkMode);
-
+  const [darken, setDarken] = useState(storeState.config.darkMode); 
   const [mobileNavOpen, setMobileNavOpen] = useState(false);
 
   const trigger = useRef(null);
@@ -60,8 +59,7 @@ function TheHeader({setDarkModeProp}) {
   }
 
   return (
-
-    <header className="absolute w-full z-30 black-text">
+    <header className="absolute w-full z-30 black-text dark-here">
       <div className="max-w-7xl mx-auto px-2 sm:px-6">
         <div className="flex items-center justify-between h-20">
           {/* Site branding */}
@@ -71,7 +69,7 @@ function TheHeader({setDarkModeProp}) {
 
                 {/* check if dark mode is true  */}
                 {
-                  !darken ? <Logo/> :  <img width={'100%'} height={'50%'} src={'https://res.cloudinary.com/dhkccnvyn/image/upload/v1658767409/Logo_Thrift_Finance_white_1_2_1_xr9jzu.png'} />
+                  !darken ? <Logo/> :  <img width={'98.28'} height={"40.29"} src={'https://res.cloudinary.com/dhkccnvyn/image/upload/v1658767409/Logo_Thrift_Finance_white_1_2_1_xr9jzu.png'} />
                 }
 
             </div>
@@ -293,7 +291,7 @@ function TheHeader({setDarkModeProp}) {
           </div>
         </div>
       </div>
-    </header>
+      </header>
   );
 }
 

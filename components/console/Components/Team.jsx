@@ -57,18 +57,15 @@ const Team = ({darkM}) => {
               team.map((item, index) => {
 
                 return (
-                  <>
-
-                    <div>
+                    <div key={index}>
                       <img src={item.image}
-                           width={"80%"} height={"80%"}
+                           width={"120px"}
                       />
 
                       <h6 className=' text-lg'>{item.name}</h6>
                       <p className='text-primary'>{item.title}</p>
                     </div>
 
-                  </>
                 )
 
               })

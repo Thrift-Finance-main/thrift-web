@@ -2,19 +2,21 @@ import React from 'react';
 
 function FeaturesBlocks({darkM}) {
   return (
-    <section className="relative dark-here ">
+    <section className="relative dark-here">
 
       {/* Section background (needs .relative class on parent and next sibling elements) */}
       <div className="absolute inset-0 top-1/2 md:mt-24 lg:mt-0 bg-gray-900 other-here pointer-events-none" aria-hidden="true"></div>
       <div className="absolute left-0 right-0 bottom-0 m-auto w-px p-px h-20 bg-gray-200 transform translate-y-1/2"></div>
 
-      <div className="relative max-w-6xl mx-auto px-4 sm:px-6">
+      <div className="relative max-w-7xl mx-auto px-4 sm:px-6">
         <div className="py-12 md:py-20">
 
           {/* Section header */}
           <div className="max-w-3xl mx-auto text-center pb-12 md:pb-20">
-            <h2 className="h2 dark-here mb-4 text-black font-header ">How it Works </h2>
-            <p className="text-xl text-gray-600 black-text">Track expenses, income, and create savings plan while growing your funds conviniently. Do these things plus more in a non-custodial wallet. You’re in control.</p>
+            <h2 className="h2 dark-here mb-4 text-black font-header ">Build a Legacy of Financial Greatness</h2>
+            <p className="text-gray-600 black-text">
+              A Suite of RealFi products powered by Cardano to keep you in control of your finances. We leverage decentralization to help you overcome banking inefficiency.
+            </p>
           </div>
 
           {/* Items */}
@@ -36,7 +38,6 @@ function FeaturesBlocks({darkM}) {
               <h4 className="text-xl font-bold leading-snug tracking-tight mb-1">SmartFi</h4>
               <p className="text-gray-600 text-center black-text">Manage and analyze your personal finances better and easier
               </p>
-              <p className={'invisible'}> Thrift.</p>
             </div>
 
             {/* 2nd item */}
@@ -70,7 +71,6 @@ function FeaturesBlocks({darkM}) {
               </svg>
               <h4 className="text-xl font-bold leading-snug tracking-tight mb-1">Stable Currency</h4>
               <p className="text-gray-600 text-center black-text">save in stable currency, stay ahead of the curve, and secure your future</p>
-              <p className={'invisible'}> Thrift.</p>
             </div>
 
             {/* 4th item */}
@@ -87,10 +87,7 @@ function FeaturesBlocks({darkM}) {
                 </g>
               </svg>
               <h4 className="text-xl font-bold leading-snug tracking-tight mb-1">Decentralized Digital Identity</h4>
-              <p className="text-gray-600 text-center black-text">Own your identity</p>
-              <p className={'invisible'}> Thrift.</p>
-              <p className={'invisible'}> Thrift.</p>
-              <p className={'invisible'}> Thrift.</p>
+              <p className="text-gray-600 text-center black-text">Own your identity, no more unwanted prying eyes.</p>
             </div>
 
             {/* 5th item */}
@@ -107,8 +104,6 @@ function FeaturesBlocks({darkM}) {
               </svg>
               <h4 className="text-xl font-bold leading-snug tracking-tight mb-1">Digital Agregation</h4>
               <p className="text-gray-600 text-center black-text">Trustless access to DeFi services and platforms. </p>
-              <p className={'invisible'}> Thrift.</p>
-              <p className={'invisible'}> Thrift.</p>
             </div>
 
             {/* 6th item */}
@@ -124,7 +119,6 @@ function FeaturesBlocks({darkM}) {
               </svg>
               <h4 className="text-xl font-bold leading-snug tracking-tight mb-1">Seamless UI/UX</h4>
               <p className="text-gray-600 text-center black-text">No matter your background, you can use Thrift RealFi Wallet, it’s that simple.</p>
-              <p className={'invisible'}> Thrift.</p>
             </div>
 
           </div>
