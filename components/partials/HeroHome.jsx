@@ -47,8 +47,9 @@ function Hero({darkM}) {
               }}>
                                 {/* <h1 className="h1 dark-here lg:text-6xl mb-4  font-red-hat-display  font-top  show-white" data-aos="fade-down">Crypto Saving, made personal</h1> */}
                 <h1 className="h1 !font-[400] font-header mb-5 text-3xl leading-9 
-              dark-here tracking-tight text-gray-900 sm:text-4xl sm:leading-10"
-                data-aos="fade-down"
+              dark-here tracking-tight text-gray-900 sm:text-4xl sm:leading-10 "
+                  data-aos="fade-down"
+                  style={{background: 'none !important'}}
               >
                     Crypto saving,
                      made personal
