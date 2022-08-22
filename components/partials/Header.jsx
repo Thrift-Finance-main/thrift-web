@@ -174,7 +174,7 @@ function TheHeader({setDarkModeProp}) {
                 id="light-switch-mobile"
                 className="light-switch sr-only"
                 checked={darken}
-                onChange={() => setDarkMode(!darken)}
+                onChange={() => handleDarkMode(!darken)}
               />
 
               <label className="relative" htmlFor="light-switch-mobile">
