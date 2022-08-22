@@ -13,7 +13,6 @@ export const AboutCardano: React.FC = () => {
     </section>
   )
 }
-
 // @ts-ignore
 const Card = ({ image, title, children, ...rest }) => {
   return (
