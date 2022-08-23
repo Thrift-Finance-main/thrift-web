@@ -1,3 +1,5 @@
+@import url(//db.onlinewebfonts.com/c/111775e1c5848e1d609ab1dbe2b4a0ec?family=Rai+Text+1983+Lowercase);
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -5,6 +7,11 @@
 :root {
   --c-main: #e64646;
   --c-dark: #00082d;
+  --header_font: 'Rai Text 1983 Lowercase';
+}
+
+.font-header {
+  font-family: var(--header_font) !important;
 }
 
 *,
@@ -35,6 +42,7 @@ body {
   background: rgba(0, 8, 45, 1) !important;
   padding: 0;
   margin: 0 !important;
+  scroll-behavior: smooth !important;
 }
 
 /* main {
