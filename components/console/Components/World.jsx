@@ -5,7 +5,7 @@ function FeaturesWorld({darkM}) {
   return (
     <>
       <div className='max-w-6xl mx-auto border-t border-gray-700 pt-8'></div>
-    <section style={darkM ? {background: "linear-gradient(180deg, rgba(46, 46, 51, 0.32) 0%, rgba(46, 46, 51, 0.0001) 100%)"} : {}}>
+    <section  id='about' style={darkM ? {background: "linear-gradient(180deg, rgba(46, 46, 51, 0.32) 0%, rgba(46, 46, 51, 0.0001) 100%)"} : {}}>
       <div className="max-w-6xl mx-auto px-4 sm:px-6">
         <div>
 

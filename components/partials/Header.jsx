@@ -1,3 +1,4 @@
+
 import React, { useState, useRef, useEffect } from 'react';
 // import { div } from 'react-router-dom';
 import Dropdown from '../shared/Dropdown';
@@ -60,7 +61,7 @@ function TheHeader({setDarkModeProp}) {
   }
 
   return (
-    <header className="absolute w-full z-30 black-text dark-here">
+    <header className="absolute w-full z-30 black-text">
       <div className="max-w-7xl mx-auto px-2 sm:px-6">
         <div className="flex items-center justify-between h-20">
           {/* Site branding */}
@@ -82,20 +83,20 @@ function TheHeader({setDarkModeProp}) {
             {/* Desktop menu divs */}
             <ul className="flex black-text grow flex-wrap items-center font-medium">
               <li>                
-                <Link href="/features">
-                  <a className="black-text text-gray-600 hover:text-gray-900 dark:text-gray-300 dark:hover:text-gray-100 px-5 py-2 flex items-center transition duration-150 ease-in-out">Features</a>
+                <Link href="#features">
+                  <a className="black-text text-gray-600 hover:!text-[#26208b] dark:text-gray-300 dark:hover:text-gray-100 px-5 py-2 flex items-center transition duration-150 ease-in-out">Features</a>
                 </Link>
               </li>
               <li>
-                <Link href="/blog" >
-                  <a className="text-gray-600 black-text  hover:text-gray-900 dark:text-gray-300 dark:hover:text-gray-100 px-5 py-2 flex items-center transition duration-150 ease-in-out">
+                <Link href="#roadmap" >
+                  <a className="text-gray-600 black-text  hover:!text-[#26208b] dark:text-gray-300 dark:hover:text-gray-100 px-5 py-2 flex items-center transition duration-150 ease-in-out">
                     Roadmap
                   </a>
                 </Link>
               </li>
               <li>
-                <Link href="/testimonials">
-                  <a className="text-gray-600 black-text  hover:text-gray-900 dark:text-gray-300 dark:hover:text-gray-100 px-5 py-2 flex items-center transition duration-150 ease-in-out">About</a>
+                <Link href="#about">
+                  <a className="mr-12 text-gray-600 black-text  hover:!text-[#26208b] dark:text-gray-300 dark:hover:text-gray-100 px-5 py-2 flex items-center transition duration-150 ease-in-out">About</a>
                 </Link>
               </li>
               {/* 1st level: hover */}
@@ -103,7 +104,7 @@ function TheHeader({setDarkModeProp}) {
                 {/* 2nd level: hover */}
                 <li>
                   <Link href="/help">
-                    <a className="text-sm black-text  text-gray-600 dark:text-gray-400  flex py-2 px-4 leading-tight">
+                    <a className="text-sm black-text hover:!text-[#26208b] text-gray-600 dark:text-gray-400  flex py-2 px-4 leading-tight">
                       Help Center
                     </a>
                   </Link>
@@ -112,7 +113,7 @@ function TheHeader({setDarkModeProp}) {
                   <Link
                     href="/404"
                   >
-                    <a className="text-sm black-text  text-gray-600 dark:text-gray-400  flex py-2 px-4 leading-tight">404</a>
+                    <a className="text-sm black-text hover:!text-[#26208b] text-gray-600 dark:text-gray-400  flex py-2 px-4 leading-tight">404</a>
                   </Link>
                 </li>
               </Dropdown>
@@ -242,14 +243,14 @@ function TheHeader({setDarkModeProp}) {
                       </Link>
                     </li>
                     <li>
-                      <Link href="/blog" >
+                      <Link href="#roadmap" >
                         <a className="block text-gray-600 black-text  hover:text-gray-900 dark:text-gray-300 dark:hover:text-gray-100 px-5 py-2 flex items-center transition duration-150 ease-in-out">
                           Roadmap
                         </a>
                       </Link>
                     </li>
                     <li>
-                      <Link href="/testimonials">
+                      <Link href="#about">
                         <a className="block text-gray-600 black-text  hover:text-gray-900 dark:text-gray-300 dark:hover:text-gray-100 px-5 py-2 flex items-center transition duration-150 ease-in-out">About</a>
                       </Link>
                     </li>

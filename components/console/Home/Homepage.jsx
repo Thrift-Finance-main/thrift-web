@@ -33,7 +33,7 @@ const Homepage = () => {
   console.log(darken);
 
   return (
-        <>
+    <div className={ 'bg-no-repeat bg-right-top ' + (darken ? 'bg-[url("https://res.cloudinary.com/dhkccnvyn/image/upload/v1658768696/Oval_keoygc.png")]' : 'bg-[url("https://res.cloudinary.com/dhkccnvyn/image/upload/v1658768303/Oval_1_supgtn.png")] ') }>
               <TheHeader setDarkModeProp={setDarkM}/>
               <center>
 
@@ -55,7 +55,7 @@ const Homepage = () => {
 
 
 
-        </>
+        </div>
     )
 
 }

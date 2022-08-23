@@ -4,34 +4,9 @@ import { useDispatch, useSelector } from 'react-redux'
 
 function Hero({darkM}) {
   return (
-    <section className='dark-here bg-[url("/bg/Bg-Shapes.png")] bg-no-repeat bg-left-bottom bg-cover'>
+    <section className=''>
 
 
-       <div className='absolute right-0'>
-
-       {
-          !darkM  ?
-            (
-              <>
-                <img
-                  width='600%'
-                  height = '600%'
-                  src='https://res.cloudinary.com/dhkccnvyn/image/upload/v1658768303/Oval_keoygc.png' />
-              </>
-            )
-          :
-          (
-            <>
-              <img
-                width='600%'
-                height = '600%'
-                src='https://res.cloudinary.com/dhkccnvyn/image/upload/v1658768696/Oval_1_supgtn.png' />
-            </>
-          )
-        }
-
-
-      </div>
       <div className="max-w-6xl mx-auto px-4 sm:px-6 ">
         <div className="pt-32 pb-10 md:pt-40 md:pb-16 topper">
                  {/* Hero content */}
