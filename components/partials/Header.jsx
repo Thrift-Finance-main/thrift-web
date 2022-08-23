@@ -4,6 +4,7 @@ import Dropdown from '../shared/Dropdown';
 import Transition from '../shared/Transition';
 import Logo from '../console/Components/Logo';
 import Image from 'next/image'
+import Link from 'next/link';
 import { useDispatch, useSelector } from 'react-redux'
 import { setDarkMode } from '../../store/actions/sampleAction'
 function TheHeader({setDarkModeProp}) {
@@ -65,62 +66,54 @@ function TheHeader({setDarkModeProp}) {
           {/* Site branding */}
           <div className="shrink-0 mr-5">
             {/* Logo */}
-            <div to="/" className="block" aria-label="Cruip">
+            <Link href="/" >
+              <a className="block" aria-label="Cruip">
 
                 {/* check if dark mode is true  */}
                 {
                   !darken ? <Logo/> :  <img width={'98.28'} height={"40.29"} src={'https://res.cloudinary.com/dhkccnvyn/image/upload/v1658767409/Logo_Thrift_Finance_white_1_2_1_xr9jzu.png'} />
                 }
-
-            </div>
+              </a>
+            </Link>
           </div>
 
           {/* Desktop navigation */}
           <nav className="hidden md:flex md:grow">
             {/* Desktop menu divs */}
             <ul className="flex black-text grow flex-wrap items-center font-medium">
-              <li>
-                <div
-                  to="/about"
-                  className="black-text text-gray-600 hover:text-gray-900 dark:text-gray-300 dark:hover:text-gray-100 px-5 py-2 flex items-center transition duration-150 ease-in-out"
-                >
-                  About
-                </div>
+              <li>                
+                <Link href="/features">
+                  <a className="black-text text-gray-600 hover:text-gray-900 dark:text-gray-300 dark:hover:text-gray-100 px-5 py-2 flex items-center transition duration-150 ease-in-out">Features</a>
+                </Link>
               </li>
               <li>
-                <div
-                  to="/blog"
-                  className="text-gray-600 black-text  hover:text-gray-900 dark:text-gray-300 dark:hover:text-gray-100 px-5 py-2 flex items-center transition duration-150 ease-in-out"
-                >
-                  Roadmap
-                </div>
+                <Link href="/blog" >
+                  <a className="text-gray-600 black-text  hover:text-gray-900 dark:text-gray-300 dark:hover:text-gray-100 px-5 py-2 flex items-center transition duration-150 ease-in-out">
+                    Roadmap
+                  </a>
+                </Link>
               </li>
               <li>
-                <div
-                  to="/testimonials"
-                  className="text-gray-600 black-text  hover:text-gray-900 dark:text-gray-300 dark:hover:text-gray-100 px-5 py-2 flex items-center transition duration-150 ease-in-out"
-                >
-                  About
-                </div>
+                <Link href="/testimonials">
+                  <a className="text-gray-600 black-text  hover:text-gray-900 dark:text-gray-300 dark:hover:text-gray-100 px-5 py-2 flex items-center transition duration-150 ease-in-out">About</a>
+                </Link>
               </li>
               {/* 1st level: hover */}
               <Dropdown title="Doc" >
                 {/* 2nd level: hover */}
                 <li>
-                  <div
-                    to="/help"
-                    className="text-sm black-text  text-gray-600 dark:text-gray-400 hover:text-teal-500 dark:hover:text-teal-500 flex py-2 px-4 leading-tight"
-                  >
-                    Help center
-                  </div>
+                  <Link href="/help">
+                    <a className="text-sm black-text  text-gray-600 dark:text-gray-400  flex py-2 px-4 leading-tight">
+                      Help Center
+                    </a>
+                  </Link>
                 </li>
                 <li>
-                  <div
-                    to="/404"
-                    className="text-sm black-text  text-gray-600 dark:text-gray-400 hover:text-teal-500 dark:hover:text-teal-500 flex py-2 px-4 leading-tight"
+                  <Link
+                    href="/404"
                   >
-                    404
-                  </div>
+                    <a className="text-sm black-text  text-gray-600 dark:text-gray-400  flex py-2 px-4 leading-tight">404</a>
+                  </Link>
                 </li>
               </Dropdown>
             </ul>
@@ -157,9 +150,12 @@ function TheHeader({setDarkModeProp}) {
             {/* Desktop CTA on the right */}
             <ul className="flex justify-end flex-wrap items-center">
               <li>
-                <div to="/contact" className="btn-sm text-white  cursor-pointer ml-6 p-3 bg-purpled">
-                   App Coming Soon
-                </div>
+                <Link href="/contact" >
+                  <a className="btn-sm text-white  cursor-pointer ml-6 p-3 bg-purpled">
+                    App Coming Soon
+                  </a>
+                   
+                </Link>
               </li>
             </ul>
           </nav>
@@ -240,49 +236,48 @@ function TheHeader({setDarkModeProp}) {
                   </div>
                   {/* divs */}
                   <ul>
-                    <li>
-                      <div to="/about" className="flex text-gray-600 hover:text-gray-900 dark:text-gray-300 dark:hover:text-gray-100 py-2">
-                        About
-                      </div>
+                    <li>                
+                      <Link href="/features">
+                        <a className="block black-text text-gray-600 hover:text-gray-900 dark:text-gray-300 dark:hover:text-gray-100 px-5 py-2 flex items-center transition duration-150 ease-in-out">Features</a>
+                      </Link>
                     </li>
                     <li>
-                      <div to="/blog" className="flex text-gray-600 hover:text-gray-900 dark:text-gray-300 dark:hover:text-gray-100 py-2">
-                        Blog
-                      </div>
+                      <Link href="/blog" >
+                        <a className="block text-gray-600 black-text  hover:text-gray-900 dark:text-gray-300 dark:hover:text-gray-100 px-5 py-2 flex items-center transition duration-150 ease-in-out">
+                          Roadmap
+                        </a>
+                      </Link>
                     </li>
                     <li>
-                      <div to="/testimonials" className="flex text-gray-600 hover:text-gray-900 dark:text-gray-300 dark:hover:text-gray-100 py-2">
-                        Testimonials
-                      </div>
+                      <Link href="/testimonials">
+                        <a className="block text-gray-600 black-text  hover:text-gray-900 dark:text-gray-300 dark:hover:text-gray-100 px-5 py-2 flex items-center transition duration-150 ease-in-out">About</a>
+                      </Link>
                     </li>
+
                     <li className="py-2 my-2 border-t border-b border-gray-200 dark:border-gray-800">
                       <span className="flex text-gray-600 dark:text-gray-400 py-2">Resources</span>
                       <ul className="pl-4">
                         <li>
-                          <div
-                            to="/help"
-                            className="text-sm flex font-medium text-gray-600 hover:text-gray-900 dark:text-gray-400 dark:hover:text-gray-100 py-2"
+                          <Link
+                            href="/help" 
                           >
-                            Help center
-                          </div>
+                            <a className="text-sm flex font-medium text-gray-600 hover:text-gray-900 dark:text-gray-400 dark:hover:text-gray-100 py-2">Help Center</a>
+                          </Link>
                         </li>
                         <li>
-                          <div
-                            to="/404"
-                            className="text-sm flex font-medium text-gray-600 hover:text-gray-900 dark:text-gray-400 dark:hover:text-gray-100 py-2"
-                          >
-                            404
-                          </div>
+                          <Link href="/404"> 
+                            <a className="text-sm flex font-medium text-gray-600 hover:text-gray-900 dark:text-gray-400 dark:hover:text-gray-100 py-2">404</a>
+                          </Link>
                         </li>
                       </ul>
                     </li>
                     <li>
-                      <div
-                        to="/contact"
-                        className="font-medium bg-purpled w-full inline-flex items-center justify-center border border-transparent px-4 py-2 my-2 rounded text-white bg-teal-500 hover:bg-teal-400 transition duration-150 ease-in-out"
-                      >
-                        App Comming Soon
-                      </div>
+                      <Link href="/contact">
+                        <a className="font-medium bg-purpled w-full inline-flex items-center justify-center border border-transparent px-4 py-2 my-2 rounded text-white bg-teal-500 hover:bg-teal-400 transition duration-150 ease-in-out">
+                          App Comming Soon
+                        </a>
+                        
+                      </Link>
                     </li>
                   </ul>
                 </div>

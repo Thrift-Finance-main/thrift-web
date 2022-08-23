@@ -12,16 +12,16 @@ function Hero({darkM}) {
        {
           !darkM  ?
             (
-              <>
+              <> 
                 <img
                   width='600%'
                   height = '600%'
-                  src='https://res.cloudinary.com/dhkccnvyn/image/upload/v1658768303/Oval_keoygc.png' />
+                  src='https://res.cloudinary.com/dhkccnvyn/image/upload/v1658768303/Oval_keoygc.png' /> 
               </>
-            )
-          :
+            ) 
+          : 
           (
-            <>
+            <> 
               <img
                 width='600%'
                 height = '600%'
@@ -46,7 +46,7 @@ function Hero({darkM}) {
 
               }}>
                                 {/* <h1 className="h1 dark-here lg:text-6xl mb-4  font-red-hat-display  font-top  show-white" data-aos="fade-down">Crypto Saving, made personal</h1> */}
-                <h1 className="h1 !font-[400] font-header mb-5 text-3xl leading-9
+                <h1 className="!bg-none h1 !font-[400] font-header mb-5 text-3xl leading-9 
               dark-here tracking-tight text-gray-900 sm:text-4xl sm:leading-10 "
                   data-aos="fade-down"
                   style={{background: 'none !important'}}
@@ -89,7 +89,7 @@ function Hero({darkM}) {
               <div className='relative'>
                 {
                   <img
-                    className='absolute top-[2.5rem] left-[-8rem]'
+                    className='absolute top-[2.5rem] left-[-8rem]' 
                     width={'256px'}
                     src={ darkM === true ? 'https://res.cloudinary.com/dhkccnvyn/image/upload/v1658794005/Oval_lpwusi.svg' : '/Oval-light.svg' } />
                 }
@@ -121,7 +121,7 @@ function Hero({darkM}) {
                 {/* Image inside mockup size: 290x624px (or 580x1248px for Retina devices) */}
 
                 {/* iPhone mockup */}
-                <img className="relative dance max-w-full mx-auto md:mr-0 md:max-w-none h-auto pointer-events-none" width='423px' src={'https://res.cloudinary.com/dhkccnvyn/image/upload/v1658348423/iPhone_12___12_Pro_f69cnq.svg'} height="674" alt="iPhone mockup" aria-hidden="true" />
+                <img className="relative dance max-w-full mx-auto md:mr-0 md:max-w-none h-auto pointer-events-none" width='423px' src={'https://res.cloudinary.com/dhkccnvyn/image/upload/v1658348423/iPhone_12___12_Pro_f69cnq.svg'} width="344" height="674" alt="iPhone mockup" aria-hidden="true" />
                 {/* Play button */}
                 {/* <a className="absolute group" href="#0" onClick={(e) => { e.preventDefault(); e.stopPropagation(); setVideoModalOpen(true); }} aria-controls="modal">
                   <img src={PlayBtn} width="96" height="96" alt="Play" />
