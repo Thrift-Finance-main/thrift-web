@@ -23,7 +23,7 @@ function How({darkM}) {
 
 
   return (
-    <section className={!darkM ? "relative bg-[url('/bg/Rectangle.png')] bg-no-repeat bg-cover" : "relative"}>
+    <section id='features' className={!darkM ? "relative bg-[url('/bg/Rectangle.png')] bg-no-repeat bg-cover" : "relative"}>
 
       {/* Section background (needs .relative class on parent and next sibling elements) */}
       {/* <div className="absolute dark-here inset-0 bg-gray-100 pointer-events-none mb-16" aria-hidden="true"></div> */}
