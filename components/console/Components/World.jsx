@@ -1,7 +1,10 @@
 import React from 'react';
 import Image from 'next/image';
+import content from '../../../public/data/Hero/content.json';
 
-function FeaturesWorld({darkM}) {
+function FeaturesWorld ({ darkM })
+{
+  const world_json = content.features_world;
   return (
     <>
       <div className='max-w-6xl mx-auto border-t border-gray-700 pt-8'></div>
@@ -11,8 +14,8 @@ function FeaturesWorld({darkM}) {
 
           {/* Section header */}
           <div className="max-w-3xl mx-auto text-center py-8">
-            <h1 className="h2 mb-4 !font-normal font-xl font-header">Team</h1>
-            <p className="text-xl text-gray-600 black-text">Decentralized Team of experts with prident blockchain history</p>
+            <h1 className="h2 mb-4 !font-normal font-xl font-header">{world_json.heading}</h1>
+              <p className="text-xl text-gray-600 black-text">{ world_json.info }</p>
           </div>
 
 

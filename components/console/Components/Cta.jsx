@@ -1,6 +1,8 @@
 import React from 'react';
+import content from '../../../public/data/Hero/content.json';
 
 function TheCta({darkM}) {
+  const cta_json = content.the_cta;
   return (
     <div className = 'dark-here'>
     <section className={darkM === true ? 'dark-bg-noti-img' : 'bg-noti-img'}>
@@ -15,7 +17,7 @@ function TheCta({darkM}) {
               {/* CTA content */}
               <div className="mb-6 lg:mr-16 lg:mb-0 text-center lg:text-left">
 
-                <p className="text-white text-lg opacity-75 text-4xl w-100 font-header">Get Notification</p>
+                <p className="text-white text-lg opacity-75 text-4xl w-100 font-header">{cta_json.heading}</p>
               </div>
 
               {/* CTA button */}

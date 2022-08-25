@@ -2,10 +2,9 @@ import React from 'react';
 
 import content from '../../public/data/Hero/content.json'
 
-function Hero({darkM}) {
-
-  console.log('content');
-  console.log(content);
+function Hero ({ darkM })
+{ 
+  const hero_json = content.hero;
   return (
     <section className=''>
 
@@ -29,11 +28,10 @@ function Hero({darkM}) {
                   data-aos="fade-down"
                   style={{background: 'none !important'}}
               >
-                    Crypto saving,
-                     made personal
+                    {hero_json.heading}
               </h1>
               </div>
-              <p className="black-text text-gray-600 dark:text-gray-400" data-aos="fade-down" data-aos-delay="150">Thrift RealFi wallet lets you easily save, invest, pay and manage your funds without giving up your privacy, asset’s ownership, security or your data. </p>
+              <p className="black-text text-gray-600 dark:text-gray-400" data-aos="fade-down" data-aos-delay="150">{ hero_json.info}</p>
               {/* CTA form */}
               <form className="mt-8" data-aos="fade-down" data-aos-delay="300">
                 <div className="flex flex-col sm:flex-row justify-center max-w-sm mx-auto sm:max-w-md md:mx-0">
@@ -44,24 +42,16 @@ function Hero({darkM}) {
                 {/* <p className="text-center md:text-left mt-2 opacity-75 text-sm">Thanks for subscribing!</p> */}
               </form>
               <ul className="max-w-sm black-text sm:max-w-md mx-auto md:max-w-none text-gray-600 dark:text-gray-400 mt-8 -mb-2" data-aos="fade-down" data-aos-delay="450">
-                <li className="flex items-center mb-2">
-                  <svg className="text-[#3ABAB4] w-3 h-3 fill-current text-primary mr-2 shrink-0" viewBox="0 0 12 12" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M10.28 2.28L3.989 8.575 1.695 6.28A1 1 0 00.28 7.695l3 3a1 1 0 001.414 0l7-7A1 1 0 0010.28 2.28z" />
-                  </svg>
-                  <span>Local language support </span>
-                </li>
-                <li className="flex items-center mb-2">
-                  <svg className="text-[#3ABAB4] w-3 h-3 fill-current text-primary mr-2 shrink-0" viewBox="0 0 12 12" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M10.28 2.28L3.989 8.575 1.695 6.28A1 1 0 00.28 7.695l3 3a1 1 0 001.414 0l7-7A1 1 0 0010.28 2.28z" />
-                  </svg>
-                  <span>Lend or save as a group</span>
-                </li>
-                <li className="flex items-center mb-2">
-                  <svg className="text-[#3ABAB4] w-3 h-3 fill-current text-primary mr-2 shrink-0" viewBox="0 0 12 12" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M10.28 2.28L3.989 8.575 1.695 6.28A1 1 0 00.28 7.695l3 3a1 1 0 001.414 0l7-7A1 1 0 0010.28 2.28z" />
-                  </svg>
-                  <span>Grow wealth annonymously</span>
-                </li>
+                {
+                  hero_json.tags.map((tag, index) => (
+                    <li key={ index }  className="flex items-center mb-2">
+                      <svg className="text-[#3ABAB4] w-3 h-3 fill-current text-primary mr-2 shrink-0" viewBox="0 0 12 12" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M10.28 2.28L3.989 8.575 1.695 6.28A1 1 0 00.28 7.695l3 3a1 1 0 001.414 0l7-7A1 1 0 0010.28 2.28z" />
+                      </svg>
+                      <span>{tag} </span>
+                    </li>
+                  ))
+                } 
               </ul>
 
               <div className='relative'>

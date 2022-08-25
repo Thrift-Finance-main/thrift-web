@@ -2,8 +2,11 @@ import React from 'react';
 
 import Image from 'next/image'
 import { AiFillGithub, AiFillTwitterCircle, AiFillInstagram, AiFillLinkedin, AiFillFacebook } from 'react-icons/ai'
+import content from '../../../public/data/Hero/content.json';
 
-function TheFooter({darkM}) {
+function TheFooter ({ darkM })
+{
+  const footer_json = content.the_footer;
   return (
     <footer>
       <div className="max-w-6xl text-left dark-here mx-auto px-4 sm:px-6">
@@ -29,16 +32,13 @@ function TheFooter({darkM}) {
           <div className="sm:col-span-6 md:col-span-3 lg:col-span-2 mr-0 sm:mr-[150px]">
             <h6 className="text-gray-800 font-medium mb-2 dark-here">Quick links </h6>
             <ul className="text-sm">
-              <li className="mb-2">
-                <div to="#" className="text-gray-600 hover:text-gray-900 shade transition duration-150 ease-in-out">Ideascale</div>
-              </li>
-              <li className="mb-2">
-                <div to="#" className="text-gray-600 hover:text-gray-900 shade transition duration-150 ease-in-out">Docs</div>
-              </li>
-              <li className="mb-2">
-                <div to="#" className="text-gray-600 hover:text-gray-900 shade transition duration-150 ease-in-out">FAQs</div>
-              </li>
-
+              {
+                footer_json.quick_links.map((link, index) => (
+                  <li key={index} className="mb-2">
+                    <div to="#" className="text-gray-600 hover:text-gray-900 shade transition duration-150 ease-in-out">{link}</div>
+                  </li>
+                ))
+              }
             </ul>
           </div>
 
@@ -46,13 +46,13 @@ function TheFooter({darkM}) {
           <div className="mt-4 sm:mt-0 sm:col-span-6 md:col-span-3 lg:col-span-2 mr-0 sm:mr-[50px]">
             <h6 className="text-gray-800 font-medium mb-2 dark-here">About</h6>
             <ul className="text-sm">
-              <li className="mb-2">
-                <div to="#" className="text-gray-600 hover:text-gray-900 shade transition duration-150 ease-in-out">Team</div>
-              </li>
-              <li className="mb-2">
-                <div to="#" className="text-gray-600 hover:text-gray-900 shade transition duration-150 ease-in-out">Roadmap</div>
-              </li>
-
+              {
+                footer_json.about.map((link, index) => (
+                  <li key={index} className="mb-2">
+                    <div to="#" className="text-gray-600 hover:text-gray-900 shade transition duration-150 ease-in-out">{link}</div>
+                  </li>
+                ))
+              }
             </ul>
           </div>
 

@@ -1,5 +1,9 @@
 import Image from 'next/image'
-const ThriftPeer = ({darkM}) => {
+import content from '../../../public/data/Hero/content.json';
+
+const ThriftPeer = ({ darkM }) =>
+{
+    const thrift_json = content.thrift_peer;
     return (
         <>
 
@@ -13,8 +17,8 @@ const ThriftPeer = ({darkM}) => {
                             />
                           </div>
                           <div className="peerText">
-                            <h3 className='!text-[2em] mt-[18px] mb-[37px]'>Thrift P2P</h3>
-                            <p> Securely exchange crypto for fiat with other users, communicate privately. </p>
+                        <h3 className='!text-[2em] mt-[18px] mb-[37px]'>{ thrift_json.heading }</h3>
+                            <p>{ thrift_json.info } </p>
                           </div>
 
                 </div>

@@ -7,7 +7,9 @@ import Logo from '../console/Components/Logo';
 import Image from 'next/image'
 import Link from 'next/link';
 import { useDispatch, useSelector } from 'react-redux'
-import { setDarkMode } from '../../store/actions/sampleAction'
+import { setDarkMode } from '../../store/actions/sampleAction';
+import content from '../../public/data/Hero/content.json';
+
 function TheHeader({setDarkModeProp}) {
 
   const dispatch = useDispatch();
@@ -18,6 +20,8 @@ function TheHeader({setDarkModeProp}) {
 
   const trigger = useRef(null);
   const mobileNav = useRef(null);
+  const header_json = content.the_header;
+  console.log(header_json);
 
   // close the mobile menu on click outside
   useEffect(() => {
@@ -82,40 +86,33 @@ function TheHeader({setDarkModeProp}) {
           <nav className="hidden md:flex md:grow">
             {/* Desktop menu divs */}
             <ul className="flex black-text grow flex-wrap items-center font-medium">
-              <li>                
-                <Link href="#features">
-                  <a className="black-text text-gray-600 hover:!text-[#26208b] dark:text-gray-300 dark:hover:text-gray-100 px-5 py-2 flex items-center transition duration-150 ease-in-out">Features</a>
-                </Link>
-              </li>
-              <li>
-                <Link href="#roadmap" >
-                  <a className="text-gray-600 black-text  hover:!text-[#26208b] dark:text-gray-300 dark:hover:text-gray-100 px-5 py-2 flex items-center transition duration-150 ease-in-out">
-                    Roadmap
-                  </a>
-                </Link>
-              </li>
-              <li>
-                <Link href="#about">
-                  <a className="mr-12 text-gray-600 black-text  hover:!text-[#26208b] dark:text-gray-300 dark:hover:text-gray-100 px-5 py-2 flex items-center transition duration-150 ease-in-out">About</a>
-                </Link>
-              </li>
-              {/* 1st level: hover */}
-              <Dropdown title="Doc" >
-                {/* 2nd level: hover */}
-                <li>
-                  <Link href="/help">
-                    <a className="text-sm black-text hover:!text-[#26208b] text-gray-600 dark:text-gray-400  flex py-2 px-4 leading-tight">
-                      Help Center
-                    </a>
-                  </Link>
-                </li>
-                <li>
-                  <Link
-                    href="/404"
-                  >
-                    <a className="text-sm black-text hover:!text-[#26208b] text-gray-600 dark:text-gray-400  flex py-2 px-4 leading-tight">404</a>
-                  </Link>
-                </li>
+              {
+                header_json.menus.map((menu, index) => (
+                  <li key={index} className={index === header_json.menus.length - 1 && 'mr-12'}>
+                    <Link href={ `#${menu.toLowerCase()}` }>
+                      <a className="text-gray-600 black-text  hover:!text-[#26208b] dark:text-gray-300 dark:hover:text-gray-100 px-5 py-2 flex items-center transition duration-150 ease-in-out">
+                        {menu}
+                      </a>
+                    </Link>
+                  </li>
+                ))
+              }
+              
+              <Dropdown title={header_json.dropdown_menu.title.desktop}>
+                {/* 2nd level: hover */ }
+                {
+                  header_json.dropdown_menu.items.map((item, index) =>
+                    (
+                      <li key={ index }>
+                        <Link href={ item.link }>
+                          <a className="text-sm black-text hover:!text-[#26208b] text-gray-600 dark:text-gray-400  flex py-2 px-4 leading-tight">
+                            {item.title}
+                          </a>
+                        </Link>
+                      </li>
+                    )
+                  )
+                }
               </Dropdown>
             </ul>
 
@@ -153,7 +150,7 @@ function TheHeader({setDarkModeProp}) {
               <li>
                 <Link href="/contact" >
                   <a className="btn-sm text-white  cursor-pointer ml-6 p-3 bg-purpled">
-                    App Coming Soon
+                    {header_json.comming_soon}
                   </a>
                    
                 </Link>
@@ -237,45 +234,39 @@ function TheHeader({setDarkModeProp}) {
                   </div>
                   {/* divs */}
                   <ul>
-                    <li>                
-                      <Link href="/features">
-                        <a className="block black-text text-gray-600 hover:text-gray-900 dark:text-gray-300 dark:hover:text-gray-100 px-5 py-2 flex items-center transition duration-150 ease-in-out">Features</a>
-                      </Link>
-                    </li>
-                    <li>
-                      <Link href="#roadmap" >
-                        <a className="block text-gray-600 black-text  hover:text-gray-900 dark:text-gray-300 dark:hover:text-gray-100 px-5 py-2 flex items-center transition duration-150 ease-in-out">
-                          Roadmap
-                        </a>
-                      </Link>
-                    </li>
-                    <li>
-                      <Link href="#about">
-                        <a className="block text-gray-600 black-text  hover:text-gray-900 dark:text-gray-300 dark:hover:text-gray-100 px-5 py-2 flex items-center transition duration-150 ease-in-out">About</a>
-                      </Link>
-                    </li>
+                    {
+                      header_json.menus.map((menu, index) => (
+                        <li key={index}>
+                          <Link href={ `#${menu.toLowerCase()}` }>
+                            <a className="block text-gray-600 black-text  hover:text-gray-900 dark:text-gray-300 dark:hover:text-gray-100 px-5 py-2 flex items-center transition duration-150 ease-in-out">
+                              {menu}
+                            </a>
+                          </Link>
+                        </li>
+                      ))
+                    }
 
                     <li className="py-2 my-2 border-t border-b border-gray-200 dark:border-gray-800">
-                      <span className="flex text-gray-600 dark:text-gray-400 py-2">Resources</span>
+                      <span className="flex text-gray-600 dark:text-gray-400 py-2">{header_json.dropdown_menu.title.mobile}</span>
                       <ul className="pl-4">
-                        <li>
-                          <Link
-                            href="/help" 
-                          >
-                            <a className="text-sm flex font-medium text-gray-600 hover:text-gray-900 dark:text-gray-400 dark:hover:text-gray-100 py-2">Help Center</a>
-                          </Link>
-                        </li>
-                        <li>
-                          <Link href="/404"> 
-                            <a className="text-sm flex font-medium text-gray-600 hover:text-gray-900 dark:text-gray-400 dark:hover:text-gray-100 py-2">404</a>
-                          </Link>
-                        </li>
+                        {
+                          header_json.dropdown_menu.items.map((item, index) => (
+                            <li key={index}>
+                              <Link href={item.link}> 
+                                <a className="text-sm flex font-medium text-gray-600 hover:text-gray-900 dark:text-gray-400 dark:hover:text-gray-100 py-2">
+                                  {item.title}
+                                </a>
+                              </Link>
+                            </li>
+                          ))
+                        } 
+
                       </ul>
                     </li>
                     <li>
                       <Link href="/contact">
                         <a className="font-medium bg-purpled w-full inline-flex items-center justify-center border border-transparent px-4 py-2 my-2 rounded text-white bg-teal-500 hover:bg-teal-400 transition duration-150 ease-in-out">
-                          App Comming Soon
+                          {header_json.comming_soon}
                         </a>
                         
                       </Link>

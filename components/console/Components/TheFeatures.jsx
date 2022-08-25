@@ -1,6 +1,10 @@
+import { features } from 'process';
 import React from 'react';
+import content from '../../../public/data/Hero/content.json';
 
-function FeaturesBlocks({darkM}) {
+function FeaturesBlocks ({ darkM })
+{
+  const features_json = content.features_block;
   return (
     <section className="relative dark-here">
 
@@ -13,9 +17,9 @@ function FeaturesBlocks({darkM}) {
 
           {/* Section header */}
           <div className="max-w-3xl mx-auto text-center pb-12 md:pb-20">
-            <h2 className="h2 dark-here mb-4 text-black font-header ">Build a Legacy of Financial Greatness</h2>
+            <h2 className="h2 dark-here mb-4 text-black font-header ">{ features_json.heading }</h2>
             <p className="text-gray-600 black-text">
-              A Suite of RealFi products powered by Cardano to keep you in control of your finances. We leverage decentralization to help you overcome banking inefficiency.
+              {features_json.info}
             </p>
           </div>
 
@@ -35,8 +39,8 @@ function FeaturesBlocks({darkM}) {
                   </g>
                 </g>
               </svg>
-              <h4 className="text-xl font-bold leading-snug tracking-tight mb-1">SmartFi</h4>
-              <p className="text-gray-600 text-center black-text">Manage and analyze your personal finances better and easier
+              <h4 className="text-xl font-bold leading-snug tracking-tight mb-1">{features_json.items[0].title}</h4>
+              <p className="text-gray-600 text-center black-text">{features_json.items[0].info}
               </p>
             </div>
 
@@ -52,8 +56,8 @@ function FeaturesBlocks({darkM}) {
                   </g>
                 </g>
               </svg>
-              <h4 className="text-xl font-bold leading-snug tracking-tight mb-1">Governance</h4>
-              <p className="text-gray-600 text-center black-text">Through voting rights, the community governs, maintains, and upgrades Thrift.</p>
+              <h4 className="text-xl font-bold leading-snug tracking-tight mb-1">{ features_json.items[1].title }</h4>
+              <p className="text-gray-600 text-center black-text">{ features_json.items[1].info}</p>
             </div>
 
             {/* 3rd item */}
@@ -69,8 +73,8 @@ function FeaturesBlocks({darkM}) {
                   </g>
                 </g>
               </svg>
-              <h4 className="text-xl font-bold leading-snug tracking-tight mb-1">Stable Currency</h4>
-              <p className="text-gray-600 text-center black-text">save in stable currency, stay ahead of the curve, and secure your future</p>
+              <h4 className="text-xl font-bold leading-snug tracking-tight mb-1">{ features_json.items[2].title}</h4>
+              <p className="text-gray-600 text-center black-text">{ features_json.items[2].info}</p>
             </div>
 
             {/* 4th item */}
@@ -86,8 +90,8 @@ function FeaturesBlocks({darkM}) {
                   </g>
                 </g>
               </svg>
-              <h4 className="text-xl font-bold leading-snug tracking-tight mb-1">Decentralized Digital Identity</h4>
-              <p className="text-gray-600 text-center black-text">Own your identity, no more unwanted prying eyes.</p>
+              <h4 className="text-xl font-bold leading-snug tracking-tight mb-1">{ features_json.items[3].title}</h4>
+              <p className="text-gray-600 text-center black-text">{ features_json.items[3].info }</p>
             </div>
 
             {/* 5th item */}
@@ -102,8 +106,8 @@ function FeaturesBlocks({darkM}) {
                   </g>
                 </g>
               </svg>
-              <h4 className="text-xl font-bold leading-snug tracking-tight mb-1">Digital Agregation</h4>
-              <p className="text-gray-600 text-center black-text">Trustless access to DeFi services and platforms. </p>
+              <h4 className="text-xl font-bold leading-snug tracking-tight mb-1">{ features_json.items[4].title }</h4>
+              <p className="text-gray-600 text-center black-text">{ features_json.items[4].info } </p>
             </div>
 
             {/* 6th item */}
@@ -117,8 +121,8 @@ function FeaturesBlocks({darkM}) {
                   </g>
                 </g>
               </svg>
-              <h4 className="text-xl font-bold leading-snug tracking-tight mb-1">Seamless UI/UX</h4>
-              <p className="text-gray-600 text-center black-text">No matter your background, you can use Thrift RealFi Wallet, it’s that simple.</p>
+              <h4 className="text-xl font-bold leading-snug tracking-tight mb-1">{ features_json.items[5].title }</h4>
+              <p className="text-gray-600 text-center black-text">{ features_json.items[5].info }</p>
             </div>
 
           </div>
