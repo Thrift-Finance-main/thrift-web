@@ -62,6 +62,7 @@ function How({darkM}) {
                 {
                   return (
                     <button
+                      key={index}
                       className={ 'flex black-text items-center  text-lg p-5 rounded border transition duration-300 ease-in-out mb-3 ' + (tab === index + 1 ? 'bg-gray-200 shadow-md border-gray-200 hover:shadow-lg' : ('other-here bg-gray-200 border-transparent' + (darkM ? null : ' !bg-white'))) }
                       onClick={ (e) => { e.preventDefault(); setTab(index + 1); } }
                     >
