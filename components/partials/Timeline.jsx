@@ -1,10 +1,10 @@
 import React, { useState } from 'react';
-import content from '../../public/data/Hero/content.json';
+import timeline_json from '../../public/data/Hero/timeline.json';
 
 function Timeline({darkM}) {
 
   const [year, setYear] = useState('2021');
-  const timeline_json = content.timeline;
+  // const timeline_json = content.timeline;
   const years = timeline_json.group.map(item => item.year);
 
   return (

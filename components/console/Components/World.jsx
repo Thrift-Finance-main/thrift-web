@@ -1,10 +1,10 @@
 import React from 'react';
 import Image from 'next/image';
-import content from '../../../public/data/Hero/content.json';
+import world_json from '../../../public/data/Hero/world.json';
 
 function FeaturesWorld ({ darkM })
 {
-  const world_json = content.features_world;
+  // const world_json = content.features_world;
   return (
     <>
       <div className='max-w-6xl mx-auto border-t border-gray-700 pt-8'></div>

@@ -1,8 +1,8 @@
 import React from 'react';
-import content from '../../../public/data/Hero/content.json';
+import cta_json from '../../../public/data/Hero/cta.json';
 
 function TheCta({darkM}) {
-  const cta_json = content.the_cta;
+  // const cta_json = content.the_cta;
   return (
     <div className = 'dark-here'>
     <section className={darkM === true ? 'dark-bg-noti-img' : 'bg-noti-img'}>

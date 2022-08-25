@@ -2,11 +2,11 @@ import React from 'react';
 
 import Image from 'next/image'
 import { AiFillGithub, AiFillTwitterCircle, AiFillInstagram, AiFillLinkedin, AiFillFacebook } from 'react-icons/ai'
-import content from '../../../public/data/Hero/content.json';
+import footer_json from '../../../public/data/Hero/footer.json';
 
 function TheFooter ({ darkM })
 {
-  const footer_json = content.the_footer;
+  // const footer_json = content.the_footer;
   return (
     <footer>
       <div className="max-w-6xl text-left dark-here mx-auto px-4 sm:px-6">

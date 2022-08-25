@@ -1,10 +1,10 @@
 import React from 'react';
 
-import content from '../../public/data/Hero/content.json'
+import hero_json from '../../public/data/Hero/hero.json'
 
 function Hero ({ darkM })
 { 
-  const hero_json = content.hero;
+  // const hero_json = content.hero;
   return (
     <section className=''>
 

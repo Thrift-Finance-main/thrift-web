@@ -8,7 +8,7 @@ import Image from 'next/image'
 import Link from 'next/link';
 import { useDispatch, useSelector } from 'react-redux'
 import { setDarkMode } from '../../store/actions/sampleAction';
-import content from '../../public/data/Hero/content.json';
+import header_json from '../../public/data/Hero/header.json';
 
 function TheHeader({setDarkModeProp}) {
 
@@ -20,7 +20,7 @@ function TheHeader({setDarkModeProp}) {
 
   const trigger = useRef(null);
   const mobileNav = useRef(null);
-  const header_json = content.the_header;
+  // const header_json = content.the_header;
   console.log(header_json);
 
   // close the mobile menu on click outside

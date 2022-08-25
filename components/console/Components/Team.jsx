@@ -1,9 +1,9 @@
 
 import Image from 'next/image'
-import content from '../../../public/data/Hero/content.json';
+import team from '../../../public/data/Hero/team.json';
 
 const Team = ({darkM}) => {
-  const {team} = content; 
+  // const {team} = content; 
 
   return (
     <> 

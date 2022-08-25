@@ -1,10 +1,10 @@
 import { features } from 'process';
 import React from 'react';
-import content from '../../../public/data/Hero/content.json';
+import features_json from '../../../public/data/Hero/features.json';
 
 function FeaturesBlocks ({ darkM })
 {
-  const features_json = content.features_block;
+  // const features_json = content.features_block;
   return (
     <section className="relative dark-here">
 

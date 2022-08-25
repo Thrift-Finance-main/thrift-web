@@ -1,8 +1,8 @@
 import Image from 'next/image'
-import content from '../../../public/data/Hero/content.json';
+import partners_json from '../../../public/data/Hero/partners.json';
 
 const Partners = ({darkM}) => {
-    const partners_json = content.partners;
+    // const partners_json = content.partners;
     return (
         <>
 

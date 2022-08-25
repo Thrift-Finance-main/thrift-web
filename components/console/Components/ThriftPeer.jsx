@@ -1,9 +1,9 @@
 import Image from 'next/image'
-import content from '../../../public/data/Hero/content.json';
+import thrift_json from '../../../public/data/Hero/thrift_peer.json';
 
 const ThriftPeer = ({ darkM }) =>
 {
-    const thrift_json = content.thrift_peer;
+    // const thrift_json = content.thrift_peer;
     return (
         <>
 

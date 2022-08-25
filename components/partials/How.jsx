@@ -1,7 +1,7 @@
 import React, { useState, useRef, useEffect } from 'react';
 import Transition from '../shared/Transition';
 import { useSelector } from 'react-redux'
-import content from '../../public/data/Hero/content.json';
+import how_json from '../../public/data/Hero/how.json';
 function How({darkM}) {
 
   const storeState = useSelector((state) => state.reduxData);
@@ -11,7 +11,7 @@ function How({darkM}) {
 
   const tabs = useRef(null);
 
-  const how_json = content.how;
+  // const how_json = content.how;
 
   const heightFix = () => {
     if (tabs.current.children[tab-1]) {

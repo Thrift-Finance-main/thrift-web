@@ -1,0 +1,20 @@
+{
+    "menus": ["Features", "Roadmap", "About"],
+    "dropdown_menu": {
+      "title": {
+        "desktop": "Doc", 
+        "mobile": "Resources"
+      },
+      "items": [
+        {
+          "title": "Help Center",
+          "link": "/help"
+        },
+        {
+          "title": "404",
+          "link": "/404"
+        }
+      ]
+    },
+    "comming_soon": "App Comming Soon"
+  }
