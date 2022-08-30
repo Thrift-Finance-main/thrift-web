@@ -38,7 +38,7 @@ function Timeline({darkM}) {
                       <span className={`block w-3.5 h-3.5 border-2 border-white dark:border-gray-900 rounded-full ${year === item ? 'bg-primary dark:bg-primary' : 'bg-gray-400 dark:bg-gray-700'}`}></span>
                     </button>
                   ))
-                } 
+                }
 
               </div>
 
@@ -52,7 +52,7 @@ function Timeline({darkM}) {
                           <article key={index} className={"p-6 bg-white  box-shade-top  dark:bg-gray-800 shadow-2xl flex flex-col" + ((group_item.items.length & 1 && !index) ? " md:col-span-2" : "")}>
                             <header>
                               <h3 className="h4 font-red-hat-display mb-1">
-                                <a href="#0"  className={'black-text text-black'} >{item.title}</a>
+                                <a href="#0"  className={'text-white dark-here'} >{item.title}</a>
                               </h3>
                             </header>
                             <div className="text-gray-600 dark:text-gray-400 grow">
@@ -68,9 +68,9 @@ function Timeline({darkM}) {
                         ))
                       }
                     </div>
-                  </div> 
+                  </div>
                 ))
-              } 
+              }
             </div>
           </div>
 

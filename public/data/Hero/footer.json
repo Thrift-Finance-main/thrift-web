@@ -1,4 +1,16 @@
 {
-    "quick_links": ["Ideascale", "Docs", "FAQs"],
-    "about": ["Team", "Roadmap"]
+    "quick_links": [
+      {
+        "title": "Ideascale",
+        "link": "https://docs.thrift.finance/"
+      },
+      {
+        "title": "Docs",
+        "link": "https://docs.thrift.finance/"
+      },
+      {
+        "title": "FAQ",
+        "link": "https://thrift.finance/faq"
+      }],
+    "about": ["About", "Roadmap"]
   }
