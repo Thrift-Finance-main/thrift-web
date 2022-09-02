@@ -5,7 +5,8 @@ import Transition from './Transition';
 
 function Dropdown({
   children,
-  title
+  title,
+  darkMode
 }) {
 
   const [dropdownOpen, setDropdownOpen] = useState(false);
@@ -16,7 +17,7 @@ function Dropdown({
       onMouseEnter={() => setDropdownOpen(true)}
       onMouseLeave={() => setDropdownOpen(false)}
       onFocus={() => setDropdownOpen(true)}
-      onBlur={() => setDropdownOpen(false)}
+      onBlur={ () => setDropdownOpen(false) }
     >
       <a
         className="text-gray-600 black-text  dark:text-gray-300 dark:hover:text-gray-100 px-5 py-2 flex items-center transition duration-150 ease-in-out"
@@ -32,7 +33,7 @@ function Dropdown({
       <Transition
         show={dropdownOpen}
         tag="ul"
-        className="origin-top-right absolute top-full left-0 w-40 bg-white dark:bg-gray-800 shadow-lg py-2 ml-4 rounded"
+        className="origin-top-right absolute top-full left-0 w-36 bg-white dark:bg-gray-800 shadow-lg py-2 ml-4 rounded dark-here"
         enter="transition ease-out duration-200 transform"
         enterStart="opacity-0 -translate-y-2"
         enterEnd="opacity-100 translate-y-0"

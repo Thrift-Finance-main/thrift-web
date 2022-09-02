@@ -1,8 +1,17 @@
 import React, { useState, useRef, useEffect } from 'react';
 import Transition from '../shared/Transition';
 import { useSelector } from 'react-redux'
-import how_json from '../../public/data/Hero/how.json';
-function How({darkM}) {
+// import how_json from '../../public/data/Hero/english/how.json';
+function How({darkM, language}) {
+  const [how_json, setHow_json] = useState(null);
+
+  useEffect(() =>
+  {
+    fetch(`/data/Hero/${language}/how.json`)
+      .then(res => res.json())
+      .then(data => setHow_json(data))
+      .catch(err => console.log(err))
+  }, [language]);
 
   const storeState = useSelector((state) => state.reduxData);
   const [darken , _] = useState(storeState.config.darkMode)
@@ -37,8 +46,8 @@ function How({darkM}) {
 
           {/* Section header */}
           <div className="max-w-3xl mx-auto text-center pb-12 md:pb-16">
-            <h1 className="h2 mb-4 font-header ">{how_json.heading}</h1>
-            <p className="text-gray-600 black-text">{ how_json.info }</p>
+            <h1 className="h2 mb-4 font-header ">{how_json?.heading}</h1>
+            <p className="text-gray-600 black-text">{ how_json?.info }</p>
           </div>
 
           {/* Top image */}
@@ -53,12 +62,12 @@ function How({darkM}) {
             {/* Content */}
             <div className="max-w-xl md:max-w-none md:w-full mx-auto md:col-span-7 lg:col-span-6 md:mt-6" data-aos="fade-right">
               <div className="md:pr-4 lg:pr-12 xl:pr-16 mb-8">
-                <h3 className="h3 mb-3 font-header  left">{ how_json.list.heading}</h3>
-                <p className="left text-gray-600 black-text">{ how_json.list.info }</p>
+                <h3 className="h3 mb-3 font-header  left">{ how_json?.list.heading}</h3>
+                <p className="left text-gray-600 black-text">{ how_json?.list.info }</p>
               </div>
               {/* Tabs buttons */}
               <div className="mb-8 md:mb-0">
-                { how_json.list.items.map((item, index) =>
+                { how_json?.list.items.map((item, index) =>
                 {
                   return (
                     <button
@@ -97,7 +106,7 @@ function How({darkM}) {
                   leaveEnd="opacity-0 -translate-y-16"
                 >
                   <div className="relative inline-flex flex-col">
-                    <img className="md:max-w-none mx-auto rounded"
+                    <img className="lg:max-w-none mx-auto rounded"
                       src={ darkM? 'https://res.cloudinary.com/thrift-labs-team/image/upload/v1659087983/Thrift%20images/Base_2_fhzh6m.svg' : '/base/Base2.png' }
                       width="500" height="375" alt="Features bg" />
                     {/* <Image className="md:max-w-none absolute w-full left-0 transform animate-float" src={FeaturesElement01} width="500" height="147" alt="Element 01" style={{ top: '22%' }} /> */}
@@ -118,7 +127,7 @@ function How({darkM}) {
                   leaveEnd="opacity-0 -translate-y-16"
                 >
                   <div className="relative inline-flex flex-col">
-                    <img className="md:max-w-none mx-auto rounded"
+                    <img className="lg:max-w-none mx-auto rounded"
                       src={ darkM ? 'https://res.cloudinary.com/thrift-labs-team/image/upload/v1659019350/Thrift%20images/Base_pmgv7g.svg' : '/base/Base1.png' } width="500" height="375" alt="Features bg" />
                     {/* <Image className="md:max-w-none absolute w-full left-0 bottom-0 transform animate-float animation-delay-1000" src={FeaturesElement03} width="500" height="167" alt="Element 03" style={{ top: '18%' }} />
                     // <Image className="md:max-w-none absolute w-full left-0 transform animate-float animation-delay-500" src={FeaturesElement02} width="500" height="158" alt="Element 02" style={{ top: '40%' }} /> */}
@@ -138,7 +147,7 @@ function How({darkM}) {
                   leaveEnd="opacity-0 -translate-y-16"
                 >
                   <div className="relative inline-flex flex-col">
-                    <img className="md:max-w-none mx-auto rounded" src={ darkM ? 'https://res.cloudinary.com/thrift-labs-team/image/upload/v1659019778/Thrift%20images/Base_1_qcyybc.svg' : '/base/Base3.png' } width="500" height="375" alt="Features bg" />
+                    <img className="lg:max-w-none mx-auto rounded" src={ darkM ? 'https://res.cloudinary.com/thrift-labs-team/image/upload/v1659019778/Thrift%20images/Base_1_qcyybc.svg' : '/base/Base3.png' } width="500" height="375" alt="Features bg" />
                     {/* <Image className="md:max-w-none absolute w-full left-0 transform animate-float" src={FeaturesElement01} width="500" height="147" alt="Element 01" style={{ top: '22%' }} />
                     <Image className="md:max-w-none absolute w-full left-0 transform animate-float animation-delay-500" src={FeaturesElement02} width="500" height="158" alt="Element 02" style={{ top: '39%' }} />
                     <Image className="md:max-w-none absolute w-full left-0 bottom-0 transform animate-float animation-delay-1000" src={FeaturesElement03} width="500" height="167" alt="Element 03" style={{ top: '77%' }} /> */}

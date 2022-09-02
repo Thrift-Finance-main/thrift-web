@@ -1,0 +1,84 @@
+{
+    "heading": "Roadmap",
+    "info": "First steps, our challenges, participation in incubation & acceleration programs.",
+    "years": ["2021", "2022", "2023", "2024", "2025"],
+    "group": [
+      {
+        "year": "2021",
+        "items": [
+          {
+          "title": "Git Init",
+          "info": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt."
+          },
+          {
+          "title": "Thrift on Cardano Summit",
+          "info": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt."
+          },
+          {
+          "title": "DeFI and Microlending for Africa",
+          "info": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt."
+          },
+          {
+          "title": "Catalyst Boost Camp for Africa",
+          "info": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt."
+          }
+        ]
+      },
+      {
+        "year": "2022",
+        "items": [
+          {
+            "title": "IM Customers",
+            "info": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt."
+          },
+          {
+            "title": "Mobile builder enabled",
+            "info": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt."
+          }
+        ]
+      },
+      {
+        "year": "2023",
+        "items": [
+          {
+            "title": "Series B fundraising",
+            "info": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt."
+          },
+          {
+            "title": "Launched Apply Business",
+            "info": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt."
+          }
+        ]
+      },
+      {
+        "year": "2024",
+        "items": [
+          {
+            "title": "Mobile builder enabled",
+            "info": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt."
+          },
+          {
+            "title": "1M Customers",
+            "info": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt."
+          }
+        ]
+      },
+      {
+        "year": "2025",
+        "items": [
+          {
+            "title": "Mobile builder enabled",
+            "info": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt."
+          },
+          {
+            "title": "Series B fundraising",
+            "info": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt."
+          },
+          {
+            "title": "1M Customers",
+            "info": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt."
+          }
+        ]
+      }
+    ]
+  }

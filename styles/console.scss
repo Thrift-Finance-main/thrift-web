@@ -84,23 +84,16 @@
 }
 
 .item-team {
-
-    //display flex amd flex wrap
-
     display: flex;
+    max-width: 1027px;
+    width: 100%;
+    margin: 0 auto;
     flex-wrap: wrap;
-    justify-content: space-between;
     align-items: center;
-    margin: 1em 0;
-    padding: 1em;
-    width: 80%;
-    gap: 3em;
     justify-content: center;
-    margin: 2em ;
-
-
-
-
+    .team-member {
+        width: 299px;
+    }
 }
 
 .p2p {
@@ -147,14 +140,6 @@
     .p2p {
         width: 90%;
         height: 100%;
-
-    }
-
-    .item-team {
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        gap: 2em;
 
     }
 

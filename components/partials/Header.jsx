@@ -1,67 +1,76 @@
-
-import React, { useState, useRef, useEffect } from 'react';
+import React, { useState, useRef, useEffect } from 'react'
 // import { div } from 'react-router-dom';
-import Dropdown from '../shared/Dropdown';
-import Transition from '../shared/Transition';
-import Logo from '../console/Components/Logo';
+import Dropdown from '../shared/Dropdown'
+import Transition from '../shared/Transition'
+import Logo from '../console/Components/Logo'
 import Image from 'next/image'
-import Link from 'next/link';
+import Link from 'next/link'
 import { useDispatch, useSelector } from 'react-redux'
-import { setDarkMode } from '../../store/actions/sampleAction';
-import header_json from '../../public/data/Hero/header.json';
+import { setDarkMode, setLanguageMode } from '../../store/actions/sampleAction'
+// import header_json from '../../public/data/Hero/english/header.json';
 
-function TheHeader({setDarkModeProp}) {
+function TheHeader({ setDarkModeProp, setLang, language, darkM }) {
+  const [header_json, setHeader_json] = useState(null)
 
-  const dispatch = useDispatch();
+  useEffect(() => {
+    fetch(`/data/Hero/${language}/header.json`)
+      .then((res) => res.json())
+      .then((data) => setHeader_json(data))
+      .catch((err) => console.log(err))
+  }, [language])
 
-  const storeState = useSelector((state) => state.reduxData);
-  const [darken, setDarken] = useState(storeState.config.darkMode); 
-  const [mobileNavOpen, setMobileNavOpen] = useState(false);
+  const dispatch = useDispatch()
 
-  const trigger = useRef(null);
-  const mobileNav = useRef(null);
-  // const header_json = content.the_header;
-  console.log(header_json);
+  const [mobileNavOpen, setMobileNavOpen] = useState(false)
+
+  const trigger = useRef(null)
+  const mobileNav = useRef(null)
 
   // close the mobile menu on click outside
   useEffect(() => {
     const clickHandler = ({ target }) => {
-      if (!mobileNav.current || !trigger.current) return;
-      if (!mobileNavOpen || mobileNav.current.contains(target) || trigger.current.contains(target)) return;
-      setMobileNavOpen(false);
-    };
-    document.addEventListener('click', clickHandler);
-    return () => document.removeEventListener('click', clickHandler);
-  });
+      if (!mobileNav.current || !trigger.current) return
+      if (
+        !mobileNavOpen ||
+        mobileNav.current.contains(target) ||
+        trigger.current.contains(target)
+      )
+        return
+      setMobileNavOpen(false)
+    }
+    document.addEventListener('click', clickHandler)
+    return () => document.removeEventListener('click', clickHandler)
+  })
 
   // close the mobile menu if the esc key is pressed
   useEffect(() => {
     const keyHandler = ({ keyCode }) => {
-      if (!mobileNavOpen || keyCode !== 27) return;
-      setMobileNavOpen(false);
-    };
-    document.addEventListener('keydown', keyHandler);
-    return () => document.removeEventListener('keydown', keyHandler);
-  });
+      if (!mobileNavOpen || keyCode !== 27) return
+      setMobileNavOpen(false)
+    }
+    document.addEventListener('keydown', keyHandler)
+    return () => document.removeEventListener('keydown', keyHandler)
+  })
 
   useEffect(() => {
-
-    if (darken) {
+    if (darkM) {
       document.documentElement.classList.add('dark')
     } else {
       document.documentElement.classList.remove('dark')
     }
-  }, [darken]);
-
+  }, [darkM])
 
   const handleDarkMode = (darkMode) => {
-
-    console.log('handleDarkMode');
-    console.log(darkMode);
-    setDarken(darkMode);
+    // console.log('handleDarkMode');
+    // console.log(darkMode);
+    // setDarken(darkMode);
     // @ts-ignore
-    dispatch(setDarkMode(darkMode));
+    dispatch(setDarkMode(darkMode))
     setDarkModeProp(darkMode)
+  }
+  const handleLanguageChange = (lang) => {
+    setLang(lang)
+    dispatch(setLanguageMode(lang))
   }
 
   return (
@@ -71,48 +80,69 @@ function TheHeader({setDarkModeProp}) {
           {/* Site branding */}
           <div className="shrink-0 mr-5">
             {/* Logo */}
-            <Link href="/" >
+            <Link href="/">
               <a className="block" aria-label="Cruip">
-
                 {/* check if dark mode is true  */}
-                {
-                  !darken ? <Logo/> :  <img width={'98.28'} height={"40.29"} src={'https://res.cloudinary.com/dhkccnvyn/image/upload/v1658767409/Logo_Thrift_Finance_white_1_2_1_xr9jzu.png'} />
-                }
+                {!darkM ? (
+                  <Logo />
+                ) : (
+                  <img
+                    width={'98.28'}
+                    height={'40.29'}
+                    src={
+                      'https://res.cloudinary.com/dhkccnvyn/image/upload/v1658767409/Logo_Thrift_Finance_white_1_2_1_xr9jzu.png'
+                    }
+                  />
+                )}
               </a>
             </Link>
           </div>
 
           {/* Desktop navigation */}
-          <nav className="hidden md:flex md:grow">
+          <nav className="hidden lg:flex lg:grow">
             {/* Desktop menu divs */}
             <ul className="flex black-text grow flex-wrap items-center font-medium">
-              {
-                header_json.menus.map((menu, index) => (
-                  <li key={index} className={index === header_json.menus.length - 1 && 'mr-12'}>
-                    <Link href={ `#${menu.toLowerCase()}` }>
-                      <a className="text-gray-600 black-text  hover:!text-[#26208b] dark:text-gray-300 dark:hover:text-gray-100 px-5 py-2 flex items-center transition duration-150 ease-in-out">
-                        {menu}
-                      </a>
-                    </Link>
-                  </li>
-                ))
-              }
-              
-              <Dropdown title={header_json.dropdown_menu.title.desktop}>
-                {/* 2nd level: hover */ }
-                {
-                  header_json.dropdown_menu.items.map((item, index) =>
-                    (
-                      <li key={ index }>
-                        <Link href={ item.link }>
-                          <a className="text-sm black-text hover:!text-[#26208b] text-gray-600 dark:text-gray-400  flex py-2 px-4 leading-tight">
-                            {item.title}
-                          </a>
-                        </Link>
-                      </li>
-                    )
+              {header_json?.menus.map((menu, index) => (
+                <li
+                  key={index}
+                  className={index === header_json?.menus.length - 1 && 'mr-12'}
+                >
+                  <Link href={`#${menu.toLowerCase()}`}>
+                    <a
+                      className={`text-gray-600 black-text dark:text-gray-300 dark:hover:text-gray-100 px-5 py-2 flex items-center transition duration-150 ease-in-out ${
+                        darkM
+                          ? 'hover:!text-[#603EDA]'
+                          : 'hover:!text-[#191919]'
+                      }`}
+                    >
+                      {menu}
+                    </a>
+                  </Link>
+                </li>
+              ))}
+
+              <Dropdown
+                title={header_json?.dropdown_menu.title.desktop}
+                darkMode={darkM}
+              >
+                {header_json?.dropdown_menu.items.map((item, index) => {
+                  if (index === 1 && darkM) return
+                  return (
+                    <li key={index}>
+                      <Link href={item.link}>
+                        <a
+                          className={`text-sm black-text text-gray-600 dark:text-gray-400  flex py-2 px-4 leading-tight ${
+                            darkM
+                              ? 'hover:!text-[#603EDA]'
+                              : 'hover:!text-[#191919]'
+                          }`}
+                        >
+                          {item.title}
+                        </a>
+                      </Link>
+                    </li>
                   )
-                }
+                })}
               </Dropdown>
             </ul>
 
@@ -123,17 +153,27 @@ function TheHeader({setDarkModeProp}) {
                 name="light-switch"
                 id="light-switch-desktop"
                 className="light-switch sr-only"
-                checked={darken}
-                onChange={() => handleDarkMode(!darken)}
+                checked={darkM}
+                onChange={() => handleDarkMode(!darkM)}
               />
 
-            <label className="relative" htmlFor="light-switch-desktop">
+              <label className="relative" htmlFor="light-switch-desktop">
                 <span
                   className="relative bg-gradient-to-t from-gray-100 to-white dark:from-gray-800 dark:to-gray-700 shadow-sm z-10"
                   aria-hidden="true"
                 ></span>
-                <svg className="absolute inset-0" width="44" height="24" viewBox="0 0 44 24" xmlns="http://www.w3.org/2000/svg">
-                  <g className="fill-current text-white" fillRule="nonzero" opacity=".88">
+                <svg
+                  className="absolute inset-0"
+                  width="44"
+                  height="24"
+                  viewBox="0 0 44 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <g
+                    className="fill-current text-white"
+                    fillRule="nonzero"
+                    opacity=".88"
+                  >
                     <path d="M32 8a.5.5 0 00.5-.5v-1a.5.5 0 10-1 0v1a.5.5 0 00.5.5zM35.182 9.318a.5.5 0 00.354-.147l.707-.707a.5.5 0 00-.707-.707l-.707.707a.5.5 0 00.353.854zM37.5 11.5h-1a.5.5 0 100 1h1a.5.5 0 100-1zM35.536 14.829a.5.5 0 00-.707.707l.707.707a.5.5 0 00.707-.707l-.707-.707zM32 16a.5.5 0 00-.5.5v1a.5.5 0 101 0v-1a.5.5 0 00-.5-.5zM28.464 14.829l-.707.707a.5.5 0 00.707.707l.707-.707a.5.5 0 00-.707-.707zM28 12a.5.5 0 00-.5-.5h-1a.5.5 0 100 1h1a.5.5 0 00.5-.5zM28.464 9.171a.5.5 0 00.707-.707l-.707-.707a.5.5 0 00-.707.707l.707.707z" />
                     <circle cx="32" cy="12" r="3" />
                     <circle fillOpacity=".4" cx="12" cy="12" r="6" />
@@ -142,24 +182,40 @@ function TheHeader({setDarkModeProp}) {
                 </svg>
                 <span className="sr-only">Switch to light / dark version</span>
               </label>
-
             </div>
 
             {/* Desktop CTA on the right */}
             <ul className="flex justify-end flex-wrap items-center">
               <li>
-                <Link href="/contact" >
+                <Link href="/contact">
                   <a className="btn-sm text-white  cursor-pointer ml-6 p-3 bg-purpled">
-                    {header_json.comming_soon}
+                    {header_json?.comming_soon}
                   </a>
-                   
                 </Link>
               </li>
+              <Dropdown title={language}>
+                {header_json?.language_dropdown.map((item, index) => {
+                  if (language === item) return
+                  return (
+                    <li
+                      key={index}
+                      className={`cursor-pointer text-sm black-text text-gray-600 dark:text-gray-400  flex py-2 px-4 leading-tight ${
+                        darkM
+                          ? 'hover:!text-[#603EDA]'
+                          : 'hover:!text-[#191919]'
+                      }`}
+                      onClick={() => handleLanguageChange(item)}
+                    >
+                      {item}
+                    </li>
+                  )
+                })}
+              </Dropdown>
             </ul>
           </nav>
 
           {/* Mobile menu */}
-          <div className="inline-flex md:hidden">
+          <div className="inline-flex lg:hidden">
             {/* Mobile lights switch */}
             <div className="form-switch flex flex-col justify-center mr-6 -mt-0.5 ">
               <input
@@ -167,8 +223,8 @@ function TheHeader({setDarkModeProp}) {
                 name="light-switch"
                 id="light-switch-mobile"
                 className="light-switch sr-only"
-                checked={darken}
-                onChange={() => handleDarkMode(!darken)}
+                checked={darkM}
+                onChange={() => handleDarkMode(!darkM)}
               />
 
               <label className="relative" htmlFor="light-switch-mobile">
@@ -176,8 +232,18 @@ function TheHeader({setDarkModeProp}) {
                   className="relative bg-gradient-to-t from-gray-100 to-white dark:from-gray-800 dark:to-gray-700 shadow-sm z-10"
                   aria-hidden="true"
                 ></span>
-                <svg className="absolute inset-0" width="44" height="24" viewBox="0 0 44 24" xmlns="http://www.w3.org/2000/svg">
-                  <g className="fill-current text-white" fillRule="nonzero" opacity=".88">
+                <svg
+                  className="absolute inset-0"
+                  width="44"
+                  height="24"
+                  viewBox="0 0 44 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <g
+                    className="fill-current text-white"
+                    fillRule="nonzero"
+                    opacity=".88"
+                  >
                     <path d="M32 8a.5.5 0 00.5-.5v-1a.5.5 0 10-1 0v1a.5.5 0 00.5.5zM35.182 9.318a.5.5 0 00.354-.147l.707-.707a.5.5 0 00-.707-.707l-.707.707a.5.5 0 00.353.854zM37.5 11.5h-1a.5.5 0 100 1h1a.5.5 0 100-1zM35.536 14.829a.5.5 0 00-.707.707l.707.707a.5.5 0 00.707-.707l-.707-.707zM32 16a.5.5 0 00-.5.5v1a.5.5 0 101 0v-1a.5.5 0 00-.5-.5zM28.464 14.829l-.707.707a.5.5 0 00.707.707l.707-.707a.5.5 0 00-.707-.707zM28 12a.5.5 0 00-.5-.5h-1a.5.5 0 100 1h1a.5.5 0 00.5-.5zM28.464 9.171a.5.5 0 00.707-.707l-.707-.707a.5.5 0 00-.707.707l.707.707z" />
                     <circle cx="32" cy="12" r="3" />
                     <circle fillOpacity=".4" cx="12" cy="12" r="6" />
@@ -186,7 +252,6 @@ function TheHeader({setDarkModeProp}) {
                 </svg>
                 <span className="sr-only">Switch to light / dark version</span>
               </label>
-
             </div>
 
             {/* Hamburger button */}
@@ -230,46 +295,61 @@ function TheHeader({setDarkModeProp}) {
                 <div className="py-6 pr-4 pl-20">
                   {/* Logo */}
                   <div to="/" className="inline-block mb-4" aria-label="Cruip">
-                    <Logo/>
+                    <Logo />
                   </div>
                   {/* divs */}
                   <ul>
-                    {
-                      header_json.menus.map((menu, index) => (
-                        <li key={index}>
-                          <Link href={ `#${menu.toLowerCase()}` }>
-                            <a className="block text-gray-600 black-text  hover:text-gray-900 dark:text-gray-300 dark:hover:text-gray-100 px-5 py-2 flex items-center transition duration-150 ease-in-out">
-                              {menu}
-                            </a>
-                          </Link>
-                        </li>
-                      ))
-                    }
+                    {header_json?.menus.map((menu, index) => (
+                      <li key={index}>
+                        <Link href={`#${menu.toLowerCase()}`}>
+                          <a className="block text-gray-600 black-text  hover:text-gray-900 dark:text-gray-300 dark:hover:text-gray-100 px-5 py-2 flex items-center transition duration-150 ease-in-out">
+                            {menu}
+                          </a>
+                        </Link>
+                      </li>
+                    ))}
 
                     <li className="py-2 my-2 border-t border-b border-gray-200 dark:border-gray-800">
-                      <span className="flex text-gray-600 dark:text-gray-400 py-2">{header_json.dropdown_menu.title.mobile}</span>
+                      <span className="flex text-gray-600 dark:text-gray-400 py-2">
+                        {header_json?.dropdown_menu.title.mobile}
+                      </span>
                       <ul className="pl-4">
-                        {
-                          header_json.dropdown_menu.items.map((item, index) => (
-                            <li key={index}>
-                              <Link href={item.link}> 
-                                <a className="text-sm flex font-medium text-gray-600 hover:text-gray-900 dark:text-gray-400 dark:hover:text-gray-100 py-2">
-                                  {item.title}
-                                </a>
-                              </Link>
-                            </li>
-                          ))
-                        } 
-
+                        {header_json?.dropdown_menu.items.map((item, index) => (
+                          <li key={index}>
+                            <Link href={item.link}>
+                              <a className="text-sm flex font-medium text-gray-600 hover:text-gray-900 dark:text-gray-400 dark:hover:text-gray-100 py-2">
+                                {item.title}
+                              </a>
+                            </Link>
+                          </li>
+                        ))}
                       </ul>
                     </li>
                     <li>
                       <Link href="/contact">
                         <a className="font-medium bg-purpled w-full inline-flex items-center justify-center border border-transparent px-4 py-2 my-2 rounded text-white bg-teal-500 hover:bg-teal-400 transition duration-150 ease-in-out">
-                          {header_json.comming_soon}
+                          {header_json?.comming_soon}
                         </a>
-                        
                       </Link>
+                    </li>
+                    <li className="py-2 my-2 border-t border-b border-gray-200 dark:border-gray-800">
+                      <span className="flex text-gray-600 dark:text-gray-400 py-2">
+                        {header_json?.dropdown_menu.title.mobile}
+                      </span>
+                      <ul className="pl-4">
+                        {header_json?.language_dropdown.map((item, index) => (
+                          <li
+                            key={index}
+                            onClick={() => handleLanguageChange(item)}
+                          >
+                            {/* <Link href={item.link}> */}
+                            <span className="cursor-pointer text-sm flex font-medium text-gray-600 hover:text-gray-900 dark:text-gray-400 dark:hover:text-gray-100 py-2">
+                              {item}
+                            </span>
+                            {/* </Link> */}
+                          </li>
+                        ))}
+                      </ul>
                     </li>
                   </ul>
                 </div>
@@ -278,8 +358,8 @@ function TheHeader({setDarkModeProp}) {
           </div>
         </div>
       </div>
-      </header>
-  );
+    </header>
+  )
 }
 
-export default TheHeader;
+export default TheHeader

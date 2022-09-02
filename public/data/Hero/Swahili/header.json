@@ -1,0 +1,25 @@
+{
+    "menus": ["Features", "Roadmap", "About"],
+    "dropdown_menu": {
+      "title": {
+        "desktop": "Doc", 
+        "mobile": "Resources"
+      },
+      "items": [
+        {
+          "title": "Litepaper",
+          "link": "/#"
+        },
+        {
+          "title": "Support Center",
+          "link": "/#"
+        },
+        {
+          "title": "404",
+          "link": "/#"
+        }
+      ]
+    },
+    "language_dropdown": ["English", "Swahili", "Spanish"],
+    "comming_soon": "App Comming Soon"
+  }

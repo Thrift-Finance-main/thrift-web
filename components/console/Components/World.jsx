@@ -1,37 +1,54 @@
-import React from 'react';
-import Image from 'next/image';
-import world_json from '../../../public/data/Hero/world.json';
+import React, { useState, useEffect } from 'react'
+import Image from 'next/image'
+// import world_json from '../../../public/data/Hero/english/world.json';
 
-function FeaturesWorld ({ darkM })
-{
+function FeaturesWorld({ darkM, language }) {
+  const [world_json, setWorld_json] = useState(null)
+
+  useEffect(() => {
+    fetch(`/data/Hero/${language}/world.json`)
+      .then((res) => res.json())
+      .then((data) => setWorld_json(data))
+      .catch((err) => console.log(err))
+  }, [language])
   // const world_json = content.features_world;
   return (
     <>
-      <div className='max-w-6xl mx-auto border-t border-gray-700 pt-8'></div>
-    <section  id='about' style={darkM ? {background: "linear-gradient(180deg, rgba(46, 46, 51, 0.32) 0%, rgba(46, 46, 51, 0.0001) 100%)"} : {}}>
-      <div className="max-w-6xl mx-auto px-4 sm:px-6">
-        <div>
+      <div className="max-w-6xl mx-auto border-t border-gray-700 pt-8"></div>
+      <section
+        id="about"
+        style={
+          darkM
+            ? {
+                background:
+                  'linear-gradient(180deg, rgba(46, 46, 51, 0.32) 0%, rgba(46, 46, 51, 0.0001) 100%)',
+              }
+            : {}
+        }
+      >
+        <div className="max-w-6xl mx-auto px-4 sm:px-6">
+          <div>
+            {/* Section header */}
+            <div className="max-w-3xl mx-auto text-center py-8">
+              <h1 className="h2 mb-4 !font-normal font-xl font-header">
+                {world_json?.heading}
+              </h1>
+              <p className="text-xl text-gray-600 black-text">
+                {world_json?.info}
+              </p>
+            </div>
 
-          {/* Section header */}
-          <div className="max-w-3xl mx-auto text-center py-8">
-            <h1 className="h2 mb-4 !font-normal font-xl font-header">{world_json.heading}</h1>
-              <p className="text-xl text-gray-600 black-text">{ world_json.info }</p>
-          </div>
-
-
-
-          {/* World illustration */}
-          {/* <div className="flex flex-col items-center pt-12 md:pt-16">
+            {/* World illustration */}
+            {/* <div className="flex flex-col items-center pt-12 md:pt-16">
             <div className="relative">
                   <img src={'https://res.cloudinary.com/dhkccnvyn/image/upload/v1659129900/Globe_q8nbya.svg'} alt={'Team around the globe'} width='100%' height='100%'/>
             </div>
           </div> */}
-
+          </div>
         </div>
-      </div>
       </section>
-      </>
-  );
+    </>
+  )
 }
 
-export default FeaturesWorld;
+export default FeaturesWorld

@@ -7,14 +7,19 @@
       },
       "items": [
         {
-          "title": "Help Center",
-          "link": "/help"
+          "title": "Litepaper",
+          "link": "/#"
+        },
+        {
+          "title": "Support Center",
+          "link": "/#"
         },
         {
           "title": "404",
-          "link": "/404"
+          "link": "/#"
         }
       ]
     },
+    "language_dropdown": ["English", "Swahili", "Spanish"],
     "comming_soon": "App Comming Soon"
   }

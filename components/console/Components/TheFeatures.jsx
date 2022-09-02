@@ -1,10 +1,19 @@
 import { features } from 'process';
-import React from 'react';
-import features_json from '../../../public/data/Hero/features.json';
+import React, {useState, useEffect} from 'react';
+// import features_json from '../../../public/data/Hero/english/features.json';
 
-function FeaturesBlocks ({ darkM })
+function FeaturesBlocks ({ darkM, language })
 {
-  // const features_json = content.features_block;
+  const [features_json, setFeatures_json] = useState(null);
+
+  useEffect(() =>
+  {
+    fetch(`/data/Hero/${language}/features.json`)
+      .then(res => res.json())
+      .then(data => setFeatures_json(data))
+      .catch(err => console.log(err))
+  }, [language]);
+
   return (
     <section className="relative dark-here">
 
@@ -17,9 +26,9 @@ function FeaturesBlocks ({ darkM })
 
           {/* Section header */}
           <div className="max-w-3xl mx-auto text-center pb-12 md:pb-20">
-            <h2 className="h2 dark-here mb-4 text-black font-header ">{ features_json.heading }</h2>
+            <h2 className="h2 dark-here mb-4 text-black font-header ">{ features_json?.heading }</h2>
             <p className="text-gray-600 black-text">
-              {features_json.info}
+              {features_json?.info}
             </p>
           </div>
 
@@ -39,8 +48,8 @@ function FeaturesBlocks ({ darkM })
                   </g>
                 </g>
               </svg>
-              <h4 className="text-xl font-bold leading-snug tracking-tight mb-1">{features_json.items[0].title}</h4>
-              <p className="text-gray-600 text-center black-text">{features_json.items[0].info}
+              <h4 className="text-xl font-bold leading-snug tracking-tight mb-1">{features_json?.items[0].title}</h4>
+              <p className="text-gray-600 text-center black-text">{features_json?.items[0].info}
               </p>
             </div>
 
@@ -56,8 +65,8 @@ function FeaturesBlocks ({ darkM })
                   </g>
                 </g>
               </svg>
-              <h4 className="text-xl font-bold leading-snug tracking-tight mb-1">{ features_json.items[1].title }</h4>
-              <p className="text-gray-600 text-center black-text">{ features_json.items[1].info}</p>
+              <h4 className="text-xl font-bold leading-snug tracking-tight mb-1">{ features_json?.items[1].title }</h4>
+              <p className="text-gray-600 text-center black-text">{ features_json?.items[1].info}</p>
             </div>
 
             {/* 3rd item */}
@@ -73,8 +82,8 @@ function FeaturesBlocks ({ darkM })
                   </g>
                 </g>
               </svg>
-              <h4 className="text-xl font-bold leading-snug tracking-tight mb-1">{ features_json.items[2].title}</h4>
-              <p className="text-gray-600 text-center black-text">{ features_json.items[2].info}</p>
+              <h4 className="text-xl font-bold leading-snug tracking-tight mb-1">{ features_json?.items[2].title}</h4>
+              <p className="text-gray-600 text-center black-text">{ features_json?.items[2].info}</p>
             </div>
 
             {/* 4th item */}
@@ -90,8 +99,8 @@ function FeaturesBlocks ({ darkM })
                   </g>
                 </g>
               </svg>
-              <h4 className="text-xl font-bold leading-snug tracking-tight mb-1">{ features_json.items[3].title}</h4>
-              <p className="text-gray-600 text-center black-text">{ features_json.items[3].info }</p>
+              <h4 className="text-xl font-bold leading-snug tracking-tight mb-1">{ features_json?.items[3].title}</h4>
+              <p className="text-gray-600 text-center black-text">{ features_json?.items[3].info }</p>
             </div>
 
             {/* 5th item */}
@@ -106,8 +115,8 @@ function FeaturesBlocks ({ darkM })
                   </g>
                 </g>
               </svg>
-              <h4 className="text-xl font-bold leading-snug tracking-tight mb-1">{ features_json.items[4].title }</h4>
-              <p className="text-gray-600 text-center black-text">{ features_json.items[4].info } </p>
+              <h4 className="text-xl font-bold leading-snug tracking-tight mb-1">{ features_json?.items[4].title }</h4>
+              <p className="text-gray-600 text-center black-text">{ features_json?.items[4].info } </p>
             </div>
 
             {/* 6th item */}
@@ -121,8 +130,8 @@ function FeaturesBlocks ({ darkM })
                   </g>
                 </g>
               </svg>
-              <h4 className="text-xl font-bold leading-snug tracking-tight mb-1">{ features_json.items[5].title }</h4>
-              <p className="text-gray-600 text-center black-text">{ features_json.items[5].info }</p>
+              <h4 className="text-xl font-bold leading-snug tracking-tight mb-1">{ features_json?.items[5].title }</h4>
+              <p className="text-gray-600 text-center black-text">{ features_json?.items[5].info }</p>
             </div>
 
           </div>

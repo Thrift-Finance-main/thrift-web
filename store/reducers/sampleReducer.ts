@@ -5,13 +5,15 @@ export const SET_CONFIG = "SET_CONFIG";
 export const SET_CURRENT_ACCOUNT= "SET_CURRENT_ACCOUNT";
 export const SET_CURRENT_ROUTE= "SET_CURRENT_ROUTE";
 export const SET_DARK_MODE= "SET_DARK_MODE";
+export const SET_LANGUAGE= "SET_LANGUAGE";
 
 export const initialConfig = {
   darkMode: false,
   lan: 'en',
   lastAction: '',
   currentRoute: 'login',
-  locked: false
+  locked: false,
+  language: 'English'
 };
 
 const initialState = {
@@ -58,6 +60,14 @@ const sampleReducer = (state = initialState, action:any) => {
       state.config.darkMode = action.payload;
       console.log(state.config.darkMode);
       return state
+    case SET_LANGUAGE: 
+      return {
+        ...state,
+        config: {
+          ...state.config,
+          language: action.payload
+        }
+      }
 
     default:
       return state;
