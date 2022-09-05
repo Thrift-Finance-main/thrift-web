@@ -39,7 +39,7 @@ function TheHeader({ setDarkModeProp, darkM }) {
   // close the mobile menu on click outside
   useEffect(() => {
 
-    const lang = query.lang;
+    const lang = query && query.lang ? query.lang : 'en' ;
     setLanguage(LANGUAGES[lang]);
 
     const clickHandler = ({ target }) => {
