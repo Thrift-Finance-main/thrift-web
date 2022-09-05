@@ -52,18 +52,24 @@ const Homepage = () => {
       />
       <center>
         <Hero darkM={darken} />
-        <How darkM={darken} />
+        {
+          /*
+          <How darkM={darken} />
         <FeaturesBlocks darkM={darken} />
         <ThriftPeer darkM={darken} />
         <Timeline darkM={darken} />
         <FeaturesWorld darkM={darken} />
 
-        {/* <TeamMembers/> */}
+
         <Team darkM={darken} />
         <Partners darkM={darken} />
         <News darkM={darken} />
         <TheCta darkM={darken} />
         <TheFooter darkM={darken} />
+
+          */
+        }
+
       </center>
     </div>
   )

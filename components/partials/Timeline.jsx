@@ -1,5 +1,5 @@
-import { useTranslation } from 'next-i18next'
-import React, { useState, useEffect } from 'react'
+import { useTranslation } from 'next-export-i18n';
+import React, { useState, useEffect } from 'react';
 
 function Timeline({ darkM, language }) {
   const { t } = useTranslation('timeline')

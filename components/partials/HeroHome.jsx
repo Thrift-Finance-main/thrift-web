@@ -1,12 +1,15 @@
 import React, { useEffect, useState } from 'react'
 import { useRouter } from 'next/router'
-import { useTranslation, Trans } from 'next-i18next'
 import NewsletterSubscribe from '@components/shared/mailchimp/NewsletterSubscribe'
+import {useTranslation, useLanguageQuery, LanguageSwitcher, } from "next-export-i18n";
 
 function Hero({ darkM }) {
   const router = useRouter()
-  const { t } = useTranslation('hero')
-
+  const { t } = useTranslation()
+  const content = t('hero');
+  console.log('transl');
+  console.log(t);
+  console.log(content);
   return (
     <section className="">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 ">
@@ -24,7 +27,7 @@ function Hero({ darkM }) {
                   style={{ background: 'none !important', lineHeight: '1em' }}
                 >
                   {/* {hero_json?.heading} */}
-                  {t('heading')}
+                  {content.heading}
                   {/* <Trans i18nKey="heading"></Trans> */}
                 </h1>
               </div>
@@ -34,7 +37,7 @@ function Hero({ darkM }) {
                 data-aos-delay="150"
               >
                 {/* {hero_json?.info} */}
-                {t('info')}
+                {content.info}
               </p>
               {/* CTA form */}
               <NewsletterSubscribe />
@@ -44,7 +47,8 @@ function Hero({ darkM }) {
                   data-aos="fade-down"
                   data-aos-delay="450"
                 >
-                  {t('tags', { returnObjects: true }).map((tag, index) => (
+                  {
+                  content.tags.map((tag, index) => (
                     <li key={index} className="flex items-center mb-2">
                       <svg
                         className="text-[#3ABAB4] w-3 h-3 fill-current text-primary mr-2 shrink-0"
@@ -56,6 +60,8 @@ function Hero({ darkM }) {
                       <span>{tag} </span>
                     </li>
                   ))}
+
+
                 </ul>
                 <div className="flex gap-4">
                   <a href="#">

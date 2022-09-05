@@ -1,6 +1,5 @@
-import React, { useState, useEffect } from 'react'
-import Image from 'next/image'
-import { useTranslation } from 'next-i18next'
+import React from 'react';
+import { useTranslation } from 'next-export-i18n';
 
 function FeaturesWorld({ darkM, language }) {
   const { t } = useTranslation('world')

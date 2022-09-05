@@ -1,7 +1,7 @@
 import React, { useState, useRef, useEffect } from 'react'
 import Transition from '../shared/Transition'
 import { useSelector } from 'react-redux'
-import { useTranslation, Trans } from 'next-i18next'
+import { useTranslation } from 'next-export-i18n'
 
 function How({ darkM, language }) {
   const { t } = useTranslation('how')

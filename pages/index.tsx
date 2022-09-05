@@ -9,8 +9,6 @@ import { useDispatch, useSelector } from 'react-redux'
 import { CONFIG_STORAGE_KEY } from '../constants'
 import { setCurrRoute } from '../store/actions/sampleAction'
 import { getObj } from '../db/LocalStorage'
-import { useTranslation, Trans } from 'next-i18next'
-import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
 
 const Console: NextPage = () => {
   const router = useRouter()
@@ -87,25 +85,5 @@ const Console: NextPage = () => {
   )
 }
 
-export const getServerSideProps = async ({ locale }: any) => ({
-  props: {
-    ...(await serverSideTranslations(locale, [
-      'common',
-      'content',
-      'cta',
-      'features',
-      'footer',
-      'header',
-      'hero',
-      'how',
-      'news',
-      'partners',
-      'team',
-      'thrift_peer',
-      'timeline',
-      'world',
-    ])),
-  },
-})
 
 export default Console

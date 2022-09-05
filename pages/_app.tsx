@@ -13,8 +13,6 @@ import '../styles/console.scss'
 import { initialConfig, SET_DARK_MODE } from '../store/reducers/sampleReducer'
 import { setDarkMode } from '../store/actions/sampleAction'
 
-import { appWithTranslation } from 'next-i18next'
-
 const initConfig = (store: any) => {
   store.dispatch(setDarkMode(false))
   getObj(SET_DARK_MODE).then((darkMode) => {
@@ -41,4 +39,4 @@ function MyApp({ Component, pageProps }: AppProps) {
     </>
   )
 }
-export default appWithTranslation(wrapper.withRedux(MyApp))
+export default wrapper.withRedux(MyApp);

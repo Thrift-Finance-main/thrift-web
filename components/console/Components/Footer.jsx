@@ -1,8 +1,7 @@
 import React, { useEffect, useState } from 'react'
 
-import Image from 'next/image'
-import Link from 'next/link'
-import { useTranslation } from 'next-i18next'
+import Link from 'next/link';
+import { useTranslation } from 'next-export-i18n';
 
 function TheFooter({ darkM, language }) {
   const { t } = useTranslation('footer')

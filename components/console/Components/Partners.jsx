@@ -1,6 +1,5 @@
-import { useTranslation } from 'next-i18next'
-import Image from 'next/image'
-import React, { useState, useEffect } from 'react'
+import { useTranslation } from 'next-export-i18n';
+import React from 'react';
 const Partners = ({ darkM, language }) => {
   const { t } = useTranslation('partners')
   return (

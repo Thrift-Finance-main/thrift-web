@@ -1,6 +1,6 @@
-import { features } from 'process'
-import React, { useState, useEffect } from 'react'
-import { useTranslation } from 'next-i18next'
+import { features } from 'process';
+import React from 'react';
+import { useTranslation } from 'next-export-i18n';
 
 function FeaturesBlocks({ darkM }) {
   const { t } = useTranslation('features')

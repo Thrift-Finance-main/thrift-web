@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react'
 import NewsletterSubscribe from '@components/shared/mailchimp/NewsletterSubscribe'
-import { useTranslation } from 'next-i18next'
+import { useTranslation } from 'next-export-i18n';
 function TheCta({ darkM, language }) {
   const { t } = useTranslation('cta')
   return (
