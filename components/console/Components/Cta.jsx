@@ -1,8 +1,9 @@
 import React, { useState, useEffect } from 'react'
 import NewsletterSubscribe from '@components/shared/mailchimp/NewsletterSubscribe'
-import { useTranslation } from 'next-export-i18n';
+import { useTranslation } from 'next-export-i18n'
 function TheCta({ darkM, language }) {
-  const { t } = useTranslation('cta')
+  const { t } = useTranslation()
+  const content = t('cta')
   return (
     <div className="dark-here">
       <section className={darkM === true ? 'dark-bg-noti-img' : 'bg-noti-img'}>
@@ -17,7 +18,7 @@ function TheCta({ darkM, language }) {
                 {/* CTA content */}
                 <div className="mb-6 lg:mr-16 lg:mb-0 text-center lg:text-left">
                   <p className="text-white text-lg opacity-75 text-4xl w-100 font-header">
-                    {t('heading')}
+                    {content.heading}
                   </p>
                 </div>
 

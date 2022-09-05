@@ -23,8 +23,11 @@
     "hero": {
       "heading": "Crypto saving, made personal",
       "info": "Thrift RealFi wallet lets you easily save, invest, pay and manage your funds without giving up your privacy, asset’s ownership, security or your data.",
-      "tags": ["Local language support", "Lend or save as a group", "Grow wealth annonymously"]
-
+      "tags": [
+        "Local language support",
+        "Lend or save as a group",
+        "Grow wealth annonymously"
+      ]
     },
     "how": {
       "heading": "How it works",
@@ -311,14 +314,18 @@
     "language_dropdown": [
       { "title": "English", "locale": "en" },
       { "title": "Swahili", "locale": "sw" },
-      { "title": "Spanish", "locale": "sp" }
+      { "title": "Spanish", "locale": "es" }
     ],
     "comming_soon": "App Comming Soon"
   },
   "hero": {
     "heading": "Crypto saving, made personal",
     "info": "Thrift RealFi wallet lets you easily save, invest, pay and manage your funds without giving up your privacy, asset’s ownership, security or your data.",
-    "tags": ["Local language support", "Lend or save as a group", "Grow wealth annonymously"]
+    "tags": [
+      "Local language support",
+      "Lend or save as a group",
+      "Grow wealth annonymously"
+    ]
   },
   "how": {
     "heading": "How it works",

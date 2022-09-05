@@ -1,15 +1,16 @@
-import { useTranslation } from 'next-export-i18n';
+import { useTranslation } from 'next-export-i18n'
 
-import React from 'react';
+import React from 'react'
 
 const Partners = ({ darkM, language }) => {
-  const { t } = useTranslation('news')
+  const { t } = useTranslation()
+  const content = t('news')
   return (
     <>
       <div className="my-5 partner max-w-6xl mx-auto">
         <h2 className="!font-normal dark-here font-header text-4xl !mb-8">
           {' '}
-          {t('heading')}{' '}
+          {content.heading}{' '}
         </h2>
 
         {/* <img className='part' src = {'https://res.cloudinary.com/dhkccnvyn/image/upload/v4658828293/Logos_hm2qbw.svg'}

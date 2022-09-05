@@ -1,8 +1,9 @@
-import { useTranslation } from 'next-export-i18n';
-import React from 'react';
+import { useTranslation } from 'next-export-i18n'
+import React from 'react'
 
 const ThriftPeer = ({ darkM }) => {
-  const { t } = useTranslation('thrift_peer')
+  const { t } = useTranslation()
+  const content = t('thrift_peer')
 
   return (
     <>
@@ -17,8 +18,10 @@ const ThriftPeer = ({ darkM }) => {
             />
           </div>
           <div className="peerText">
-            <h3 className="!text-[2em] mt-[18px] mb-[37px]">{t('heading')}</h3>
-            <p>{t('info')} </p>
+            <h3 className="!text-[2em] mt-[18px] mb-[37px]">
+              {content.heading}
+            </h3>
+            <p>{content.info} </p>
           </div>
         </div>
       </div>

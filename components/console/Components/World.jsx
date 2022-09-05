@@ -1,8 +1,9 @@
-import React from 'react';
-import { useTranslation } from 'next-export-i18n';
+import React from 'react'
+import { useTranslation } from 'next-export-i18n'
 
 function FeaturesWorld({ darkM, language }) {
-  const { t } = useTranslation('world')
+  const { t } = useTranslation()
+  const content = t('world')
   return (
     <>
       <div className="max-w-6xl mx-auto border-t border-gray-700 pt-8"></div>
@@ -22,9 +23,9 @@ function FeaturesWorld({ darkM, language }) {
             {/* Section header */}
             <div className="max-w-3xl mx-auto text-center py-8">
               <h1 className="h2 mb-4 !font-normal font-xl font-header">
-                {t('heading')}
+                {content.heading}
               </h1>
-              <p className="text-xl text-gray-600 black-text">{t('info')}</p>
+              <p className="text-xl text-gray-600 black-text">{content.info}</p>
             </div>
           </div>
         </div>

@@ -1,8 +1,9 @@
-import { useTranslation } from 'next-export-i18n';
-import React, { useState, useEffect } from 'react';
+import { useTranslation } from 'next-export-i18n'
+import React, { useState, useEffect } from 'react'
 
 function Timeline({ darkM, language }) {
-  const { t } = useTranslation('timeline')
+  const { t } = useTranslation()
+  const content = t('timeline')
   const [year, setYear] = useState('2021')
 
   return (
@@ -12,9 +13,9 @@ function Timeline({ darkM, language }) {
           {/* Section header */}
           <div className="max-w-3xl mx-auto text-center pb-12 md:pb-20">
             <h2 className="h2 font-red-hat-display mb-4 !font-normal text-2xl font-header ">
-              {t('heading')}
+              {content.heading}
             </h2>
-            <p className="text-gray-600 dark:text-gray-400">{t('info')}</p>
+            <p className="text-gray-600 dark:text-gray-400">{content.info}</p>
           </div>
 
           {/* Section content */}
@@ -34,7 +35,7 @@ function Timeline({ darkM, language }) {
                 >
                   <div className="absolute inset-0 w-0.5 h-full bg-gray-300 dark:bg-gray-700"></div>
                 </div>
-                {t('group', { returnObjects: true })
+                {content.group
                   .map((item) => item.year)
                   .map((item) => (
                     <button
@@ -55,7 +56,7 @@ function Timeline({ darkM, language }) {
               </div>
 
               {/* 2020's articles */}
-              {t('group', { returnObjects: true }).map((group_item, ind) => (
+              {content.group.map((group_item, ind) => (
                 <div
                   key={ind}
                   className={`grow ${year !== group_item.year && 'hidden'}`}

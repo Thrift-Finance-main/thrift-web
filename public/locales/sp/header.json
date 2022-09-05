@@ -23,7 +23,7 @@
   "language_dropdown": [
     { "title": "English", "locale": "en" },
     { "title": "Swahili", "locale": "sw" },
-    { "title": "Spanish", "locale": "sp" }
+    { "title": "Spanish", "locale": "es" }
   ],
   "comming_soon": "App Comming Soon"
 }

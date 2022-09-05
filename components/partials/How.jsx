@@ -1,10 +1,15 @@
 import React, { useState, useRef, useEffect } from 'react'
 import Transition from '../shared/Transition'
 import { useSelector } from 'react-redux'
-import { useTranslation } from 'next-export-i18n'
+import {
+  useTranslation,
+  useLanguageQuery,
+  LanguageSwitcher,
+} from 'next-export-i18n'
 
 function How({ darkM, language }) {
-  const { t } = useTranslation('how')
+  const { t } = useTranslation()
+  const content = t('how')
 
   const storeState = useSelector((state) => state.reduxData)
   const [darken, _] = useState(storeState.config.darkMode)
@@ -42,8 +47,8 @@ function How({ darkM, language }) {
         <div className="pt-12 md:pt-20">
           {/* Section header */}
           <div className="max-w-3xl mx-auto text-center pb-12 md:pb-16">
-            <h1 className="h2 mb-4 font-header ">{t('heading')}</h1>
-            <p className="text-gray-600 black-text">{t('info')}</p>
+            <h1 className="h2 mb-4 font-header ">{content.heading}</h1>
+            <p className="text-gray-600 black-text">{content.info}</p>
           </div>
 
           {/* Top image */}
@@ -68,15 +73,15 @@ function How({ darkM, language }) {
             >
               <div className="md:pr-4 lg:pr-12 xl:pr-16 mb-8">
                 <h3 className="h3 mb-3 font-header  left">
-                  {t('list.heading')}
+                  {content.list.heading}
                 </h3>
                 <p className="left text-gray-600 black-text">
-                  {t('list.info')}
+                  {content.list.info}
                 </p>
               </div>
               {/* Tabs buttons */}
               <div className="mb-8 md:mb-0">
-                {t('list.items', { returnObjects: true }).map((item, index) => {
+                {content.list.items.map((item, index) => {
                   return (
                     <button
                       key={index}

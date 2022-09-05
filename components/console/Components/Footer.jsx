@@ -1,10 +1,11 @@
 import React, { useEffect, useState } from 'react'
 
-import Link from 'next/link';
-import { useTranslation } from 'next-export-i18n';
+import Link from 'next/link'
+import { useTranslation } from 'next-export-i18n'
 
 function TheFooter({ darkM, language }) {
-  const { t } = useTranslation('footer')
+  const { t } = useTranslation()
+  const content = t('footer')
   return (
     <footer>
       <div className="max-w-6xl text-left dark-here mx-auto px-16">
@@ -39,25 +40,23 @@ function TheFooter({ darkM, language }) {
                 Quick links{' '}
               </h6>
               <ul className="text-sm">
-                {t('quick_links', { returnObjects: true }).map(
-                  (item, index) => (
-                    <li key={index} className="mb-2">
-                      <div
-                        to="#"
-                        className="text-gray-300 hover:text-gray-900 shade transition duration-150 ease-in-out"
+                {content.quick_links.map((item, index) => (
+                  <li key={index} className="mb-2">
+                    <div
+                      to="#"
+                      className="text-gray-300 hover:text-gray-900 shade transition duration-150 ease-in-out"
+                    >
+                      <a
+                        className="text-gray-400"
+                        href={item.link}
+                        target="_blank"
+                        rel="noreferrer"
                       >
-                        <a
-                          className="text-gray-400"
-                          href={item.link}
-                          target="_blank"
-                          rel="noreferrer"
-                        >
-                          {item.title}
-                        </a>
-                      </div>
-                    </li>
-                  )
-                )}
+                        {item.title}
+                      </a>
+                    </div>
+                  </li>
+                ))}
               </ul>
             </div>
 
@@ -66,7 +65,7 @@ function TheFooter({ darkM, language }) {
                 About
               </h6>
               <ul className="text-sm">
-                {t('about', { returnObjects: true }).map((link, index) => (
+                {content.about.map((link, index) => (
                   <li key={index} className="mb-2">
                     <Link href={`#${link.toLowerCase()}`}>
                       <div
@@ -98,7 +97,7 @@ function TheFooter({ darkM, language }) {
 
           <div>
             <ul className="flex white-text gap-4 justifyContent-right">
-              {t('social_links', { returnObjects: true }).map((item, index) => (
+              {content.social_links.map((item, index) => (
                 <li className="cursor-pointer" key={index}>
                   <a href={item.link}>
                     <img

@@ -2,7 +2,8 @@ import { useTranslation } from 'next-export-i18n'
 import React from 'react'
 
 const Team = ({ darkM, language }) => {
-  const { t } = useTranslation('team')
+  const { t } = useTranslation()
+  const content = t('content')
 
   return (
     <>
@@ -10,7 +11,7 @@ const Team = ({ darkM, language }) => {
         <div className=" dark-here mt-20 md:mt-40">
           <div className="item-team">
             {/* loop through items  */}
-            {t('team', { returnObjects: true }).map((item, index) => (
+            {content.team.map((item, index) => (
               <div key={index} className="team-member mb-12">
                 <div className="text-center text-gray-500 dark:text-gray-400">
                   <img

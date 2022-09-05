@@ -1,9 +1,11 @@
-import { features } from 'process';
-import React from 'react';
-import { useTranslation } from 'next-export-i18n';
+import { features } from 'process'
+import React from 'react'
+import { useTranslation } from 'next-export-i18n'
 
 function FeaturesBlocks({ darkM }) {
-  const { t } = useTranslation('features')
+  const { t } = useTranslation()
+  const content = t('features')
+  console.log(content)
 
   return (
     <section className="relative dark-here">
@@ -19,9 +21,9 @@ function FeaturesBlocks({ darkM }) {
           {/* Section header */}
           <div className="max-w-3xl mx-auto text-center pb-12 md:pb-20">
             <h2 className="h2 dark-here mb-4 text-black font-header ">
-              {t('heading')}
+              {content.heading}
             </h2>
-            <p className="text-gray-600 black-text">{t('info')}</p>
+            <p className="text-gray-600 black-text">{content.info}</p>
           </div>
 
           {/* Items */}
@@ -63,10 +65,10 @@ function FeaturesBlocks({ darkM }) {
                 </g>
               </svg>
               <h4 className="text-xl font-bold leading-snug tracking-tight mb-1">
-                {t('items.0.title')}
+                {content.items[0].title}
               </h4>
               <p className="text-gray-600 text-center black-text">
-                {t('items.0.info')}
+                {content.items[0].info}
               </p>
             </div>
 
@@ -104,10 +106,10 @@ function FeaturesBlocks({ darkM }) {
                 </g>
               </svg>
               <h4 className="text-xl font-bold leading-snug tracking-tight mb-1">
-                {t('items.1.title')}
+                {content.items[1].title}
               </h4>
               <p className="text-gray-600 text-center black-text">
-                {t('items.1.info}')}
+                {content.items[1].info}
               </p>
             </div>
 
@@ -148,10 +150,10 @@ function FeaturesBlocks({ darkM }) {
                 </g>
               </svg>
               <h4 className="text-xl font-bold leading-snug tracking-tight mb-1">
-                {t('items.2.title')}
+                {content.items[2].title}
               </h4>
               <p className="text-gray-600 text-center black-text">
-                {t('items.2.info}')}
+                {content.items[2].info}
               </p>
             </div>
 
@@ -191,10 +193,10 @@ function FeaturesBlocks({ darkM }) {
                 </g>
               </svg>
               <h4 className="text-xl font-bold leading-snug tracking-tight mb-1">
-                {t('items.3.title')}
+                {content.items[3].title}
               </h4>
               <p className="text-gray-600 text-center black-text">
-                {t('items.3.info}')}
+                {content.items[3].info}
               </p>
             </div>
 
@@ -229,10 +231,10 @@ function FeaturesBlocks({ darkM }) {
                 </g>
               </svg>
               <h4 className="text-xl font-bold leading-snug tracking-tight mb-1">
-                {t('items.4.title')}
+                {content.items[4].title}
               </h4>
               <p className="text-gray-600 text-center black-text">
-                {t('items.4.info}')}{' '}
+                {content.items[4].info}{' '}
               </p>
             </div>
 
@@ -263,10 +265,10 @@ function FeaturesBlocks({ darkM }) {
                 </g>
               </svg>
               <h4 className="text-xl font-bold leading-snug tracking-tight mb-1">
-                {t('items.5.title')}
+                {content.items[5].title}
               </h4>
               <p className="text-gray-600 text-center black-text">
-                {t('items.5.info}')}
+                {content.items[5].info}
               </p>
             </div>
           </div>
