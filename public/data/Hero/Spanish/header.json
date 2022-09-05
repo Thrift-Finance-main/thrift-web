@@ -1,25 +1,29 @@
 {
-    "menus": ["Features", "Roadmap", "About"],
-    "dropdown_menu": {
-      "title": {
-        "desktop": "Doc", 
-        "mobile": "Resources"
-      },
-      "items": [
-        {
-          "title": "Litepaper",
-          "link": "/#"
-        },
-        {
-          "title": "Support Center",
-          "link": "/#"
-        },
-        {
-          "title": "404",
-          "link": "/#"
-        }
-      ]
+  "menus": ["Features", "Roadmap", "About"],
+  "dropdown_menu": {
+    "title": {
+      "desktop": "Doc",
+      "mobile": "Resources"
     },
-    "language_dropdown": ["English", "Swahili", "Spanish"],
-    "comming_soon": "App Comming Soon"
-  }
+    "items": [
+      {
+        "title": "Litepaper",
+        "link": "/#"
+      },
+      {
+        "title": "Support Center",
+        "link": "/#"
+      },
+      {
+        "title": "404",
+        "link": "/#"
+      }
+    ]
+  },
+  "language_dropdown": [
+    { "title": "English", "locale": "en" },
+    { "title": "Swahili", "locale": "sw" },
+    { "title": "Spanish", "locale": "sp" }
+  ],
+  "comming_soon": "App Comming Soon"
+}

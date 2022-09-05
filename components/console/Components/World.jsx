@@ -1,17 +1,9 @@
 import React, { useState, useEffect } from 'react'
 import Image from 'next/image'
-// import world_json from '../../../public/data/Hero/english/world.json';
+import { useTranslation } from 'next-i18next'
 
 function FeaturesWorld({ darkM, language }) {
-  const [world_json, setWorld_json] = useState(null)
-
-  useEffect(() => {
-    fetch(`/data/Hero/${language}/world.json`)
-      .then((res) => res.json())
-      .then((data) => setWorld_json(data))
-      .catch((err) => console.log(err))
-  }, [language])
-  // const world_json = content.features_world;
+  const { t } = useTranslation('world')
   return (
     <>
       <div className="max-w-6xl mx-auto border-t border-gray-700 pt-8"></div>
@@ -31,19 +23,10 @@ function FeaturesWorld({ darkM, language }) {
             {/* Section header */}
             <div className="max-w-3xl mx-auto text-center py-8">
               <h1 className="h2 mb-4 !font-normal font-xl font-header">
-                {world_json?.heading}
+                {t('heading')}
               </h1>
-              <p className="text-xl text-gray-600 black-text">
-                {world_json?.info}
-              </p>
+              <p className="text-xl text-gray-600 black-text">{t('info')}</p>
             </div>
-
-            {/* World illustration */}
-            {/* <div className="flex flex-col items-center pt-12 md:pt-16">
-            <div className="relative">
-                  <img src={'https://res.cloudinary.com/dhkccnvyn/image/upload/v1659129900/Globe_q8nbya.svg'} alt={'Team around the globe'} width='100%' height='100%'/>
-            </div>
-          </div> */}
           </div>
         </div>
       </section>

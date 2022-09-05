@@ -1,16 +1,8 @@
 import React, { useState, useEffect } from 'react'
 import NewsletterSubscribe from '@components/shared/mailchimp/NewsletterSubscribe'
-// import cta_json from '../../../public/data/Hero/english/cta.json';
-
+import { useTranslation } from 'next-i18next'
 function TheCta({ darkM, language }) {
-  const [cta_json, setCta_json] = useState(null)
-
-  useEffect(() => {
-    fetch(`/data/Hero/${language}/cta.json`)
-      .then((res) => res.json())
-      .then((data) => setCta_json(data))
-      .catch((err) => console.log(err))
-  }, [language])
+  const { t } = useTranslation('cta')
   return (
     <div className="dark-here">
       <section className={darkM === true ? 'dark-bg-noti-img' : 'bg-noti-img'}>
@@ -25,7 +17,7 @@ function TheCta({ darkM, language }) {
                 {/* CTA content */}
                 <div className="mb-6 lg:mr-16 lg:mb-0 text-center lg:text-left">
                   <p className="text-white text-lg opacity-75 text-4xl w-100 font-header">
-                    {cta_json?.heading}
+                    {t('heading')}
                   </p>
                 </div>
 

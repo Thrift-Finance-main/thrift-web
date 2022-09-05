@@ -6,28 +6,30 @@ import '../styles/toggle-switch.css'
 import '../styles/utility-patterns.css'
 import type { AppProps } from 'next/app'
 import { Toaster } from 'react-hot-toast'
-import { Provider } from "react-redux";
+import { Provider } from 'react-redux'
 import { store, wrapper } from '../store'
 import { getObj } from '../db/LocalStorage'
-import '../styles/console.scss';
+import '../styles/console.scss'
 import { initialConfig, SET_DARK_MODE } from '../store/reducers/sampleReducer'
 import { setDarkMode } from '../store/actions/sampleAction'
 
-const initConfig = (store:any) => { 
-  store.dispatch(setDarkMode(false));
-  getObj(SET_DARK_MODE).then(darkMode => {
-    let dm = initialConfig.darkMode;
-    if (darkMode){
-      dm = darkMode;
+import { appWithTranslation } from 'next-i18next'
+
+const initConfig = (store: any) => {
+  store.dispatch(setDarkMode(false))
+  getObj(SET_DARK_MODE).then((darkMode) => {
+    let dm = initialConfig.darkMode
+    if (darkMode) {
+      dm = darkMode
     }
-    console.log(dm);
-  });
+    console.log(dm)
+  })
 }
 
 const initApp = () => {
-  initConfig(store);
-};
-initApp();
+  initConfig(store)
+}
+initApp()
 function MyApp({ Component, pageProps }: AppProps) {
   return (
     <>
@@ -39,4 +41,4 @@ function MyApp({ Component, pageProps }: AppProps) {
     </>
   )
 }
-export default wrapper.withRedux(MyApp);
+export default appWithTranslation(wrapper.withRedux(MyApp))

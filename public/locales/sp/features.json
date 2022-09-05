@@ -1,0 +1,30 @@
+{
+    "heading": "Build a Legacy of Financial Greatness",
+    "info": "A Suite of RealFi products powered by Cardano to keep you in control of your finances. We leverage decentralization to help you overcome banking inefficiency.",
+    "items": [
+      {
+        "title": "SmartFi",
+        "info": "Manage and analyze your personal finances better and easier"
+      },
+      {
+        "title": "Governance",
+        "info": "Through voting rights, the community governs, maintains, and upgrades Thrift."
+      },
+      {
+        "title": "Stable Currency",
+        "info": "save in stable currency, stay ahead of the curve, and secure your future"
+      },
+      {
+        "title": "Decentralized Digital Identity",
+        "info": "Own your identity, no more unwanted prying eyes."
+      },
+      {
+        "title": "Digital Agregation",
+        "info": "Trustless access to DeFi services and platforms."
+      },
+      {
+        "title": "Seamless UI/UX",
+        "info": "No matter your background, you can use Thrift RealFi Wallet, it’s that simple."
+      }
+    ]
+  }

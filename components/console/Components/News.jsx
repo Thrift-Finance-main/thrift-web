@@ -1,22 +1,15 @@
+import { useTranslation } from 'next-i18next'
 import Image from 'next/image'
 import React, { useState, useEffect } from 'react'
-// import news_json from '../../../public/data/Hero/english/news.json';
 
 const Partners = ({ darkM, language }) => {
-  const [news_json, setNews_json] = useState(null)
-
-  useEffect(() => {
-    fetch(`/data/Hero/${language}/news.json`)
-      .then((res) => res.json())
-      .then((data) => setNews_json(data))
-      .catch((err) => console.log(err))
-  }, [language])
+  const { t } = useTranslation('news')
   return (
     <>
       <div className="my-5 partner max-w-6xl mx-auto">
         <h2 className="!font-normal dark-here font-header text-4xl !mb-8">
           {' '}
-          {news_json?.heading}{' '}
+          {t('heading')}{' '}
         </h2>
 
         {/* <img className='part' src = {'https://res.cloudinary.com/dhkccnvyn/image/upload/v4658828293/Logos_hm2qbw.svg'}

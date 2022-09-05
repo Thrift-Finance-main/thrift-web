@@ -1,51 +1,44 @@
+import { useTranslation } from 'next-i18next'
 import React, { useState, useEffect } from 'react'
-// import team from '../../../public/data/Hero/english/team.json';
 
 const Team = ({ darkM, language }) => {
-  const [team_json, setTeam_json] = useState(null)
-
-  useEffect(() => {
-    fetch(`/data/Hero/${language}/team.json`)
-      .then((res) => res.json())
-      .then((data) => setTeam_json(data))
-      .catch((err) => console.log(err))
-  }, [language])
+  const { t } = useTranslation('team')
 
   return (
     <>
       <div>
-        <div className=" dark-here mt-20">
+        <div className=" dark-here mt-20 md:mt-40">
           <div className="item-team">
             {/* loop through items  */}
-            {team_json?.map((item, index) => (
+            {t('team', { returnObjects: true }).map((item, index) => (
               <div key={index} className="team-member mb-12">
                 <div className="text-center text-gray-500 dark:text-gray-400">
                   <img
-                    className="mx-auto mb-4 w-36 h-36 rounded-full"
+                    className="mx-auto mb-4 rounded-full"
                     src={item.image}
                     alt="Leslie Avatar"
                   />
-                  <p className="mb-1 text-2xl font-bold tracking-tight">
-                    <a
+                  <p className="mb-1 text-2xl tracking-tight    dark-here text-gray-900 font-header !font-[400]">
+                    {/* <a
                       className="dark-here text-gray-900 font-header !font-[400]"
                       href="#"
-                    >
-                      {item.name}
-                    </a>
+                    > */}
+                    {item.name}
+                    {/* </a> */}
                   </p>
                   <p className="text-[#F338C2]">{item.title}</p>
                   <ul className="flex justify-center mt-4 space-x-4">
                     {item.twitter !== '' && (
                       <li>
                         <a
-                          href="#"
+                          href={item.twitter}
                           className="text-[#00acee] dark:hover:text-gray-400 dark:text-gray-500"
                         >
                           <svg
                             className="w-6 h-6"
                             fill="currentColor"
                             viewBox="0 0 24 24"
-                            ariaHidden="true"
+                            aria-hidden="true"
                           >
                             <path d="M8.29 20.251c7.547 0 11.675-6.253 11.675-11.675 0-.178 0-.355-.012-.53A8.348 8.348 0 0022 5.92a8.19 8.19 0 01-2.357.646 4.118 4.118 0 001.804-2.27 8.224 8.224 0 01-2.605.996 4.107 4.107 0 00-6.993 3.743 11.65 11.65 0 01-8.457-4.287 4.106 4.106 0 001.27 5.477A4.072 4.072 0 012.8 9.713v.052a4.105 4.105 0 003.292 4.022 4.095 4.095 0 01-1.853.07 4.108 4.108 0 003.834 2.85A8.233 8.233 0 012 18.407a11.616 11.616 0 006.29 1.84" />
                           </svg>
@@ -55,7 +48,7 @@ const Team = ({ darkM, language }) => {
                     {item.linkedin !== '' && (
                       <li>
                         <a
-                          href="#"
+                          href={item.linkedin}
                           className="text-[#ea4c89] dark:hover:text-gray-400 dark:text-gray-500"
                         >
                           <svg
@@ -72,14 +65,14 @@ const Team = ({ darkM, language }) => {
                     {item.github !== '' && (
                       <li>
                         <a
-                          href="#"
+                          href={item.github}
                           className="text-gray-900 hover:text-gray-900 dark:hover:text-gray-400 dark:text-gray-500"
                         >
                           <svg
                             className="w-6 h-6"
                             fill="currentColor"
                             viewBox="0 0 24 24"
-                            ariaHidden="true"
+                            aria-hidden="true"
                           >
                             <path
                               fillRule="evenodd"

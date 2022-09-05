@@ -1,0 +1,25 @@
+{
+  "heading": "How it works",
+  "info": "Track expenses, income, and create savings plan while growing your funds <br/>conviniently. Do these things plus more in a non-custodial wallet. You’re in control.",
+  "list": {
+    "heading": "Powerful suite of tools",
+    "info": "DeFi solutions are often complex, unintuitive, and hard to understand. Thrift makes it simple, providing real solutions to real life finance problems.",
+    "items": [
+      {
+        "heading": "Non-custodial Savings",
+        "info": "Own your data, save your funds in the safest way, earn passively, get rewards, NFTs and much more.",
+        "path": "M11.953 4.29a.5.5 0 00-.454-.292H6.14L6.984.62A.5.5 0 006.12.173l-6 7a.5.5 0 00.379.825h5.359l-.844 3.38a.5.5 0 00.864.445l6-7a.5.5 0 00.075-.534z"
+      },
+      {
+        "heading": "Crowd Lending",
+        "info": "Join or create groups according to your saving goals, lend, and grow your wealth.",
+        "path": "M11.854.146a.5.5 0 00-.525-.116l-11 4a.5.5 0 00-.015.934l4.8 1.921 1.921 4.8A.5.5 0 007.5 12h.008a.5.5 0 00.462-.329l4-11a.5.5 0 00-.116-.525z"
+      },
+      {
+        "heading": "Multiple Payments",
+        "info": "For a single payment transaction fee, you can make multiple payments in one transaction.",
+        "path": "M11.334 8.06a.5.5 0 00-.421-.237 6.023 6.023 0 01-5.905-6c0-.41.042-.82.125-1.221a.5.5 0 00-.614-.586 6 6 0 106.832 8.529.5.5 0 00-.017-.485z"
+      }
+    ]
+  }
+}

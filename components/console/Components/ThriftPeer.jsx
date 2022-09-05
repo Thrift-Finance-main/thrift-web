@@ -1,16 +1,10 @@
+import { useTranslation } from 'next-i18next'
 import Image from 'next/image'
 import React, { useState, useEffect } from 'react'
-// import thrift_json from '../../../public/data/Hero/english/thrift_peer.json';
 
-const ThriftPeer = ({ darkM, language }) => {
-  const [thrift_json, setThrift_json] = useState(null)
+const ThriftPeer = ({ darkM }) => {
+  const { t } = useTranslation('thrift_peer')
 
-  useEffect(() => {
-    fetch(`/data/Hero/${language}/thrift_peer.json`)
-      .then((res) => res.json())
-      .then((data) => setThrift_json(data))
-      .catch((err) => console.log(err))
-  }, [language])
   return (
     <>
       <div className="my-20">
@@ -24,10 +18,8 @@ const ThriftPeer = ({ darkM, language }) => {
             />
           </div>
           <div className="peerText">
-            <h3 className="!text-[2em] mt-[18px] mb-[37px]">
-              {thrift_json?.heading}
-            </h3>
-            <p>{thrift_json?.info} </p>
+            <h3 className="!text-[2em] mt-[18px] mb-[37px]">{t('heading')}</h3>
+            <p>{t('info')} </p>
           </div>
         </div>
       </div>

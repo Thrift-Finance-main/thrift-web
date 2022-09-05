@@ -1,18 +1,9 @@
+import { useTranslation } from 'next-i18next'
 import React, { useState, useEffect } from 'react'
-// import timeline_json from '../../public/data/Hero/english/timeline.json';
 
 function Timeline({ darkM, language }) {
-  const [timeline_json, setTimeline_json] = useState(null)
-
-  useEffect(() => {
-    fetch(`/data/Hero/${language}/timeline.json`)
-      .then((res) => res.json())
-      .then((data) => setTimeline_json(data))
-      .catch((err) => console.log(err))
-  }, [language])
+  const { t } = useTranslation('timeline')
   const [year, setYear] = useState('2021')
-  // const timeline_json = content.timeline;
-  // const years = timeline_json?.group.map((item) => item.year)
 
   return (
     <section id="roadmap" className="text-left">
@@ -21,11 +12,9 @@ function Timeline({ darkM, language }) {
           {/* Section header */}
           <div className="max-w-3xl mx-auto text-center pb-12 md:pb-20">
             <h2 className="h2 font-red-hat-display mb-4 !font-normal text-2xl font-header ">
-              {timeline_json?.heading}
+              {t('heading')}
             </h2>
-            <p className="text-gray-600 dark:text-gray-400">
-              {timeline_json?.info}
-            </p>
+            <p className="text-gray-600 dark:text-gray-400">{t('info')}</p>
           </div>
 
           {/* Section content */}
@@ -45,7 +34,7 @@ function Timeline({ darkM, language }) {
                 >
                   <div className="absolute inset-0 w-0.5 h-full bg-gray-300 dark:bg-gray-700"></div>
                 </div>
-                {timeline_json?.group
+                {t('group', { returnObjects: true })
                   .map((item) => item.year)
                   .map((item) => (
                     <button
@@ -66,7 +55,7 @@ function Timeline({ darkM, language }) {
               </div>
 
               {/* 2020's articles */}
-              {timeline_json?.group.map((group_item, ind) => (
+              {t('group', { returnObjects: true }).map((group_item, ind) => (
                 <div
                   key={ind}
                   className={`grow ${year !== group_item.year && 'hidden'}`}

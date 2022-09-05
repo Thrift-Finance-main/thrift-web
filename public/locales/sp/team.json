@@ -1,0 +1,76 @@
+{
+  "team": [
+    {
+      "name": "Odosu Josiah",
+      "title": "Founder",
+      "image": "https://res.cloudinary.com/dhkccnvyn/image/upload/v1658844458/thrift%20web/Avatar_awomic.svg",
+      "linkedin": "https://www.linkedin.com/in/cjosiah/",
+      "twitter": "https://twitter.com/RealJosiah1?t=IEJXjAY13tXKpaRjLO3wsg&s=09",
+      "github": ""
+    },
+    {
+      "name": "Jaime Caso",
+      "title": "Co-Founder",
+      "image": "https://res.cloudinary.com/dhkccnvyn/image/upload/v1658844463/thrift%20web/1_2x_e0y822.svg",
+      "linkedin": "https://www.linkedin.com/in/jaime-caso",
+      "twitter": "https://twitter.com/SirCaso?t=ydfg8KeDxS70OenbmtguyQ&s=09",
+      "github": ""
+    },
+    {
+      "name": "Loveth Chukwu",
+      "title": "Finance Consultant",
+      "image": "https://res.cloudinary.com/dhkccnvyn/image/upload/v1658844469/thrift%20web/3_2x_xfcljs.svg",
+      "linkedin": "https://www.linkedin.com/in/lovethchukwu/",
+      "twitter": "",
+      "github": ""
+    },
+    {
+      "name": "Kan Kan",
+      "title": "Community Manager ",
+      "image": "https://res.cloudinary.com/dhkccnvyn/image/upload/v1658844468/thrift%20web/5_2x_l7lila.svg",
+      "linkedin": "https://www.linkedin.com/in/kan-kan-74a23a202/",
+      "twitter": "https://twitter.com/kankan__0?t=3uUEFzTDrmARYp9o0qbX5A&s=09",
+      "github": ""
+    },
+    {
+      "name": "Lucas Jiang",
+      "title": "Blockchain and Front-end Dev",
+      "image": "/devs/lucas.png",
+      "linkedin": "https://www.linkedin.com/in/lucas-jiang-486516244/",
+      "twitter": "",
+      "github": ""
+    },
+    {
+      "name": "Haresh PudiPeddi",
+      "title": "Full stack Dev",
+      "image": "/devs/haresh.png",
+      "linkedin": "https://www.linkedin.com/in/pharesh/",
+      "twitter": "",
+      "github": ""
+    },
+    {
+      "name": "Immanuel Obiabo",
+      "title": "Front-end Dev",
+      "image": "https://res.cloudinary.com/dhkccnvyn/image/upload/v1658844456/thrift%20web/4_2x_ajpsfv.svg",
+      "linkedin": "https://www.linkedin.com/in/obiabo-immanuel-5a66371aa/",
+      "twitter": "",
+      "github": ""
+    },
+    {
+      "name": "Walker Leite",
+      "title": "Software Dev",
+      "image": "/devs/walker.png",
+      "linkedin": "https://www.linkedin.com/in/klarkc/",
+      "twitter": "",
+      "github": ""
+    },
+    {
+      "name": "Hishmat Rai",
+      "title": "Web & Mobile Developer",
+      "image": "https://res.cloudinary.com/dhkccnvyn/image/upload/v1658844457/thrift%20web/6_2x_sqlqmx.svg",
+      "linkedin": "https://www.linkedin.com/in/hishmat-rai-787737170/",
+      "twitter": "",
+      "github": ""
+    }
+  ]
+}

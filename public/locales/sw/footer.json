@@ -1,0 +1,17 @@
+{
+  "quick_links": [
+    {
+      "title": "Ideascale",
+      "link": "https://cardano.ideascale.com/c/profile/3114720/my-ideas/author/stage/all/ideas/unspecified"
+    },
+    {
+      "title": "Docs",
+      "link": "https://docs.thrift.finance/"
+    },
+    {
+      "title": "FAQ",
+      "link": "https://thrift.finance/faq"
+    }
+  ],
+  "about": ["Litepaper", "Contact us"]
+}

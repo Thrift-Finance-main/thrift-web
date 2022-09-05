@@ -1,17 +1,11 @@
 import React, { useEffect, useState } from 'react'
+import { useRouter } from 'next/router'
+import { useTranslation, Trans } from 'next-i18next'
 import NewsletterSubscribe from '@components/shared/mailchimp/NewsletterSubscribe'
 
-// import hero_json from '../../public/data/Hero/english/hero.json'
-
-function Hero({ darkM, language }) {
-  const [hero_json, setHero_json] = useState(null)
-
-  useEffect(() => {
-    fetch(`/data/Hero/${language}/hero.json`)
-      .then((res) => res.json())
-      .then((data) => setHero_json(data))
-      .catch((err) => console.log(err))
-  }, [language])
+function Hero({ darkM }) {
+  const router = useRouter()
+  const { t } = useTranslation('hero')
 
   return (
     <section className="">
@@ -29,7 +23,9 @@ function Hero({ darkM, language }) {
                   data-aos="fade-down"
                   style={{ background: 'none !important', lineHeight: '1em' }}
                 >
-                  {hero_json?.heading}
+                  {/* {hero_json?.heading} */}
+                  {t('heading')}
+                  {/* <Trans i18nKey="heading"></Trans> */}
                 </h1>
               </div>
               <p
@@ -37,17 +33,18 @@ function Hero({ darkM, language }) {
                 data-aos="fade-down"
                 data-aos-delay="150"
               >
-                {hero_json?.info}
+                {/* {hero_json?.info} */}
+                {t('info')}
               </p>
               {/* CTA form */}
               <NewsletterSubscribe />
-              <div className="flex items-end">
+              <div className="info-box">
                 <ul
                   className="max-w-sm black-text sm:max-w-md mr-20 md:max-w-none text-gray-600 dark:text-gray-400 mt-8 -mb-2"
                   data-aos="fade-down"
                   data-aos-delay="450"
                 >
-                  {hero_json?.tags.map((tag, index) => (
+                  {t('tags', { returnObjects: true }).map((tag, index) => (
                     <li key={index} className="flex items-center mb-2">
                       <svg
                         className="text-[#3ABAB4] w-3 h-3 fill-current text-primary mr-2 shrink-0"
@@ -102,28 +99,6 @@ function Hero({ darkM, language }) {
               data-aos-delay="450"
             >
               <div className="inline-flex relative justify-center items-center w-full">
-                {/* Glow illustration
-
-                 <svg className="absolute mr-12 mt-32 pointer-events-none -z-1 dark:opacity-40" aria-hidden="true" width="678" height="634" viewBox="0 0 678 634" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <circle cx="240" cy="394" r="240" fill="url(#piphoneill_paint0_radial)" fillOpacity=".4" />
-                  <circle cx="438" cy="240" r="240" fill="url(#piphoneill_paint1_radial)" fillOpacity=".6" />
-                  <defs>
-                    <radialGradient id="piphoneill_paint0_radial" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="rotate(90 -77 317) scale(189.054)">
-                      <stop stopColor="#667EEA" />
-                      <stop offset="1" stopColor="#667EEA" stopOpacity=".01" />
-                    </radialGradient>
-                    <radialGradient id="piphoneill_paint1_radial" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="rotate(90 99 339) scale(189.054)">
-                      <stop stopColor="#9F7AEA" />
-                      <stop offset="1" stopColor="#9F7AEA" stopOpacity=".01" />
-                    </radialGradient>
-                  </defs>
-                </svg>
-
-                */}
-
-                {/* Image inside mockup size: 290x624px (or 580x1248px for Retina devices) */}
-
-                {/* iPhone mockup */}
                 <img
                   className="relative dance max-w-full mx-auto md:mr-0 md:max-w-none h-auto pointer-events-none w-full"
                   src={
@@ -133,10 +108,6 @@ function Hero({ darkM, language }) {
                   alt="iPhone mockup"
                   aria-hidden="true"
                 />
-                {/* Play button */}
-                {/* <a className="absolute group" href="#0" onClick={(e) => { e.preventDefault(); e.stopPropagation(); setVideoModalOpen(true); }} aria-controls="modal">
-                  <img src={PlayBtn} width="96" height="96" alt="Play" />
-                </a> */}
               </div>
             </div>
           </div>

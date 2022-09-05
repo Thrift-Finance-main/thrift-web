@@ -51,19 +51,19 @@ const Homepage = () => {
         darkM={darken}
       />
       <center>
-        <Hero darkM={darken} language={language} />
-        <How darkM={darken} language={language} />
-        <FeaturesBlocks darkM={darken} language={language} />
-        <ThriftPeer darkM={darken} language={language} />
-        <Timeline darkM={darken} language={language} />
-        <FeaturesWorld darkM={darken} language={language} />
+        <Hero darkM={darken} />
+        <How darkM={darken} />
+        <FeaturesBlocks darkM={darken} />
+        <ThriftPeer darkM={darken} />
+        <Timeline darkM={darken} />
+        <FeaturesWorld darkM={darken} />
 
-        {/* <TeamMembers language={language}/> */}
-        <Team darkM={darken} language={language} />
-        <Partners darkM={darken} language={language} />
-        <News darkM={darken} language={language} />
-        <TheCta darkM={darken} language={language} />
-        <TheFooter darkM={darken} language={language} />
+        {/* <TeamMembers/> */}
+        <Team darkM={darken} />
+        <Partners darkM={darken} />
+        <News darkM={darken} />
+        <TheCta darkM={darken} />
+        <TheFooter darkM={darken} />
       </center>
     </div>
   )

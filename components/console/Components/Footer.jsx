@@ -1,25 +1,11 @@
 import React, { useEffect, useState } from 'react'
 
 import Image from 'next/image'
-// import {
-//   AiFillGithub,
-//   AiFillTwitterCircle,
-//   AiFillInstagram,
-//   AiFillLinkedin,
-//   AiFillFacebook,
-// } from 'react-icons/ai'
 import Link from 'next/link'
-// import footer_json from '../../../public/data/Hero/english/footer.json';
+import { useTranslation } from 'next-i18next'
 
 function TheFooter({ darkM, language }) {
-  const [footer_json, setFooter_json] = useState(null)
-
-  useEffect(() => {
-    fetch(`/data/Hero/${language}/footer.json`)
-      .then((res) => res.json())
-      .then((data) => setFooter_json(data))
-      .catch((err) => console.log(err))
-  }, [language])
+  const { t } = useTranslation('footer')
   return (
     <footer>
       <div className="max-w-6xl text-left dark-here mx-auto px-16">
@@ -54,32 +40,34 @@ function TheFooter({ darkM, language }) {
                 Quick links{' '}
               </h6>
               <ul className="text-sm">
-                {footer_json?.quick_links.map((item, index) => (
-                  <li key={index} className="mb-2">
-                    <div
-                      to="#"
-                      className="text-gray-300 hover:text-gray-900 shade transition duration-150 ease-in-out"
-                    >
-                      <a
-                        className="text-gray-400"
-                        href={item.link}
-                        target="_blank"
-                        rel="noreferrer"
+                {t('quick_links', { returnObjects: true }).map(
+                  (item, index) => (
+                    <li key={index} className="mb-2">
+                      <div
+                        to="#"
+                        className="text-gray-300 hover:text-gray-900 shade transition duration-150 ease-in-out"
                       >
-                        {item.title}
-                      </a>
-                    </div>
-                  </li>
-                ))}
+                        <a
+                          className="text-gray-400"
+                          href={item.link}
+                          target="_blank"
+                          rel="noreferrer"
+                        >
+                          {item.title}
+                        </a>
+                      </div>
+                    </li>
+                  )
+                )}
               </ul>
             </div>
 
-            <div className="mt-4 sm:mt-0 sm:col-span-6 md:col-span-3 lg:col-span-2 mr-0">
+            <div className="sm:col-span-6 md:col-span-3 lg:col-span-2 mr-0">
               <h6 className="text-gray-800 font-medium mb-2 dark-here">
                 About
               </h6>
               <ul className="text-sm">
-                {footer_json?.about.map((link, index) => (
+                {t('about', { returnObjects: true }).map((link, index) => (
                   <li key={index} className="mb-2">
                     <Link href={`#${link.toLowerCase()}`}>
                       <div
@@ -100,8 +88,9 @@ function TheFooter({ darkM, language }) {
           className={'flex-bottom black-text py-8'}
           style={{ alignItems: 'center' }}
         >
-          <div>
-            <p>© 2021 Thrift Labs. All rights reserved.</p>
+          <div className="alrights">
+            <p>© 2021 Thrift Labs. </p>
+            <p> All rights reserved.</p>
           </div>
 
           <div>
@@ -110,7 +99,7 @@ function TheFooter({ darkM, language }) {
 
           <div>
             <ul className="flex white-text gap-4 justifyContent-right">
-              {footer_json?.social_links.map((item, index) => (
+              {t('social_links', { returnObjects: true }).map((item, index) => (
                 <li className="cursor-pointer" key={index}>
                   <a href={item.link}>
                     <img

@@ -1,23 +1,22 @@
 import React, { useState, useRef, useEffect } from 'react'
-// import { div } from 'react-router-dom';
 import Dropdown from '../shared/Dropdown'
 import Transition from '../shared/Transition'
 import Logo from '../console/Components/Logo'
 import Image from 'next/image'
 import Link from 'next/link'
+import { useRouter } from 'next/router'
 import { useDispatch, useSelector } from 'react-redux'
 import { setDarkMode, setLanguageMode } from '../../store/actions/sampleAction'
-// import header_json from '../../public/data/Hero/english/header.json';
 
-function TheHeader({ setDarkModeProp, setLang, language, darkM }) {
-  const [header_json, setHeader_json] = useState(null)
+import { useTranslation, UseTranslation } from 'next-i18next'
+import lang from '../../constants/lang'
 
-  useEffect(() => {
-    fetch(`/data/Hero/${language}/header.json`)
-      .then((res) => res.json())
-      .then((data) => setHeader_json(data))
-      .catch((err) => console.log(err))
-  }, [language])
+function TheHeader({ setDarkModeProp, darkM }) {
+  const router = useRouter()
+
+  const { t } = useTranslation('header')
+
+  const [language, setLanguage] = useState(lang[router.locale])
 
   const dispatch = useDispatch()
 
@@ -61,16 +60,15 @@ function TheHeader({ setDarkModeProp, setLang, language, darkM }) {
   }, [darkM])
 
   const handleDarkMode = (darkMode) => {
-    // console.log('handleDarkMode');
-    // console.log(darkMode);
-    // setDarken(darkMode);
     // @ts-ignore
     dispatch(setDarkMode(darkMode))
     setDarkModeProp(darkMode)
   }
-  const handleLanguageChange = (lang) => {
-    setLang(lang)
-    dispatch(setLanguageMode(lang))
+  const handleLanguageChange = (newLocale) => {
+    setLanguage(lang[newLocale])
+
+    const { pathname, asPath, query } = router
+    router.push({ pathname, query }, asPath, { locale: newLocale })
   }
 
   return (
@@ -102,10 +100,13 @@ function TheHeader({ setDarkModeProp, setLang, language, darkM }) {
           <nav className="hidden lg:flex lg:grow">
             {/* Desktop menu divs */}
             <ul className="flex black-text grow flex-wrap items-center font-medium">
-              {header_json?.menus.map((menu, index) => (
+              {t('menus', { returnObjects: true }).map((menu, index) => (
                 <li
                   key={index}
-                  className={index === header_json?.menus.length - 1 && 'mr-12'}
+                  className={
+                    index === t('menus', { returnObjects: true }).length - 1 &&
+                    'mr-12'
+                  }
                 >
                   <Link href={`#${menu.toLowerCase()}`}>
                     <a
@@ -122,27 +123,29 @@ function TheHeader({ setDarkModeProp, setLang, language, darkM }) {
               ))}
 
               <Dropdown
-                title={header_json?.dropdown_menu.title.desktop}
+                title={t('dropdown_menu.title.desktop')}
                 darkMode={darkM}
               >
-                {header_json?.dropdown_menu.items.map((item, index) => {
-                  if (index === 1 && darkM) return
-                  return (
-                    <li key={index}>
-                      <Link href={item.link}>
-                        <a
-                          className={`text-sm black-text text-gray-600 dark:text-gray-400  flex py-2 px-4 leading-tight ${
-                            darkM
-                              ? 'hover:!text-[#603EDA]'
-                              : 'hover:!text-[#191919]'
-                          }`}
-                        >
-                          {item.title}
-                        </a>
-                      </Link>
-                    </li>
-                  )
-                })}
+                {t('dropdown_menu.items', { returnObjects: true }).map(
+                  (item, index) => {
+                    if (index === 1 && darkM) return
+                    return (
+                      <li key={index}>
+                        <Link href={item.link}>
+                          <a
+                            className={`text-sm black-text text-gray-600 dark:text-gray-400  flex py-2 px-4 leading-tight ${
+                              darkM
+                                ? 'hover:!text-[#603EDA]'
+                                : 'hover:!text-[#191919]'
+                            }`}
+                          >
+                            {item.title}
+                          </a>
+                        </Link>
+                      </li>
+                    )
+                  }
+                )}
               </Dropdown>
             </ul>
 
@@ -189,27 +192,29 @@ function TheHeader({ setDarkModeProp, setLang, language, darkM }) {
               <li>
                 <Link href="/contact">
                   <a className="btn-sm text-white  cursor-pointer ml-6 p-3 bg-purpled">
-                    {header_json?.comming_soon}
+                    {t('comming_soon')}
                   </a>
                 </Link>
               </li>
               <Dropdown title={language}>
-                {header_json?.language_dropdown.map((item, index) => {
-                  if (language === item) return
-                  return (
-                    <li
-                      key={index}
-                      className={`cursor-pointer text-sm black-text text-gray-600 dark:text-gray-400  flex py-2 px-4 leading-tight ${
-                        darkM
-                          ? 'hover:!text-[#603EDA]'
-                          : 'hover:!text-[#191919]'
-                      }`}
-                      onClick={() => handleLanguageChange(item)}
-                    >
-                      {item}
-                    </li>
-                  )
-                })}
+                {t('language_dropdown', { returnObjects: true }).map(
+                  (item, index) => {
+                    if (router.locale === item.locale) return
+                    return (
+                      <li
+                        key={index}
+                        className={`cursor-pointer text-sm black-text text-gray-600 dark:text-gray-400  flex py-2 px-4 leading-tight ${
+                          darkM
+                            ? 'hover:!text-[#603EDA]'
+                            : 'hover:!text-[#191919]'
+                        }`}
+                        onClick={() => handleLanguageChange(item.locale)}
+                      >
+                        {item.title}
+                      </li>
+                    )
+                  }
+                )}
               </Dropdown>
             </ul>
           </nav>
@@ -257,7 +262,7 @@ function TheHeader({ setDarkModeProp, setLang, language, darkM }) {
             {/* Hamburger button */}
             <button
               ref={trigger}
-              className={`hamburger ${mobileNavOpen && 'active'}`}
+              className={`hamburger ${mobileNavOpen ? 'active' : ''}`}
               aria-controls="mobile-nav"
               aria-expanded={mobileNavOpen}
               onClick={() => setMobileNavOpen(!mobileNavOpen)}
@@ -299,7 +304,7 @@ function TheHeader({ setDarkModeProp, setLang, language, darkM }) {
                   </div>
                   {/* divs */}
                   <ul>
-                    {header_json?.menus.map((menu, index) => (
+                    {t('menus', { returnObjects: true }).map((menu, index) => (
                       <li key={index}>
                         <Link href={`#${menu.toLowerCase()}`}>
                           <a className="block text-gray-600 black-text  hover:text-gray-900 dark:text-gray-300 dark:hover:text-gray-100 px-5 py-2 flex items-center transition duration-150 ease-in-out">
@@ -311,44 +316,48 @@ function TheHeader({ setDarkModeProp, setLang, language, darkM }) {
 
                     <li className="py-2 my-2 border-t border-b border-gray-200 dark:border-gray-800">
                       <span className="flex text-gray-600 dark:text-gray-400 py-2">
-                        {header_json?.dropdown_menu.title.mobile}
+                        {t('dropdown_menu.title.mobile')}
                       </span>
                       <ul className="pl-4">
-                        {header_json?.dropdown_menu.items.map((item, index) => (
-                          <li key={index}>
-                            <Link href={item.link}>
-                              <a className="text-sm flex font-medium text-gray-600 hover:text-gray-900 dark:text-gray-400 dark:hover:text-gray-100 py-2">
-                                {item.title}
-                              </a>
-                            </Link>
-                          </li>
-                        ))}
+                        {t('dropdown_menu.items', { returnObjects: true }).map(
+                          (item, index) => (
+                            <li key={index}>
+                              <Link href={item.link}>
+                                <a className="text-sm flex font-medium text-gray-600 hover:text-gray-900 dark:text-gray-400 dark:hover:text-gray-100 py-2">
+                                  {item.title}
+                                </a>
+                              </Link>
+                            </li>
+                          )
+                        )}
                       </ul>
                     </li>
                     <li>
                       <Link href="/contact">
                         <a className="font-medium bg-purpled w-full inline-flex items-center justify-center border border-transparent px-4 py-2 my-2 rounded text-white bg-teal-500 hover:bg-teal-400 transition duration-150 ease-in-out">
-                          {header_json?.comming_soon}
+                          {t('comming_soon')}
                         </a>
                       </Link>
                     </li>
                     <li className="py-2 my-2 border-t border-b border-gray-200 dark:border-gray-800">
                       <span className="flex text-gray-600 dark:text-gray-400 py-2">
-                        {header_json?.dropdown_menu.title.mobile}
+                        {t('dropdown_menu.title.mobile')}
                       </span>
                       <ul className="pl-4">
-                        {header_json?.language_dropdown.map((item, index) => (
-                          <li
-                            key={index}
-                            onClick={() => handleLanguageChange(item)}
-                          >
-                            {/* <Link href={item.link}> */}
-                            <span className="cursor-pointer text-sm flex font-medium text-gray-600 hover:text-gray-900 dark:text-gray-400 dark:hover:text-gray-100 py-2">
-                              {item}
-                            </span>
-                            {/* </Link> */}
-                          </li>
-                        ))}
+                        {t('language_dropdown', { returnObjects: true }).map(
+                          (item, index) => (
+                            <li
+                              key={index}
+                              onClick={() => handleLanguageChange(item.locale)}
+                            >
+                              {/* <Link href={item.link}> */}
+                              <span className="cursor-pointer text-sm flex font-medium text-gray-600 hover:text-gray-900 dark:text-gray-400 dark:hover:text-gray-100 py-2">
+                                {item.title}
+                              </span>
+                              {/* </Link> */}
+                            </li>
+                          )
+                        )}
                       </ul>
                     </li>
                   </ul>
