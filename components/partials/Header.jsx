@@ -27,7 +27,7 @@ function TheHeader({ setDarkModeProp, darkM }) {
 
   // const currentLanguage = LANGUAGES[query.lang];
 
-  const [language, setLanguage] = useState(lang[router.locale])
+  const [language, setLanguage] = useState('en')
 
   const dispatch = useDispatch()
 
@@ -41,7 +41,6 @@ function TheHeader({ setDarkModeProp, darkM }) {
 
     const lang = query.lang;
     setLanguage(LANGUAGES[lang]);
-    console.log(LANGUAGES[lang]);
 
     const clickHandler = ({ target }) => {
       if (!mobileNav.current || !trigger.current) return
