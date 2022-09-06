@@ -13,10 +13,13 @@
       "link": "https://thrift.finance/faq"
     }
   ],
-  "about": ["Litepaper", "Contact us"],
+  "about_links": [
+    { "title": "Litepaper", "link": "#" },
+    { "title": "Contact us", "link": "mailto:Team@thrift.finance" }
+  ],
   "social_links": [
     { "icon": "telegram", "link": "https://medium.com/@ThriftFinance" },
-    { "icon": "twittaer", "link": "https://twitter.com/FinanceThrift" },
+    { "icon": "twitter", "link": "https://twitter.com/FinanceThrift" },
     { "icon": "discord", "link": "https://discord.gg/XtyGUX9kKZ" },
     {
       "icon": "github",

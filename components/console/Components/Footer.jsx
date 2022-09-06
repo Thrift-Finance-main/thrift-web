@@ -90,10 +90,10 @@ function TheFooter({ darkM, language }) {
             <p>© 2021 Thrift Labs. </p>
             <p> All rights reserved.</p>
           </div>
-
+          {/* 
           <div>
             <p>Privacy Policy · Terms</p>
-          </div>
+          </div> */}
 
           <div>
             <ul className="flex white-text gap-4 justifyContent-right">

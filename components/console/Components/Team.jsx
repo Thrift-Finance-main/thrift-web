@@ -3,7 +3,7 @@ import React from 'react'
 
 const Team = ({ darkM, language }) => {
   const { t } = useTranslation()
-  const content = t('content')
+  const content = t('team')
 
   return (
     <>
@@ -20,7 +20,7 @@ const Team = ({ darkM, language }) => {
                     alt="Leslie Avatar"
                   />
                   <p className="mb-1 text-2xl tracking-tight    dark-here text-gray-900 font-header !font-[400]">
-                    {/* <a
+                    {/* <a target="_blank"
                       className="dark-here text-gray-900 font-header !font-[400]"
                       href="#"
                     > */}
@@ -32,6 +32,7 @@ const Team = ({ darkM, language }) => {
                     {item.twitter !== '' && (
                       <li>
                         <a
+                          target="_blank"
                           href={item.twitter}
                           className="text-[#00acee] dark:hover:text-gray-400 dark:text-gray-500"
                         >
@@ -49,6 +50,7 @@ const Team = ({ darkM, language }) => {
                     {item.linkedin !== '' && (
                       <li>
                         <a
+                          target="_blank"
                           href={item.linkedin}
                           className="text-[#ea4c89] dark:hover:text-gray-400 dark:text-gray-500"
                         >
@@ -66,6 +68,7 @@ const Team = ({ darkM, language }) => {
                     {item.github !== '' && (
                       <li>
                         <a
+                          target="_blank"
                           href={item.github}
                           className="text-gray-900 hover:text-gray-900 dark:hover:text-gray-400 dark:text-gray-500"
                         >

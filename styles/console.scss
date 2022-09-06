@@ -95,10 +95,22 @@
   width: 100%;
   margin: 0 auto;
   flex-wrap: wrap;
-  justify-content: center;
+  // justify-content: center;
+  justify-content: space-around;
+  @media screen and (max-width: 598px) {
+  }
   .team-member {
     width: 299px;
     @media screen and (max-width: 598px) {
+      p:nth-child(2) {
+        font-size: 0.9em !important;
+      }
+      p:nth-child(3) {
+        font-size: 0.6em !important;
+      }
+      img {
+        width: 90px;
+      }
       width: 200px;
     }
     @media screen and (max-width: 448px) {

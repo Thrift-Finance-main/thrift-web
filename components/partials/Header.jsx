@@ -8,22 +8,22 @@ import { useRouter } from 'next/router'
 import { useDispatch, useSelector } from 'react-redux'
 import { setDarkMode, setLanguageMode } from '../../store/actions/sampleAction'
 
-import { useTranslation, useLanguageQuery } from 'next-export-i18n';
-import lang from '../../constants/lang';
+import { useTranslation, useLanguageQuery } from 'next-export-i18n'
+import lang from '../../constants/lang'
 
 export const LANGUAGES = {
-  "en": "English",
-  "es": "Spanish",
-  "sw": "Swahili",
+  en: 'English',
+  es: 'Spanish',
+  sw: 'Swahili',
 }
 
 function TheHeader({ setDarkModeProp, darkM }) {
   const router = useRouter()
 
-  const { t } = useTranslation();
-  const [query] = useLanguageQuery();
+  const { t } = useTranslation()
+  const [query] = useLanguageQuery()
 
-  const content = t('header');
+  const content = t('header')
 
   // const currentLanguage = LANGUAGES[query.lang];
 
@@ -38,9 +38,8 @@ function TheHeader({ setDarkModeProp, darkM }) {
 
   // close the mobile menu on click outside
   useEffect(() => {
-
-    const lang = query && query.lang ? query.lang : 'en' ;
-    setLanguage(LANGUAGES[lang]);
+    const lang = query && query.lang ? query.lang : 'en'
+    setLanguage(LANGUAGES[lang])
 
     const clickHandler = ({ target }) => {
       if (!mobileNav.current || !trigger.current) return
@@ -53,9 +52,7 @@ function TheHeader({ setDarkModeProp, darkM }) {
       setMobileNavOpen(false)
     }
     document.addEventListener('click', clickHandler)
-    return () => document.removeEventListener('click', clickHandler);
-
-
+    return () => document.removeEventListener('click', clickHandler)
   })
 
   // close the mobile menu if the esc key is pressed
@@ -82,9 +79,11 @@ function TheHeader({ setDarkModeProp, darkM }) {
     setDarkModeProp(darkMode)
   }
   const handleLanguageChange = (newLocale) => {
-    router.push({query: {
-      lang: newLocale
-      }})
+    router.push({
+      query: {
+        lang: newLocale,
+      },
+    })
   }
 
   return (
@@ -119,51 +118,48 @@ function TheHeader({ setDarkModeProp, darkM }) {
             <ul className="flex black-text grow flex-wrap items-center font-medium">
               {
                 // @ts-ignore
-                content.dropdown_menu.items.map(
-                  (item, index) => {
-                    if (index === 1 && darkM) return
-                    return (
-                      <li key={index}>
-                        <Link href={item.link}>
-                          <a
-                            className={`text-sm black-text text-gray-600 dark:text-gray-400  flex py-2 px-4 leading-tight ${
-                              darkM
-                                ? 'hover:!text-[#603EDA]'
-                                : 'hover:!text-[#191919]'
-                            }`}
-                          >
-                            {item.title}
-                          </a>
-                        </Link>
-                      </li>
-                    )
-                  }
-                )}
+                content.menus.map((item, index) => {
+                  if (index === 1 && darkM) return
+                  return (
+                    <li key={index}>
+                      <Link href={`/#${item.toLowerCase()}`}>
+                        <a
+                          className={` black-text text-gray-600 dark:text-gray-400  flex py-2 px-4 leading-tight ${
+                            darkM
+                              ? 'hover:!text-[#603EDA]'
+                              : 'hover:!text-[#191919]'
+                          }`}
+                        >
+                          {item}
+                        </a>
+                      </Link>
+                    </li>
+                  )
+                })
+              }
 
               <Dropdown
                 title={content.dropdown_menu.title.desktop}
                 darkMode={darkM}
               >
-                {content.dropdown_menu.items.map(
-                  (item, index) => {
-                    if (index === 1 && darkM) return
-                    return (
-                      <li key={index}>
-                        <Link href={item.link}>
-                          <a
-                            className={`text-sm black-text text-gray-600 dark:text-gray-400  flex py-2 px-4 leading-tight ${
-                              darkM
-                                ? 'hover:!text-[#603EDA]'
-                                : 'hover:!text-[#191919]'
-                            }`}
-                          >
-                            {item.title}
-                          </a>
-                        </Link>
-                      </li>
-                    )
-                  }
-                )}
+                {content.dropdown_menu.items.map((item, index) => {
+                  if (index === 1 && darkM) return
+                  return (
+                    <li key={index}>
+                      <Link href={item.link}>
+                        <a
+                          className={`text-sm black-text text-gray-600 dark:text-gray-400  flex py-2 px-4 leading-tight ${
+                            darkM
+                              ? 'hover:!text-[#603EDA]'
+                              : 'hover:!text-[#191919]'
+                          }`}
+                        >
+                          {item.title}
+                        </a>
+                      </Link>
+                    </li>
+                  )
+                })}
               </Dropdown>
             </ul>
 
@@ -215,10 +211,8 @@ function TheHeader({ setDarkModeProp, darkM }) {
                 </Link>
               </li>
               {
-
-                  <Dropdown title={language}>
-                {content.language_dropdown.map(
-                  (item, index) => {
+                <Dropdown title={language}>
+                  {content.language_dropdown.map((item, index) => {
                     if (router.locale === item.locale) return
                     return (
                       <li
@@ -233,12 +227,9 @@ function TheHeader({ setDarkModeProp, darkM }) {
                         {item.title}
                       </li>
                     )
-                  }
-                )}
-              </Dropdown>
-
+                  })}
+                </Dropdown>
               }
-
             </ul>
           </nav>
 
@@ -339,21 +330,19 @@ function TheHeader({ setDarkModeProp, darkM }) {
                       ))}
 
                       <li className="py-2 my-2 border-t border-b border-gray-200 dark:border-gray-800">
-                      <span className="flex text-gray-600 dark:text-gray-400 py-2">
-                        {t('dropdown_menu.title.mobile')}
-                      </span>
+                        <span className="flex text-gray-600 dark:text-gray-400 py-2">
+                          {content.dropdown_menu.title.mobile}
+                        </span>
                         <ul className="pl-4">
-                          {content.dropdown_menu.items.map(
-                            (item, index) => (
-                              <li key={index}>
-                                <Link href={item.link}>
-                                  <a className="text-sm flex font-medium text-gray-600 hover:text-gray-900 dark:text-gray-400 dark:hover:text-gray-100 py-2">
-                                    {item.title}
-                                  </a>
-                                </Link>
-                              </li>
-                            )
-                          )}
+                          {content.dropdown_menu.items.map((item, index) => (
+                            <li key={index}>
+                              <Link href={item.link}>
+                                <a className="text-sm flex font-medium text-gray-600 hover:text-gray-900 dark:text-gray-400 dark:hover:text-gray-100 py-2">
+                                  {item.title}
+                                </a>
+                              </Link>
+                            </li>
+                          ))}
                         </ul>
                       </li>
                       <li>
@@ -364,28 +353,24 @@ function TheHeader({ setDarkModeProp, darkM }) {
                         </Link>
                       </li>
                       <li className="py-2 my-2 border-t border-b border-gray-200 dark:border-gray-800">
-                      <span className="flex text-gray-600 dark:text-gray-400 py-2">
-                        {content.dropdown_menu.title.mobile}
-                      </span>
+                        <span className="flex text-gray-600 dark:text-gray-400 py-2">
+                          {content.dropdown_menu.title.mobile}
+                        </span>
                         <ul className="pl-4">
-                          {content.language_dropdown.map(
-                            (item, index) => (
-                              <li
-                                key={index}
-                                onClick={() => handleLanguageChange(item.locale)}
-                              >
-
-                  <span className="cursor-pointer text-sm flex font-medium text-gray-600 hover:text-gray-900 dark:text-gray-400 dark:hover:text-gray-100 py-2">
+                          {content.language_dropdown.map((item, index) => (
+                            <li
+                              key={index}
+                              onClick={() => handleLanguageChange(item.locale)}
+                            >
+                              <span className="cursor-pointer text-sm flex font-medium text-gray-600 hover:text-gray-900 dark:text-gray-400 dark:hover:text-gray-100 py-2">
                                 {item.title}
                               </span>
-                              </li>
-                            )
-                          )}
+                            </li>
+                          ))}
                         </ul>
                       </li>
                     </ul>
                   }
-
                 </div>
               </nav>
             </Transition>

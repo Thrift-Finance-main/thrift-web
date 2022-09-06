@@ -17,7 +17,10 @@ const Partners = ({ darkM, language }) => {
                 width='700%' height='100%'/> */}
 
         <div className="images flex justify-around">
-          <a href="https://u.today/cardano-network-expands-further-with-djed-becoming-official-stablecoin-of-iohks-realfi-start-up">
+          <a
+            target="_blank"
+            href="https://u.today/cardano-network-expands-further-with-djed-becoming-official-stablecoin-of-iohks-realfi-start-up"
+          >
             <img
               className="hover:opacity-80"
               src={`/news/${darkM ? 'dark' : 'light'}/1.png`}
@@ -25,7 +28,10 @@ const Partners = ({ darkM, language }) => {
               width="100%"
             />
           </a>
-          <a href="https://cardanofeed.com/thrift-partners-with-coti-to-integrate-djed-stablecoin-to-its-realfi-wallet-107350.html">
+          <a
+            target="_blank"
+            href="https://cardanofeed.com/thrift-partners-with-coti-to-integrate-djed-stablecoin-to-its-realfi-wallet-107350.html"
+          >
             <img
               className="hover:opacity-80"
               src={`/news/${darkM ? 'dark' : 'light'}/2.png`}
@@ -33,7 +39,10 @@ const Partners = ({ darkM, language }) => {
               width="100%"
             />
           </a>
-          <a href="https://cardanofeed.com/thrift-partners-with-coti-to-integrate-djed-stablecoin-to-its-realfi-wallet-107350.html">
+          <a
+            target="_blank"
+            href="https://cardanofeed.com/thrift-partners-with-coti-to-integrate-djed-stablecoin-to-its-realfi-wallet-107350.html"
+          >
             <img
               className="hover:opacity-80"
               src={`/news/${darkM ? 'dark' : 'light'}/3.png`}
@@ -41,7 +50,10 @@ const Partners = ({ darkM, language }) => {
               width="100%"
             />
           </a>
-          <a href="https://cardanofeed.com/thrift-partners-with-coti-to-integrate-djed-stablecoin-to-its-realfi-wallet-107350.html">
+          <a
+            target="_blank"
+            href="https://cardanofeed.com/thrift-partners-with-coti-to-integrate-djed-stablecoin-to-its-realfi-wallet-107350.html"
+          >
             <img
               className="hover:opacity-80"
               src={`/news/${darkM ? 'dark' : 'light'}/4.png`}
