@@ -19,7 +19,7 @@ const Partners = ({ darkM, language }) => {
         <div className="images flex justify-around">
           <a
             target="_blank"
-            href="https://u.today/cardano-network-expands-further-with-djed-becoming-official-stablecoin-of-iohks-realfi-start-up"
+            href="https://u.today/cardano-network-expands-further-with-djed-becoming-official-stablecoin-of-iohks-realfi-start-up" rel="noreferrer"
           >
             <img
               className="hover:opacity-80"
@@ -30,7 +30,7 @@ const Partners = ({ darkM, language }) => {
           </a>
           <a
             target="_blank"
-            href="https://cardanofeed.com/thrift-partners-with-coti-to-integrate-djed-stablecoin-to-its-realfi-wallet-107350.html"
+            href="https://cardanofeed.com/thrift-partners-with-coti-to-integrate-djed-stablecoin-to-its-realfi-wallet-107350.html" rel="noreferrer"
           >
             <img
               className="hover:opacity-80"
@@ -41,7 +41,7 @@ const Partners = ({ darkM, language }) => {
           </a>
           <a
             target="_blank"
-            href="https://cardanofeed.com/thrift-partners-with-coti-to-integrate-djed-stablecoin-to-its-realfi-wallet-107350.html"
+            href="https://cardanofeed.com/thrift-partners-with-coti-to-integrate-djed-stablecoin-to-its-realfi-wallet-107350.html" rel="noreferrer"
           >
             <img
               className="hover:opacity-80"
@@ -52,7 +52,7 @@ const Partners = ({ darkM, language }) => {
           </a>
           <a
             target="_blank"
-            href="https://cardanofeed.com/thrift-partners-with-coti-to-integrate-djed-stablecoin-to-its-realfi-wallet-107350.html"
+            href="https://cardanofeed.com/thrift-partners-with-coti-to-integrate-djed-stablecoin-to-its-realfi-wallet-107350.html" rel="noreferrer"
           >
             <img
               className="hover:opacity-80"

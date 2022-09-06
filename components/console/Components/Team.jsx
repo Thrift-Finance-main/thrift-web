@@ -34,7 +34,7 @@ const Team = ({ darkM, language }) => {
                         <a
                           target="_blank"
                           href={item.twitter}
-                          className="text-[#00acee] dark:hover:text-gray-400 dark:text-gray-500"
+                          className="text-[#00acee] dark:hover:text-gray-400 dark:text-gray-500" rel="noreferrer"
                         >
                           <svg
                             className="w-6 h-6"
@@ -52,7 +52,7 @@ const Team = ({ darkM, language }) => {
                         <a
                           target="_blank"
                           href={item.linkedin}
-                          className="text-[#ea4c89] dark:hover:text-gray-400 dark:text-gray-500"
+                          className="text-[#ea4c89] dark:hover:text-gray-400 dark:text-gray-500" rel="noreferrer"
                         >
                           <svg
                             xmlns="http://www.w3.org/2000/svg"
@@ -70,7 +70,7 @@ const Team = ({ darkM, language }) => {
                         <a
                           target="_blank"
                           href={item.github}
-                          className="text-gray-900 hover:text-gray-900 dark:hover:text-gray-400 dark:text-gray-500"
+                          className="text-gray-900 hover:text-gray-900 dark:hover:text-gray-400 dark:text-gray-500" rel="noreferrer"
                         >
                           <svg
                             className="w-6 h-6"
