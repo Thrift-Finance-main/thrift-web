@@ -54,7 +54,7 @@ const Partners = ({ darkM, language }) => {
           </a>
           <a
             target="_blank"
-            href="https://ambcrypto.com/cardanos-increasing-github-activity-has-these-lessons-about-real-wealth/"
+            href="https://ambcrypto.com/cardanos-increasing-github-activity-has-these-lessons-about-real-wealth/" rel="noreferrer"
           >
             <img
               className="hover:opacity-80"
