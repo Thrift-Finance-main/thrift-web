@@ -41,7 +41,7 @@ const Partners = ({ darkM, language }) => {
           </a>
           <a
             target="_blank"
-            href="https://cardanofeed.com/thrift-partners-with-coti-to-integrate-djed-stablecoin-to-its-realfi-wallet-107350.html"
+            href="https://cryptonews.net/news/altcoins/9609935/"
           >
             <img
               className="hover:opacity-80"
@@ -52,7 +52,7 @@ const Partners = ({ darkM, language }) => {
           </a>
           <a
             target="_blank"
-            href="https://cardanofeed.com/thrift-partners-with-coti-to-integrate-djed-stablecoin-to-its-realfi-wallet-107350.html"
+            href="https://ambcrypto.com/cardanos-increasing-github-activity-has-these-lessons-about-real-wealth/"
           >
             <img
               className="hover:opacity-80"
