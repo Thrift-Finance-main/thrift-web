@@ -65,16 +65,16 @@ function TheFooter({ darkM, language }) {
                 About
               </h6>
               <ul className="text-sm">
-                {content.about.map((link, index) => (
+                {content.about_links.map((item, index) => (
                   <li key={index} className="mb-2">
-                    <Link href={`#${link.toLowerCase()}`}>
+                    <a target="_blank" href={`${item.link.toLowerCase()}`}>
                       <div
                         to="#"
-                        className="text-gray-300 hover:text-gray-900 shade transition duration-150 ease-in-out cursor-pointer dark-here"
+                        className="text-gray-400 hover:text-gray-900 shade transition duration-150 ease-in-out cursor-pointer dark-here"
                       >
-                        {link}
+                        {item.title}
                       </div>
-                    </Link>
+                    </a>
                   </li>
                 ))}
               </ul>

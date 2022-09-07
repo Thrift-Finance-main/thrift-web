@@ -1,5 +1,5 @@
 {
-  "menus": ["Features", "Roadmap", "About"],
+  "menus": ["Features", "Roadmap", "About", "Litepaper"],
   "dropdown_menu": {
     "title": {
       "desktop": "Doc",
