@@ -67,7 +67,7 @@ function TheFooter({ darkM, language }) {
               <ul className="text-sm">
                 {content.about_links.map((item, index) => (
                   <li key={index} className="mb-2">
-                    <a target="_blank" href={`${item.link.toLowerCase()}`}>
+                    <a target="_blank" href={`${item.link.toLowerCase()}`} rel="noreferrer">
                       <div
                         to="#"
                         className="text-gray-400 hover:text-gray-900 shade transition duration-150 ease-in-out cursor-pointer dark-here"
@@ -90,7 +90,7 @@ function TheFooter({ darkM, language }) {
             <p>© 2021 Thrift Labs. </p>
             <p> All rights reserved.</p>
           </div>
-          {/* 
+          {/*
           <div>
             <p>Privacy Policy · Terms</p>
           </div> */}
