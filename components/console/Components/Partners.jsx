@@ -15,7 +15,10 @@ const Partners = ({ darkM, language }) => {
                 width='700%' height='100%'/> */}
 
         <div className="images flex justify-around">
-          <a target="_blank" href="https://ariob.io/startups/">
+          <a
+            target="_blank"
+            href="https://cryptonews.net/news/altcoins/9609935/"
+          >
             <img
               className="hover:opacity-80"
               src={`/partner/${darkM ? 'dark' : 'light'}/1.png`}
@@ -39,7 +42,10 @@ const Partners = ({ darkM, language }) => {
               width="100%"
             />
           </a>
-          <a target="_blank" href="https://cardano.ideascale.com/">
+          <a
+            target="_blank"
+            href="https://ambcrypto.com/cardanos-increasing-github-activity-has-these-lessons-about-real-wealth/"
+          >
             <img
               className="hover:opacity-80"
               src={`/partner/${darkM ? 'dark' : 'light'}/4.png`}

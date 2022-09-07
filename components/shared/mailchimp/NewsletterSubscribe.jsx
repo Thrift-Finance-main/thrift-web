@@ -2,7 +2,8 @@ import MailchimpSubscribe from 'react-mailchimp-subscribe'
 import NewsletterForm from './NewsletterForm'
 
 const NewsletterSubscribe = () => {
-  const MAILCHIMP_URL = process.env.NEXT_PUBLIC_MAILCHIMP_URL
+  const MAILCHIMP_URL =
+    'https://finance.us20.list-manage.com/subscribe/post?u=980ba315fb0bd313489501daf&id=7775d4c80c&f_id=0048fae6f0'
   // alert(MAILCHIMP_URL)
   // alert(MAILCHIMP_URL)
 

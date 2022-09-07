@@ -1,15 +1,19 @@
 import React, { useEffect, useState } from 'react'
 import { useRouter } from 'next/router'
 import NewsletterSubscribe from '@components/shared/mailchimp/NewsletterSubscribe'
-import {useTranslation, useLanguageQuery, LanguageSwitcher, } from "next-export-i18n";
+import {
+  useTranslation,
+  useLanguageQuery,
+  LanguageSwitcher,
+} from 'next-export-i18n'
 
 function Hero({ darkM }) {
   const router = useRouter()
   const { t } = useTranslation()
-  const content = t('hero');
-  console.log('transl');
-  console.log(t);
-  console.log(content);
+  const content = t('hero')
+  console.log('transl')
+  console.log(t)
+  console.log(content)
   return (
     <section className="">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 ">
@@ -47,8 +51,7 @@ function Hero({ darkM }) {
                   data-aos="fade-down"
                   data-aos-delay="450"
                 >
-                  {
-                  content.tags.map((tag, index) => (
+                  {content.tags.map((tag, index) => (
                     <li key={index} className="flex items-center mb-2">
                       <svg
                         className="text-[#3ABAB4] w-3 h-3 fill-current text-primary mr-2 shrink-0"
@@ -60,11 +63,9 @@ function Hero({ darkM }) {
                       <span>{tag} </span>
                     </li>
                   ))}
-
-
                 </ul>
                 <div className="flex gap-4">
-                  <a href="#">
+                  <a href="https://t.me/ThriftFinanceGroup">
                     <img
                       src={`/icon/${darkM ? 'telegram' : 'telegram-light'}.png`}
                       width="32px"
@@ -72,7 +73,7 @@ function Hero({ darkM }) {
                       alt=""
                     />
                   </a>
-                  <a href="#">
+                  <a href="https://twitter.com/FinanceThrift">
                     <img
                       src={`/icon/${darkM ? 'twitter' : 'twitter-light'}.png`}
                       width="32px"

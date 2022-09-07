@@ -119,7 +119,7 @@ function TheHeader({ setDarkModeProp, darkM }) {
               {
                 // @ts-ignore
                 content.menus.map((item, index) => {
-                  if (index === 1 && darkM) return
+                  // if (index === 1 && darkM) return
                   return (
                     <li key={index}>
                       <Link href={`/#${item.toLowerCase()}`}>
@@ -138,7 +138,7 @@ function TheHeader({ setDarkModeProp, darkM }) {
                 })
               }
 
-              <Dropdown
+              {/* <Dropdown
                 title={content.dropdown_menu.title.desktop}
                 darkMode={darkM}
               >
@@ -160,7 +160,7 @@ function TheHeader({ setDarkModeProp, darkM }) {
                     </li>
                   )
                 })}
-              </Dropdown>
+              </Dropdown> */}
             </ul>
 
             {/* Desktop lights switch */}
@@ -329,9 +329,9 @@ function TheHeader({ setDarkModeProp, darkM }) {
                         </li>
                       ))}
 
-                      <li className="py-2 my-2 border-t border-b border-gray-200 dark:border-gray-800">
+                      {/* <li className="py-2 my-2 border-t border-b border-gray-200 dark:border-gray-800">
                         <span className="flex text-gray-600 dark:text-gray-400 py-2">
-                          {content.dropdown_menu.title.mobile}
+                          {content.dropdown_menu.title.desktop}
                         </span>
                         <ul className="pl-4">
                           {content.dropdown_menu.items.map((item, index) => (
@@ -344,17 +344,17 @@ function TheHeader({ setDarkModeProp, darkM }) {
                             </li>
                           ))}
                         </ul>
-                      </li>
+                      </li> */}
                       <li>
                         <Link href="/contact">
                           <a className="font-medium bg-purpled w-full inline-flex items-center justify-center border border-transparent px-4 py-2 my-2 rounded text-white bg-teal-500 hover:bg-teal-400 transition duration-150 ease-in-out">
-                            {t('comming_soon')}
+                            {content.comming_soon}
                           </a>
                         </Link>
                       </li>
                       <li className="py-2 my-2 border-t border-b border-gray-200 dark:border-gray-800">
                         <span className="flex text-gray-600 dark:text-gray-400 py-2">
-                          {content.dropdown_menu.title.mobile}
+                          {language}
                         </span>
                         <ul className="pl-4">
                           {content.language_dropdown.map((item, index) => (
