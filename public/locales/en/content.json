@@ -3,7 +3,7 @@
     "menus": ["Features", "Roadmap", "About"],
     "dropdown_menu": {
       "title": {
-        "desktop": "Doc", 
+        "desktop": "Doc",
         "mobile": "Resources"
       },
       "items": [
@@ -109,7 +109,7 @@
             "title": "Q1 2023",
             "info": "Mobile wallet launch on mainnet. Android & iOS, address book and Adahandle, start community challenges, start ISPO. funding, launch Thrift Operators Alliance program."
           },
-          
+          {
             "title": "Q2 2023",
             "info": "Start FISO. funding & airdrop, dapp connector, launch crowd-lending, develop P2P hybrid lending, token swap services."
           },
@@ -140,7 +140,7 @@
             "info": "Launch prepaid cards. wallets funding, develop fiat ramp, full on-chain governance, community funding program(treasury), launch desktop wallet."
           }
         ]
-      },
+      }
     ]
   },
   "features_world": {
