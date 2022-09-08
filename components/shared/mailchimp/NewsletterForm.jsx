@@ -62,23 +62,25 @@ const NewsletterForm = ({ status, message, onValidated }) => {
   return (
     <>
       <div data-aos="fade-down" data-aos-delay="300">
-        <div className="flex flex-col sm:flex-row justify-center max-w-sm mx-auto sm:max-w-md md:mx-0">
-          <input
-            type="email"
-            onChange={(event) => setEmail(event?.target?.value ?? '')}
-            onKeyUp={(event) => handleInputKeyEvent(event)}
-            className="form-input w-full mb-2 sm:mb-0 sm:mr-2"
-            placeholder="Enter Email Address.."
-            aria-label="email address"
-          />
-          <span
-            className="btn text-white bg-purpled hover:opacity-80 shrink-0 cursor-pointer"
-            onClick={handleFormSubmit}
-          >
-            {' '}
-            Join Waitlist{' '}
-          </span>
-        </div>
+        {!(status === 'success' && status !== 'error' && !error) && (
+          <div className="flex flex-col sm:flex-row justify-center max-w-sm mx-auto sm:max-w-md md:mx-0">
+            <input
+              type="email"
+              onChange={(event) => setEmail(event?.target?.value ?? '')}
+              onKeyUp={(event) => handleInputKeyEvent(event)}
+              className="form-input w-full mb-2 sm:mb-0 sm:mr-2"
+              placeholder="Enter Email Address.."
+              aria-label="email address"
+            />
+            <span
+              className="btn text-white bg-purpled hover:opacity-80 shrink-0 cursor-pointer"
+              onClick={handleFormSubmit}
+            >
+              {' '}
+              Join Waitlist{' '}
+            </span>
+          </div>
+        )}
         {/* Success message */}
         {/* <p className="text-center md:text-left mt-2 opacity-75 text-sm">Thanks for subscribing!</p> */}
         <div className="newsletter-form-info">
@@ -91,7 +93,7 @@ const NewsletterForm = ({ status, message, onValidated }) => {
           ) : null}
           {status === 'success' && status !== 'error' && !error && (
             // <div dangerouslySetInnerHTML={{ __html: decode(message) }} />
-            <p>Thanks for signing up to be notified</p>
+            <p>thank you and confirmation text</p>
           )}
         </div>
       </div>
