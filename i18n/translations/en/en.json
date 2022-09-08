@@ -111,7 +111,7 @@
     "heading": "How it works",
     "info": "Track expenses, income, and create savings plan while growing your funds conviniently. Do these things plus more in a non-custodial wallet. You’re in control.",
     "list": {
-      "heading": "Powerful suite of tools",
+      "heading": "Powerful suite of products",
       "info": "DeFi solutions are often complex, unintuitive, and hard to understand. Thrift makes it simple, providing real solutions to real life finance problems.",
       "items": [
         {
@@ -263,16 +263,16 @@
         "year": "2024",
         "items": [
           {
-            "title": "Q1 to Q4 2024",
+            "title": "Q1-Q4 2024",
             "info": "P2P hybrid lending on mainnet, provide P2P communication chat as a group, crowd transacitons: pay as a group, launch social credit: lending + identity, develop on-chain voting mechanism."
           }
         ]
       },
       {
-        "year": "2025+",
+        "year": "2025",
         "items": [
           {
-            "title": "Q1 to Q4 2025",
+            "title": "Q1-Q4 2025",
             "info": "Launch prepaid cards. wallets funding, develop fiat ramp, full on-chain governance, community funding program(treasury), launch desktop wallet."
           }
         ]
