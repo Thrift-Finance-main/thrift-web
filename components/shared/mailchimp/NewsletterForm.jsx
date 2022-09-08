@@ -68,7 +68,7 @@ const NewsletterForm = ({ status, message, onValidated }) => {
               type="email"
               onChange={(event) => setEmail(event?.target?.value ?? '')}
               onKeyUp={(event) => handleInputKeyEvent(event)}
-              className="form-input w-full mb-2 sm:mb-0 sm:mr-2"
+              className="form-input w-full mb-2 sm:mb-0 sm:mr-2 text-black dark-here"
               placeholder="Enter Email Address.."
               aria-label="email address"
             />
