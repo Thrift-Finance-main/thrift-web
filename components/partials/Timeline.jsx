@@ -66,7 +66,7 @@ function Timeline({ darkM, language }) {
                       <article
                         key={index}
                         className={
-                          'p-6 bg-white  box-shade-top  dark:bg-gray-800 shadow-2xl flex flex-col' +
+                          'p-6 bg-white  box-shade-top dark:bg-gray-800 shadow-2xl flex flex-col' +
                           (group_item.items.length & 1 && !index
                             ? ' md:col-span-2'
                             : '')
@@ -76,9 +76,7 @@ function Timeline({ darkM, language }) {
                           <h3 className="h4 font-red-hat-display mb-1">
                             <a
                               href="#0"
-                              className={`${
-                                darkM ? 'text-white' : 'text-black'
-                              }`}
+                              className={"dark-here text-white"}
                             >
                               {item.title}
                             </a>
