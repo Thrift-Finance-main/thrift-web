@@ -4,7 +4,7 @@ import React, { useState, useEffect } from 'react'
 function Timeline({ darkM, language }) {
   const { t } = useTranslation()
   const content = t('timeline')
-  const [year, setYear] = useState('2021')
+  const [year, setYear] = useState('2022')
 
   return (
     <section id="roadmap" className="text-left">
@@ -74,7 +74,12 @@ function Timeline({ darkM, language }) {
                       >
                         <header>
                           <h3 className="h4 font-red-hat-display mb-1">
-                            <a href="#0" className={'text-white dark-here'}>
+                            <a
+                              href="#0"
+                              className={`${
+                                darkM ? 'text-white' : 'text-black'
+                              }`}
+                            >
                               {item.title}
                             </a>
                           </h3>

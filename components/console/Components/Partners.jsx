@@ -17,7 +17,8 @@ const Partners = ({ darkM, language }) => {
         <div className="images flex justify-around">
           <a
             target="_blank"
-            href="https://cryptonews.net/news/altcoins/9609935/" rel="noreferrer"
+            href="https://cryptonews.net/news/altcoins/9609935/"
+            rel="noreferrer"
           >
             <img
               className="hover:opacity-80"
@@ -44,7 +45,8 @@ const Partners = ({ darkM, language }) => {
           </a>
           <a
             target="_blank"
-            href="https://ambcrypto.com/cardanos-increasing-github-activity-has-these-lessons-about-real-wealth/" rel="noreferrer"
+            href="https://cardano.ideascale.com/"
+            rel="noreferrer"
           >
             <img
               className="hover:opacity-80"
