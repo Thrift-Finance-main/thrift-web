@@ -54,7 +54,6 @@ function Timeline({ darkM, language }) {
                     </button>
                   ))}
               </div>
-
               {/* 2020's articles */}
               {content.group.map((group_item, ind) => (
                 <div
