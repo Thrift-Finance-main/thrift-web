@@ -12,6 +12,10 @@ class Document extends NextDocument {
           <link rel="shortlink" href="https://thrift.finance/" />
 
           <meta name="robots" content="max-image-preview:large" />
+          <meta property="og:url" content="thrift.finance" />
+          <meta property="og:type" content="website" />
+          <meta property="og:title" content={"/favicon.png"} />
+          <meta name="twitter:card" content="summary" />
 
           <link rel="icon" href="/favicon.png" sizes="32x32" />
           <link
@@ -40,6 +44,7 @@ class Document extends NextDocument {
             href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap;ver=5.8.2"
             rel="stylesheet"
           />
+          <title>Thrift Finance</title>
         </Head>
         <body>
           <Main />
