@@ -14,16 +14,20 @@ class Document extends NextDocument {
           <meta name="robots" content="max-image-preview:large" />
           <meta property="og:url" content="thrift.finance" />
           <meta property="og:type" content="website" />
-          <meta property="og:title" content={"/favicon.png"} />
+          <meta property="og:title" content={"/favicon.ico"} />
           <meta name="twitter:card" content="summary" />
 
-          <link rel="icon" href="/favicon.png" sizes="32x32" />
+          <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png"/>
+          <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"/>
+
+          <link rel="icon" href="/favicon.ico" sizes="32x32" />
           <link
             rel="icon"
             type="image/png"
-            href="/favicon.png"
+            href="/favicon.ico"
             sizes="192x192"
           />
+          <link rel="shortcut icon" href="favicon.ico" />
 
           <link
             rel="apple-touch-icon"
@@ -31,7 +35,7 @@ class Document extends NextDocument {
             href="/apple-touch-icon.png"
           />
 
-          <meta name="msapplication-TileImage" content="/favicon.png" />
+          <meta name="msapplication-TileImage" content="/favicon.ico" />
 
           <link rel="preconnect" href="https://fonts.googleapis.com" />
           <link
