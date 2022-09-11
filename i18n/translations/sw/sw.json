@@ -67,7 +67,11 @@
         "icon": "linkedin",
         "link": "https://www.linkedin.com/company/80445185/admin/"
       }
-    ]
+    ],
+    "copyright": {
+      "title": " Thrift Labs. All rights reserved",
+      "year": "2022"
+    }
   },
   "header": {
     "menus": ["Features", "Roadmap", "About", "Litepaper"],

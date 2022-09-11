@@ -67,7 +67,11 @@
         "icon": "linkedin",
         "link": "https://www.linkedin.com/company/80445185/admin/"
       }
-    ]
+    ],
+    "copyright": {
+      "title": " Thrift Labs. All rights reserved",
+      "year": "2022"
+    }
   },
   "header": {
     "menus": ["Features", "Roadmap", "About", "Litepaper"],
@@ -234,13 +238,13 @@
             "title": "Q4 2022",
             "info": "Feedback from testnet users, wallet development, private sale, funding, grow the team."
           }
-          
+
         ]
       },
       {
         "year": "2023",
         "items": [
-          
+
           {
             "title": "Q1 2023",
             "info": "Mobile wallet launch on mainnet: Android & iOS, address book and Adahandle, start community challenges, start ISPO. funding, launch Thrift Operators Alliance program."
