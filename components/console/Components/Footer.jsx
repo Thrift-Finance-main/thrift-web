@@ -81,6 +81,7 @@ function TheFooter({ darkM, language }) {
             </div>
           </div>
         </div>
+
         {/* Bottom area: Copyright */}
         <div
           className={'flex-bottom black-text py-8'}
