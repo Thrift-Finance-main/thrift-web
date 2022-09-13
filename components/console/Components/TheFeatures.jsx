@@ -64,7 +64,7 @@ function FeaturesBlocks({ darkM }) {
                   </g>
                 </g>
               </svg>
-              <h4 className="text-xl font-bold leading-snug tracking-tight mb-1">
+              <h4 className="text-xl font-bold leading-snug tracking-tight mb-1 text-black dark-here">
                 {content.items[0].title}
               </h4>
               <p className="text-gray-600 text-center black-text">
@@ -105,7 +105,7 @@ function FeaturesBlocks({ darkM }) {
                   </g>
                 </g>
               </svg>
-              <h4 className="text-xl font-bold leading-snug tracking-tight mb-1">
+              <h4 className="text-xl font-bold leading-snug tracking-tight mb-1 text-black dark-here">
                 {content.items[1].title}
               </h4>
               <p className="text-gray-600 text-center black-text">
@@ -149,7 +149,7 @@ function FeaturesBlocks({ darkM }) {
                   </g>
                 </g>
               </svg>
-              <h4 className="text-xl font-bold leading-snug tracking-tight mb-1">
+              <h4 className="text-xl font-bold leading-snug tracking-tight mb-1 text-black dark-here">
                 {content.items[2].title}
               </h4>
               <p className="text-gray-600 text-center black-text">
@@ -192,7 +192,7 @@ function FeaturesBlocks({ darkM }) {
                   </g>
                 </g>
               </svg>
-              <h4 className="text-xl font-bold leading-snug tracking-tight mb-1">
+              <h4 className="text-xl font-bold leading-snug tracking-tight mb-1 text-black dark-here">
                 {content.items[3].title}
               </h4>
               <p className="text-gray-600 text-center black-text">
@@ -230,10 +230,10 @@ function FeaturesBlocks({ darkM }) {
                   </g>
                 </g>
               </svg>
-              <h4 className="text-xl font-bold leading-snug tracking-tight mb-1">
+              <h4 className="text-xl font-bold leading-snug tracking-tight mb-1 text-black dark-here">
                 {content.items[4].title}
               </h4>
-              <p className="text-gray-600 text-center black-text">
+              <p className="text-gray-600 text-center text-black dark-here">
                 {content.items[4].info}{' '}
               </p>
             </div>
@@ -264,7 +264,7 @@ function FeaturesBlocks({ darkM }) {
                   </g>
                 </g>
               </svg>
-              <h4 className="text-xl font-bold leading-snug tracking-tight mb-1">
+              <h4 className="text-xl font-bold leading-snug tracking-tight mb-1 text-black dark-here">
                 {content.items[5].title}
               </h4>
               <p className="text-gray-600 text-center black-text">

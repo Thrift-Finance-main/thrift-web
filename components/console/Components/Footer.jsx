@@ -87,8 +87,8 @@ function TheFooter({ darkM, language }) {
           style={{ alignItems: 'center' }}
         >
           <div className="alrights">
-            <p>© 2021 Thrift Labs. </p>
-            <p> All rights reserved.</p>
+            <p className="text-black dark-here">© {content.copyright.year} Thrift Labs. </p>
+            <p className="text-black dark-here"> All rights reserved.</p>
           </div>
           {/*
           <div>
