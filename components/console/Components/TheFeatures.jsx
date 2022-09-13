@@ -233,7 +233,7 @@ function FeaturesBlocks({ darkM }) {
               <h4 className="text-xl font-bold leading-snug tracking-tight mb-1 text-black dark-here">
                 {content.items[4].title}
               </h4>
-              <p className="text-gray-600 text-center black-text">
+              <p className="text-gray-600 text-center text-black dark-here">
                 {content.items[4].info}{' '}
               </p>
             </div>

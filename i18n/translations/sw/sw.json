@@ -69,8 +69,8 @@
       }
     ],
     "copyright": {
-      "title": " Thrift Labs. All rights reserved",
-      "year": "2022"
+      "title": "Thrift Labs.\n\nAll rights reserved.",
+      "year": 2022
     }
   },
   "header": {

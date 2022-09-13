@@ -81,14 +81,14 @@ function TheFooter({ darkM, language }) {
             </div>
           </div>
         </div>
-
         {/* Bottom area: Copyright */}
         <div
           className={'flex-bottom black-text py-8'}
           style={{ alignItems: 'center' }}
         >
           <div className="alrights">
-            <p className="dark-here text-black">© {content.copyright.year} {content.copyright.title} </p>
+            <p className="text-black dark-here">© {content.copyright.year} Thrift Labs. </p>
+            <p className="text-black dark-here"> All rights reserved.</p>
           </div>
           {/*
           <div>

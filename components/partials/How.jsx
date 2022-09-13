@@ -47,7 +47,7 @@ function How({ darkM, language }) {
         <div className="pt-12 md:pt-20">
           {/* Section header */}
           <div className="max-w-3xl mx-auto text-center pb-12 md:pb-16">
-            <h1 className="h2 mb-4 font-header ">{content.heading}</h1>
+            <h1 className="h2 mb-4 font-header text-black dark-here">{content.heading}</h1>
             <p className="text-gray-600 black-text">{content.info}</p>
           </div>
 
@@ -72,7 +72,7 @@ function How({ darkM, language }) {
               data-aos="fade-right"
             >
               <div className="md:pr-4 lg:pr-12 xl:pr-16 mb-8">
-                <h3 className="h3 mb-3 font-header  left">
+                <h3 className="h3 mb-3 font-header left text-black dark-here">
                   {content.list.heading}
                 </h3>
                 <p className="left text-gray-600 black-text">
