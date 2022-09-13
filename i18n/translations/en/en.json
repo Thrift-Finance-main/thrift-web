@@ -109,9 +109,9 @@
   },
   "how": {
     "heading": "How it works",
-    "info": "Track expenses, income, and create savings plan while growing your funds conviniently. Do these things plus more in a non-custodial wallet. You’re in control.",
+    "info": "Track expenses, income, and create savings plan while growing your funds <br/>conviniently. Do these things plus more in a non-custodial wallet. You’re in control.",
     "list": {
-      "heading": "Powerful suite of products",
+      "heading": "Powerful suite of tools",
       "info": "DeFi solutions are often complex, unintuitive, and hard to understand. Thrift makes it simple, providing real solutions to real life finance problems.",
       "items": [
         {
@@ -215,47 +215,58 @@
     ]
   },
   "thrift_peer": {
-    "heading": "Thrift P2P Chat + Decetralized Lending + Identity",
-    "info": "Securely exchange cryptocurrency for fiat with other users, communicate privately, borrow or lend, and improve your credit score."
+    "heading": "Thrift P2P",
+    "info": "Securely exchange crypto for fiat with other users, communicate privately. "
   },
   "timeline": {
     "heading": "Roadmap",
     "info": "First steps, our challenges, participation in incubation & acceleration programs.",
-    "years": ["2022", "2023", "2024", "2025"],
+    "years": ["2021", "2022", "2023", "2024", "2025"],
     "group": [
+      {
+        "year": "2021",
+        "items": [
+          {
+            "title": "Git Init",
+            "info": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt."
+          },
+          {
+            "title": "Thrift on Cardano Summit",
+            "info": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt."
+          },
+          {
+            "title": "DeFI and Microlending for Africa",
+            "info": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt."
+          },
+          {
+            "title": "Catalyst Boost Camp for Africa",
+            "info": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt."
+          }
+        ]
+      },
       {
         "year": "2022",
         "items": [
           {
-            "title": "Q3 2022",
-            "info": "Demo launch on testnet, local languages support, litepaper release, Thrift Ambassador launch."
+            "title": "IM Customers",
+            "info": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt."
           },
           {
-            "title": "Q4 2022",
-            "info": "Feedback from testnet users, wallet development, private sale, funding, grow the team."
+            "title": "Mobile builder enabled",
+            "info": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt."
           }
-          
         ]
       },
       {
         "year": "2023",
         "items": [
-          
           {
-            "title": "Q1 2023",
-            "info": "Mobile wallet launch on mainnet: Android & iOS, address book and Adahandle, start community challenges, start ISPO. funding, launch Thrift Operators Alliance program."
+            "title": "Series B fundraising",
+            "info": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt."
           },
           {
-            "title": "Q2 2023",
-            "info": "Start FISO. funding & airdrop, dapp connector, launch crowd-lending, develop P2P hybrid lending, token swap services."
-          },
-          {
-            "title": "Q3 2023",
-            "info": "Provide P2P communication chat, P2P hybrid lending on testnet, THR listed on Cardano dex, integrate financial analytics."
-          },
-          {
-            "title": "Q4 2023",
-            "info": "Family savings account and wills, Integrate hardware wallet, Integrate NFT marketplace gateway, develop social credit: lending + identity."
+            "title": "Launched Apply Business",
+            "info": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt."
           }
         ]
       },
@@ -263,8 +274,12 @@
         "year": "2024",
         "items": [
           {
-            "title": "Q1-Q4 2024",
-            "info": "P2P hybrid lending on mainnet, provide P2P communication chat as a group, crowd transacitons: pay as a group, launch social credit: lending + identity, develop on-chain voting mechanism."
+            "title": "Mobile builder enabled",
+            "info": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt."
+          },
+          {
+            "title": "1M Customers",
+            "info": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt."
           }
         ]
       },
@@ -272,8 +287,16 @@
         "year": "2025",
         "items": [
           {
-            "title": "Q1-Q4 2025",
-            "info": "Launch prepaid cards. wallets funding, develop fiat ramp, full on-chain governance, community funding program(treasury), launch desktop wallet."
+            "title": "Mobile builder enabled",
+            "info": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt."
+          },
+          {
+            "title": "Series B fundraising",
+            "info": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt."
+          },
+          {
+            "title": "1M Customers",
+            "info": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt."
           }
         ]
       }
@@ -281,6 +304,6 @@
   },
   "world": {
     "heading": "Team",
-    "info": "Decentralized Team of experts with prudent blockchain history"
+    "info": "Decentralized Team of experts with prident blockchain history"
   }
 }
