@@ -5,7 +5,6 @@ import { useTranslation } from 'next-export-i18n'
 function FeaturesBlocks({ darkM }) {
   const { t } = useTranslation()
   const content = t('features')
-  console.log(content)
 
   return (
     <section className="relative dark-here">

@@ -58,9 +58,8 @@ const sampleReducer = (state = initialState, action:any) => {
 
     case SET_DARK_MODE:
       state.config.darkMode = action.payload;
-      console.log(state.config.darkMode);
       return state
-    case SET_LANGUAGE: 
+    case SET_LANGUAGE:
       return {
         ...state,
         config: {

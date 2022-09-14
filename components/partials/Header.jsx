@@ -23,13 +23,7 @@ function TheHeader({ setDarkModeProp, darkM }) {
   const { t } = useTranslation()
   const [query] = useLanguageQuery()
 
-  const content = t('header')
-
-  console.log('query');
-  console.log(query);
-  console.log('content header');
-  console.log(content);
-  // const currentLanguage = LANGUAGES[query.lang];
+  const content = t('header');
 
   const [language, setLanguage] = useState('en')
 

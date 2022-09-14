@@ -20,14 +20,13 @@ const initConfig = (store: any) => {
     if (darkMode) {
       dm = darkMode
     }
-    console.log(dm)
   })
 }
 
 const initApp = () => {
   initConfig(store)
 }
-initApp()
+initApp();
 function MyApp({ Component, pageProps }: AppProps) {
   return (
     <>

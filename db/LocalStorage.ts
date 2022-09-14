@@ -85,8 +85,6 @@ export const clearAll = async () => {
     } catch(e) {
         // clear error
     }
-
-    console.log('Done.')
 }
 
 

@@ -19,8 +19,6 @@ export const submitAPI = async (url:string, data?:any, token?: string) => {
         config.headers["Authorization"] = 'Bearer ' + token;
     }
     try {
-        console.log("Hey api request");
-        console.log(config);
         return axios(config);
     } catch (e) {
         return {

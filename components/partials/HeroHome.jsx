@@ -11,9 +11,7 @@ function Hero({ darkM }) {
   const router = useRouter()
   const { t } = useTranslation()
   const content = t('hero')
-  console.log('transl')
-  console.log(t)
-  console.log(content)
+
   return (
     <section className="">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 ">
