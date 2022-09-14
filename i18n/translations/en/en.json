@@ -227,27 +227,6 @@
     "years": ["2022", "2023", "2024", "2025"],
     "group": [
       {
-        "year": "2021",
-        "items": [
-          {
-            "title": "Git Init",
-            "info": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt."
-          },
-          {
-            "title": "Thrift on Cardano Summit",
-            "info": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt."
-          },
-          {
-            "title": "DeFI and Microlending for Africa",
-            "info": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt."
-          },
-          {
-            "title": "Catalyst Boost Camp for Africa",
-            "info": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt."
-          }
-        ]
-      },
-      {
         "year": "2022",
         "items": [
           {
