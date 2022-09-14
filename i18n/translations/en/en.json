@@ -67,7 +67,10 @@
         "icon": "linkedin",
         "link": "https://www.linkedin.com/company/80445185/admin/"
       }
-    ]
+    ],
+    "copyright": {
+      "year": 2022
+    }
   },
   "header": {
     "menus": ["Features", "Roadmap", "About", "Litepaper"],
@@ -224,6 +227,27 @@
     "years": ["2022", "2023", "2024", "2025"],
     "group": [
       {
+        "year": "2021",
+        "items": [
+          {
+            "title": "Git Init",
+            "info": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt."
+          },
+          {
+            "title": "Thrift on Cardano Summit",
+            "info": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt."
+          },
+          {
+            "title": "DeFI and Microlending for Africa",
+            "info": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt."
+          },
+          {
+            "title": "Catalyst Boost Camp for Africa",
+            "info": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt."
+          }
+        ]
+      },
+      {
         "year": "2022",
         "items": [
           {
@@ -234,13 +258,13 @@
             "title": "Q4 2022",
             "info": "Feedback from testnet users, wallet development, private sale, funding, grow the team."
           }
-          
+
         ]
       },
       {
         "year": "2023",
         "items": [
-          
+
           {
             "title": "Q1 2023",
             "info": "Mobile wallet launch on mainnet: Android & iOS, address book and Adahandle, start community challenges, start ISPO. funding, launch Thrift Operators Alliance program."

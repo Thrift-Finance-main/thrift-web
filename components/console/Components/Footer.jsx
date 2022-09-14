@@ -6,6 +6,8 @@ import { useTranslation } from 'next-export-i18n'
 function TheFooter({ darkM, language }) {
   const { t } = useTranslation()
   const content = t('footer')
+  console.log('content');
+  console.log(content);
   return (
     <footer>
       <div className="max-w-6xl text-left dark-here mx-auto px-16">
@@ -87,7 +89,7 @@ function TheFooter({ darkM, language }) {
           style={{ alignItems: 'center' }}
         >
           <div className="alrights">
-            <p className="text-black dark-here">© {content.copyright.year} Thrift Labs. </p>
+            <p className="text-black dark-here">©  Thrift Labs. </p>
             <p className="text-black dark-here"> All rights reserved.</p>
           </div>
           {/*
