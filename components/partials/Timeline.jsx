@@ -12,7 +12,7 @@ function Timeline({ darkM, language }) {
         <div className="py-12 md:py-20 dark:border-gray-800">
           {/* Section header */}
           <div className="max-w-3xl mx-auto text-center pb-12 md:pb-20">
-            <h2 className="h2 font-red-hat-display mb-4 text-2xl font-header text-white dark-here">
+            <h2 className="h2 font-red-hat-display mb-4 text-2xl font-header text-black dark-here">
               {content.heading}
             </h2>
             <p className="text-gray-600 dark:text-gray-400">{content.info}</p>
