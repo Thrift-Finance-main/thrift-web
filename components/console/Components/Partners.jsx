@@ -17,7 +17,7 @@ const Partners = ({ darkM, language }) => {
         <div className="images flex justify-around">
           <a
             target="_blank"
-            href="https://cryptonews.net/news/altcoins/9609935/"
+            href="https://ariob.io/startups/"
             rel="noreferrer"
           >
             <img
