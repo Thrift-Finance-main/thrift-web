@@ -75,7 +75,7 @@ function Timeline({ darkM, language }) {
                           <h3 className="h4 mb-1">
                             <a
                               href="#0"
-                              className={"text-white dark-here"}
+                              className={"text-black dark-here"}
                             >
                               {item.title}
                             </a>
