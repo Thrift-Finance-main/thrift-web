@@ -48,7 +48,7 @@
       }
     ],
     "about_links": [
-      { "title": "Litepaper", "link": "#" },
+      { "title": "Litepaper", "link": "/litepaper.pdf" },
       { "title": "Contact us", "link": "mailto:team@thrift.finance" }
     ],
     "social_links": [
@@ -73,17 +73,13 @@
     }
   },
   "header": {
-    "menus": ["Features", "Roadmap", "About", "Litepaper"],
+    "menus": ["Features", "Roadmap", "About"],
     "dropdown_menu": {
       "title": {
         "desktop": "Doc",
         "mobile": "Resources"
       },
       "items": [
-        {
-          "title": "Litepaper1",
-          "link": "/#"
-        },
         {
           "title": "Support Center",
           "link": "/#"

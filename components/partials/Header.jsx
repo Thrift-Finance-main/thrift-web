@@ -135,6 +135,19 @@ function TheHeader({ setDarkModeProp, darkM }) {
                   )
                 })
               }
+              <li>
+                <a
+                  href={"litepaper.pdf"}
+                  target="_blank"
+                  className={` black-text text-gray-600 dark:text-gray-400  flex py-2 px-4 leading-tight ${
+                    darkM
+                      ? 'hover:!text-[#603EDA]'
+                      : 'hover:!text-[#191919]'
+                  }`}
+                >
+                  Litepaper
+                </a>
+              </li>
 
               {/* <Dropdown
                 title={content.dropdown_menu.title.desktop}
