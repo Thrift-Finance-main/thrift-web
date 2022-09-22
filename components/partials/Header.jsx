@@ -138,6 +138,7 @@ function TheHeader({ setDarkModeProp, darkM }) {
               <li>
                 <a
                   href={"litepaper.pdf"}
+                  rel="noreferrer"
                   target="_blank"
                   className={` black-text text-gray-600 dark:text-gray-400  flex py-2 px-4 leading-tight ${
                     darkM
