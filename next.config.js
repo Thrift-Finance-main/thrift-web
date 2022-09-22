@@ -16,6 +16,16 @@ module.exports = {
   },
   webpack: (config, { buildId, dev, isServer, defaultLoaders, webpack }) => {
     config.experiments = { ...config.experiments, asyncWebAssembly: true }
+    config.module.rules.push({
+      test: /\.pdf$/,
+      use: {
+        loader: 'file-loader',
+        options: {
+          name: '[path][name].[ext]',
+        },
+      },
+    });
+
     return config
   }
 }
