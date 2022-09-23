@@ -149,30 +149,6 @@ function TheHeader({ setDarkModeProp, darkM }) {
                   Litepaper
                 </a>
               </li>
-
-              {/* <Dropdown
-                title={content.dropdown_menu.title.desktop}
-                darkMode={darkM}
-              >
-                {content.dropdown_menu.items.map((item, index) => {
-                  if (index === 1 && darkM) return
-                  return (
-                    <li key={index}>
-                      <Link href={item.link}>
-                        <a
-                          className={`text-sm black-text text-gray-600 dark:text-gray-400  flex py-2 px-4 leading-tight ${
-                            darkM
-                              ? 'hover:!text-[#603EDA]'
-                              : 'hover:!text-[#191919]'
-                          }`}
-                        >
-                          {item.title}
-                        </a>
-                      </Link>
-                    </li>
-                  )
-                })}
-              </Dropdown> */}
             </ul>
 
             {/* Desktop lights switch */}
@@ -341,36 +317,13 @@ function TheHeader({ setDarkModeProp, darkM }) {
                         </li>
                       ))}
                       <li>
-                        <a
-                          href={"/litepaper.pdf"}
-                          rel="noreferrer"
-                          target="_blank"
-                          className={` black-text text-gray-600 dark:text-gray-400  flex py-2 px-4 leading-tight ${
-                            darkM
-                              ? 'hover:!text-[#603EDA]'
-                              : 'hover:!text-[#191919]'
-                          }`}
-                        >
-                          Litepaper
-                        </a>
+                        <Link href={"/litepaper.pdf"} target="_blank">
+                          <a className="block text-gray-600 black-text  hover:text-gray-900 dark:text-gray-300 dark:hover:text-gray-100 px-5 py-2 flex items-center transition duration-150 ease-in-out">
+                            Litepaper
+                          </a>
+                        </Link>
                       </li>
 
-                      {/* <li className="py-2 my-2 border-t border-b border-gray-200 dark:border-gray-800">
-                        <span className="flex text-gray-600 dark:text-gray-400 py-2">
-                          {content.dropdown_menu.title.desktop}
-                        </span>
-                        <ul className="pl-4">
-                          {content.dropdown_menu.items.map((item, index) => (
-                            <li key={index}>
-                              <Link href={item.link}>
-                                <a className="text-sm flex font-medium text-gray-600 hover:text-gray-900 dark:text-gray-400 dark:hover:text-gray-100 py-2">
-                                  {item.title}
-                                </a>
-                              </Link>
-                            </li>
-                          ))}
-                        </ul>
-                      </li> */}
                       <li>
                         <Link href="/contact">
                           <a className="font-medium bg-purpled w-full inline-flex items-center justify-center border border-transparent px-4 py-2 my-2 rounded text-white bg-teal-500 hover:bg-teal-400 transition duration-150 ease-in-out">
