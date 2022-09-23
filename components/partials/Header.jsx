@@ -137,7 +137,7 @@ function TheHeader({ setDarkModeProp, darkM }) {
               }
               <li>
                 <a
-                  href={"litepaper.pdf"}
+                  href={"/litepaper.pdf"}
                   rel="noreferrer"
                   target="_blank"
                   className={` black-text text-gray-600 dark:text-gray-400  flex py-2 px-4 leading-tight ${
@@ -340,6 +340,20 @@ function TheHeader({ setDarkModeProp, darkM }) {
                           </Link>
                         </li>
                       ))}
+                      <li>
+                        <a
+                          href={"/litepaper.pdf"}
+                          rel="noreferrer"
+                          target="_blank"
+                          className={` black-text text-gray-600 dark:text-gray-400  flex py-2 px-4 leading-tight ${
+                            darkM
+                              ? 'hover:!text-[#603EDA]'
+                              : 'hover:!text-[#191919]'
+                          }`}
+                        >
+                          Litepaper
+                        </a>
+                      </li>
 
                       {/* <li className="py-2 my-2 border-t border-b border-gray-200 dark:border-gray-800">
                         <span className="flex text-gray-600 dark:text-gray-400 py-2">
