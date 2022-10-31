@@ -3,7 +3,7 @@
     "menus": ["Features", "Roadmap", "About"],
     "dropdown_menu": {
       "title": {
-        "desktop": "Doc", 
+        "desktop": "Doc",
         "mobile": "Resources"
       },
       "items": [
@@ -22,8 +22,11 @@
   "hero": {
     "heading": "Crypto saving, made personal",
     "info": "Thrift RealFi wallet lets you easily save, invest, pay and manage your funds without giving up your privacy, asset’s ownership, security or your data.",
-    "tags": ["Local language support", "Lend or save as a group", "Grow wealth annonymously"]
-
+    "tags": [
+      "Local language support",
+      "Lend or save as a group",
+      "Grow wealth annonymously"
+    ]
   },
   "how": {
     "heading": "How it works",
@@ -93,20 +96,20 @@
         "year": "2021",
         "items": [
           {
-          "title": "Git Init",
-          "info": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt."
+            "title": "Git Init",
+            "info": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt."
           },
           {
-          "title": "Thrift on Cardano Summit",
-          "info": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt."
+            "title": "Thrift on Cardano Summit",
+            "info": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt."
           },
           {
-          "title": "DeFI and Microlending for Africa",
-          "info": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt."
+            "title": "DeFI and Microlending for Africa",
+            "info": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt."
           },
           {
-          "title": "Catalyst Boost Camp for Africa",
-          "info": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt."
+            "title": "Catalyst Boost Camp for Africa",
+            "info": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt."
           }
         ]
       },
@@ -211,7 +214,7 @@
     }
   ],
   "partners": {
-    "heading": "Partners"
+    "heading": "Partners & Supporters"
   },
   "the_cta": {
     "heading": "Get Notification"
