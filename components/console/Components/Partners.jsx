@@ -16,6 +16,20 @@ const Partners = ({ darkM, language }) => {
 
         <div className="images flex justify-around">
           <a
+            className="w-[20%]"
+            target="_blank"
+            href="https://microsoft.com"
+            rel="noreferrer"
+          >
+            <img
+              className="hover:opacity-80"
+              src={`/partner/${darkM ? 'dark' : 'light'}/microsoft.png`}
+              alt="1"
+              width="100%"
+            />
+          </a>
+          <a
+            className="w-[20%]"
             target="_blank"
             href="https://ariob.io/startups/"
             rel="noreferrer"
@@ -27,7 +41,12 @@ const Partners = ({ darkM, language }) => {
               width="100%"
             />
           </a>
-          <a target="_blank" href="https://coti.io/" rel="noreferrer">
+          <a
+            className="w-[20%]"
+            target="_blank"
+            href="https://coti.io/"
+            rel="noreferrer"
+          >
             <img
               className="hover:opacity-80"
               src={`/partner/${darkM ? 'dark' : 'light'}/2.png`}
@@ -35,7 +54,12 @@ const Partners = ({ darkM, language }) => {
               width="100%"
             />
           </a>
-          <a target="_blank" href="https://mlabs.city/" rel="noreferrer">
+          <a
+            className="w-[20%]"
+            target="_blank"
+            href="https://mlabs.city/"
+            rel="noreferrer"
+          >
             <img
               className="hover:opacity-80"
               src={`/partner/${darkM ? 'dark' : 'light'}/3.png`}
@@ -44,6 +68,7 @@ const Partners = ({ darkM, language }) => {
             />
           </a>
           <a
+            className="w-[20%]"
             target="_blank"
             href="https://cardano.ideascale.com/"
             rel="noreferrer"
