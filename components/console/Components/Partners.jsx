@@ -14,22 +14,9 @@ const Partners = ({ darkM, language }) => {
         {/* <img className='part' src = {'https://res.cloudinary.com/dhkccnvyn/image/upload/v4658828293/Logos_hm2qbw.svg'}
                 width='700%' height='100%'/> */}
 
-        <div className="images flex justify-around">
+        <div className="images flex gap-[10px]">
           <a
-            className="w-[20%]"
-            target="_blank"
-            href="https://microsoft.com"
-            rel="noreferrer"
-          >
-            <img
-              className="hover:opacity-80"
-              src={`/partner/${darkM ? 'dark' : 'light'}/microsoft.png`}
-              alt="1"
-              width="100%"
-            />
-          </a>
-          <a
-            className="w-[20%]"
+            className="w-full"
             target="_blank"
             href="https://ariob.io/startups/"
             rel="noreferrer"
@@ -42,7 +29,7 @@ const Partners = ({ darkM, language }) => {
             />
           </a>
           <a
-            className="w-[20%]"
+            className="w-full"
             target="_blank"
             href="https://coti.io/"
             rel="noreferrer"
@@ -55,7 +42,7 @@ const Partners = ({ darkM, language }) => {
             />
           </a>
           <a
-            className="w-[20%]"
+            className="w-full"
             target="_blank"
             href="https://mlabs.city/"
             rel="noreferrer"
@@ -68,7 +55,7 @@ const Partners = ({ darkM, language }) => {
             />
           </a>
           <a
-            className="w-[20%]"
+            className="w-full"
             target="_blank"
             href="https://cardano.ideascale.com/"
             rel="noreferrer"
@@ -81,6 +68,20 @@ const Partners = ({ darkM, language }) => {
             />
           </a>
         </div>
+        <a
+          style={{ width: 'calc(25% - 7.5px)' }}
+          className="block mt-6"
+          target="_blank"
+          href="https://www.microsoft.com/en-us/startups?rtc=1"
+          rel="noreferrer"
+        >
+          <img
+            className="hover:opacity-80"
+            src={`/partner/${darkM ? 'dark' : 'light'}/microsoft.png`}
+            alt="1"
+            width="100%"
+          />
+        </a>
       </div>
     </>
   )
