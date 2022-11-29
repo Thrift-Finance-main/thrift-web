@@ -59,7 +59,7 @@ const Homepage = () => {
         <Timeline darkM={darken} />
         <FeaturesWorld darkM={darken} />
 
-        <Team darkM={darken} />
+        {/*<Team darkM={darken} />*/}
         <Partners darkM={darken} />
         <News darkM={darken} />
         <TheCta darkM={darken} />
